@@ -39,6 +39,8 @@
     height: 2px;
     background: white;
     position: relative;
+    padding: 0px;
+    border: none; 
     &::before {
         content: '';
         display: block;
