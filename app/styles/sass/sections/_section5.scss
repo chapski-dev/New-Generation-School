@@ -1,0 +1,21 @@
+.section5-items__teachers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section5-items{
+    padding-bottom: 134px;
+}
+.teachers-items{
+    overflow: hidden;
+}
+.section5-img{
+    object-fit: none;
+}
+.section5-discr__links{
+    a{
+        display: inline-block;
+    }
+    display: flex;
+    justify-content: space-between;
+}

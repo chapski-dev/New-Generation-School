@@ -1,0 +1,24 @@
+h1, h2, h3, h4 {
+    font-family: 'Neucha', cursive;
+}
+
+h1 {
+    font-size: 64.5px;
+}
+
+h2 {
+    font-size: 54px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+@media screen and (max-width: 320px) {
+    h1, h2 {
+        font-size: 30px;
+    }
+    span {
+        font-size: 15px;
+    }
+}

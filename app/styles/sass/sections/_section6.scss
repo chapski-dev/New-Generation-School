@@ -1,0 +1,23 @@
+.section6-items{
+    .section6-videos:first-of-type{
+        padding-bottom: 42px;
+    }
+    padding-bottom: 132px;
+}
+.section6-videos{
+    display: flex;
+    justify-content: space-between;
+}
+.section6-video{
+    display: block;
+    height: 250px;
+    background: cornflowerblue;
+    border-radius: 70px;
+    margin-bottom: 21px;
+}
+.section6-video__items{
+    width: 48%;
+}
+.section6-video__items + .section6-video__items{
+    padding-left: 40px;
+}

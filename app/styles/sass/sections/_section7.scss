@@ -1,0 +1,26 @@
+.section7-items{
+    padding-bottom: 265px;
+}
+.section7-blocks{
+    display: flex;
+    flex-direction: column;
+    .section7-block:nth-child(even){
+        background: rgb(196, 105, 105);
+        align-items: flex-end;
+    }
+}
+
+.section7-block{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    h2{
+        padding-bottom: 35px;
+    }
+}
+.section7-block__discr{
+    h3{
+        padding-bottom: 12px;
+    }
+}

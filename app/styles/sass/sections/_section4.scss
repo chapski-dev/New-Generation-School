@@ -1,0 +1,31 @@
+.section4-items{
+    padding-bottom: 135px;
+    h2{
+        padding-bottom: 54px;
+    }
+}
+
+.section4-buttons{
+    display: flex;
+}
+.section4-buttons__block1, .section4-buttons__block3{
+    display: flex;
+    flex-direction: column;
+}
+.section4-buttons__block1{
+    flex: 3;
+    margin-right: 40px;
+    button:first-of-type{
+        margin-bottom: 40px;
+    }
+}
+.section4-buttons__block2{
+    flex: 1.3;
+}
+.section4-buttons__block3{
+    flex: 1.5;
+    margin-left: 40px;
+    button:first-of-type{
+        margin-bottom: 40px;
+    }
+}

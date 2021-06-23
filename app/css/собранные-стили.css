@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    color: #313131;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.title{
+    font-size: 54px;
+    font-weight: 400;
+    font-family: 'Neucha', cursive;
+}
+.suptitle{
+    font-size: 16px;
+}
+.container{
+    margin: 0 auto;
+    width: 1160px;
+    padding: 0 18px;
+}
+h1, h2{
+    font-family: 'Neucha', cursive;
+}
+h1{
+    font-size: 64.5px;
+    font-family: 'Neucha', cursive;
+}
+h2{
+    font-size: 54px;
+}
+/* BUTTONS */
+.button{
+    border-radius: 100px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.header-button{
+    padding: 10px 30px;
+    background: #EBEBF2;
+    color: #36347F;
+    font-size: 14px;
+}
+
+
+
+
+/* HEADER*/
+header{
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.header__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* картинка лого */
+.header-logo__items{
+    position: relative;
+}
+
+.header-logo__circleImg{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+/* навигация */
+.nav-links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-link{
+    display: block;
+    text-decoration: none;
+}
+
+.header-contacts{
+    display: flex;
+    justify-content: space-between;
+}
+.header__phone{
+    display: block;
+    font-weight: 700;
+    color: black;
+}
+
+
+
+.section1-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1__text-area{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}

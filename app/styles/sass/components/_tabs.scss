@@ -1,0 +1,98 @@
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.tabs-nav__trigger {
+    font-size: 16px;
+    display: block;
+    padding: 28px 0;
+    flex: 1;
+    opacity: .5;
+    &.active {
+        opacity: 1;
+        background-color: $gray;
+    }
+    &:hover{
+        opacity: 1;
+        color: $green;
+    }
+}
+
+.tabs-contents__item {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+  //
+  // Tabs
+  //
+  
+.nav-tabs {
+    .nav-link.active,
+    .nav-item.show .nav-link {
+        color: black;
+        background-color: $gray;
+    }
+}
+  
+  
+//
+// Pills
+//
+  
+.nav-pills {
+    margin-bottom: 50px;
+    .nav-link.active,
+    .show > .nav-link {
+        color: black;
+        background-color: $gray;
+    }
+}
+  
+.nav-justified {
+    .nav-item {
+        flex: 1;
+        text-align: center;
+    }
+}
+  
+  
+  // Tabbable tabs
+  //
+  // Hide tabbable panes to start, show them when `.active`
+  
+  .tab-content {
+    > .tab-pane {
+      display: none;
+    }
+    > .active {
+      display: block;
+    }
+  }
+
+.nav-item {
+    border: $gray 1px solid;
+    &:first-of-type {
+        border-top-left-radius: 70px;
+        border-bottom-left-radius: 70px;
+        .tabs-nav__trigger {
+            border-top-left-radius: 70px;
+            border-bottom-left-radius: 70px;
+        }
+    }
+    &:last-of-type {
+        border-top-right-radius: 70px;
+        border-bottom-right-radius: 70px;
+        .tabs-nav__trigger {
+            border-top-right-radius: 70px;
+            border-bottom-right-radius: 70px; 
+        }
+    }
+}
