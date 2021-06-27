@@ -1,7 +1,21 @@
+.section2 {
+    @include tablet {
+        .container {
+            overflow: hidden;
+        }
+    }
+}
 .section2-row {
     padding-bottom: 137px;
     h2 {
         padding-bottom: 56px;
+    }
+    @include tablet {
+        text-align: center;
+        align-items: center;
+        h2 {
+            padding-bottom: 61px;
+        }
     }
 }
 .section2__swiper {
@@ -11,43 +25,45 @@
         top: 22%;
         left: -5%;
         z-index: 10;
+        @include tablet {
+            width: 8%;
+        }
     }
     .section2__felt-tip2 {
         position: absolute;
         bottom: 0;
         right: 6%;
         z-index: 10;
+        @include tablet {
+            display: none;
+        }
     }
     .section2__felt-tip3 {
         position: absolute;
         top: 6%;
         right: -12%;
+        @include tablet {
+            width: 16%;
+        }
     }
 }
 
-
-
-@media screen and (max-width: 320px) {
-
-    .section2-row {
-        text-align: center;
-        align-items: center;
-        h2 {
-            padding-bottom: 61px;
-        }
-    }
-    .nav-pills {
+.nav-pills {
+    @include tablet {
         display: none;
     }
-    .section2__felt-tip1 {
-        width: 8%;
+}
+.section2-searching-glass {
+    display: none;
+    @include tablet {
+        display: block;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        z-index: 2;
     }
-    .section2__felt-tip3 {
-        width: 16%;
-    }
-    .section2__swiper {
-        .section2__felt-tip2 {
-            display: none;
-        }
-    }
+
+}
+.swipe-button-prev, .swipe-button-next {
+    padding: 20px;
 }

@@ -9,14 +9,17 @@ $desktop-fdh125: 1540px;
 $portrait: "(orientation: portrait)";
 $landscape: "(orientation: landscape)";
 
-@mixin mobile-land {
-  @media screen and (max-width: $mobile-width-l) {
+
+
+
+@mixin mobile {
+  @media screen and (max-width: $mobile-width) {
     @content;
   }
 }
 
-@mixin mobile {
-  @media screen and (max-width: $mobile-width) {
+@mixin mobile-land {
+  @media screen and (max-width: $mobile-width-l) {
     @content;
   }
 }

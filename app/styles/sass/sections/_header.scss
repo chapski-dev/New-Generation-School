@@ -8,9 +8,28 @@
         align-items: center;
         position: relative;
     }
+    @include tablet {
+        padding: 0;
+        .container {
+            padding: 0;
+        }
+    }
 }
-
+.header__row{
+    @include tablet {
+        height: 80px;
+        background-color: #36347F;
+        padding: 0 10px;
+        z-index: 12;
+    }
+}
 /* logo image */
+.header-logo__img {
+    @include tablet {
+        width: 101px;
+        max-height: 40px;
+    }
+} 
 
  .header-logo__circleImg {
     position: absolute;
@@ -18,7 +37,11 @@
     left: -3%;
     bottom: -95%;
     object-fit: fill;
+    @include tablet {
+        display: none;
+    }
  }
+ 
 .header-contacts {
     display: flex;
     justify-content: space-between;
@@ -27,10 +50,20 @@
         font-weight: 700;
         color: black;
     }
+    @include tablet {
+        display: none;
+        flex-direction: column;
+        &__address {
+            color: #000;
+        }
+    }
 }
 
 .header-actions {
     padding-left: 20px;
+    @include tablet {
+        padding: 0;
+    }
 }
 
 .header__nav-toggle {
@@ -66,42 +99,44 @@
     }
 }
 
-.header__nav-links {
+.header__navigation {
         
     &._mobile-nav-open {
-        .nav-links {
-            @include mobile-land {
+        .header__nav-links {
+            @include tablet {
                 display: block;
+                z-index: -1;
             }
         }
     }
-    .nav-links {
-        @include mobile-land {
+    .header__nav-links {
+        @include tablet {
             display: none;
         }
     }
-
 }
-
-@media screen and (max-width: 320px) {
-
-    .header {
-        padding: 0;
-        
-    }
-    .header-logo__img {
-        width: 101px;
-        max-height: 40px;
-    }    
-    .header-logo__circleImg {
-        display: none;
-    }
-    .header__row{
-        height: 80px;
-        background-color: #36347F;
-        padding: 0 10px;
-    }
-    .header-contacts {
-        display: none;
+.header-contacts__tablet {
+    display: none;
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        &-phone {
+            display: block;
+            padding-bottom: 20px;
+            font-weight: 700;
+            color: black;
+            order: 1;
+        }
+        &-address {
+            order: 3;
+            padding-bottom: 50px;
+        }
+        .header-actions {
+            padding-bottom: 31px;
+            order: 2;
+        }
     }
 }

@@ -1,3 +1,10 @@
+.section1 {
+	@include tablet {
+		.container {
+			overflow: hidden;
+		}
+	}
+}
 .section1__wrapper {
 	display: flex;
 	flex-direction: column;
@@ -5,6 +12,12 @@
 
 h1 { 
     padding-bottom: 35.6px;
+	@include tablet {
+		text-align: center;
+		padding-top: 64px;
+		padding-bottom: 35.6px;
+		order: -1;
+	}
 }
 
 .section1-row {
@@ -13,139 +26,127 @@ h1 {
 
 	.check-ic-text {
 		width: 50%;
+		@include tablet {
+			&:first-of-type {
+				padding-bottom: 24px;
+			}
+			&:last-of-type {
+				padding-bottom: 44px;
+			}
+		}
 	}
 
 	.check-ic-text__icon {
 		max-height: 75px;
 		padding-bottom: 10px;
 	}
+	@include tablet {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .section1-left {
 	justify-content: flex-start;
 	width: 64%;
+	@include tablet {
+		width: 100%;
+		text-align: center;
+		order: 3;
+	}
 }
 
 .section1__text-area {
 	display: flex;
 	padding-bottom: 64px;
-}
-
-
-.section1-right {
-    width: 40%;
-	// position: relative;
-    .img-block { 
-		top: -27%;
-        padding-bottom: 13px;
-
-    }
-}
-.img-block {
-	position: relative;
-}
-.section1-img {
-	position: relative;
-	z-index: -1;
-	width: 100%;
-	height: auto;
-}
-.section1-paint {
-	position: absolute;
-	top: -9%;
-	right: 67%;
-	z-index: -2;
-	width: (108 / 446) * 100%;
-}
-.section1-globus {
-	position: absolute;
-	bottom: -2%;
-	right: 12%;  
-}
-.section1-circleMiddle {
-	position: absolute;
-	top: -3%;
-	right: -18%;
-}
-.section1-circleBig {
-	position: absolute;
-	bottom: -17%;
-    left: -12%;
-}
-.section1-circleSmall {
-	position: absolute;
-	bottom: 22%;
-    left: -9%;
-}
-.section1-bottom{
-    padding-bottom: 174px;
-}
-
-
-@media screen and (max-width: 320px) {
-
-	h1 {
-		text-align: center;
-		padding-top: 64px;
-		padding-bottom: 35.6px;
-		order: -1;
-	}
-
-	.section1-row {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-
-	}
-	.section1-left {
-		width: 100%;
-		text-align: center;
-		order: 3;
-	}
-	.section1__text-area {
-		display: flex;
+	@include tablet {
 		flex-direction: column;
 		width: 100%;
 		.check-ic-text {
 			width: 100%;
 		}
 	}
-	.section1-right {
+}
+
+
+.section1-right {
+    width: 40%;
+    .img-block { 
+		top: -27%;
+        padding-bottom: 13px;
+		position: relative;
+    }
+	.section1-img {
+		position: relative;
+		z-index: -1;
+		width: 100%;
+		height: auto;
+	}
+	.section1-paint {
+		position: absolute;
+		top: -9%;
+		right: 67%;
+		z-index: -2;
+		width: (108 / 446) * 100%;
+	}
+	.section1-globus {
+		position: absolute;
+		bottom: -2%;
+		right: 22%;
+		width: (72/446) * 100%;  
+	}
+	.section1-circleMiddle {
+		position: absolute;
+		top: 0;
+		right: -13%;
+		width: (95/446) * 100%;
+	}
+	.section1-circleBig {
+		position: absolute;
+		bottom: -17%;
+		left: -12%;
+		width: (166/446) * 100%;
+	}
+	.section1-circleSmall {
+		position: absolute;
+		bottom: 22%;
+		left: -9%;
+		width: (72/446) * 100%;
+	}
+	@include tablet {
 		order: 2;
 		padding-bottom: 33px;
 		width: 100%;
 		.section1-img {
 			position: static;
-			width: 100%;
-		}
-		.section1-paint, .section1-globus, .section1-circleMiddle {
-			width: 20%;
 		}
 		.section1-circleBig {
 			bottom: -9%;
 			left: 1%;
-    		width: 28%;
 		}
 		.section1-circleSmall {
 			bottom: 22%;
     		left: -2%;
-    		width: 12%;
 		}
 		.section1-circleMiddle {
 			top: -16%;
     		right: 8%;
 		}
 	}
-	.section1-bottom {
+}
+.section1-bottom{
+    padding-bottom: 174px;
+	.icon-triangle-play {
+		padding-left: 50px;
+		&::before {
+			padding: 20px;
+			border-radius: 100%;
+			background-color: $green-light;
+		}
+	}
+	@include tablet {
 		margin: 0 auto;
 		padding-bottom: 131px;
-	}
-	.check-ic-text {
-		&:first-of-type {
-			padding-bottom: 24px;
-		}
-		&:last-of-type {
-			padding-bottom: 44px;
-		}
 	}
 }

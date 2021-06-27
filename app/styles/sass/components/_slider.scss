@@ -1,9 +1,23 @@
 .swiper-container {
+  width: 100%;
+  @include tablet{
     width: 100%;
-    height: auto;
   }
+}
+.swiper-slide {
+  height: 569px;
+  @include tablet{
+    width: 100%;
+    height: 367px;
+  }
+  @include mobile-land {
+    height: 304px;
+  }
+  @include mobile{
+    height: 193px;
+  }
+}
 .swiper-pagination {
-  // background: red;
   position: static;
   width: 100%;
   display: flex;
@@ -21,22 +35,7 @@
         background: $green;
 
     }
-}
-.swiper-pagination-bullet + .swiper-pagination-bullet{
-  margin-left: 30px;
-}
-.swiper-slide{
- height: 569.5px;
-}
-
-@media screen and (max-width: 320px) {
-    .swiper-slide {
-      height: 147px;
-  }
-  .swiper-container, .swiper-slide {
-      width: 300px;
-  }
-  .swiper-pagination {
+    @include tablet {
       padding: 30px;
       .swiper-pagination-bullet {
         background: $dark-gray;
@@ -47,7 +46,35 @@
       .swiper-pagination-bullet-active {
         background: $green;
     }
+    }
+}
+.swiper-pagination-bullet + .swiper-pagination-bullet{
+  margin-left: 30px;
+}
+
+// NAVIGATION 
+.swiper-buttons-mobile {
+  display: none;
+  @include tablet {
+    display: block;
+    position: relative;
+    padding-bottom: 31px;
+    
+    .swiper-button-next, .swiper-button-prev {
+      position: absolute;
+      top: -11%;
+      width: calc(var(--swiper-navigation-size)/ 7 * 37);
+      height: var(--swiper-navigation-size);
+      margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+      z-index: 10;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $green;
+    }
+    .swiper-buttons-mobile__text {
+      padding-top: 30px;
+    }
   }
-
-
 }

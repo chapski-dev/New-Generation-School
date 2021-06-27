@@ -4,21 +4,31 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 64.5px;
+    @include mobile {
+        font-size: 30px;  
+    }
 }
 
 h2 {
     font-size: 54px;
+    @include mobile {
+        font-size: 30px;
+    }
 }
 
 h3 {
     font-size: 28px;
 }
+.icon-triangle-down {
+    font-size: 10px;
+}
+.icon-triangle-play {
+    font-size: 15px;
+    color: white;
+}
 
-@media screen and (max-width: 320px) {
-    h1, h2 {
-        font-size: 30px;
-    }
-    span {
+span {
+    @include mobile {
         font-size: 15px;
     }
 }

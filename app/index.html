@@ -14,32 +14,32 @@
     <header class="header">
         <div class="container">
             <div class="header__row">
-                <!-- картинка лого -->
+                <!-- LOGO IMG -->
                 <div class="header-logo">
                     <img src="./img/src/nav-logo_circle.png" alt="" class="header-logo__circleImg">
                     <a href="" class="nav-logo__img-link">
                         <img src="./img/src/nav-logo.png" alt="" class="header-logo__img">
                     </a>
                 </div>
-                <!-- ссылки навигации -->
-                <div class="header__nav-links">
+                <!-- NAVIGATION -->
+                <div class="header__navigation">
                     <button class="header__nav-toggle"></button>
-                    <nav class="nav-links">
+                    <nav class="nav-links header__nav-links">
                         <ul class="nav-links__list">
-                            <li class="nav-links__item nav-links__item-courses">
-                                <a href="#" class="nav-links__link">
+                            <li class="nav-links__item nav-links__item--parent nav-links__item-courses">
+                                <a href="#" class="nav-links__link ">
                                     Курсы
                                     <i class="icon-triangle-down"></i>
                                 </a>
-                                <ul class="sub-menu">
-                                    <li><a href="">Курсы подготовки к школе (4-6 лет)</a></li>
-                                    <li><a href="">Маленькие исследователи (7+ лет)</a></li>
-                                    <li><a href="">Логопед</a></li>
-                                    <li><a href="">Репетиторство и доп.услуги</a></li>
+                                <ul class="sub-menu panel">
+                                    <li><a href="#">Курсы подготовки к школе (4-6 лет)</a></li>
+                                    <li><a href="#">Маленькие исследователи (7+ лет)</a></li>
+                                    <li><a href="#">Логопед</a></li>
+                                    <li><a href="#">Репетиторство и доп.услуги</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-links__item">
-                                <a href="#" class="nav-links__link">О ТРИЗ</a>
+                            <li class="nav-links__item accordion">
+                                <a href="#" class="nav-links__link accordion">О ТРИЗ</a>
                             </li>
                             <li class="nav-links__item">
                                 <a href="#" class="nav-links__link">СМИ о нас</a>
@@ -51,9 +51,17 @@
                                 <a href="#" class="nav-links__link">Отзывы</a>
                             </li>
                         </ul>
+                        <!-- TABLET/MOBILE CONTACTS -->
+                        <div class="header-contacts__tablet">
+                                <a href="tel:375291194194" class="header-contacts__tablet-phone">+375(29) 1-194-194</a>
+                                <div class="header-contacts__tablet-address">пр-т Победителей, д. 23, к. 1 </div>
+                            <div class="header-actions">
+                                <button class="button-fill  button-fill--sm header-button">Записаться</button>
+                            </div>
+                        </div>
                     </nav>
                 </div>
-                <!-- блог контактов -->
+                <!-- CONTACTS -->
                 <div class="header-contacts">
                     <div class="header-contacts__info">
                         <a href="tel:375291194194" class="header-contacts__phone">+375(29) 1-194-194</a>
@@ -119,29 +127,162 @@
                 <div class="tabs">
                     <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
                         <li class="nav-item">
-                            <a class=" tabs-nav__trigger active" id="pills-procces-tab" data-toggle="pill" href="#pills-procces" role="tab" aria-controls="pills-procces" aria-selected="true">Учебный процесс</a>
+                            <a class="tabs-nav__trigger active" id="pills-procces-tab" data-toggle="pill" href="#pills-procces" role="tab" aria-controls="pills-procces" aria-selected="true">Учебный процесс</a>
                         </li>
                         <li class="nav-item">
-                            <a class=" tabs-nav__trigger" id="pills-materials-tab" data-toggle="pill" href="#pills-materials" role="tab" aria-controls="pills-materials" aria-selected="false">Материалы</a>
+                            <a class="tabs-nav__trigger" id="pills-materials-tab" data-toggle="pill" href="#pills-materials" role="tab" aria-controls="pills-materials" aria-selected="false">Материалы</a>
                         </li>
                         <li class="nav-item">
-                            <a class=" tabs-nav__trigger" id="pills-classes-tab" data-toggle="pill" href="#pills-classes" role="tab" aria-controls="pills-classes" aria-selected="false">Классы</a>
+                            <a class="tabs-nav__trigger" id="pills-classes-tab" data-toggle="pill" href="#pills-classes" role="tab" aria-controls="pills-classes" aria-selected="false">Классы</a>
                         </li>
                         <li class="nav-item">
-                            <a class=" tabs-nav__trigger" id="pills-graduate-tab" data-toggle="pill" href="#pills-graduate" role="tab" aria-controls="pills-graduate" aria-selected="false">Наш выпускной</a>
+                            <a class="tabs-nav__trigger" id="pills-graduate-tab" data-toggle="pill" href="#pills-graduate" role="tab" aria-controls="pills-graduate" aria-selected="false">Наш выпускной</a>
                         </li>
                         <li class="nav-item">
-                            <a class=" tabs-nav__trigger" id="pills-events-tab" data-toggle="pill" href="#pills-events" role="tab" aria-controls="pills-events" aria-selected="false">Мероприятия</a>
+                            <a class="tabs-nav__trigger" id="pills-events-tab" data-toggle="pill" href="#pills-events" role="tab" aria-controls="pills-events" aria-selected="false">Мероприятия</a>
                         </li>
                     </ul>
+                    <!-- SWIPE BUTTONS FOR TABS-->
+                    <div class="section2__swipe-buttons">
+                        <button class="swipe-button-prev">
+                            <i class="icon-section2__button-prev"></i>
+                        </button>
+                        <button class="swipe-button-next">
+                            <i class="icon-section2__button-next"></i>
+                        </button>
+                    </div>
                      <!-- Swiper -->
+                     <!-- 1st TAB -->
                     <div class="tabs-contents tab-content" id="pills-tabContent">
-                        <div id="nav-procces" class="tabs-contents__item show active" role="tabpanel" aria-labelledby="nav-procces-tab"> 
+                        <div id="pills-procces" class="tabs-contents__item show active" role="tabpanel" aria-labelledby="pills-procces-tab"> 
+                            <div class="section2__swiper">
+                                    <!-- DECORATING IMAGES -->
+                                <img src="./img/src/section2__felt-tip1.svg" alt="" class="section2__felt-tip1">
+                                <img src="./img/src/section2__felt-tip2.svg" alt="" class="section2__felt-tip2">
+                                <img src="./img/src/section2__felt-tip3.svg" alt="" class="section2__felt-tip3">
+                                    <!-- SWIPER PAGITAION -->
+                                <div class="swiper-container section2-tabs-slider">
+                                    <img src="./img/src/section2-searching-glass.svg" alt="" class="section2-searching-glass">
+                                        <!-- SLIDER WRAPPER -->
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/section2-img.png" alt="" class="section2__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/пример.jpg" alt="" class="section2__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/пример2.png" alt="" class="section2__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/пример3.jpg" alt="" class="section2__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/пример4.jpg" alt="" class="section2__img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>   
+                        </div>
+                        <!-- 2nd TAB -->
+                        <div id="pills-materials" class="tabs-contents__item show" role="tabpanel" aria-labelledby="pills-materials-tab"> 
                             <div class="section2__swiper">
                                 <img src="./img/src/section2__felt-tip1.svg" alt="" class="section2__felt-tip1">
                                 <img src="./img/src/section2__felt-tip2.svg" alt="" class="section2__felt-tip2">
                                 <img src="./img/src/section2__felt-tip3.svg" alt="" class="section2__felt-tip3">
-                                <div class="swiper-container mySwiper">
+                                <div class="swiper-container section2-tabs-slider">
+                                    <img src="./img/src/section2-searching-glass.svg" alt="" class="section2-searching-glass">
+                                    <!-- SLIDER WRAPPER -->
+                                    <div class="swiper-wrapper">
+                                        <!-- SEARCHIN-GLASS -->
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/section2-img.png" alt="" class="section2__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/пример.jpg" alt="" class="section2__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/пример2.png" alt="" class="section2__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/пример3.jpg" alt="" class="section2__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/пример4.jpg" alt="" class="section2__img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>   
+                        </div>
+                        <!-- 3rd TAB -->
+                        <div id="pills-classes" class="tabs-contents__item" role="tabpanel" aria-labelledby="pills-classes-tab"> 
+                            <div class="section2__swiper">
+                                <img src="./img/src/section2__felt-tip1.svg" alt="" class="section2__felt-tip1">
+                                <img src="./img/src/section2__felt-tip2.svg" alt="" class="section2__felt-tip2">
+                                <img src="./img/src/section2__felt-tip3.svg" alt="" class="section2__felt-tip3">
+                                <div class="swiper-container section2-tabs-slider">
+                                    <img src="./img/src/section2-searching-glass.svg" alt="" class="section2-searching-glass">
+                                    <!-- SLIDER WRAPPER -->
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/section2-img.png" alt="" class="section2__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/пример.jpg" alt="" class="section2__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/пример2.png" alt="" class="section2__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/пример3.jpg" alt="" class="section2__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/пример4.jpg" alt="" class="section2__img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>   
+                        </div>
+                        <!-- 4th TAB -->
+                        <div id="pills-graduate" class="tabs-contents__item" role="tabpanel" aria-labelledby="pills-graduate-tab"> 
+                            <div class="section2__swiper">
+                                <img src="./img/src/section2__felt-tip1.svg" alt="" class="section2__felt-tip1">
+                                <img src="./img/src/section2__felt-tip2.svg" alt="" class="section2__felt-tip2">
+                                <img src="./img/src/section2__felt-tip3.svg" alt="" class="section2__felt-tip3">
+                                <div class="swiper-container section2-tabs-slider">
+                                    <img src="./img/src/section2-searching-glass.svg" alt="" class="section2-searching-glass">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/section2-img.png" alt="" class="section2__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/пример.jpg" alt="" class="section2__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/пример2.png" alt="" class="section2__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/пример3.jpg" alt="" class="section2__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/src/пример4.jpg" alt="" class="section2__img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>   
+                        </div>
+                        <!-- 5th TAB -->
+                        <div id="pills-events" class="tabs-contents__item" role="tabpanel" aria-labelledby="pills-events-tab"> 
+                            <div class="section2__swiper">
+                                <img src="./img/src/section2__felt-tip1.svg" alt="" class="section2__felt-tip1">
+                                <img src="./img/src/section2__felt-tip2.svg" alt="" class="section2__felt-tip2">
+                                <img src="./img/src/section2__felt-tip3.svg" alt="" class="section2__felt-tip3">
+                                <div class="swiper-container section2-tabs-slider">
+                                    <img src="./img/src/section2-searching-glass.svg" alt="" class="section2-searching-glass">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <img src="./img/src/section2-img.png" alt="" class="section2__img">
@@ -172,7 +313,7 @@
         <div class="container">
             <div class="section3-items">
                 <h2>Курсы школы раннего развития</h2>
-                <div class="section3-block">
+                <div class="section3-block section3-block_1">
                     <div class="section3__img-block1">
                         <img src="" alt="">
                     </div>
@@ -201,13 +342,13 @@
                                 </div>
                             </div>
                             <div class="block-info__buttons">
-                                <button class="button block-info__button">Записаться</button>
-                                <button class="button block-info__button block-info__button_active"> Подробнее</button>
+                                <button class="button-fill button-fill--green block-info__button">Записаться</button>
+                                <button class="button-bordered block-info__button_about"> Подробнее</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="section3-block">
+                <div class="section3-block section3-block_2">
                     <div class="section3__img-block2">
                         <img src="" alt="">
                     </div>
@@ -236,13 +377,13 @@
                                 </div>
                             </div>
                             <div class="block-info__buttons">
-                                <button class="button block-info__button">Записаться</button>
-                                <button class="button block-info__button block-info__button_active"> Подробнее</button>
+                                <button class="button-fill button-fill--green block-info__button">Записаться</button>
+                                <button class="button-bordered block-info__button_about"> Подробнее</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="section3-block">
+                <div class="section3-block section3-block_3">
                     <div class="section3__img-block3">
                         <img src="" alt="">
                     </div>
@@ -271,8 +412,8 @@
                                 </div>
                             </div>
                             <div class="block-info__buttons">
-                                <button class="button block-info__button">Записаться</button>
-                                <button class="button block-info__button block-info__button_active"> Подробнее</button>
+                                <button class="button-fill button-fill--green block-info__button">Записаться</button>
+                                <button class="button-bordered block-info__button_about"> Подробнее</button>
                             </div>
                         </div>
                     </div>
@@ -461,6 +602,30 @@
             </div>
         
         </div>
+        <style>
+            .box-parent {
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 500px;
+                height: 500px;
+                background: #000;
+            }
+            .box-chiled {
+                backdrop-filter: blur(4px); /* Размываем фон */
+                background: rgba(255,255,255,0.4); /* Белый фон с полупрозрачностью */
+                width: 300px; /* Ширина блока */
+                padding: 20px; /* Поля вокруг текста */
+            }   
+        </style>
+        <div class="box-parent">
+            <div class="box-chiled">
+                <p>Полинезийцы называют Млечный путь Манго-Роа-И-Ата, 
+                    что в переводе с маори означает «Длинная акула на рассвете».</p>
+            </div>
+        </div>
+
     </section>
 
 
@@ -469,19 +634,12 @@
 
 
 
+    <footer>
 
+    </footer>
 
-
-
-
-
-
-
-
-
-
-
-
+    <!-- modals start -->
+    <!-- modals end -->
 
 
 
@@ -492,24 +650,19 @@
 </html>
 
 
-
-
-<!-- TABS bootstrap -->
-
-<!-- <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
-    <li class="nav-item button section2-button section2-button_active">
-      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-procces" role="tab" aria-controls="pills-procces" aria-selected="true">Учебный процесс</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="pills-materials-tab" data-toggle="pill" href="#pills-materials" role="tab" aria-controls="pills-materials" aria-selected="false">Материалы</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="pills-classes-tab" data-toggle="pill" href="#pills-classes" role="tab" aria-controls="pills-classes" aria-selected="false">Классы</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" id="pills-graduate-tab" data-toggle="pill" href="#pills-graduate" role="tab" aria-controls="pills-graduate" aria-selected="false">Наш выпускной</a>
-      </li>
-    <li class="nav-item">
-        <a class="nav-link" id="pills-events-tab" data-toggle="pill" href="#pills-events" role="tab" aria-controls="pills-events" aria-selected="false">Мероприятия</a>
-    </li>
-  </ul> -->
+                                    <!-- SWIPER BUTTONS NAVIGATION !!!!!!! TEST !!!!!!-->
+                                    <div class="swiper-buttons-mobile">
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-container section2-tabs-slider">
+                                             <!-- SLIDER WRAPPER !!!TEST!!!-->
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-buttons-mobile__text swiper-slide">
+                                                    <span>Учебный процесс</span>
+                                                </div>
+                                                <div class="swiper-buttons-mobile__text swiper-slide">
+                                                    <span>Материалы</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>

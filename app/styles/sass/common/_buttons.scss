@@ -43,17 +43,22 @@
     border: 2px $green solid;
 }
 
-
+// HEADER
 .header-button {
     padding: 10px 30px;
     background: $gray;
     color: #36347F;
     font-size: 14px;
+    &:hover {
+        color: white;
+        background: $green;
+    }
+    @include tablet {
+        background: $green;
+        color: #ffffff;
+    }
 }
-.header-button:hover {
-    color: white;
-    background: $green;
-}
+
 
 // SECTION 1
 .button_section1 {
@@ -62,18 +67,15 @@
     align-items: center;
     padding: 23px 29px 23px 46px;
     background: $green;
-    &:hover img{
-        background: $green
-    }
+    &:hover .icon-triangle-play::before{
+		background-color: $green;
+	}
     span {
+        font-size: 18px;
         color: white;
     }
-
-    img {
-        padding: 19px 20px 20px 19px;
-        margin-left: 31px;
-        background: #12C96D;
-        border-radius: 30px;
+    @include tablet { 
+        margin: 0 auto;
     }
 }
 
@@ -82,13 +84,11 @@
 // SECTION 3
 .block-info__button{
     padding: 35px 66px;
-    background: #0BBC63;
     color: white;
 }
-.block-info__button_active{
-    background: transparent;
-    border: 2px #0BBC63 solid;
-    color: #0BBC63;
+.block-info__button_about{
+    padding: 35px 66px;
+    color: $green;
 }
 
 // SECTION 4
@@ -109,12 +109,5 @@
     button{
         width: 100%;
         height: 100%;
-    }
-}
-
-@media screen and (max-width: 320px) {
-
-    .button_section1 {
-        margin: 0 auto;
     }
 }
