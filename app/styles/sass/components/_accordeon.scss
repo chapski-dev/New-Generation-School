@@ -1,0 +1,18 @@
+.card {
+    background-color: $pink;
+    border-radius: 20px;
+}
+.card-header {
+    border-radius: 70px !important;
+    padding: 0px;
+    button {
+        padding-top: 28px;
+        padding-left: 31px;
+        padding-bottom: 28px;
+    }
+}
+.card-body {
+    padding-top: 16px;
+    padding-left: 31px;
+    padding-bottom: 33px;
+}

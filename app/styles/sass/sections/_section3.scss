@@ -1,5 +1,14 @@
-.section3-items h2{
-    padding-bottom: 107px;
+.section3-items {
+    h2 {
+        padding-bottom: 107px;
+    }
+    @include tablet {
+        text-align: center;
+        margin-bottom: 131px;
+        h2 {
+            padding-bottom: 61px;
+        }
+    }
 }
 
 .section3-block{
@@ -7,12 +16,44 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 174px;
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 41px;
+        padding-bottom: 71px;
+        margin-bottom: 50px;
+        &:last-of-type {
+            margin-bottom: 0px;
+        }
+    }
 }
 .content-block{
     width: 55%;
+    padding-left: 25px;
+    @include tablet {
+        width: 87.67%;
+        padding-left: 0px;
+    }
+    h5{
+        padding-bottom: 27px;
+        @include tablet {
+            padding-bottom: 20px;
+        }
+    }
+    h3{
+        padding-bottom: 12px;
+        @include tablet {
+            padding-bottom: 23px;
+        }
+    }
+    p{
+        padding-bottom: 44px;
+    }
 }
 // COMMON STYLES OF DESCTOP BACKGROUND
 .section3-block_1, .section3-block_2, .section3-block_3 {
+    
     &::before {
             content: '';
             display: block;
@@ -26,27 +67,44 @@
             z-index: -1;
             top: -11%;
             left: -5%;
+            @include tablet {
+                display: none;
+            }
         }
 }    
 
-.section3-block_1::before{
-    background: #FFF8D2;
-    transform: rotate(-1.7deg);
+
+.section3-block_1{
+    &::before {
+        background: #FFF8D2;
+        transform: rotate(-1.7deg);
+    }
+    @include tablet {
+        background: #FFF8D2;
+        border-radius: 70px;
+    }
 }
-.section3-block_2::before{
+.section3-block_2 {
+    &::before{
     background: #E7F8EF;
     transform: rotate(1.23deg);
+    }
+    @include tablet {
+        background: #E7F8EF;
+        border-radius: 70px;
+    }
 }
-.section3-block_3::before{
-    background: #F5F5F9;
-    transform: rotate(-1.19deg);
-}
+.section3-block_3{
+    &::before{
+        background: #F5F5F9;
+        transform: rotate(-1.19deg);
+    }
+    @include tablet {
+        background: #F5F5F9;
+        border-radius: 70px;
+    }
+} 
 // common styles of section3__img-block
-.section3__img-block1, .section3__img-block2, .section3__img-block3 {
-    width: 460px;
-    height: 556px;
-    border-radius: 70px;
-}
 .section3__img-block1{
     background: rgb(207, 66, 66);
     transform: rotate(3.09deg);
@@ -59,34 +117,63 @@
     background: rgb(69, 46, 199);
     transform: rotate(2.23deg);
 }
-
-.content-block1, .content-block2, .content-block3 {
-    h5{
-        padding-bottom: 27px;
+.section3__img-block1, .section3__img-block2, .section3__img-block3 {
+    width: 460px;
+    height: 543px;
+    border-radius: 70px;
+    overflow: hidden;
+    img {
+        object-fit: fill;
     }
-    h3{
-        padding-bottom: 12px;
+    @include tablet {
+        width: 90%;
+        height: 161px;
+        transform: none;
+        border-radius: 20px;
     }
-    p{
-        padding-bottom: 44px;
-    }
-    padding-left: 25px;
 }
 
-.block-info__first{
+.block-info__first, .block-info__sec {
     display: flex;
-    div{
+    div {
         width: 45%;
+    }
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        div {
+            width: 100%;
+        }
     }
 }
 .block-info__sec{
     display: flex;
-    div{
+
+    div {
         width: 45%;
+    }
+    .schedule {
+        .timetable {
+            color: $green;
+        }
+    }
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        div {
+            width: 100%;
+        }
+        padding-bottom: 47px;
     }
 }
 .block-info__buttons{
     display: flex;
     justify-content: space-between;
     width: 76%;
+    @include tablet {
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
 }

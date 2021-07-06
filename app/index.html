@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Neucha&display=swap" rel="stylesheet">
@@ -68,7 +68,7 @@
                         <div class="header-contacts__address">пр-т Победителей, д. 23, к. 1 </div>
                     </div>
                     <div class="header-actions">
-                        <button class="button-fill  button-fill--sm header-button">Записаться</button>
+                        <button class="button-fill button-fill--sm header-button btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalCenter" >Записаться</button>
                     </div>
                 </div>
             </div>
@@ -99,7 +99,7 @@
                             </div>
                         </div>
                         <div class="section1-bottom">
-                            <button class="button-fill button-fill--green  section1-button button_section1">
+                            <button class="button-fill button-fill--green section1-button button_section1">
                                 <span>Подробнее</span>
                                 <i class="icon-triangle-play"></i>
                             </button>
@@ -145,14 +145,15 @@
                     <!-- SWIPE BUTTONS FOR TABS-->
                     <div class="section2__swipe-buttons">
                         <button class="swipe-button-prev">
-                            <i class="icon-section2__button-prev"></i>
+                            <i class="icon-arrow-left-bordered"></i>
                         </button>
                         <button class="swipe-button-next">
-                            <i class="icon-section2__button-next"></i>
+                            <i class="icon-arrow-right-bordered"></i>
                         </button>
                     </div>
                      <!-- Swiper -->
                      <!-- 1st TAB -->
+                     <!-- TOD: уникальный data-fancybox="gallery" для каждого слайдера (блока слайдов) - пример первый блок слайдов -->
                     <div class="tabs-contents tab-content" id="pills-tabContent">
                         <div id="pills-procces" class="tabs-contents__item show active" role="tabpanel" aria-labelledby="pills-procces-tab"> 
                             <div class="section2__swiper">
@@ -166,19 +167,29 @@
                                         <!-- SLIDER WRAPPER -->
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="./img/src/section2-img.png" alt="" class="section2__img">
+                                            <a href="./img/src/section2-img.png" data-fancybox="gallery-process" class="section2__img-wrapper">
+                                                <img src="./img/src/section2-img.png" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример.jpg" alt="" class="section2__img">
+                                            <a href="./img/src/пример.jpg" data-fancybox="gallery-process" class="section2__img-wrapper">
+                                                <img src="./img/src/пример.jpg" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример2.png" alt="" class="section2__img">
+                                            <a href="./img/src/пример2.png" data-fancybox="gallery-process" class="section2__img-wrapper">
+                                                <img src="./img/src/пример2.png" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример3.jpg" alt="" class="section2__img">
+                                            <a href="./img/src/пример3.jpg" data-fancybox="gallery-process" class="section2__img-wrapper">
+                                                <img src="./img/src/пример3.jpg" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример4.jpg" alt="" class="section2__img">
+                                            <a href="./img/src/пример4.jpg" data-fancybox="gallery-process" class="section2__img-wrapper">
+                                                <img src="./img/src/пример4.jpg" alt="" />
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -197,19 +208,29 @@
                                     <div class="swiper-wrapper">
                                         <!-- SEARCHIN-GLASS -->
                                         <div class="swiper-slide">
-                                            <img src="./img/src/section2-img.png" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-materials" class="section2__img-wrapper">
+                                                <img src="./img/src/section2-img.png" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример.jpg" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-materials" class="section2__img-wrapper">
+                                                <img src="./img/src/пример.jpg" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример2.png" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-materials" class="section2__img-wrapper">
+                                                <img src="./img/src/пример2.png" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример3.jpg" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-materials" class="section2__img-wrapper">
+                                                <img src="./img/src/пример3.jpg" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример4.jpg" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-materials" class="section2__img-wrapper">
+                                                <img src="./img/src/пример4.jpg" alt="" />
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -227,19 +248,29 @@
                                     <!-- SLIDER WRAPPER -->
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="./img/src/section2-img.png" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-classes" class="section2__img-wrapper">
+                                                <img src="./img/src/section2-img.png" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример.jpg" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-classes" class="section2__img-wrapper">
+                                                <img src="./img/src/пример.jpg" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример2.png" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-classes" class="section2__img-wrapper">
+                                                <img src="./img/src/пример2.png" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример3.jpg" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-classes" class="section2__img-wrapper">
+                                                <img src="./img/src/пример3.jpg" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример4.jpg" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-classes" class="section2__img-wrapper">
+                                                <img src="./img/src/пример4.jpg" alt="" />
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -256,19 +287,29 @@
                                     <img src="./img/src/section2-searching-glass.svg" alt="" class="section2-searching-glass">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="./img/src/section2-img.png" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-graduate" class="section2__img-wrapper">
+                                                <img src="./img/src/section2-img.png" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример.jpg" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-graduate" class="section2__img-wrapper">
+                                                <img src="./img/src/пример.jpg" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример2.png" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-graduate" class="section2__img-wrapper">
+                                                <img src="./img/src/пример2.png" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример3.jpg" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-graduate" class="section2__img-wrapper">
+                                                <img src="./img/src/пример3.jpg" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример4.jpg" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-graduate" class="section2__img-wrapper">
+                                                <img src="./img/src/пример4.jpg" alt="" />
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -285,19 +326,29 @@
                                     <img src="./img/src/section2-searching-glass.svg" alt="" class="section2-searching-glass">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="./img/src/section2-img.png" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-events" class="section2__img-wrapper">
+                                                <img src="./img/src/section2-img.png" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример.jpg" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-events" class="section2__img-wrapper">
+                                                <img src="./img/src/пример.jpg" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример2.png" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-events" class="section2__img-wrapper">
+                                                <img src="./img/src/пример2.png" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример3.jpg" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-events" class="section2__img-wrapper">
+                                                <img src="./img/src/пример3.jpg" alt="" />
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/src/пример4.jpg" alt="" class="section2__img">
+                                            <a data-fancybox="gallery" data-fancybox="gallery-events" class="section2__img-wrapper">
+                                                <img src="./img/src/пример4.jpg" alt="" />
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -315,7 +366,7 @@
                 <h2>Курсы школы раннего развития</h2>
                 <div class="section3-block section3-block_1">
                     <div class="section3__img-block1">
-                        <img src="" alt="">
+                        <img src="./img/src/section3/section3-img1.png" alt="">
                     </div>
                     <div class="content-block content-block1">
                         <h5>Курс для дошкольного развития</h5>
@@ -350,7 +401,7 @@
                 </div>
                 <div class="section3-block section3-block_2">
                     <div class="section3__img-block2">
-                        <img src="" alt="">
+                        <img src="./img/src/section3/section3-img2.png" alt="">
                     </div>
                     <div class="content-block content-block2">
                         <h5>Курс для развития школьников</h5>
@@ -385,7 +436,7 @@
                 </div>
                 <div class="section3-block section3-block_3">
                     <div class="section3__img-block3">
-                        <img src="" alt="">
+                        <img src="./img/src/section3/section3-img3.png" alt="">
                     </div>
                     <div class="content-block content-block3">
                         <h5>Занятие с логопедом</h5>
@@ -423,19 +474,30 @@
     </section>
     <section class="section4">
         <div class="container">
-            <div class="section4-items">
+            <div class="section4-wrapper">
                 <h2>Дополнительно мы предлагаем :</h2>
-                <div class="section4-buttons">
-                    <div class="section4-buttons__block1">
-                        <button class="button section4-button">Репетитор по математике и русскому языку</button>
-                        <button class="button section4-button">Иностранные языки</button>
-                    </div>
-                    <div class="section4-buttons__block2">
-                        <button class="button section4-button">ИЗО</button>
-                    </div>
-                    <div class="section4-buttons__block3">
-                        <button class="button section4-button">Занятия вокалом</button>
-                        <button class="button section4-button">Экстернат</button>
+                <div class="section4-row">
+                    <div class="section4-items">
+                        <div class="section4-item section4-item_1">
+                           <span>Репетитор по математике и русскому языку</span>
+                           <a href="#">Подробнее</a>
+                        </div>
+                        <div class="section4-item section4-item_2">
+                           <span>Занятия вокалом</span>
+                           <a href="#">Подробнее</a>
+                        </div>
+                        <div class="section4-item section4-item_3">
+                           <span>ИЗО</span>
+                           <a href="#">Подробнее</a>
+                        </div>
+                        <div class="section4-item section4-item_4">
+                            <span>Иностранные языки</span>
+                            <a href="#">Подробнее</a>
+                        </div>
+                        <div class="section4-item section4-item_5">
+                            <span>Экстернат</span>
+                            <a href="#">Подробнее</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -443,64 +505,64 @@
     </section>
     <section class="section5">
         <div class="container">
-            <h2>У нас не работают студенты</h2>
-            <h5>Занятия проводят преподаватели с большим опытом работы в области образования, в том числе в ТРИЗ - педагогике</h5>
-            <div class="section5-items">
-                <div class="section5-items__teachers">
-                    <div class="teachers-items">
+            <h2 class="section5-title">У нас не работают студенты</h2>
+            <div class="section5-suptitle-wrapper">
+                <h5 class="section5-suptitle">Занятия проводят преподаватели с <strong>большим опытом</strong> работы в области образования, в том числе в ТРИЗ - педагогике</h5>
+            </div>
+            <div class="section5-wrapper">
+                <div class="section5-row">
+                    <div class="section5__item section5__item_1">
                         <img src="./img/src/section5-teacher1.png" alt="" class="section5-img">
-                        <div class="section5-discr">
+                        <div class="section5__item-discr">
                             <h3>Таипова Марина Евгеньевна</h3>
                             <h5>Учитель начальных классов высшей категории</h5>
-                            <div class="section5-discr__links">
+                            <div class="section5__links-discr">
                                 <a href="" class="section5-discr__link-about">Об учителе</a>
                                 <a href="" class="section5-discr__link-certificate">Сертификаты</a>
                             </div>
                         </div>
                     </div>
-                    <div class="teachers-items">
+                    <div class="section5__item section5__item_2">
                         <img src="./img/src/section5-teacher1.png" alt="" class="section5-img">
-                        <div class="section5-discr">
+                        <div class="section5__item-discr">
                             <h3>Чапего Наталья Николаевна</h3>
                             <h5>Учитель начальных классов высшей категории</h5>
-                            <div class="section5-discr__links">
+                            <div class="section5__links-discr">
                                 <a href="" class="section5-discr__link-about">Об учителе</a>
                                 <a href="" class="section5-discr__link-certificate">Сертификаты</a>
                             </div>
                         </div>
                     </div>
-                    <div class="teachers-items">
+                    <div class="section5__item section5__item_3">
                         <img src="./img/src/section5-teacher1.png" alt="" class="section5-img">
-                        <div class="section5-discr">
+                        <div class="section5__item-discr">
                             <h3>Косович Дарья Сергеевна</h3>
                             <h5>Логопед. Учитель-дефектолог</h5>
-                            <div class="section5-discr__links">
-                                <a href="" class="section5-discr__link-about">Об учителе</a>
-                                <a href="" class="section5-discr__link-certificate">Сертификаты</a>
+                            <div class="section5__links-discr">
+                                <a href="#" class="section5-discr__link-about">Об учителе</a>
+                                <a href="#" class="section5-discr__link-certificate">Сертификаты</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="section5-items__teachers">
-                    <div class="teachers-items">
+                    <div class="section5__item section5__item_4">
                         <img src="./img/src/section5-teacher1.png" alt="" class="section5-img">
-                        <div class="section5-discr">
+                        <div class="section5__item-discr">
                             <h3>Васютинская Алеся Владимировна</h3>
                             <h5>Преподаватель английского</h5>
-                            <div class="section5-discr__links">
-                                <a href="" class="section5-discr__link-about">Об учителе</a>
-                                <a href="" class="section5-discr__link-certificate">Сертификаты</a>
+                            <div class="section5__links-discr">
+                                <a href="#" class="section5-discr__link-about">Об учителе</a>
+                                <a href="#" class="section5-discr__link-certificate">Сертификаты</a>
                             </div>
                         </div>
                     </div>
-                    <div class="teachers-items">
+                    <div class="section5__item section5__item_5">
                         <img src="./img/src/section5-teacher1.png" alt="" class="section5-img">
-                        <div class="section5-discr">
+                        <div class="section5__item-discr">
                             <h3>Молокова Светлана Васильевна</h3>
                             <h5>Педагог по вокалу</h5>
-                            <div class="section5-discr__links">
-                                <a href="" class="section5-discr__link-about">Об учителе</a>
-                                <a href="" class="section5-discr__link-certificate">Сертификаты</a>
+                            <div class="section5__links-discr">
+                                <a href="#" class="section5-discr__link-about">Об учителе</a>
+                                <a href="#" class="section5-discr__link-certificate">Сертификаты</a>
                             </div>
                         </div>
                     </div>
@@ -510,32 +572,50 @@
     </section>
     <section class="section6">
         <div class="container">
-            <div class="section6-items">
-                <h2>Видео о школе раннего развития <br> "Новое поколение"</h2>
-                <div class="section6-videos">
-                    <div class="section6-video__items">
+            <div class="section6-wrapper">
+                <h2>Видео о школе раннего развития "Новое поколение"</h2>
+                <div class="section6-row">
+                    <div class="section6__item section6__item-1">
                         <!-- замена видео -->
-                        <div class="section6-video"></div>
-                        <p>Подготовка к школе. Курсы для детей. Школа "Новое поколение" в Минске</p>
+                        <div class="section6-video">
+                            <button class="section6-button">
+                                <i class="icon-triangle-play"></i>
+                            </button>
+                        </div>
+                        <span>Подготовка к школе. Курсы для детей. Школа "Новое <br> поколение" в Минске</span>
                     </div>
-                    <div class="section6-video__items">
-                        <div class="section6-video"></div>
-                        <p>Школа "Новое поколение" в СМИ. Сюжет в программе «Добрай ранiцы, Беларусь!»<p>
+                    <div class="section6__item section6__item-2">
+                        <div class="section6-video">
+                            <button class="section6-button">
+                                <i class="icon-triangle-play"></i>
+                            </button>
+                        </div>
+                        <span>Школа "Новое поколение" в СМИ. Сюжет в программе <br> «Добрай ранiцы, Беларусь!»</span>
                     </div>
-                </div>
-                <div class="section6-videos">
-                    <div class="section6-video__items">
+                    <div class="section6__item section6__item-3">
                         <!-- замена видео -->
-                        <div class="section6-video"></div>
-                        <p>Подготовка к школе. Курсы для детей. Школа "Новое поколение" в Минске</p>
+                        <div class="section6-video">
+                            <button class="section6-button">
+                                <i class="icon-triangle-play"></i>
+                            </button>
+                        </div>
+                        <span>Выпускной в школе для детей "Новое поколение" в Минске. Курс "Подготовка к школе". 30.06.2020</span>
                     </div>
-                    <div class="section6-video__items">
-                        <div class="section6-video"></div>
-                        <p>Школа "Новое поколение" в СМИ. Сюжет в программе «Добрай ранiцы, Беларусь!»<p>
+                    <div class="section6__item section6__item-4">
+                        <div class="section6-video">
+                            <button class="section6-button">
+                                <i class="icon-triangle-play"></i>
+                            </button>
+                        </div>
+                        <span>Выпускной 2020 в школе "Новое поколение". Сюжет в программе «Добрай ранiцы, Беларусь!»</span>
                     </div>
-                    <div class="section6-video__items">
-                        <div class="section6-video"></div>
-                        <p>Школа "Новое поколение" в СМИ. Сюжет в программе «Добрай ранiцы, Беларусь!»<p>
+                    <div class="section6__item section6__item-5">
+                        <div class="section6-video">
+                            <button class="section6-button">
+                                <i class="icon-triangle-play"></i>
+                            </button>
+                        </div>
+                        <span>Выпускной в школе для детей "Новое поколение" в Минске 01.07.2020. Курс "Подготовка к школе".</span>
                     </div>
                 </div>
             </div>
@@ -543,102 +623,184 @@
     </section>
     <section class="section7">
         <div class="container">
-            <div class="section7-items">
-                <h2>Отличия нашей школы от других детских образовательных центров</h2>
-                <div class="section7-blocks">
-                    <div class="section7-block">
+            <div class="section7-wrapper">
+                <h2 class="section7-title">Отличия нашей школы от других детских образовательных центров</h2>
+                <div class="section7-row">
+                    <div class="section7-item section7-item_1">
                         <h2>1</h2>
-                        <div class="section7-block__discr">
+                        <div class="section7-item__discr">
                             <h3>Оснащение</h3>
                             <p>Современные классы. Специальные парты и стулья. Вода и чай. Видеонаблюдение и многое другое.</p>
                         </div>
                     </div>
-                    <div class="section7-block">
+                    <div class="section7-item section7-item_2">
                         <h2>2</h2>
-                        <div class="section7-block__discr">
+                        <div class="section7-item__discr">
                             <h3>Учебный материал</h3>
                             <p>Вам не нужно тратить время и деньги. Для обучения детей предоставляется всё необходимое.</p>
                         </div>
                     </div>
-                    <div class="section7-block">
+                    <div class="section7-item section7-item_3">
                         <h2>3</h2>
-                        <div class="section7-block__discr">
+                        <div class="section7-item__discr">
                             <h3>Гарантия результата</h3>
                             <p>Мы занимаемся именно развитием детей. Результаты и успехи детей видны почти сразу.</p>
                         </div>
                     </div>
-                    <div class="section7-block">
+                    <div class="section7-item section7-item_4">
                         <h2>4</h2>
-                        <div class="section7-block__discr">
+                        <div class="section7-item__discr">
                             <h3>ТРИЗ-технология</h3>
                             <p>Мы используем не просто элементы ТРИЗ, а именно полноценную методику обучения.</p>
                         </div>
                     </div>
-                    <div class="section7-block">
+                    <div class="section7-item section7-item_5">
                         <h2>5</h2>
-                        <div class="section7-block__discr">
+                        <div class="section7-item__discr">
                             <h3>Учебный процесс</h3>
                             <p>Занятия проходят в игровой форме, минимум статики. Пособия готовятся к каждому занятию индивидуально.</p>
                         </div>
                     </div>
-                    <div class="section7-block">
+                    <div class="section7-item section7-item_6">
                         <h2>6</h2>
-                        <div class="section7-block__discr">
+                        <div class="section7-item__discr">
                             <h3>Мотивация</h3>
                             <p>Прививаем любовь к учебе. Дети сами начинают искать информацию и тянуться к знаниям.</p>
                         </div>
                     </div>
                 </div>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      This dropdown's menu is right-aligned
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <button class="dropdown-item" type="button">Action</button>
-                      <button class="dropdown-item" type="button">Another action</button>
-                      <button class="dropdown-item" type="button">Something else here</button>
-                    </div>
-                  </div>
-            </div>
-        
-        </div>
-        <style>
-            .box-parent {
-                margin: 0 auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 500px;
-                height: 500px;
-                background: #000;
-            }
-            .box-chiled {
-                backdrop-filter: blur(4px); /* Размываем фон */
-                background: rgba(255,255,255,0.4); /* Белый фон с полупрозрачностью */
-                width: 300px; /* Ширина блока */
-                padding: 20px; /* Поля вокруг текста */
-            }   
-        </style>
-        <div class="box-parent">
-            <div class="box-chiled">
-                <p>Полинезийцы называют Млечный путь Манго-Роа-И-Ата, 
-                    что в переводе с маори означает «Длинная акула на рассвете».</p>
             </div>
         </div>
+    </section>
+    <section class="section8">
+        <div class="container">
+            <div class="section8-wrapper">
+                <h2 class="section8-title">Ответы на часто задаваемые вопросы :</h2>
+                <div class="section8-accordion">
+                    <div id="accordion">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Когда начинаются занятия?
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
 
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Если не получается приступить к занятиям 1 сентября. Это проблема?
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Если Вы не готовы приступить к занятиям в первые недели сентября, то ничего страшного. Если позже, то будем рассматривать Ваш случай в индивидуальном порядке. Как минимум, предложим Вам присоединиться ко второму потоку с октября 2020. Мы всегда готовы пойти Вам навстречу.
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Что входит в курс для подготовки к школе?
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                По каким дням и в какое время проводятся занятия?
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Сколько детей в группе?
+                                </button>
+                              </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                              <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                              </div>
+                            </div>
+                          </div>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section9">
+        <div class="container">
+            <div class="section9-wrapper">
+                <div class="section9-header">
+                    <h2>Новости</h2>
+                    <button class="button">Все новости</button>
+                </div>
+            </div>
+        </div>
     </section>
 
 
 
 
 
-
-
-    <footer>
+    <footer class="footer">
 
     </footer>
 
     <!-- modals start -->
+    <div class="header__modal">
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLongTitle">Заказать консультацию</h3>
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+                    </div>
+                    <div class="modal-body">
+                        <p>Оставьте свои контактные данные и мы очень скоро перезвоним вам :)</p>
+                        <input class="modal-body__input-name" type="text" placeholder="Как вас зовут?">
+                        <input class="modal-body__input-phone" type="text" placeholder="Ваш омер телефона">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="header__modal-button button-fill button-fill--green btn btn-primary ">
+                            <span>Получить консультацию</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- modals end -->
 
 

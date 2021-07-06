@@ -3,8 +3,11 @@ import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
 
+const jQuery = $;
+
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.min';
+require('@fancyapps/fancybox/dist/jquery.fancybox.min');
 
 import Swiper from 'swiper';
 // core version + navigation, pagination modules:
@@ -13,11 +16,10 @@ import SwiperCore, { Navigation, Pagination } from 'swiper/core';
 // configure Swiper to use modules
 SwiperCore.use([Navigation, Pagination]);
 
-var DESKTOP_FROM = 1024;
-
+const DESKTOP_FROM = 1024;
 
 // section2 tabs sliders
-var slidersParents = $('.tabs-contents__item');
+const slidersParents = $('.tabs-contents__item');
 
 if (slidersParents.length) {
   slidersParents.each(function() {
@@ -64,5 +66,7 @@ $('.nav-links__item--parent').on('click', '.nav-links__link', function(event) {
     $(this).siblings('.sub-menu').removeAttr('style');
   }
 });
+
+
 // для сабменю убрать для таблетов и мобилок ховер и убрать position: absolute
 // отступ в выпадающем меню вместо позиции top иначе не работает ховер как надо

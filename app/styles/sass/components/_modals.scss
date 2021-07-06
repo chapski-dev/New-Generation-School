@@ -1,0 +1,49 @@
+.header__modal {
+
+    .modal-content {
+        border-radius: 70px;
+        display: flex;
+        align-items: center;
+        padding: 51px 100px 70px 100px;
+        border: none;
+        min-width: 560px;
+    }
+    .modal-header {
+        padding: 0 0 12px 0;
+    }
+    .modal-body {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+        p {
+            padding-bottom: 29px;
+        }
+    }
+    .modal-body__input-name, .modal-body__input-phone {
+        padding-top: 21px;
+        padding-bottom: 21px;
+        padding-left: 30px;
+        border-radius: 20px;
+        border: $dark-gray 1px solid;
+        opacity: 0.4;
+        &:focus {
+            outline: none;
+        }
+    }
+    .modal-body__input-name {
+        margin-bottom: 10px;
+    }
+    .modal-body__input-phone {
+        margin-bottom: 20px;
+    }
+    .modal-footer {
+        padding: 0px;
+    }
+    .header__modal-button {
+        padding: 36px 81px;
+        span {
+            color: white;
+        }
+    }
+}

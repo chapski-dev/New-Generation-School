@@ -1,26 +1,104 @@
-.section7-items{
+.section7-wrapper {
     padding-bottom: 265px;
-}
-.section7-blocks{
-    display: flex;
-    flex-direction: column;
-    .section7-block:nth-child(even){
-        background: rgb(196, 105, 105);
-        align-items: flex-end;
+    @include tablet {
+        padding: 0 20px;
+    }
+    .section7-title {
+        width: 70%;
+        padding-bottom: 93px;
+        @include tablet {
+            width: 100%;
+            text-align: center;
+        }
     }
 }
 
-.section7-block{
-    width: 30%;
+.section7-row {
+    display: grid;
+
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat (6, 1fr);
+    @include tablet {
+        grid-template-columns: repeat (4, 1fr);
+        grid-template-rows: repeat (6, 1fr);
+        column-gap: 20px;
+    }
+    .section7-item_1 {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        @include tablet {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    }
+    .section7-item_2 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        @include tablet {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    }
+    .section7-item_3 {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        @include tablet {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    }
+    .section7-item_4 {
+        grid-column-start: 2;
+        grid-row-start: 4;
+        @include tablet {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    }
+    .section7-item_5 {
+        grid-column-start: 1;
+        grid-row-start: 5;
+        @include tablet {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    }
+    .section7-item_6 {
+        grid-column-start:2;
+        grid-row-start: 6;
+        @include tablet {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    }
+}
+.section7-item{
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    h2{
+    margin: auto;
+
+    position: relative;
+    h2 {
         padding-bottom: 35px;
     }
+    @include tablet {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 150px;
+        h2 {
+            width: 20%;
+        }
+    }
 }
-.section7-block__discr{
-    h3{
+.section7-item__discr{
+    h3 {
         padding-bottom: 12px;
+    }
+    @include tablet {
+        h3 {
+            padding-bottom: 6px;
+        }
     }
 }

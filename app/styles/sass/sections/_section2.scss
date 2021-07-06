@@ -20,39 +20,35 @@
 }
 .section2__swiper {
     position: relative;
-    .section2__felt-tip1 {
-        position: absolute;
-        top: 22%;
-        left: -5%;
-        z-index: 10;
-        @include tablet {
-            width: 8%;
-        }
-    }
-    .section2__felt-tip2 {
-        position: absolute;
-        bottom: 0;
-        right: 6%;
-        z-index: 10;
-        @include tablet {
-            display: none;
-        }
-    }
-    .section2__felt-tip3 {
-        position: absolute;
-        top: 6%;
-        right: -12%;
-        @include tablet {
-            width: 16%;
-        }
-    }
 }
 
-.nav-pills {
+.section2__felt-tip1 {
+    position: absolute;
+    top: 22%;
+    left: -5%;
+    z-index: 10;
+    @include tablet {
+        width: 8%;
+    }
+}
+.section2__felt-tip2 {
+    position: absolute;
+    bottom: 0;
+    right: 6%;
+    z-index: 10;
     @include tablet {
         display: none;
     }
 }
+.section2__felt-tip3 {
+    position: absolute;
+    top: 6%;
+    right: -12%;
+    @include tablet {
+        width: 16%;
+    }
+}
+
 .section2-searching-glass {
     display: none;
     @include tablet {
@@ -62,8 +58,28 @@
         left: 50%;
         z-index: 2;
     }
-
+    
 }
-.swipe-button-prev, .swipe-button-next {
-    padding: 20px;
+
+.section2__img-wrapper {
+    position: relative;
+    display: block;
+    padding-bottom: (570 / 1160) * 100%;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+// TODO: Перенести в ддругой файл если должно применяться на всем сайте или обернуть во враппе
+.nav-pills {
+    @include tablet {
+        display: none;
+    }
 }

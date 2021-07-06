@@ -1,21 +1,116 @@
-.section5-items__teachers{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.section5-items{
+.section5 {
     padding-bottom: 134px;
-}
-.teachers-items{
-    overflow: hidden;
-}
-.section5-img{
-    object-fit: none;
-}
-.section5-discr__links{
-    a{
-        display: inline-block;
+    .section5-title{
+        padding-bottom: 66px;
+        @include tablet {
+            text-align: center;
+        }
     }
+    .section5-suptitle-wrapper {
+        width: 523px;
+        padding-bottom: 109px;
+        position: relative;
+        left: 45%;
+        @include tablet {
+            display: none;
+        }
+    }
+
+}
+.section5-row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    column-gap: 30px;
+    row-gap: 30px;
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.section5-img {
+    @include tablet {
+        padding-bottom: 30px;
+    }
+}
+.section5__item_1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    @include tablet {
+
+    }
+}
+.section5__item_2 {
+    grid-row-start: 1;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    @include tablet {
+
+    }
+}
+.section5__item_3 {
+    grid-row-start: 1;
+    grid-column-start: 9;
+    grid-column-end: 13;
+    @include tablet {
+
+    }
+}
+.section5__item_4 {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    @include tablet {
+
+    }
+}
+.section5__item_5 {
+    grid-row-start: 2;
+    grid-column-start: 7;
+    grid-column-end: 11;
+    @include tablet {
+
+    }
+}
+
+.section5__item {
+    @include tablet {
+        text-align: center;
+
+    }
+}
+.section5__item-discr {
+    height: 130px;
+    @include tablet {
+        height: auto;
+        margin: 0 auto;
+        h3 {
+            padding-bottom: 6px;
+        }
+        h5 {
+            padding-bottom: 24px;
+        }
+    }
+}
+.section5__links-discr {
     display: flex;
     justify-content: space-between;
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section5-discr__link-about {
+        text-decoration: underline;
+        color: $green;
+        @include tablet {
+            padding-bottom: 30px;
+        }
+    }
+    .section5-discr__link-certificate {
+        text-decoration: underline;
+    }
 }

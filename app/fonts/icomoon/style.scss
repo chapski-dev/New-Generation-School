@@ -3,9 +3,9 @@
 @font-face {
   font-family: '#{$icomoon-font-family}';
   src:
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?lda7al') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?lda7al') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?lda7al##{$icomoon-font-family}') format('svg');
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?tmdtkl') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?tmdtkl') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?tmdtkl##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-zoom {
+  &:before {
+    content: $icon-zoom; 
+  }
+}
+.icon-arrow-left-bordered {
+  &:before {
+    content: $icon-arrow-left-bordered; 
+  }
+}
+.icon-arrow-right-bordered {
+  &:before {
+    content: $icon-arrow-right-bordered; 
+  }
+}
 .icon-triangle-play {
   &:before {
     content: $icon-triangle-play; 
