@@ -1,6 +1,11 @@
+#accordion {
+    width: 69%;
+    margin: 0 auto;
+}
 .card {
     background-color: $pink;
     border-radius: 20px;
+    margin-bottom: 10px;
 }
 .card-header {
     border-radius: 70px !important;
@@ -15,4 +20,98 @@
     padding-top: 16px;
     padding-left: 31px;
     padding-bottom: 33px;
+    
+
+}
+
+.section-questions-accordion {
+    position: relative;
+
+    .icon-daub-questions {
+        position: absolute;
+        top: -81px;
+        left: -5%;
+        font-size: 291px;
+        color: $yellow;
+        z-index: -1;
+    }
+    .icon-letters-questions {
+        position: absolute;
+        top: 200px;
+        left: -6%;
+        font-size: 55px;
+        color: $yellow;
+        z-index: -1;
+    }
+
+    .icon-mobile-phone {
+        position: absolute;
+        top: 422px;
+        left: 90%;
+        font-size: 50px;
+        color: $yellow;
+        z-index: -1;
+    }
+    .icon-tune-questions_1 {
+        position: absolute;
+        top: -27px;
+        left: -26%;
+        font-size: 39px;
+        color: $yellow;
+        z-index: -1;
+    }
+    .icon-tune-questions_2 {
+        position: absolute;
+        top: 693px;
+        left: 122%;
+        font-size: 39px;
+        color: $yellow;
+        z-index: -1;
+    }
+    .icon-ruler {
+        position: absolute;
+        top: -54px;
+        left: 100%;
+        font-size: 115px;
+        color: $yellow;
+        z-index: -1;
+    }
+    .icon-notebook-questions {
+        position: absolute;
+        top: 557px;
+        left: -6%;
+        font-size: 96px;
+        color: $yellow;
+        z-index: -1;
+    }
+    .icon-scattered_1 {
+        position: absolute;
+        top: 300px;
+        left: -34%;
+        font-size: 119px;
+        color: $yellow;
+        z-index: -1;
+        transform: rotate(309deg);
+    }
+    .icon-scattered_2 {
+        position: absolute;
+        top: 337px;
+        left: 106%;
+        font-size: 119px;
+        color: $yellow;
+        z-index: -1;
+        transform: rotate(342deg);
+    }
+    .icon-magnifier {
+        position: absolute;
+        top: 200px;
+        left: 131.5%;
+        font-size: 75px;
+        color: $yellow;
+        z-index: -1;
+    }
+
+
+
+
 }

@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('fonts/icomoon.ttf?1hh2sd') format('truetype'),
-    url('fonts/icomoon.woff?1hh2sd') format('woff'),
-    url('fonts/icomoon.svg?1hh2sd#icomoon') format('svg');
+    url('fonts/icomoon.ttf?tfrc17') format('truetype'),
+    url('fonts/icomoon.woff?tfrc17') format('woff'),
+    url('fonts/icomoon.svg?tfrc17#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-daub-questions:before {
+  content: "\e929";
+}
+.icon-letters-questions:before {
+  content: "\e92a";
+}
+.icon-mobile-phone:before {
+  content: "\e92b";
+}
+.icon-notebook-questions:before {
+  content: "\e92c";
+}
+.icon-tune-questions:before {
+  content: "\e92d";
+}
+.icon-ruler:before {
+  content: "\e92e";
+}
 .icon-icon-cicle-fill-sec5:before {
   content: "\e926";
 }
@@ -111,7 +129,7 @@
 .icon-dashed:before {
   content: "\e90b";
 }
-.icon-notepad:before {
+.icon-calendar:before {
   content: "\e90c";
 }
 .icon-sun:before {

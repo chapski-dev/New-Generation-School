@@ -3,9 +3,9 @@
 @font-face {
   font-family: '#{$icomoon-font-family}';
   src:
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?1hh2sd') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?1hh2sd') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?1hh2sd##{$icomoon-font-family}') format('svg');
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?tfrc17') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?tfrc17') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?tfrc17##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,36 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-daub-questions {
+  &:before {
+    content: $icon-daub-questions; 
+  }
+}
+.icon-letters-questions {
+  &:before {
+    content: $icon-letters-questions; 
+  }
+}
+.icon-mobile-phone {
+  &:before {
+    content: $icon-mobile-phone; 
+  }
+}
+.icon-notebook-questions {
+  &:before {
+    content: $icon-notebook-questions; 
+  }
+}
+.icon-tune-questions {
+  &:before {
+    content: $icon-tune-questions; 
+  }
+}
+.icon-ruler {
+  &:before {
+    content: $icon-ruler; 
+  }
+}
 .icon-icon-cicle-fill-sec5 {
   &:before {
     content: $icon-icon-cicle-fill-sec5; 
@@ -171,9 +201,9 @@
     content: $icon-dashed; 
   }
 }
-.icon-notepad {
+.icon-calendar {
   &:before {
-    content: $icon-notepad; 
+    content: $icon-calendar; 
   }
 }
 .icon-sun {
