@@ -1,17 +1,41 @@
 .section6-wrapper{
+    position: relative;
     padding-bottom: 132px;
-    h2 {
-        width: 60%;
-    }
-    .section6-row:first-of-type{
-        padding-bottom: 42px;
-    }
     @include tablet {
-        h2 {
+        .section6-title {
             width: 100%;
             text-align: center;
             padding-bottom: 55px;
         }
+    }
+    .section6-title {
+        width: 62%;
+        padding-bottom: 46px;
+    }
+    .section6-row:first-of-type{
+        padding-bottom: 42px;
+    }
+    .icon-glasses {
+        position: absolute;
+        font-size: 84px;
+        top: 3%;
+        left: 76%;
+        color: $yellow;
+    }
+    .icon-palette {
+        position: absolute;
+        font-size: 84px;
+        top: 19%;
+        left: -16%;
+        color: $green;
+    }
+    .icon-icon-cicle-fill-sec5 {
+        position: absolute;
+        font-size: 369px;
+        top: 1%;
+        left: -24%;
+        color: $light-gray;
+        z-index: -1;
     }
 }
 .section6-row{
@@ -27,8 +51,11 @@
 }
 .section6__item{
 
-    &:hover span {
-        color: $green;
+    &:hover {
+        cursor: pointer;
+        span{
+            color: $green;
+        }
     }
 }
 .section6__item-1 {

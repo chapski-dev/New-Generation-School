@@ -25,17 +25,21 @@
 .section2__felt-tip1 {
     position: absolute;
     top: 22%;
-    left: -5%;
+    left: -11%;
     z-index: 10;
+    font-size: 222px;
+    color: $yellow;
     @include tablet {
         width: 8%;
     }
 }
 .section2__felt-tip2 {
     position: absolute;
-    bottom: 0;
+    bottom: -7%;
     right: 6%;
     z-index: 10;
+    font-size: 223px;
+    color: $yellow;
     @include tablet {
         display: none;
     }
@@ -43,7 +47,9 @@
 .section2__felt-tip3 {
     position: absolute;
     top: 6%;
-    right: -12%;
+    right: -9%;
+    color: $yellow;
+    font-size: 155px;
     @include tablet {
         width: 16%;
     }

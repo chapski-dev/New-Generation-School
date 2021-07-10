@@ -1,3 +1,13 @@
+.section3 {
+    position: relative;
+    .icon-sun {
+        position: absolute;
+        top: -3%;
+        left: -5.5%;
+        color: $yellow;
+        font-size: 233px;
+    }
+}
 .section3-items {
     h2 {
         padding-bottom: 107px;
@@ -53,11 +63,13 @@
 }
 // COMMON STYLES OF DESCTOP BACKGROUND
 .section3-block_1, .section3-block_2, .section3-block_3 {
-    
+    .icon-notepad {
+        color: $green;
+    }
     &::before {
             content: '';
             display: block;
-            width: 108%;
+            width: 115%;
             height: 93%;
             background: #FFF8D2;
             opacity: .6;
@@ -74,7 +86,7 @@
 }    
 
 
-.section3-block_1{
+.section3-block_1 {
     &::before {
         background: #FFF8D2;
         transform: rotate(-1.7deg);
@@ -85,7 +97,16 @@
     }
 }
 .section3-block_2 {
-    &::before{
+    position: relative;
+    .icon-wawes {
+        position: absolute;
+        top: 0;
+        right: -23%;
+        font-size: 181px;
+        color: $yellow;
+
+    }
+    &::before {
     background: #E7F8EF;
     transform: rotate(1.23deg);
     }
@@ -94,8 +115,16 @@
         border-radius: 70px;
     }
 }
-.section3-block_3{
-    &::before{
+.section3-block_3 {
+    position: relative;
+    .icon-dashed {
+        position: absolute;
+        top: -30%;
+        left: -20%;
+        font-size: 246px;
+        color: $yellow;
+    }
+    &::before {
         background: #F5F5F9;
         transform: rotate(-1.19deg);
     }

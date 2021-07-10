@@ -1,0 +1,186 @@
+.footer {
+    background: #FFFCED;
+}
+
+.footer-title {
+    padding-top: 136px;
+    padding-bottom: 54px;
+    @include tablet {
+        text-align: center;
+        padding-top: 112px;
+        padding-bottom: 61px;
+    }
+}
+.footer-wrapper {
+    position: relative;
+    z-index: 1;
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+    .icon-daub {
+        position: absolute;
+        color: $yellow;
+        font-size: 225px;
+        top: 6.4%;
+        left: -3.8%;
+        z-index: -1;
+    }
+    .icon-childrens {
+        position: absolute;
+        color: $yellow;
+        font-size: 141px;
+        top: 3%;
+        left: 50%;
+    }
+    .icon-scattered {
+        position: absolute;
+        color: $yellow;
+        font-size: 149px;
+        top: -8%;
+        right: 1%;
+    }
+    .icon-little-star {
+        position: absolute;
+        color: $yellow;
+        font-size: 40px;
+        top: 5%;
+        left: 25%;
+    }
+    .icon-little-star_1 {
+        position: absolute;
+        color: $yellow;
+        font-size: 40px;
+        top: 11%;
+        left: 75%;
+    }
+}
+.footer-map {
+    position: relative;
+    margin-bottom: 54px;
+    @include tablet {
+        margin-bottom: 30px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 70px;
+        border: 4px solid $yellow;
+        transform: rotate(3deg);
+        @include tablet {
+            display: none;
+        }
+    }
+}
+.footer__img-map {
+    border-radius: 70px;
+    @include tablet {
+        border-radius: 20px;
+    }
+}
+.footer-contacts__row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 64px;
+}
+.footer-contacts {
+    width: 31.8%;
+    @include tablet {
+        width: 100%;
+        padding-bottom: 39px;
+        &:last-of-type {
+            padding-bottom: 70px;
+        }
+    }
+    .footer-contacts__title {
+        font-size: 28px;
+        padding-bottom: 12px;
+        @include tablet {
+            font-size: 20px;
+        }
+    }
+
+    .footer-contacts__text {
+        @include tablet {
+            font-size: 15px;
+        }
+     }
+}
+.footer-contacts__item1 {
+    min-width: 31.8%;
+    margin-right: 149px;
+}
+.footer-contacts__item2 {
+    min-width: 31.8%;
+    margin-right: 49px;
+}
+.footer-contacts__item3 {
+
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 0 25px;
+    position: relative;
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #000;
+        opacity: 0.05;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    span {
+        font-size: 12px;
+    }
+    .footer-bottom__left {
+        opacity: .5;
+        @include tablet {
+            display: none;
+        }
+    }
+    .footer-bottom__right {
+        opacity: .5;    
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.footer-contacts__social-links {
+    .vk-link {
+        .icon-vk {
+            font-size: 31px;
+            color: white;
+            padding: 14.5px;
+            background: #7294C7;
+            border-radius: 100%;
+        }
+    }
+    .instagram-link {
+        // position: absolute;
+        top: 17.5px;
+        left: 26px;
+        .icon-instagram {
+            font-size: 25px;
+            color: white;
+            padding: 17.5px;
+            background: linear-gradient(43.94deg, #EEA054 16.16%, #D64763 50.11%, #B62A99 83.68%);
+            border-radius: 100%;
+        }
+    }
+}

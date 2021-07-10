@@ -47,3 +47,31 @@
         }
     }
 }
+
+.about-teacher__modal {
+    .modal-content {
+        border-radius: 70px;
+        min-width: 760px;
+        left: -25%;
+    }
+    .modal-header {
+        padding: 0px;
+        border: none;
+    }
+    .modal-body {
+        padding: 41px 60px 67px;
+    }
+    .about-teacher__modal-button {
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-shadow: none;
+        opacity: .8;
+        color: white;
+        padding: 0px;
+        span {
+            color: white;
+            font-weight: 700;
+            padding: 0px;
+        }
+    }
+}

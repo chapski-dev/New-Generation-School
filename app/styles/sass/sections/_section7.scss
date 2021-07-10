@@ -1,7 +1,28 @@
+.section7 {
+    overflow: hidden;
+}
 .section7-wrapper {
+    position: relative;
     padding-bottom: 265px;
+    z-index: 1;
     @include tablet {
         padding: 0 20px;
+    }
+    .icon-daub-section7 {
+        position: absolute;
+        top: -4.5%;
+        left: 20.7%;
+        font-size: 254px;
+        z-index: -1;
+        color: $yellow;
+    }
+    .icon-sun {
+        position: absolute;
+        top: 10%;
+        right: -41.7%;
+        font-size: 254px;
+        z-index: -1;
+        color: $yellow;
     }
     .section7-title {
         width: 70%;
@@ -18,6 +39,8 @@
 
     grid-template-columns: repeat (2, 1fr);
     grid-template-rows: repeat (6, 1fr);
+
+    row-gap: 50px;
     @include tablet {
         grid-template-columns: repeat (4, 1fr);
         grid-template-rows: repeat (6, 1fr);
@@ -26,6 +49,33 @@
     .section7-item_1 {
         grid-column-start: 1;
         grid-row-start: 1;
+
+        .icon-cicle-fill-1 {
+            position: absolute;
+            top: -17%;
+            left: 15%;
+            font-size: 404px;
+            z-index: -1;
+            color: #F5F5F9;
+        }
+        .icon-cicle-empty-1 {
+            position: absolute;
+            top: -22%;
+            right: -20%;
+            font-size: 162px;
+            z-index: -1;
+            color: #36347F;
+        }
+        .icon-childrens {
+            position: absolute;
+            top: 111%;
+            left: 10%;
+            font-size: 141px;
+            z-index: -1;
+            color: #36347F;
+            transform: rotate(341deg)
+        }
+
         @include tablet {
             grid-column-start: 1;
             grid-column-end: 5;
@@ -34,6 +84,30 @@
     .section7-item_2 {
         grid-column-start: 2;
         grid-row-start: 2;
+
+        .icon-cicle-fill-2 {
+            position: absolute;
+            top: -34%;
+            left: 16%;
+            font-size: 378px;
+            z-index: -1;
+            color: #E7F8EF;
+        }
+        .icon-cicle-empty-2 {
+            position: absolute;
+            top: -19%;
+            left: 79%;
+            font-size: 131px;
+            color: $green;
+        }
+        .icon-backpack {
+            position: absolute;
+            top: -37%;
+            left: 21%;
+            font-size: 107px;
+            z-index: -1;
+            color: $green;
+        }
         @include tablet {
             grid-column-start: 1;
             grid-column-end: 5;
@@ -46,6 +120,31 @@
             grid-column-start: 1;
             grid-column-end: 5;
         }
+        .icon-cicle-fill-3 {
+            position: absolute;
+            top: -21%;
+            left: 10%;
+            font-size: 392px;
+            z-index: -1;
+            color: $yellow;
+            opacity: .2;
+        }
+        .icon-cicle-empty-3 {
+            position: absolute;
+            top: -10%;
+            left: 81%;
+            font-size: 107px;
+            z-index: -1;
+            color: $yellow;
+        }
+        .icon-rocet {
+            position: absolute;
+            top: 121%;
+            left: 17%;
+            font-size: 89px;
+            z-index: -1;
+            color: $yellow;
+        }
     }
     .section7-item_4 {
         grid-column-start: 2;
@@ -53,6 +152,30 @@
         @include tablet {
             grid-column-start: 1;
             grid-column-end: 5;
+        }
+        .icon-cicle-fill-4 {
+            position: absolute;
+            top: -20%;
+            left: 13%;
+            font-size: 366px;
+            z-index: -1;
+            color: #FCE8E6;
+        }
+        .icon-cicle-empty-2 {
+            position: absolute;
+            top: -17%;
+            left: 78%;
+            font-size: 131px;
+            z-index: -1;
+            color: $red;
+        }
+        .icon-hat {
+            position: absolute;
+            top: -40%;
+            left: 15%;
+            font-size: 133px;
+            z-index: -1;
+            color: $red;
         }
     }
     .section7-item_5 {
@@ -62,6 +185,30 @@
             grid-column-start: 1;
             grid-column-end: 5;
         }
+        .icon-cicle-fill-5 {
+            position: absolute;
+            top: -23%;
+            left: 11%;
+            font-size: 387.5px;
+            z-index: -1;
+            color: #E7F8EF;
+        }
+        .icon-cicle-empty-3 {
+            position: absolute;
+            top: -18%;
+            left: 80%;
+            font-size: 133px;
+            z-index: -1;
+            color: $green;
+        }
+        .icon-paper-boat {
+            position: absolute;
+            top: 108%;
+            left: 0%;
+            font-size: 133px;
+            z-index: -1;
+            color: $green;
+        }
     }
     .section7-item_6 {
         grid-column-start:2;
@@ -70,9 +217,34 @@
             grid-column-start: 1;
             grid-column-end: 5;
         }
+        .icon-cicle-fill-6 {
+            position: absolute;
+            top: -37%;
+            left: 7%;
+            font-size: 424px;
+            z-index: -1;
+            color: #F5F5F9;
+        }
+        .icon-cicle-empty-2 {
+            position: absolute;
+            top: -17%;
+            left: 78%;
+            font-size: 131px;
+            z-index: -1;
+            color: $dark-blue;
+        }
+        .icon-magnifier {
+            position: absolute;
+            top: 132%;
+            left: 40%;
+            font-size: 105px;
+            z-index: -1;
+            color: $dark-blue;
+        }
     }
 }
 .section7-item{
+    
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -80,6 +252,7 @@
     margin: auto;
 
     position: relative;
+    z-index: 1;
     h2 {
         padding-bottom: 35px;
     }
