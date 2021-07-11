@@ -1,6 +1,9 @@
 #accordion {
     width: 69%;
     margin: 0 auto;
+    @include tablet {
+        width: 100%;
+    }
 }
 .card {
     background-color: $pink;
@@ -8,12 +11,23 @@
     margin-bottom: 10px;
 }
 .card-header {
+    position: relative;
     border-radius: 70px !important;
     padding: 0px;
     button {
         padding-top: 28px;
         padding-left: 31px;
         padding-bottom: 28px;
+    }
+    &::after {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 50%;
+        left: 91.5%;
     }
 }
 .card-body {
@@ -34,6 +48,9 @@
         font-size: 291px;
         color: $yellow;
         z-index: -1;
+        @include tablet {
+            display: none;
+        }
     }
     .icon-letters-questions {
         position: absolute;
@@ -42,6 +59,9 @@
         font-size: 55px;
         color: $yellow;
         z-index: -1;
+        @include tablet {
+            display: none;
+        }
     }
 
     .icon-mobile-phone {
@@ -51,6 +71,9 @@
         font-size: 50px;
         color: $yellow;
         z-index: -1;
+        @include tablet {
+            display: none;
+        }
     }
     .icon-tune-questions_1 {
         position: absolute;
@@ -59,6 +82,9 @@
         font-size: 39px;
         color: $yellow;
         z-index: -1;
+        @include tablet {
+            display: none;
+        }
     }
     .icon-tune-questions_2 {
         position: absolute;
@@ -67,6 +93,9 @@
         font-size: 39px;
         color: $yellow;
         z-index: -1;
+        @include tablet {
+            display: none;
+        }
     }
     .icon-ruler {
         position: absolute;
@@ -75,6 +104,9 @@
         font-size: 115px;
         color: $yellow;
         z-index: -1;
+        @include tablet {
+            display: none;
+        }
     }
     .icon-notebook-questions {
         position: absolute;
@@ -83,6 +115,9 @@
         font-size: 96px;
         color: $yellow;
         z-index: -1;
+        @include tablet {
+            display: none;
+        }
     }
     .icon-scattered_1 {
         position: absolute;
@@ -92,6 +127,9 @@
         color: $yellow;
         z-index: -1;
         transform: rotate(309deg);
+        @include tablet {
+            display: none;
+        }
     }
     .icon-scattered_2 {
         position: absolute;
@@ -101,6 +139,9 @@
         color: $yellow;
         z-index: -1;
         transform: rotate(342deg);
+        @include tablet {
+            display: none;
+        }
     }
     .icon-magnifier {
         position: absolute;
@@ -109,6 +150,9 @@
         font-size: 75px;
         color: $yellow;
         z-index: -1;
+        @include tablet {
+            display: none;
+        }
     }
 
 

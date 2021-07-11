@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('fonts/icomoon.ttf?tfrc17') format('truetype'),
-    url('fonts/icomoon.woff?tfrc17') format('woff'),
-    url('fonts/icomoon.svg?tfrc17#icomoon') format('svg');
+    url('fonts/icomoon.ttf?v2kg4r') format('truetype'),
+    url('fonts/icomoon.woff?v2kg4r') format('woff'),
+    url('fonts/icomoon.svg?v2kg4r#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-roundels:before {
+  content: "\e92f";
+}
+.icon-dashed-rainbow:before {
+  content: "\e930";
+}
+.icon-double-empty-circles:before {
+  content: "\e931";
+}
+.icon-item_4-fill-circle:before {
+  content: "\e932";
+}
+.icon-item_5-fill-circle:before {
+  content: "\e933";
+}
 .icon-daub-questions:before {
   content: "\e929";
 }

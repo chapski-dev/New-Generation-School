@@ -3,9 +3,9 @@
 @font-face {
   font-family: '#{$icomoon-font-family}';
   src:
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?tfrc17') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?tfrc17') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?tfrc17##{$icomoon-font-family}') format('svg');
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?v2kg4r') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?v2kg4r') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?v2kg4r##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-roundels {
+  &:before {
+    content: $icon-roundels; 
+  }
+}
+.icon-dashed-rainbow {
+  &:before {
+    content: $icon-dashed-rainbow; 
+  }
+}
+.icon-double-empty-circles {
+  &:before {
+    content: $icon-double-empty-circles; 
+  }
+}
+.icon-item_4-fill-circle {
+  &:before {
+    content: $icon-item_4-fill-circle; 
+  }
+}
+.icon-item_5-fill-circle {
+  &:before {
+    content: $icon-item_5-fill-circle; 
+  }
+}
 .icon-daub-questions {
   &:before {
     content: $icon-daub-questions; 

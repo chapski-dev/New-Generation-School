@@ -28,6 +28,9 @@
         top: 6.4%;
         left: -3.8%;
         z-index: -1;
+        @include tablet {
+            display: none;
+        }
     }
     .icon-childrens {
         position: absolute;
@@ -35,6 +38,9 @@
         font-size: 141px;
         top: 3%;
         left: 50%;
+        @include tablet {
+            display: none;
+        }
     }
     .icon-scattered {
         position: absolute;
@@ -42,6 +48,9 @@
         font-size: 149px;
         top: -8%;
         right: 1%;
+        @include tablet {
+            display: none;
+        }
     }
     .icon-little-star {
         position: absolute;
@@ -49,6 +58,9 @@
         font-size: 40px;
         top: 5%;
         left: 25%;
+        @include tablet {
+            display: none;
+        }
     }
     .icon-little-star_1 {
         position: absolute;
@@ -56,6 +68,9 @@
         font-size: 40px;
         top: 11%;
         left: 75%;
+        @include tablet {
+            display: none;
+        }
     }
 }
 .footer-map {
@@ -89,12 +104,15 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 64px;
+    @include tablet {
+        padding: 0 10px;
+        flex-direction: column;
+    }
 }
 .footer-contacts {
     width: 31.8%;
     @include tablet {
         width: 100%;
-        padding-bottom: 39px;
         &:last-of-type {
             padding-bottom: 70px;
         }
@@ -104,6 +122,7 @@
         padding-bottom: 12px;
         @include tablet {
             font-size: 20px;
+            padding-bottom: 6px;
         }
     }
 
@@ -116,13 +135,23 @@
 .footer-contacts__item1 {
     min-width: 31.8%;
     margin-right: 149px;
+    @include tablet {
+        padding-bottom: 34px;
+    }
 }
 .footer-contacts__item2 {
     min-width: 31.8%;
     margin-right: 49px;
+    @include tablet {
+        padding-bottom: 39px;
+    }
 }
 .footer-contacts__item3 {
-
+    .footer-contacts__title-mail {
+        @include tablet {
+            padding-bottom: 20px;
+        }
+    }
 }
 .footer-bottom {
     display: flex;
@@ -162,25 +191,41 @@
 }
 
 .footer-contacts__social-links {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    @include tablet {
+        justify-content: center;
+    }
     .vk-link {
+        display: block;
+        padding: 14.5px;
+        background: #7294C7;
+        border-radius: 100%;
+        font-size: 0;
+        @include tablet {
+            margin-right: 20px;
+        }
         .icon-vk {
             font-size: 31px;
             color: white;
-            padding: 14.5px;
-            background: #7294C7;
-            border-radius: 100%;
         }
     }
     .instagram-link {
-        // position: absolute;
-        top: 17.5px;
-        left: 26px;
+        display: block;
+        background: linear-gradient(43.94deg, #EEA054 16.16%, #D64763 50.11%, #B62A99 83.68%);
+        border-radius: 100%;
+        padding: 17.5px;
+        font-size: 0;
+        margin-left: -4%;
+        z-index: -1;
+        @include tablet {
+            margin-left: 0;
+            z-index: 1;
+        }
         .icon-instagram {
             font-size: 25px;
             color: white;
-            padding: 17.5px;
-            background: linear-gradient(43.94deg, #EEA054 16.16%, #D64763 50.11%, #B62A99 83.68%);
-            border-radius: 100%;
         }
     }
 }

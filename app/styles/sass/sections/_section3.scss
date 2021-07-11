@@ -6,6 +6,9 @@
         left: -5.5%;
         color: $yellow;
         font-size: 233px;
+        @include tablet {
+            display: none;
+        }
     }
 }
 .section3-items {
@@ -104,7 +107,9 @@
         right: -23%;
         font-size: 181px;
         color: $yellow;
-
+        @include tablet {
+            display: none;
+        }
     }
     &::before {
     background: #E7F8EF;

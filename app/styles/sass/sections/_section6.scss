@@ -9,7 +9,7 @@
         }
     }
     .section6-title {
-        width: 76%;
+        width: 70%;
         padding-bottom: 46px;
     }
     .section6-row:first-of-type{
@@ -21,6 +21,9 @@
         top: 3%;
         left: 76%;
         color: $yellow;
+        @include tablet {
+            display: none;
+        }
     }
     .icon-palette {
         position: absolute;
@@ -28,6 +31,9 @@
         top: 19%;
         left: -16%;
         color: $green;
+        @include tablet {
+            display: none;
+        }
     }
     .icon-icon-cicle-fill-sec5 {
         position: absolute;

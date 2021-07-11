@@ -45,11 +45,13 @@
     }
 }
 .section5__item_1 {
-    position: relative;
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: 5;
 
+    @include tablet {
+
+    }
     .icon-wawes {
         position: absolute;
         top: 18%;
@@ -58,24 +60,43 @@
         font-size: 157px;
         transform: rotate(15.22deg);
     }
-    @include tablet {
-
-    }
 }
 .section5__item_2 {
     grid-row-start: 1;
     grid-column-start: 5;
     grid-column-end: 9;
+
     @include tablet {
 
+    }
+    .icon-roundels {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        color: $green;
+        font-size: (376 / 179) * 100px - 31px;
+        @include tablet {
+
+        }
     }
 }
 .section5__item_3 {
     grid-row-start: 1;
     grid-column-start: 9;
     grid-column-end: 13;
+
     @include tablet {
 
+    }
+    .icon-dashed-rainbow {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        color: $red;
+        font-size: 201.5px;
+        @include tablet {
+
+        }
     }
 }
 .section5__item_4 {
@@ -85,6 +106,24 @@
     @include tablet {
 
     }
+    .icon-double-empty-circles {
+        position: absolute;
+        top: 36%;
+        left: -11%;
+        font-size: 133px;
+        color: $green;
+        @include tablet {
+            left: 4%;
+        }
+    }
+    .icon-item_4-fill-circle {
+        position: absolute;
+        top: 0;
+        left: 70%;
+        color: $dark-blue;
+        font-size: 53px;
+        z-index: -1;
+    }
 }
 .section5__item_5 {
     grid-row-start: 2;
@@ -93,35 +132,60 @@
     @include tablet {
 
     }
+    .icon-item_5-fill-circle_1 {
+        position: absolute;
+        top: 0;
+        left: 60%;
+        color: $yellow;
+        font-size: 41px;
+    }
+    .icon-item_5-fill-circle_2 {
+        position: absolute;
+        top: 10%;
+        left: 81%;
+        color: $yellow;
+        font-size: 71px;
+    }
 }
 
 .section5__item {
+    position: relative;
     @include tablet {
         text-align: center;
 
     }
 }
-.section5__item-discr {
+.section5__item-info {
     height: 130px;
+    .item-info__name {
+        padding-bottom: 12px;
+    }
+    .item-info__discr {
+        padding-bottom: 24px;
+    }
     @include tablet {
         height: auto;
         margin: 0 auto;
-        h3 {
+        .item-info__name {
             padding-bottom: 6px;
         }
-        h5 {
+        .item-info__discr {
             padding-bottom: 24px;
         }
     }
 }
-.section5__links-discr {
-    display: flex;
-    justify-content: space-between;
+.section5__links-info {
     @include tablet {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .section5-discr__link-about {
+    .section5-info__link-about {
+        padding-right: 52px;
+        @include tablet {
+            padding-right: 0px;
+            padding-bottom: 30px;
+        }
         span {
             text-decoration: underline;
             color: $green;
@@ -129,11 +193,8 @@
         .icon-ellipsis {
             color: $green;
         }
-        @include tablet {
-            padding-bottom: 30px;
-        }
     }
-    .section5-discr__link-certificate {
+    .section5-info__link-certificate {
         span {
             text-decoration: underline;
         }
