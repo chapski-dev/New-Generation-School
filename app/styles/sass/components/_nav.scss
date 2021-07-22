@@ -30,6 +30,9 @@
 
 .nav-links__item {
 	margin-left: 35px;
+	@include tablet-land {
+		margin-left: 20px;
+	}
 	&:first-of-type {
 		margin-left: 0px;
 	}
@@ -51,17 +54,11 @@
 		&:last-of-type {
 			padding-bottom: 50px;
 		}
-		// &:hover {
-		// 	.sub-menu {
-		// 		display: none;
-		// 	}
-		// }
 	}
 }
 
 .sub-menu {
 	display: none;
-	// top: 40px;
 	padding-top: 23px;
 	position: absolute;
 	left: 0;

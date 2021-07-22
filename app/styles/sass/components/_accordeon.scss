@@ -3,40 +3,75 @@
     margin: 0 auto;
     @include tablet {
         width: 100%;
+        * {
+            font-size: 14px;
+            line-height: 19.5px;
+        }
     }
-}
-.card {
-    background-color: $pink;
-    border-radius: 20px;
-    margin-bottom: 10px;
-}
-.card-header {
-    position: relative;
-    border-radius: 70px !important;
-    padding: 0px;
-    button {
-        padding-top: 28px;
-        padding-left: 31px;
-        padding-bottom: 28px;
-    }
-    &::after {
-        content: '';
-        display: block;
-        width: 25px;
-        height: 1px;
-        background: black;
-        position: absolute;
-        top: 50%;
-        left: 91.5%;
-    }
-}
-.card-body {
-    padding-top: 16px;
-    padding-left: 31px;
-    padding-bottom: 33px;
     
-
 }
+.accordion-item {
+    max-width: 761px;
+    margin: 0 auto 10px;
+    padding-left: 31px;
+    background: $pink;
+    border-radius: 20px;
+    &:hover {
+        .accordion-item__header::after {
+            color: $green;
+        }
+    }
+    .accordion-item__header {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-top: 28px;
+        padding-bottom: 28px;
+        line-height: 24px;
+        min-height: 80px;
+        cursor: pointer;
+        font-weight: 400;
+        @include tablet {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            span {
+                padding-right: 78px;
+            }
+        }
+        &::after {
+            content: "\002B";
+            position: absolute;
+            right: 31px;
+            font-size: 44px;
+            transition: transform 0.2s ease-out;
+            font-weight: lighter;
+            @include tablet {
+                right: 24px;
+            }
+        }
+    }
+    .active {
+        &::after {
+            color: $green;
+            transform: rotate(135deg);
+        } 
+    }
+    .accordion-item__body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+    .accordion-item__body-content {
+        max-width: 629px;
+        opacity: 0.5;
+        padding-bottom: 33px;
+        line-height: 24px;
+        @include tablet {
+            padding-right: 30px;
+        }
+    }
+}
+
 
 .section-questions-accordion {
     position: relative;

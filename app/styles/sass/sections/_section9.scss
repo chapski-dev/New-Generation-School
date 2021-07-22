@@ -28,27 +28,59 @@
         padding-bottom: 50px;
     }
 }
-.section9__item-img-wrapper {
-    height: 300px;
-    background: $green;
-    border-radius: 70px;
-
-    margin-bottom: 24px;
-}
 .section9__item {
-    .section9__item-discr {
-        padding-bottom: 9px;
-    }
     &:hover {
         cursor: pointer;
         .section9__item-discr {
             color: $green;
         }
     }
+    .section9__item-discr {
+        font-family: $neucha;
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 9px;
+        @include tablet {
+            line-height: 22px;
+        }
+    }
+}
+.section9__item-img-wrapper {
+    padding-bottom: (300 / 360) * 100%;
+    display: block;
+    position: relative;
+    background: $green;
+    border-radius: 70px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    @include tablet {
+        border-radius: 20px;
+        padding-bottom: (190/300)*100%;
+        margin-bottom: 13px;
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: .5s;
+        &:hover {
+            transform: scale(1.2);
+            @include tablet {
+                transform: none;
+            }
+        }
+    }
 }
 .section9__item-count {
     display: flex;
     justify-content: space-between;
+    @include tablet {
+
+    }
     div{
         color: $dark-gray;
         opacity: .3;

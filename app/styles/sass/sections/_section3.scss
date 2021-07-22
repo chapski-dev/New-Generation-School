@@ -1,25 +1,26 @@
 .section3 {
     position: relative;
+}
+.section3-items {
+    position: relative;
+    @include tablet {
+        text-align: center;
+        margin-bottom: 131px;
+    }
+    h2 {
+        padding-bottom: 107px;
+        @include tablet {
+            padding-bottom: 61px;
+        }
+    }
     .icon-sun {
         position: absolute;
         top: -3%;
-        left: -5.5%;
+        left: -39.5%;
         color: $yellow;
         font-size: 233px;
         @include tablet {
             display: none;
-        }
-    }
-}
-.section3-items {
-    h2 {
-        padding-bottom: 107px;
-    }
-    @include tablet {
-        text-align: center;
-        margin-bottom: 131px;
-        h2 {
-            padding-bottom: 61px;
         }
     }
 }
@@ -28,7 +29,6 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 174px;
     @include tablet {
         flex-direction: column;
         align-items: center;
@@ -44,43 +44,59 @@
 .content-block{
     width: 55%;
     padding-left: 25px;
+    .section3__img-wrapper {
+        display: none;
+    }
     @include tablet {
-        width: 87.67%;
+        width: 100%;
         padding-left: 0px;
+        .section3__img-wrapper {
+            display: block;
+            margin: 0 auto 21px;
+        }
     }
     h5{
         padding-bottom: 27px;
         @include tablet {
+            font-size: 15px;
             padding-bottom: 20px;
         }
     }
     h3{
         padding-bottom: 12px;
         @include tablet {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 20px;
             padding-bottom: 23px;
         }
     }
     p{
         padding-bottom: 44px;
+        margin: 0 auto;
+        @include tablet {
+            font-size: 15px;
+        }
     }
 }
 // COMMON STYLES OF DESCTOP BACKGROUND
 .section3-block_1, .section3-block_2, .section3-block_3 {
-    .icon-notepad {
+    .icon-calendar {
         color: $green;
+        margin-right: 5px;
     }
     &::before {
             content: '';
             display: block;
-            width: 115%;
-            height: 93%;
+            width: 1260px;
+            height: 656px;
             background: #FFF8D2;
             opacity: .6;
             border-radius: 70px;
         
             position: absolute;
             z-index: -1;
-            top: -11%;
+            top: -5%;
             left: -5%;
             @include tablet {
                 display: none;
@@ -96,7 +112,7 @@
     }
     @include tablet {
         background: #FFF8D2;
-        border-radius: 70px;
+        border-radius: 20px;
     }
 }
 .section3-block_2 {
@@ -117,49 +133,62 @@
     }
     @include tablet {
         background: #E7F8EF;
-        border-radius: 70px;
+        border-radius: 20px;
     }
 }
 .section3-block_3 {
     position: relative;
+    @include tablet {
+        background: #F5F5F9;
+        border-radius: 20px;
+    }
     .icon-dashed {
         position: absolute;
         top: -30%;
         left: -20%;
         font-size: 246px;
         color: $yellow;
+        @include tablet {
+            display: none;
+        }
     }
     &::before {
         background: #F5F5F9;
         transform: rotate(-1.19deg);
     }
-    @include tablet {
-        background: #F5F5F9;
-        border-radius: 70px;
-    }
 } 
 // common styles of section3__img-block
-.section3__img-block1{
+.section3__img-wrapper_1{
     background: rgb(207, 66, 66);
     transform: rotate(3.09deg);
 }
-.section3__img-block2{
+.section3__img-wrapper_2{
     background: rgb(66, 207, 113);
     transform: rotate(-1.43deg);
 }
-.section3__img-block3{
+.section3__img-wrapper_3{
     background: rgb(69, 46, 199);
     transform: rotate(2.23deg);
 }
-.section3__img-block1, .section3__img-block2, .section3__img-block3 {
-    width: 460px;
-    height: 543px;
+.section3__img-wrapper {
+    position: relative;
+    display: block;
     border-radius: 70px;
+    padding-bottom: (162 / 260) * 100%;
+    // width: 460px;
+    // height: 543px;
     overflow: hidden;
     img {
-        object-fit: fill;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
     @include tablet {
+        display: none;
         width: 90%;
         height: 161px;
         transform: none;
@@ -169,8 +198,16 @@
 
 .block-info__first, .block-info__sec {
     display: flex;
+    justify-content: space-between;
     div {
         width: 45%;
+    }
+    .title {
+        font-size: 28px;
+        padding-bottom: 12px;
+    }
+    .text {
+        font-size: 16px;
     }
     @include tablet {
         flex-direction: column;
@@ -178,11 +215,17 @@
         div {
             width: 100%;
         }
+        .title { 
+            font-size: 20px;
+        }
+        .text {
+            font-size: 15px;
+        }
     }
 }
 .block-info__sec{
     display: flex;
-
+    align-items: center;
     div {
         width: 45%;
     }
@@ -203,11 +246,23 @@
 .block-info__buttons{
     display: flex;
     justify-content: space-between;
-    width: 76%;
+    width: 96%;
+    padding-bottom: 173px;
     @include tablet {
         justify-content: center;
+        align-items: center;
         flex-direction: column;
         width: 90%;
         margin: 0 auto;
+        padding-bottom: 0;
+    }
+    button {
+        font-size: 18px;
+        line-height: 150%;
+        min-width: 240px;
+        @include tablet {
+            max-width: 240px;
+            max-height: 100px;
+        }
     }
 }

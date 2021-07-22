@@ -20,33 +20,25 @@ const DESKTOP_FROM = 1024;
 
 // section2 tabs sliders
 const slidersParents = $('.tabs-contents__item');
+  
+var swiper = new Swiper(".section2-tabs-slider", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  
+  observer: true,
+  
+  observeParents: true ,
+  
+  observSlideChildren: true,
 
-if (slidersParents.length) {
-  slidersParents.each(function() {
-    var _self = $(this);
-    var paginationBlock = _self.find('.swiper-pagination');
-
-    var config = {};
-    if (paginationBlock.length) {
-      config.pagination = {
-        el: paginationBlock.get(0),
-        clickable: true,
-      }
-    }
-    var swiper = new Swiper(_self.find(".section2-tabs-slider").get(0), config)
-  })
-}
-
-  var swiper = new Swiper(".section2-tabs-slider", {
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    // navigation: {
-    //   nextEl: ".swiper-button-next",
-    //   prevEl: ".swiper-button-prev",
-    // },
-  });
+  // autoplay: {
+  //   delay: 1000,
+  //   stopOnLastSlide: true,
+  //   disableOnInteraction: false
+  // }
+});
 
 
 // HEADER MOBILE NAV TOGLE
@@ -68,5 +60,50 @@ $('.nav-links__item--parent').on('click', '.nav-links__link', function(event) {
 });
 
 
-// для сабменю убрать для таблетов и мобилок ховер и убрать position: absolute
-// отступ в выпадающем меню вместо позиции top иначе не работает ховер как надо
+// Переключение табов во второй секции на мобилке
+
+const tabsTriggers = $('.section2-tabs .tabs-nav__trigger');
+
+$('.section2-tabs__mobile-trigger').on('click', function(event) {
+  event.preventDefault();
+  const currentTab = $('.section2-tabs .tabs-nav__trigger.active');
+  const activeIndex = currentTab.parent().index();
+
+  if ($(this).data('move') === 'prev') {
+    if ( activeIndex === 0 ) {
+      tabsTriggers.eq( tabsTriggers.length - 1 ).tab('show');
+    } else {
+      tabsTriggers.eq( activeIndex - 1 ).tab('show');
+    }
+  } else {
+    if ( activeIndex === (tabsTriggers.length - 1) ) {
+      tabsTriggers.eq(0).tab('show');
+    } else {
+      tabsTriggers.eq( activeIndex + 1 ).tab('show');
+    }
+  }
+});
+
+// Коллапс Аккордеон собствеными руками.
+
+const accordionItemHeader = document.querySelectorAll(".accordion-item__header")
+
+accordionItemHeader.forEach(accordionItemHeader => {
+  accordionItemHeader.addEventListener("click", event => {
+    const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item__header.active");
+    if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
+      currentlyActiveAccordionItemHeader.classList.toggle("active");
+      currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+    }
+
+
+    accordionItemHeader.classList.toggle("active");
+    const accordionItemBody = accordionItemHeader.nextElementSibling;
+    if (accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    }
+    else {
+      accordionItemBody.style.maxHeight = 0;
+    }
+  })
+});

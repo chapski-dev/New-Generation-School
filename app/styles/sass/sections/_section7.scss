@@ -5,6 +5,9 @@
     position: relative;
     padding-bottom: 265px;
     z-index: 1;
+    @include tablet {
+        padding-bottom: 0px;
+    }
     .icon-daub-section7 {
         position: absolute;
         top: -4.5%;
@@ -23,6 +26,9 @@
         font-size: 254px;
         z-index: -1;
         color: $yellow;
+        @include tablet {
+            display: none;
+        }
     }
     .section7-title {
         width: 76%;
@@ -53,28 +59,43 @@
 
         .icon-cicle-fill-1 {
             position: absolute;
-            top: -17%;
+            top: -6%;
             left: 15%;
             font-size: 404px;
             z-index: -1;
             color: #F5F5F9;
+            @include tablet {
+                font-size: 296px;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                }
         }
         .icon-cicle-empty-1 {
             position: absolute;
-            top: -22%;
-            right: -20%;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             font-size: 162px;
-            z-index: -1;
             color: #36347F;
+            @include tablet {
+                font-size: 75px;
+            }
         }
         .icon-childrens {
             position: absolute;
             top: 111%;
             left: 10%;
             font-size: 141px;
-            z-index: -1;
             color: #36347F;
-            transform: rotate(341deg)
+            transform: rotate(341deg);
+            @include tablet {
+                font-size: 85px;
+                top: 68%;
+                left: 5%;
+                transform: translate(-50%, -50%) rotate(341deg);
+                }
+            
         }
 
         @include tablet {
@@ -85,7 +106,10 @@
     .section7-item-2 {
         grid-column-start: 2;
         grid-row-start: 2;
-
+        @include tablet {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
         .icon-cicle-fill-2 {
             position: absolute;
             top: -34%;
@@ -93,13 +117,23 @@
             font-size: 378px;
             z-index: -1;
             color: #E7F8EF;
+            @include tablet {
+                font-size: 296px;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                }
         }
         .icon-cicle-empty-2 {
             position: absolute;
-            top: -19%;
-            left: 79%;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             font-size: 131px;
             color: $green;
+            @include tablet {
+                font-size: 65px;
+            }
         }
         .icon-backpack {
             position: absolute;
@@ -108,10 +142,11 @@
             font-size: 107px;
             z-index: -1;
             color: $green;
-        }
-        @include tablet {
-            grid-column-start: 1;
-            grid-column-end: 5;
+            @include tablet {
+                top: 50%;
+                left: 0;
+                font-size: 56px;
+            }
         }
     }
     .section7-item-3 {
@@ -123,60 +158,90 @@
         }
         .icon-cicle-fill-3 {
             position: absolute;
-            top: -21%;
-            left: 10%;
+            top: -9%;
+            left: 12%;
             font-size: 392px;
             z-index: -1;
             color: $yellow;
             opacity: .2;
+            @include tablet {
+                font-size: 299px;
+                top: 33.5%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                }
         }
         .icon-cicle-empty-3 {
             position: absolute;
-            top: -10%;
-            left: 81%;
-            font-size: 107px;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 133px;
             z-index: -1;
             color: $yellow;
+            @include tablet {
+                font-size: 64px;
+            }
         }
         .icon-rocet {
             position: absolute;
             top: 121%;
             left: 17%;
             font-size: 89px;
-            z-index: -1;
             color: $yellow;
+            @include tablet {
+                font-size: 68px;
+                top: 57%;
+                left: -5%;
+            }
         }
     }
     .section7-item-4 {
         grid-column-start: 2;
         grid-row-start: 4;
+        // width: 62%;
         @include tablet {
+            // width: 100%;
             grid-column-start: 1;
             grid-column-end: 5;
         }
         .icon-cicle-fill-4 {
             position: absolute;
-            top: -20%;
-            left: 13%;
+            top: -12%;
+            left: 7%;
             font-size: 366px;
             z-index: -1;
             color: #FCE8E6;
+            @include tablet {
+                font-size: 303px;
+                top: 33%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                }
         }
         .icon-cicle-empty-2 {
             position: absolute;
-            top: -17%;
-            left: 78%;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             font-size: 131px;
-            z-index: -1;
             color: $red;
+            @include tablet {
+                font-size: 66px;
+            }
         }
         .icon-hat {
             position: absolute;
-            top: -40%;
+            top: -34%;
             left: 15%;
             font-size: 133px;
             z-index: -1;
             color: $red;
+            @include tablet {
+                font-size: 85px;
+                left: -5%;
+                top: 50%;
+            }
         }
     }
     .section7-item-5 {
@@ -188,27 +253,40 @@
         }
         .icon-cicle-fill-5 {
             position: absolute;
-            top: -23%;
-            left: 11%;
+            top: -9%;
+            left: 15%;
             font-size: 387.5px;
             z-index: -1;
             color: #E7F8EF;
+            @include tablet {
+                font-size: 302px;
+                top: 37%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                }
         }
         .icon-cicle-empty-3 {
             position: absolute;
-            top: -18%;
-            left: 80%;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             font-size: 133px;
-            z-index: -1;
             color: $green;
+            @include tablet {
+                font-size: 68.55px;
+            }
         }
         .icon-paper-boat {
             position: absolute;
             top: 108%;
             left: 0%;
             font-size: 133px;
-            z-index: -1;
             color: $green;
+            @include tablet {
+                top: 60%;
+                left: -2%;
+                font-size: 61px;
+            }
         }
     }
     .section7-item-6 {
@@ -225,14 +303,23 @@
             font-size: 424px;
             z-index: -1;
             color: #F5F5F9;
+            @include tablet {
+                font-size: 299px;
+                top: 33.5%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                }
         }
         .icon-cicle-empty-2 {
             position: absolute;
-            top: -17%;
-            left: 78%;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             font-size: 131px;
-            z-index: -1;
             color: $dark-blue;
+            @include tablet {
+                font-size: 68px;
+            }
         }
         .icon-magnifier {
             position: absolute;
@@ -241,6 +328,11 @@
             font-size: 105px;
             z-index: -1;
             color: $dark-blue;
+            @include tablet {
+                font-size: 66px;
+                top: 61%;
+                left: 0;
+            }
         }
     }
 }
@@ -254,25 +346,44 @@
 
     position: relative;
     z-index: 1;
-    h2 {
-        padding-bottom: 35px;
-    }
+
     @include tablet {
-        width: 100%;
+        width: 40%;
         text-align: center;
         padding-bottom: 150px;
-        h2 {
+        &:last-of-type {
+            padding-bottom: 194px;
+        }
+    }
+    @include mobile {
+        width: 100%;
+    }
+    .item__number {
+        position: relative;
+        font-family: $neucha;
+        font-size: 64px;
+        padding-bottom: 35px;
+        @include tablet {
             width: 20%;
+            font-size: 0;
+            span{
+                font-size: 33px !important; 
+            }
         }
     }
 }
+
 .section7-item__discr{
     h3 {
         padding-bottom: 12px;
     }
     @include tablet {
         h3 {
+            font-size: 20px;
             padding-bottom: 6px;
+        }
+        p {
+            font-size: 15px;
         }
     }
 }

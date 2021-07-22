@@ -1,18 +1,15 @@
-.section1 {
-	@include tablet {
-		.container {
-			overflow: hidden;
-		}
-	}
-}
 .section1__wrapper {
 	display: flex;
 	flex-direction: column;
 }
 
-h1 { 
+.section1__title { 
     padding-bottom: 35.6px;
+	@include tablet-land {
+		width: 70%;
+	}
 	@include tablet {
+		width: 100%;
 		text-align: center;
 		padding-top: 64px;
 		padding-bottom: 35.6px;
@@ -25,9 +22,13 @@ h1 {
     justify-content: space-between;
 
 	.check-ic-text {
-		width: 50%;
+		width: 42%;
+		&:first-of-type {
+			margin-right: 53px;
+		}
 		@include tablet {
 			&:first-of-type {
+				margin-left: 0px;
 				padding-bottom: 24px;
 			}
 			&:last-of-type {
@@ -39,6 +40,12 @@ h1 {
 	.check-ic-text__icon {
 		max-height: 75px;
 		padding-bottom: 10px;
+		.path1 {
+			font-size: 49px;
+		}
+		.path2 {
+			font-size: 35px;
+		}
 	}
 	@include tablet {
 		display: flex;

@@ -1,71 +1,56 @@
 .section2 {
     @include tablet {
-        .container {
+        .c-container {
             overflow: hidden;
         }
     }
 }
+
+.section2-tabs {
+    .nav-pills {
+        @include tablet {
+            display: block;
+        }
+    }
+
+    .nav-item {
+        @include tablet {
+            border: none;
+        }
+    }
+
+    @include tablet {
+        .tabs-nav__trigger {
+            display: none;
+            background-color: transparent;
+            padding: 0;
+    
+            &.active {
+                display: block;
+                text-align: center;
+                @include tablet {
+                    font-family: $neucha;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
 .section2-row {
     padding-bottom: 137px;
-    h2 {
+    .section2-title {
         padding-bottom: 56px;
     }
     @include tablet {
         text-align: center;
         align-items: center;
-        h2 {
+        .section2-title {
             padding-bottom: 61px;
         }
     }
 }
-.section2__swiper {
-    position: relative;
-}
 
-.section2__felt-tip1 {
-    position: absolute;
-    top: 22%;
-    left: -11%;
-    z-index: 10;
-    font-size: 222px;
-    color: $yellow;
-    @include tablet {
-        width: 8%;
-    }
-}
-.section2__felt-tip2 {
-    position: absolute;
-    bottom: -7%;
-    right: 6%;
-    z-index: 10;
-    font-size: 223px;
-    color: $yellow;
-    @include tablet {
-        display: none;
-    }
-}
-.section2__felt-tip3 {
-    position: absolute;
-    top: 6%;
-    right: -9%;
-    color: $yellow;
-    font-size: 155px;
-    @include tablet {
-        width: 16%;
-    }
-}
-
-.section2-searching-glass {
-    display: none;
-    @include tablet {
-        display: block;
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        z-index: 2;
-    }
-    
-}
 
 .section2__img-wrapper {
     position: relative;
@@ -81,11 +66,25 @@
         object-fit: cover;
         object-position: center;
     }
-}
-
-// TODO: Перенести в ддругой файл если должно применяться на всем сайте или обернуть во враппе
-.nav-pills {
     @include tablet {
-        display: none;
+        &::before {
+            content: $icon-zoom;
+            font-family: $icomoon-font-family;
+            position: absolute;
+            top: 50%;
+            font-size: 18px;
+            // background: $yellow;
+            z-index: 1;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $yellow;
+            background-color: #ffd6006b; 
+            border-radius: 50%;
+        }
     }
 }

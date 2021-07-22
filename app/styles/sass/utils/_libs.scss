@@ -1,4 +1,5 @@
 @import '../libs/reset';
+@import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import '/node_modules/swiper/swiper-bundle.css';
 @import '/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css';
 
@@ -6,3 +7,11 @@
 $icomoon-font-path: "../../../fonts/icomoon/";
 @import '../../../fonts/icomoon/variables.scss';
 @import '../../../fonts/icomoon/style.scss';
+
+// fix icons
+.icon-checkMark1 .path2:before {
+    margin-left: -1.4em;
+}
+.icon-checkMark2 .path2:before {
+    margin-left: -1.4em;
+}

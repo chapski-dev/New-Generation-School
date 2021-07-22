@@ -5,16 +5,8 @@
   }
 }
 .swiper-slide {
-  height: 569px;
   @include tablet{
     width: 100%;
-    height: 367px;
-  }
-  @include mobile-land {
-    height: 304px;
-  }
-  @include mobile{
-    height: 193px;
   }
 }
 .swiper-pagination {
@@ -24,33 +16,29 @@
   justify-content: center;
   align-items: center;
   padding-top: 30px;
-  
+
+}
+.swiper-pagination-bullet{
+  background: $gray;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  margin: 0 30px !important;
   @include tablet {
-    padding: 30px;
-  }
-  .swiper-pagination-bullet{
-    background: $gray;
+    background: $dark-gray;
     opacity: 1;
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
+    margin: 0 19px !important;
+  }
+}
+.swiper-pagination-bullet-active {
+    background: $green;
     @include tablet {
-      background: $dark-gray;
-      opacity: 1;
-      width: 6px;
-      height: 6px;
-    }
-  }
-  .swiper-pagination-bullet-active {
       background: $green;
-      @include tablet {
-        background: $green;
-      }
-  }
+    }
 }
 
-.swiper-pagination-bullet + .swiper-pagination-bullet{
-  margin-left: 30px;
-}
 
 // NAVIGATION 
 .swiper-buttons-mobile {
@@ -76,5 +64,42 @@
     .swiper-buttons-mobile__text {
       padding-top: 30px;
     }
+  }
+}
+.section__swiper-row {
+  position: relative;
+}
+
+.icon-slider-daub-1 {
+  position: absolute;
+  top: 22%;
+  left: -11%;
+  z-index: 10;
+  font-size: 222px;
+  color: $yellow;
+  @include tablet {
+      font-size: 57px;
+      left: -7%;
+  }
+}
+.icon-slider-daub-2  {
+  position: absolute;
+  top: 6%;
+  right: -10%;
+  color: $yellow;
+  font-size: 155px;
+  @include tablet {
+      font-size: 40px;
+  }
+}
+.icon-triple-xxx {
+  position: absolute;
+  bottom: -12%;
+  right: 7%;
+  z-index: 10;
+  font-size: 223px;
+  color: $yellow;
+  @include tablet {
+      display: none;
   }
 }

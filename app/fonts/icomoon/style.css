@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('fonts/icomoon.ttf?v2kg4r') format('truetype'),
-    url('fonts/icomoon.woff?v2kg4r') format('woff'),
-    url('fonts/icomoon.svg?v2kg4r#icomoon') format('svg');
+    url('fonts/icomoon.ttf?li2qdy') format('truetype'),
+    url('fonts/icomoon.woff?li2qdy') format('woff'),
+    url('fonts/icomoon.svg?li2qdy#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-slider-daub-1:before {
+  content: "\e907";
+}
+.icon-slider-daub-2:before {
+  content: "\e908";
+}
+.icon-triple-xxx:before {
+  content: "\e909";
+}
 .icon-roundels:before {
   content: "\e92f";
 }
@@ -149,15 +158,6 @@
 }
 .icon-sun:before {
   content: "\e90d";
-}
-.icon-section2__felt-tip1:before {
-  content: "\e907";
-}
-.icon-section2__felt-tip2:before {
-  content: "\e908";
-}
-.icon-section2__felt-tip3:before {
-  content: "\e909";
 }
 .icon-checkMark1 .path1:before {
   content: "\e903";

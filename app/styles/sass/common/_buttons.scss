@@ -1,3 +1,6 @@
+button {
+    outline: none !important; 
+}
 %button-preset {
     display: inline-flex;
     align-items: center;
@@ -86,23 +89,22 @@
     display: none;
     @include tablet {
         display: block;
-        .swipe-button-prev, .swipe-button-next {
+        .section2-tabs__mobile-trigger {
             background: transparent;
             border: none;
-            font-size: 54px;
             padding: 0;
+            margin-bottom: 21px;
             i {
+                font-size: 54px;
                 color: $green;
             }
         }
+        .section2-tabs__mobile-trigger-prev {
+            margin-right: 40px;
+        }
     }
 }
-.swipe-button-prev {
-    padding-right: 20px;
-}
-.swipe-button-next {
-    padding-left: 20px;
-}
+
 // SECTION 3
 .block-info__button{
     padding: 35px 66px;

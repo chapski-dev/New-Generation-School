@@ -32,6 +32,13 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    @include tablet {
+        padding: 49px 44px 47px 44px;
+        margin-bottom: 30px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
     span {
         // position: relative;
     }
@@ -42,23 +49,19 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, 50%);
+        @include tablet {
+            display: none;
+        }
     }
     &:hover {
         cursor: pointer;
+        background: $green;
         span {
             color: white;
         }
-        background: $green;
         a {
             color: white;
             text-decoration: underline;
-        }
-    }
-    @include tablet {
-        padding: 49px 44px 47px 44px;
-        margin-bottom: 30px;
-        &:last-of-type {
-            margin-bottom: 0;
         }
     }
 }

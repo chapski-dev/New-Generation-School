@@ -10,6 +10,7 @@
     }
     .modal-header {
         padding: 0 0 12px 0;
+        border: none;
     }
     .modal-body {
         display: flex;
@@ -39,6 +40,7 @@
     }
     .modal-footer {
         padding: 0px;
+        border: none;
     }
     .header__modal-button {
         padding: 36px 81px;
@@ -48,30 +50,58 @@
     }
 }
 
+// .header__modal_2 {
+
+// }
+
+
 .about-teacher__modal {
+    .modal-dialog {
+        @include tablet {
+            margin: 0;
+        }
+    }
     .modal-content {
         border-radius: 70px;
         min-width: 760px;
         left: -25%;
+        @include tablet {
+            border-radius: 0%;
+            min-width: 300px;
+            left: 0;
+        }
     }
     .modal-header {
         padding: 0px;
         border: none;
+        @include tablet {
+            max-height: 0;
+        }
     }
     .modal-body {
         padding: 41px 60px 67px;
+        @include tablet {
+            padding: 83px 10px;
+        }
     }
     .about-teacher__modal-button {
-        font-size: 3.5rem;
         font-weight: 600;
         text-shadow: none;
         opacity: .8;
         color: white;
         padding: 0px;
+        @include tablet {
+            margin: 0rem 1rem -1rem auto
+        }
         span {
+            font-size: 52.5px;
             color: white;
             font-weight: 700;
             padding: 0px;
+            @include tablet {
+                font-weight: normal;
+                color: black;
+            }
         }
     }
 }

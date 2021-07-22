@@ -59,6 +59,11 @@
         color: $yellow;
         font-size: 157px;
         transform: rotate(15.22deg);
+        @include mobile {
+            top: 27%;
+            left: -25%;
+            font-size: 108px;
+        }
     }
 }
 .section5__item_2 {
@@ -76,7 +81,8 @@
         color: $green;
         font-size: (376 / 179) * 100px - 31px;
         @include tablet {
-
+            left: 56%;
+            font-size: 127px;
         }
     }
 }
@@ -95,7 +101,8 @@
         color: $red;
         font-size: 201.5px;
         @include tablet {
-
+            left: 60%;
+            font-size: 89px;
         }
     }
 }
@@ -113,7 +120,9 @@
         font-size: 133px;
         color: $green;
         @include tablet {
-            left: 4%;
+            top: 41%;
+            left: 11%;
+            font-size: 99px;
         }
     }
     .icon-item_4-fill-circle {
@@ -123,6 +132,9 @@
         color: $dark-blue;
         font-size: 53px;
         z-index: -1;
+        @include tablet {
+            font-size: 52px;
+        }
     }
 }
 .section5__item_5 {
@@ -138,6 +150,10 @@
         left: 60%;
         color: $yellow;
         font-size: 41px;
+        @include tablet {
+            left: 68%;
+            font-size: 24px;
+        }
     }
     .icon-item_5-fill-circle_2 {
         position: absolute;
@@ -145,6 +161,11 @@
         left: 81%;
         color: $yellow;
         font-size: 71px;
+        @include tablet {
+            top: 6%;
+            left: 79%;
+            font-size: 42px;
+        }
     }
 }
 
@@ -159,9 +180,17 @@
     height: 130px;
     .item-info__name {
         padding-bottom: 12px;
+        @include tablet {
+             font-size: 20px;
+        }
     }
     .item-info__discr {
         padding-bottom: 24px;
+        @include tablet {
+            margin: 0 auto;
+            width: 81%;
+            font-size: 15px;
+        }
     }
     @include tablet {
         height: auto;
