@@ -2,32 +2,34 @@
     .container {
         max-width: 1160px;
         padding: 0;
-        @include tablet{
+        @include tablet-land{
             padding: 0 10px;
         }
     }
 }
 .section6-wrapper{
     position: relative;
-    padding-bottom: 132px;
+    margin-bottom: 130px;
+    @include tablet {
+        margin-bottom: 104px;
+    }
     .section6-title {
         width: 70%;
-        padding-bottom: 46px;
+        margin-bottom: 59px;
+        line-height: 59px;
         @include tablet {
             width: 100%;
             width: 100%;
             text-align: center;
-            padding-bottom: 54px;
+            line-height: 33px;
+            margin-bottom: 63px;
         }
-    }
-    .section6-row:first-of-type{
-        padding-bottom: 42px;
     }
     .icon-glasses {
         position: absolute;
         font-size: 84px;
         top: 3%;
-        left: 76%;
+        left: 77%;
         color: $yellow;
         @include tablet {
             display: none;
@@ -35,9 +37,9 @@
     }
     .icon-palette {
         position: absolute;
-        font-size: 84px;
-        top: 19%;
-        left: -16%;
+        font-size: 93px;
+        top: 25%;
+        left: -21%;
         color: $green;
         @include tablet {
             display: none;
@@ -47,7 +49,7 @@
         position: absolute;
         font-size: 369px;
         top: 1%;
-        left: -24%;
+        left: -22%;
         color: $light-gray;
         z-index: -1;
     }
@@ -57,33 +59,65 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 40px;
-    row-gap: 30px;
+    row-gap: 20px;
     @include tablet {
         display: flex;
         flex-direction: column;
     }
 }
 .section6__item {
-
+    .section6__item-discr {
+        line-height: 150%;
+        font-size: 16px;
+        // @include tablet {
+        //     font-size: 16px;
+        // }
+    }
     &:hover {
-        cursor: pointer;
-        .section6__item-discr {
-            color: $green;
+        // cursor: pointer;
+        .section6-button {
+            width: 100px;
+            height: 100px;
             @include tablet {
-                font-size: 15px;
+                width: 80px;
+                height: 80px;
             }
         }
+        .section6__item-discr {
+            span {
+                color: $green;
+            }
+        }
+        
     }
 }
 .section6__item-1 {
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: 7;
+    @include tablet {
+        margin-bottom: -2px;
+    }
+    .section6-video {
+        padding-bottom: (300 / 560) * 100%;
+    }
+    .section6__item-discr {
+        width: 90%;
+        @include tablet {
+            width: 100%;
+        }
+    }
 }
 .section6__item-2 {
     grid-row-start: 1;
     grid-column-start: 7;
     grid-column-end: 13;
+    @include tablet {
+        margin-bottom: 17px;
+    }
+    .section6-video {
+        padding-bottom: (300 / 560) * 100%;
+    }
     .section6__item-discr {
         width: 90%;
         @include tablet {
@@ -95,37 +129,106 @@
     grid-row-start: 2;
     grid-column-start: 1;
     grid-column-end: 5;
+    @include tablet {
+        margin-bottom: 7px;
+    }
+    .section6-video {
+        padding-bottom: (300 / 360) * 100%;
+        @include tablet {
+            padding-bottom: (300 / 560) * 100%;
+            .section6__item-discr {
+                font-size: 15px;
+            }
+        }
+    }
 }
 .section6__item-4 {
     grid-row-start: 2;
     grid-column-start: 5;
     grid-column-end: 9;
+    @include tablet {
+        margin-bottom: 7px;
+    }
+    .section6-video {
+        padding-bottom: (300 / 360) * 100%;
+        @include tablet {
+            padding-bottom: (300 / 560) * 100%;
+        }
+    }
+    .section6-button {
+        bottom: 23px !important;
+        @include tablet {
+            bottom: 10px !important;
+        }
+    }
 }
 .section6__item-5 {
     grid-row-start: 2;
     grid-column-start: 9;
     grid-column-end: 13;
+    .section6__item-discr {
+        @include tablet {
+            width: 90%;
+        }
+    }
+    .section6-video {
+        padding-bottom: (300 / 360) * 100%;
+        @include tablet {
+            padding-bottom: (300 / 560) * 100%;
+        }
+    }
 }
 
 .section6-video{
-    position: relative;
     display: block;
-    height: 300px;
+    position: relative;
+    overflow: hidden;
+    // padding-bottom: (300 / 560) * 100%;
     background: cornflowerblue;
     border-radius: 70px;
     margin-bottom: 21px;
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $dark-blue;
+        opacity: .2;
+        z-index: 2;
+        pointer-events: none;
+    }
     @include tablet {
         height: 190px;
         border-radius: 20px;
         margin-bottom: 11px;
     }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
     .section6-button {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        border: none;
+        background: $red;
+        text-align: center;
         position: absolute;
         bottom: 30px;
         left: 30px;
+        transition: .5s linear;
+        z-index: 3;
         @include tablet {
             bottom: 10px;
-        left: 10px;
+            left: 10px;
         }
     }
 }

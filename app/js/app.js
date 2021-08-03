@@ -33,13 +33,25 @@ var swiper = new Swiper(".section2-tabs-slider", {
   
   observSlideChildren: true,
 
-  // autoplay: {
-  //   delay: 1000,
-  //   stopOnLastSlide: true,
-  //   disableOnInteraction: false
-  // }
 });
 
+// modal swiper
+
+var swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  observer: true,
+  
+  observeParents: true ,
+  
+  observSlideChildren: true,
+});
 
 // HEADER MOBILE NAV TOGLE
 $('.header__nav-toggle').on('click', function(event) {
@@ -83,6 +95,32 @@ $('.section2-tabs__mobile-trigger').on('click', function(event) {
     }
   }
 });
+
+const thankModal = $('#thanksModal');
+const timeoutToCloseThanksModal = +thankModal.data('timeout');
+
+thankModal.on('shown.bs.modal', () => {
+  setTimeout(() => {
+    thankModal.modal('hide')
+  }, timeoutToCloseThanksModal)
+});
+
+function showThanksModal(event) {
+  $(event.target).off('hidden.bs.modal', showThanksModal);
+  thankModal.modal('show');
+}
+
+$('form').on('submit', function(event) {
+  event.preventDefault();
+  const parent = $(this).closest('.modal');
+
+  if (parent.length) {
+    parent.on('hidden.bs.modal', showThanksModal)
+    parent.modal('hide');
+  } else {
+    showThanksModal();
+  }
+})
 
 // Коллапс Аккордеон собствеными руками.
 

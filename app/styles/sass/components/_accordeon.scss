@@ -4,8 +4,8 @@
     @include tablet {
         width: 100%;
         * {
-            font-size: 14px;
-            line-height: 19.5px;
+            font-size: 13px;
+            line-height: 20.5px;
         }
     }
     
@@ -15,11 +15,15 @@
     margin: 0 auto 10px;
     padding-left: 31px;
     background: $pink;
-    border-radius: 20px;
+    border-radius: 70px;
     &:hover {
         .accordion-item__header::after {
             color: $green;
         }
+    }
+    @include tablet {
+        border-radius: 20px;
+        margin-bottom: 7px;
     }
     .accordion-item__header {
         display: flex;
@@ -33,7 +37,7 @@
         font-weight: 400;
         @include tablet {
             padding-top: 30px;
-            padding-bottom: 30px;
+            padding-bottom: 19px;
             span {
                 padding-right: 78px;
             }
@@ -60,6 +64,9 @@
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
+        @include tablet {
+            width: 93%;
+        }
     }
     .accordion-item__body-content {
         max-width: 629px;
@@ -78,8 +85,8 @@
 
     .icon-daub-questions {
         position: absolute;
-        top: -81px;
-        left: -5%;
+        top: -112px;
+        left: -2%;
         font-size: 291px;
         color: $yellow;
         z-index: -1;
@@ -89,8 +96,8 @@
     }
     .icon-letters-questions {
         position: absolute;
-        top: 200px;
-        left: -6%;
+        top: 172px;
+        left: -2.5%;
         font-size: 55px;
         color: $yellow;
         z-index: -1;
@@ -101,9 +108,9 @@
 
     .icon-mobile-phone {
         position: absolute;
-        top: 422px;
-        left: 90%;
-        font-size: 50px;
+        top: 407px;
+        left: 86%;
+        font-size: 70px;
         color: $yellow;
         z-index: -1;
         @include tablet {
@@ -112,9 +119,9 @@
     }
     .icon-tune-questions_1 {
         position: absolute;
-        top: -27px;
-        left: -26%;
-        font-size: 39px;
+        top: -105px;
+        left: -22%;
+        font-size: 47px;
         color: $yellow;
         z-index: -1;
         @include tablet {
@@ -123,9 +130,9 @@
     }
     .icon-tune-questions_2 {
         position: absolute;
-        top: 693px;
-        left: 122%;
-        font-size: 39px;
+        top: 609px;
+        left: 120%;
+        font-size: 47px;
         color: $yellow;
         z-index: -1;
         @include tablet {
@@ -134,9 +141,9 @@
     }
     .icon-ruler {
         position: absolute;
-        top: -54px;
+        top: -57px;
         left: 100%;
-        font-size: 115px;
+        font-size: 97px;
         color: $yellow;
         z-index: -1;
         @include tablet {
@@ -145,8 +152,8 @@
     }
     .icon-notebook-questions {
         position: absolute;
-        top: 557px;
-        left: -6%;
+        top: 517px;
+        left: -2%;
         font-size: 96px;
         color: $yellow;
         z-index: -1;
@@ -156,9 +163,9 @@
     }
     .icon-scattered_1 {
         position: absolute;
-        top: 300px;
-        left: -34%;
-        font-size: 119px;
+        top: 330px;
+        left: -30%;
+        font-size: 124px;
         color: $yellow;
         z-index: -1;
         transform: rotate(309deg);
@@ -168,9 +175,9 @@
     }
     .icon-scattered_2 {
         position: absolute;
-        top: 337px;
-        left: 106%;
-        font-size: 119px;
+        top: 307px;
+        left: 103%;
+        font-size: 132px;
         color: $yellow;
         z-index: -1;
         transform: rotate(342deg);
@@ -180,8 +187,8 @@
     }
     .icon-magnifier {
         position: absolute;
-        top: 200px;
-        left: 131.5%;
+        top: 140px;
+        left: 127.5%;
         font-size: 75px;
         color: $yellow;
         z-index: -1;

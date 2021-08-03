@@ -8,8 +8,10 @@
 
 .section2-tabs {
     .nav-pills {
+        margin-bottom: 46px;
         @include tablet {
             display: block;
+            margin-bottom: 28px;
         }
     }
 
@@ -38,15 +40,16 @@
 }
 
 .section2-row {
-    padding-bottom: 137px;
-    .section2-title {
-        padding-bottom: 56px;
-    }
+    margin-bottom: 134px;
     @include tablet {
+        margin-bottom: 109px;
         text-align: center;
         align-items: center;
-        .section2-title {
-            padding-bottom: 61px;
+    }
+    .section2-title {
+        margin-bottom: 56px;
+        @include tablet {
+            margin-bottom: 58px;
         }
     }
 }
@@ -57,16 +60,8 @@
     display: block;
     padding-bottom: (570 / 1160) * 100%;
 
-    img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
     @include tablet {
+        padding-bottom: (190 / 300) * 100%;
         &::before {
             content: $icon-zoom;
             font-family: $icomoon-font-family;
@@ -85,6 +80,18 @@
             color: $yellow;
             background-color: #ffd6006b; 
             border-radius: 50%;
+        }
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        @include tablet {
+            border-radius: 20px;
         }
     }
 }

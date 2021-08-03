@@ -16,7 +16,9 @@
   justify-content: center;
   align-items: center;
   padding-top: 30px;
-
+  @include tablet {
+    padding-top: 21px;
+  }
 }
 .swiper-pagination-bullet{
   background: $gray;
@@ -72,10 +74,10 @@
 
 .icon-slider-daub-1 {
   position: absolute;
-  top: 22%;
-  left: -11%;
+  top: 21%;
+  left: -10.3%;
   z-index: 10;
-  font-size: 222px;
+  font-size: 220px;
   color: $yellow;
   @include tablet {
       font-size: 57px;
@@ -84,18 +86,18 @@
 }
 .icon-slider-daub-2  {
   position: absolute;
-  top: 6%;
-  right: -10%;
+  top: 4.5%;
+  right: -12%;
   color: $yellow;
-  font-size: 155px;
+  font-size: 200px;
   @include tablet {
       font-size: 40px;
   }
 }
 .icon-triple-xxx {
   position: absolute;
-  bottom: -12%;
-  right: 7%;
+  bottom: -11%;
+  right: 7.3%;
   z-index: 10;
   font-size: 223px;
   color: $yellow;

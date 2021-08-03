@@ -1,16 +1,14 @@
-.section7 {
-    overflow: hidden;
-}
+
 .section7-wrapper {
     position: relative;
-    padding-bottom: 265px;
+    margin-bottom: 258px;
     z-index: 1;
     @include tablet {
-        padding-bottom: 0px;
+        margin-bottom: 195px;
     }
     .icon-daub-section7 {
         position: absolute;
-        top: -4.5%;
+        top: -5.3%;
         left: 20.7%;
         font-size: 254px;
         z-index: -1;
@@ -21,8 +19,8 @@
     }
     .icon-sun {
         position: absolute;
-        top: 10%;
-        right: -41.7%;
+        top: 15%;
+        right: -36.7%;
         font-size: 254px;
         z-index: -1;
         color: $yellow;
@@ -31,24 +29,30 @@
         }
     }
     .section7-title {
-        width: 76%;
-        padding-bottom: 93px;
+        width: 70%;
+        margin-bottom: 93px;
+        line-height: 59px;
         @include tablet {
             width: 100%;
             text-align: center;
+            line-height: 33px;
+            margin-bottom: 66px;
         }
     }
 }
 
 .section7-row {
-    padding: 0 20px;
+    padding-right: 8%;
+    margin-left: -6%;
     display: grid;
-
+    
     grid-template-columns: repeat (2, 1fr);
     grid-template-rows: repeat (6, 1fr);
-
-    row-gap: 50px;
+    
+    row-gap: 0px;
     @include tablet {
+        margin-left: 0;
+        padding: 0 20px;
         grid-template-columns: repeat (4, 1fr);
         grid-template-rows: repeat (6, 1fr);
         column-gap: 20px;
@@ -66,8 +70,8 @@
             color: #F5F5F9;
             @include tablet {
                 font-size: 296px;
-                top: 30%;
-                left: 50%;
+                top: 45%;
+                left: 49%;
                 transform: translate(-50%, -50%);
                 }
         }
@@ -91,16 +95,16 @@
             transform: rotate(341deg);
             @include tablet {
                 font-size: 85px;
-                top: 68%;
-                left: 5%;
+                top: 88%;
+                left: 7%;
                 transform: translate(-50%, -50%) rotate(341deg);
                 }
             
         }
-
         @include tablet {
             grid-column-start: 1;
             grid-column-end: 5;
+            padding-bottom: 110px;
         }
     }
     .section7-item-2 {
@@ -109,6 +113,7 @@
         @include tablet {
             grid-column-start: 1;
             grid-column-end: 5;
+            padding-bottom: 98px;
         }
         .icon-cicle-fill-2 {
             position: absolute;
@@ -119,7 +124,7 @@
             color: #E7F8EF;
             @include tablet {
                 font-size: 296px;
-                top: 30%;
+                top: 46%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 }
@@ -143,8 +148,8 @@
             z-index: -1;
             color: $green;
             @include tablet {
-                top: 50%;
-                left: 0;
+                top: 66%;
+                left: -6%;
                 font-size: 56px;
             }
         }
@@ -155,6 +160,7 @@
         @include tablet {
             grid-column-start: 1;
             grid-column-end: 5;
+            padding-bottom: 115px;
         }
         .icon-cicle-fill-3 {
             position: absolute;
@@ -165,8 +171,8 @@
             color: $yellow;
             opacity: .2;
             @include tablet {
-                font-size: 299px;
-                top: 33.5%;
+                font-size: 303px;
+                top: 45.5%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 }
@@ -191,19 +197,18 @@
             color: $yellow;
             @include tablet {
                 font-size: 68px;
-                top: 57%;
-                left: -5%;
+                top: 73%;
+                left: -3%;
+}
             }
-        }
     }
     .section7-item-4 {
         grid-column-start: 2;
         grid-row-start: 4;
-        // width: 62%;
         @include tablet {
-            // width: 100%;
             grid-column-start: 1;
             grid-column-end: 5;
+            padding-bottom: 116px;
         }
         .icon-cicle-fill-4 {
             position: absolute;
@@ -213,9 +218,9 @@
             z-index: -1;
             color: #FCE8E6;
             @include tablet {
-                font-size: 303px;
-                top: 33%;
-                left: 50%;
+                font-size: 302px;
+                top: 46%;
+                left: 51%;
                 transform: translate(-50%, -50%);
                 }
         }
@@ -238,9 +243,9 @@
             z-index: -1;
             color: $red;
             @include tablet {
-                font-size: 85px;
-                left: -5%;
-                top: 50%;
+                font-size: 86px;
+                left: -6%;
+                top: 59%;
             }
         }
     }
@@ -250,6 +255,7 @@
         @include tablet {
             grid-column-start: 1;
             grid-column-end: 5;
+            padding-bottom: 114px;
         }
         .icon-cicle-fill-5 {
             position: absolute;
@@ -260,7 +266,7 @@
             color: #E7F8EF;
             @include tablet {
                 font-size: 302px;
-                top: 37%;
+                top: 46%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 }
@@ -283,9 +289,9 @@
             font-size: 133px;
             color: $green;
             @include tablet {
-                top: 60%;
+                top: 69%;
                 left: -2%;
-                font-size: 61px;
+                font-size: 63px;
             }
         }
     }
@@ -305,7 +311,7 @@
             color: #F5F5F9;
             @include tablet {
                 font-size: 299px;
-                top: 33.5%;
+                top: 70.5%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 }
@@ -330,12 +336,13 @@
             color: $dark-blue;
             @include tablet {
                 font-size: 66px;
-                top: 61%;
-                left: 0;
+                top: 116%;
+                left: -3px;
             }
         }
     }
 }
+
 .section7-item{
     
     width: 60%;
@@ -353,6 +360,9 @@
         padding-bottom: 150px;
         &:last-of-type {
             padding-bottom: 194px;
+            @include tablet {
+                padding-bottom: 0;
+            }
         }
     }
     @include mobile {
@@ -362,7 +372,7 @@
         position: relative;
         font-family: $neucha;
         font-size: 64px;
-        padding-bottom: 35px;
+        padding-bottom: 36px;
         @include tablet {
             width: 20%;
             font-size: 0;

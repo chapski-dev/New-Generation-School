@@ -1,12 +1,12 @@
 .section4-wrapper {
     h2 {
         padding-bottom: 54px;
+        @include tablet {
+            padding-bottom: 57px;
+        }
     }
     @include tablet {
         text-align: center;
-        h2 {
-            padding-bottom: 61px;
-        }
     }
 }
 .section4-items {
@@ -16,8 +16,10 @@
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 
-    column-gap: 20px;
+    column-gap: 41px;
+    row-gap: 41px;
     @include tablet {
+        padding-bottom: 106px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -27,28 +29,22 @@
     width: 100%;
     margin: auto;
     text-align: center;
-    padding: 48px 60px;
+    padding: 26px 36px;
     border-radius: 70px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    position: relative;
     @include tablet {
         padding: 49px 44px 47px 44px;
-        margin-bottom: 30px;
+        margin-bottom: -10px;
         &:last-of-type {
             margin-bottom: 0;
         }
     }
-    span {
-        // position: relative;
-    }
     a {
-        color: transparent;
-
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 50%);
+        display: none;
+        color: white;
         @include tablet {
             display: none;
         }
@@ -60,35 +56,58 @@
             color: white;
         }
         a {
-            color: white;
+            display: block;
             text-decoration: underline;
         }
     }
 }
 .section4-item_1 {
+    width: 560px;
+    height: 120px;
     background-color: #FCE8E6;
     @include tablet {
-        padding: 37px 44px;
+        width: 300px;
+        height: 120px;
     }
 }
 .section4-item_2 {
+    width: 260px;
+    height: 120px;
     background-color: #E6F3FC;
+    @include tablet {
+        width: 300px;
+        height: 120px;
+    }
 }
 .section4-item_3 {
     background-color: #F5F5F9;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 2;
-    padding: 128px 0;
+    width: 260px;
+    height: 280px;
     @include tablet {
-        padding: 49px 44px 47px 44px;
+        width: 300px;
+        height: 120px;
     }
 }
 
 .section4-item_4 {
+    width: 560px;
+    height: 120px;
     background-color: #FFF8D2;
+    @include tablet {
+        width: 300px;
+        height: 120px;
+    }
 }
 
 .section4-item_5 {
+    width: 260px;
+    height: 120px;
     background-color: #E7F8EF;
+    @include tablet {
+        width: 300px;
+        height: 120px;
+    }
 }

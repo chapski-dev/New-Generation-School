@@ -1,8 +1,12 @@
 .section5 {
-    padding-bottom: 134px;
+    margin-bottom: 128px;
+    @include tablet {
+        margin-bottom: 107px;
+    }
     .section5-title{
-        padding-bottom: 66px;
+        margin-bottom: 66px;
         @include tablet {
+            margin-bottom: 60px;
             text-align: center;
         }
     }
@@ -31,17 +35,32 @@
     grid-template-rows: repeat(2, 1fr);
 
     column-gap: 30px;
-    row-gap: 30px;
+    row-gap: 68px;
     @include tablet {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: block;
     }
 }
-.section5-img {
+
+.section5__img-wrapper {
+    position: relative;
+    padding-bottom: (351 / 360) * 100%;
+    display: block;
+    z-index: -1;
+    margin-bottom: 27px;
     @include tablet {
-        padding-bottom: 30px;
+        margin-bottom: 28px;
+    }
+    .section5-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 }
 .section5__item_1 {
@@ -50,15 +69,16 @@
     grid-column-end: 5;
 
     @include tablet {
-
+        padding-bottom: 62px;
     }
     .icon-wawes {
         position: absolute;
-        top: 18%;
-        left: -41%;
+        top: 31%;
+        left: -37%;
         color: $yellow;
         font-size: 157px;
         transform: rotate(15.22deg);
+        z-index: 3;
         @include mobile {
             top: 27%;
             left: -25%;
@@ -72,17 +92,21 @@
     grid-column-end: 9;
 
     @include tablet {
-
+        padding-bottom: 66px;
     }
     .icon-roundels {
         position: absolute;
-        top: 50%;
-        left: 45%;
+        top: 67%;
+        left: 44%;
         color: $green;
         font-size: (376 / 179) * 100px - 31px;
+        @include tablet-land {
+            font-size: 120px;
+        }
         @include tablet {
-            left: 56%;
-            font-size: 127px;
+            top: 38%;
+            left: 53%;
+            font-size: 124px;
         }
     }
 }
@@ -92,14 +116,20 @@
     grid-column-end: 13;
 
     @include tablet {
-
+        padding-bottom: 60px;
+        .item-info__discr {
+            margin-bottom: -4px !important;
+        }
     }
     .icon-dashed-rainbow {
         position: absolute;
-        top: 0;
-        left: 50%;
+        top: -4%;
+        left: 56%;
         color: $red;
-        font-size: 201.5px;
+        font-size: 191.5px;
+        @include tablet-land {
+            font-size: 164px;
+        }
         @include tablet {
             left: 60%;
             font-size: 89px;
@@ -111,14 +141,20 @@
     grid-column-start: 3;
     grid-column-end: 7;
     @include tablet {
-
+        padding-bottom: 54px;
+        .item-info__discr {
+            margin-bottom: -4px !important;
+        }
     }
     .icon-double-empty-circles {
         position: absolute;
-        top: 36%;
-        left: -11%;
+        top: 62%;
+        left: -3%;
         font-size: 133px;
         color: $green;
+        @include tablet-land {
+            font-size: 109px;
+        }
         @include tablet {
             top: 41%;
             left: 11%;
@@ -127,8 +163,8 @@
     }
     .icon-item_4-fill-circle {
         position: absolute;
-        top: 0;
-        left: 70%;
+        top: 11%;
+        left: 80%;
         color: $dark-blue;
         font-size: 53px;
         z-index: -1;
@@ -142,12 +178,14 @@
     grid-column-start: 7;
     grid-column-end: 11;
     @include tablet {
-
+        .item-info__discr {
+            margin-bottom: -4px !important;
+        }
     }
     .icon-item_5-fill-circle_1 {
         position: absolute;
         top: 0;
-        left: 60%;
+        left: 69%;
         color: $yellow;
         font-size: 41px;
         @include tablet {
@@ -157,10 +195,11 @@
     }
     .icon-item_5-fill-circle_2 {
         position: absolute;
-        top: 10%;
-        left: 81%;
+        top: 16%;
+        left: 84%;
         color: $yellow;
         font-size: 71px;
+        z-index: 3;
         @include tablet {
             top: 6%;
             left: 79%;
@@ -173,34 +212,36 @@
     position: relative;
     @include tablet {
         text-align: center;
-
     }
 }
 .section5__item-info {
-    height: 130px;
+    min-height: 130px;
     .item-info__name {
-        padding-bottom: 12px;
+        letter-spacing: -1px;
+        margin-bottom: 12px;
+        @include tablet-land {
+            letter-spacing: normal;
+            font-size: 26px;
+        }
         @include tablet {
              font-size: 20px;
+             margin-bottom: 7px;    
         }
     }
     .item-info__discr {
-        padding-bottom: 24px;
+        margin-bottom: 25px;
+        min-height: 48px;
+        line-height: 150%;
         @include tablet {
             margin: 0 auto;
             width: 81%;
             font-size: 15px;
+            margin-bottom: 19px;
         }
     }
     @include tablet {
         height: auto;
         margin: 0 auto;
-        .item-info__name {
-            padding-bottom: 6px;
-        }
-        .item-info__discr {
-            padding-bottom: 24px;
-        }
     }
 }
 .section5__links-info {
@@ -210,22 +251,46 @@
         align-items: center;
     }
     .section5-info__link-about {
-        padding-right: 52px;
+        margin-right: 48px;
+        padding-left: 11px;
+        @include tablet-land {
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 13px;
+        }
         @include tablet {
             padding-right: 0px;
-            padding-bottom: 30px;
+            padding-bottom: 27px;
         }
         span {
             text-decoration: underline;
             color: $green;
         }
         .icon-ellipsis {
+            font-size: 20px;
             color: $green;
+        }
+        &:hover {
+            text-decoration: none;
+            span {
+                text-decoration: none;
+            }
         }
     }
     .section5-info__link-certificate {
+        .icon-certificate {
+            font-size: 20px;
+            margin-right: 5px;
+        }
         span {
             text-decoration: underline;
         }
+        &:hover {
+            text-decoration: none;
+            span {
+                text-decoration: none;
+            }
+        }
     }
+    
 }

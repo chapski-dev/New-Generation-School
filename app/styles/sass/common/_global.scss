@@ -20,6 +20,7 @@ a{
 .c-container, .container{
     margin: 0 auto;
     width: 1196px;
+    max-width: 1196px;
     padding-left: 18px;
     padding-right: 18px;
     @include tablet-land {
@@ -38,8 +39,3 @@ svg {
     
 }
 
-.section10{
-    @include tablet {
-        display: none;
-    }
-}

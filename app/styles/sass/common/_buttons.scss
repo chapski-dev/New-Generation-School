@@ -50,6 +50,8 @@ button {
 
 // HEADER
 .header-button {
+    width: 120px;
+    height: 40px;
     padding: 10px 30px;
     background: $gray;
     color: #36347F;
@@ -72,6 +74,8 @@ button {
     align-items: center;
     padding: 23px 29px 23px 46px;
     background: $green;
+    width: 240px;
+    height: 100px;
     &:hover .icon-triangle-play::before{
 		background-color: $green;
 	}
@@ -80,6 +84,9 @@ button {
         color: white;
     }
     @include tablet { 
+        width: 240px;
+        height: 100px;
+        padding: 23px 29px 23px 49px;;
         margin: 0 auto;
     }
 }
@@ -89,6 +96,7 @@ button {
     display: none;
     @include tablet {
         display: block;
+        margin-bottom: -9px;
         .section2-tabs__mobile-trigger {
             background: transparent;
             border: none;
@@ -122,13 +130,3 @@ button {
     }
 }
 
-// SECTION 6 
-.section6 {
-    .section6-button {
-        padding: 32px 33px 33px 32px;
-        border-radius: 100%;
-        border: none;
-        background: $red;
-        text-align: center;
-    }
-}

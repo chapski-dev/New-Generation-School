@@ -1,6 +1,6 @@
 .header {
-    padding-top: 13px;
-    padding-bottom: 120px;
+    padding-top: 11px;
+    margin-bottom: 107px;
 
     &__row {
         display: flex;
@@ -10,6 +10,7 @@
     }
     @include tablet {
         padding: 0;
+        margin-bottom: 62px;
         .container {
             padding: 0;
         }
@@ -25,7 +26,9 @@
 }
 /* logo image */
 .header-logo__img {
+    margin-right: 10%;
     @include tablet {
+        margin-right: 0;
         width: 101px;
         max-height: 40px;
     }
@@ -34,8 +37,8 @@
  .header-logo__circleImg {
     position: absolute;
     z-index: -1;
-    left: -3%;
-    bottom: -95%;
+    left: -2.89%;
+    bottom: -79.5%;
     object-fit: fill;
     @include tablet-land {
         width: 18%;
@@ -52,6 +55,9 @@
         display: block;
         font-weight: 700;
         color: black;
+    }
+    &__address {
+        font-size: 12px;
     }
     @include tablet {
         display: none;
@@ -112,7 +118,7 @@
 }
 
 .header__navigation {
-        
+    margin-top: -7px;
     &._mobile-nav-open {
         .header__nav-links {
             @include tablet {

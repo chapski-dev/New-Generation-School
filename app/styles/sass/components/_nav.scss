@@ -29,12 +29,15 @@
 }
 
 .nav-links__item {
-	margin-left: 35px;
+	margin-left: 30px;
 	@include tablet-land {
 		margin-left: 20px;
 	}
 	&:first-of-type {
-		margin-left: 0px;
+		margin-left: 35px;
+		@include tablet {
+			margin-left: 0px;
+		}
 	}
 
 	a {
@@ -59,9 +62,13 @@
 
 .sub-menu {
 	display: none;
-	padding-top: 23px;
-	position: absolute;
-	left: 0;
+	padding: 24px 34px;
+    position: absolute;
+    left: -26px;
+    top: 100%;
+    z-index: 1;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
 	li {
 		display: block;
 		
@@ -79,7 +86,7 @@
 		position: static;
 		width: 100%;
 		left: 0;
-		padding-top: 10px;
+		padding-top: 10px; // TODO: посмотреть паддинги
 		li {
 			padding: 10px 0;
 			a {

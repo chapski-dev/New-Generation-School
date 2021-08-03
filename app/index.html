@@ -55,7 +55,7 @@
                                 <a href="tel:375291194194" class="header-contacts__tablet-phone">+375(29) 1-194-194</a>
                                 <div class="header-contacts__tablet-address">пр-т Победителей, д. 23, к. 1 </div>
                             <div class="header-actions">
-                                <button class="button-fill  button-fill--sm header-button">Записаться</button>
+                                <button class="button-fill  button-fill--sm header-button" type="button" data-toggle="modal" data-target="#modalConsultationFirst">Записаться</button>
                             </div>
                         </div>
                     </nav>
@@ -67,7 +67,7 @@
                         <div class="header-contacts__address">пр-т Победителей, д. 23, к. 1 </div>
                     </div>
                     <div class="header-actions">
-                        <button class="btn btn-primary button-fill button-fill--sm header-button" type="button" data-toggle="modal" data-target="#headerModalFirst" >Записаться</button>
+                        <button class="btn btn-primary button-fill button-fill--sm header-button" type="button" data-toggle="modal" data-target="#modalConsultationFirst">Записаться</button>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                 <h1 class="section1__title">Детский развивающий центр</h1>
                 <div class="section1-row">
                     <div class="section1-left">
-                        <!-- <div class="section1__text-area">
+                        <div class="section1__text-area">
                             <div class="check-ic-text">
                                 <div class="check-ic-text__icon">
                                     <span class="icon-checkMark1">
@@ -102,24 +102,6 @@
                                     <span>Мы добиваемся потрясающих результатов при помощи интегрированных занятий и ТРИЗ-педагогики!</span>
                                 </div>
                             </div>
-                        </div> -->
-                        <div class="section1__text-area">
-                            <div class="check-ic-text">
-                                <div class="check-ic-text__icon">
-                                    <img src="./img/src/section1__text-blockImg-check mark.svg" alt="" class="section1__text-checkMark_1">
-                                </div>
-                                <div class="check-ic-text__content">
-                                    <span>С нами ваш ребёнок станет более уверенным в себе, появиться тяга к знаниям, научиться логически <br> и творчески мыслить</span>
-                                </div>
-                            </div>
-                            <div class="check-ic-text">
-                                <div class="check-ic-text__icon">
-                                    <img src="./img/src/section1__text-blockImg-checkMark2.svg" alt="" class="section1__text-checkMark_1">
-                                </div>
-                                <div class="check-ic-text__content">
-                                    <span>Мы добиваемся потрясающих результатов при помощи интегрированных занятий <br> и ТРИЗ-педагогики!</span>
-                                </div>
-                            </div>
                         </div>
                         <div class="section1-bottom">
                             <button class="button-fill button-fill--green section1-button button_section1">
@@ -131,11 +113,11 @@
                     <div class="section1-right">
                         <div class="img-block">
                             <img src="./img/src/section1-img.png" alt="" class="section1-img">
-                            <img src="./img/src/section1-paint.svg" alt="" class="section1-paint">
-                            <img src="./img/src/section1-globus.svg" alt="" class="section1-globus">
-                            <img src="./img/src/section1-circleMiddle.svg" alt="" class="section1-circleMiddle">
-                            <img src="./img/src/section1-circleBig.svg" alt="" class="section1-circleBig">
-                            <img src="./img/src/section1-circleSmall.svg" alt="" class="section1-circleSmall">
+                            <i class="icon-section1-paint"></i>
+                            <i class="icon-section1-globus"></i>
+                            <i class="icon-section1-circleMiddle"></i>
+                            <i class="icon-section1-circleBig"></i>
+                            <i class="icon-section1-circleSmall"></i>
                         </div>
                     </div>
                 </div>
@@ -180,13 +162,13 @@
                     <div class="tabs-contents tab-content" id="pills-tabContent">
                         <div id="pills-procces" class="tabs-contents__item show active" role="tabpanel" aria-labelledby="pills-procces-tab"> 
                             <div class="section__swiper-row">
-                                    <!-- DECORATING IMAGES -->
-                                    <i class="icon-slider-daub-1"></i>
-                                    <i class="icon-slider-daub-2"></i>
-                                    <i class="icon-triple-xxx"></i>
-                                    <!-- SWIPER PAGITAION -->
-                                    <div class="swiper-container section2-tabs-slider">
-                                        <!-- SLIDER WRAPPER -->
+                                <!-- DECORATING IMAGES -->
+                                <i class="icon-slider-daub-1"></i>
+                                <i class="icon-slider-daub-2"></i>
+                                <i class="icon-triple-xxx"></i>
+                                <!-- SWIPER PAGITAION -->
+                                <div class="swiper-container section2-tabs-slider">
+                                    <!-- SLIDER WRAPPER -->
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <a href="./img/src/section2-img.png" data-fancybox="gallery-process" class="section2__img-wrapper">
@@ -216,10 +198,6 @@
                                     </div>
                                     <div class="swiper-pagination"></div>
                                 </div>
-                            </div>   
-                                </div>
-                            </div>   
-                        </div>
                             </div>   
                         </div>
                         <!-- 2nd TAB -->
@@ -260,8 +238,6 @@
                                     <div class="swiper-pagination"></div>
                                 </div>
                             </div>   
-                                </div>
-                            </div>
                         </div>   
                         <!-- 3rd TAB -->
                         <div id="pills-classes" class="tabs-contents__item" role="tabpanel" aria-labelledby="pills-classes-tab"> 
@@ -301,10 +277,6 @@
                                     <div class="swiper-pagination"></div>
                                 </div>
                             </div>   
-                                </div>
-                            </div>   
-                        </div>
-                            </div>   
                         </div>
                         <!-- 4th TAB -->
                         <div id="pills-graduate" class="tabs-contents__item" role="tabpanel" aria-labelledby="pills-graduate-tab"> 
@@ -342,10 +314,6 @@
                                     </div>
                                     <div class="swiper-pagination"></div>
                                 </div>
-                            </div>   
-                                </div>
-                            </div>   
-                        </div>
                             </div>   
                         </div>
                         <!-- 5th TAB -->
@@ -391,132 +359,132 @@
             </div>
         </div>
     </section>
+
     <section class="section3">
         <div class="container">
-            <div class="section3-items">
-                <i class="icon-sun"></i>
+            <div class="section3__content">
                 <h2>Курсы школы раннего развития</h2>
-                <div class="section3-block section3-block_1">
-                    <div class="section3__img-wrapper section3__img-wrapper_1">
-                        <img src="./img/src/section3/section3-img1.png" alt="">
-                    </div>
-                    <div class="content-block content-block1">
-                        <h5>Курс для дошкольного развития</h5>
-                        <h3>"Почемучки"- (4-5 лет) и "Потомучки"- (5-6 лет)</h3>
-                        <div class="section3__img-wrapper section3__img-wrapper_1">
-                            <img class="img-block__image" src="./img/src/section3/section3-img1.png" alt="">
-                        </div>
-                        <p>Цель курса: мотивировать ребёнка на обучение, подготовить к успешному обучению в школе, формировать навыки общения</p>
-                        <div class="block-info">
-                            <div class="block-info__first">
-                                <div class="price">
-                                    <span class="title">15 руб.</span>
-                                    <p class="text">Стоимость 1-го занятия</p>
-                                </div>
-                                <div class="duration">
-                                    <span class="title">9 месяцев</span>
-                                    <p class="text">Продолжительность занятий (сентябрь - май)</p>
+                <i class="icon-sun"></i>
+                <div class="section3-items-row">
+                    <div class="section3-item section3-item_1">
+                        <div class="section3-item__content">
+                            <h5>Курс для дошкольного развития</h5>
+                            <h3>"Почемучки"- (4-5 лет) и "Потомучки"- (5-6 лет)</h3>
+                            <div class="section3-item-image section3-item-image_1">
+                                <div class="section3-item-image__wrapper">
+                                    <img class="section3-item-image__image" src="./img/src/section3/section3-img1.png" alt="">
                                 </div>
                             </div>
-                            <div class="block-info__sec">
-                                <div class="mode">
-                                    <span class="title">2 / 2 </span>
-                                    <p class="text">Занятия проходят 2 раза в неделю по 2 часа</p>
+                            <p class="section3-item__discr">Цель курса: мотивировать ребёнка на обучение, подготовить к успешному обучению в школе, формировать навыки общения</p>
+                            <div class="section3-item__info">
+                                <div class="section3-item-params">
+                                    <div class="section3-item-params-item">
+                                        <div class="section3-item-params-item__title">15 руб.</div>
+                                        <div class="section3-item-params-item__text">Стоимость 1-го занятия</div>
+                                    </div>
+                                    <div class="section3-item-params-item">
+                                        <div class="section3-item-params-item__title">9 месяцев</div>
+                                        <div class="section3-item-params-item__text">Продолжительность занятий (сентябрь - май)</div>
+                                    </div>
+                                    <div class="section3-item-params-item">
+                                        <div class="section3-item-params-item__title">2 / 2</div>
+                                        <div class="section3-item-params-item__text">Занятия проходят 2 раза в неделю по 2 часа</div>
+                                    </div>
+                                    <div class="section3-item-params-item section3-item-params-item_center">
+                                        <div class="section3-item-params-item__text">
+                                            <a href="#" class="timetable">
+                                                <i class="icon-calendar"></i>
+                                                Расписание занятий
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="schedule">
-                                    <a href="#" class="timetable">
-                                        <i class="icon-calendar"></i>
-                                        Расписание занятий
-                                    </a>
+                                <div class="item-info__buttons">
+                                    <button class="button-fill button-fill--green block-info__button" type="button" data-toggle="modal" data-target="#modalConsultationFirst">Записаться</button>
+                                    <button class="button-bordered block-info__button_about"> Подробнее</button>
                                 </div>
-                            </div>
-                            <div class="block-info__buttons">
-                                <button class="button-fill button-fill--green block-info__button">Записаться</button>
-                                <button class="button-bordered block-info__button_about"> Подробнее</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section3-block section3-block_2">
-                    <i class="icon-wawes"></i>
-                    <div class="section3__img-wrapper section3__img-wrapper_2">
-                        <img src="./img/src/section3/section3-img2.png" alt="">
-                    </div>
-                    <div class="content-block content-block2">
-                        <h5>Курс для развития школьников</h5>
-                        <h3>"Маленькие исследователи" (7+ лет)</h3>
-                        <div class="section3__img-wrapper section3__img-wrapper_3">
-                            <img class="img-block__image" src="./img/src/section3/section3-img2.png" alt="">
-                        </div>
-                        <p>Цель курса: развить исследовательские способности школьника, научить видеть необычное в обычном, повысить навыки общения.</p>
-                        <div class="block-info">
-                            <div class="block-info__first">
-                                <div class="price">
-                                    <span class="title">15 руб.</span>
-                                    <p class="text">Стоимость 1-го занятия</p>
-                                </div>
-                                <div class="duration">
-                                    <span class="title">9 месяцев</span>
-                                    <p class="text">Продолжительность занятий (сентябрь - май)</p>
-                                </div>
-                            </div>
-                            <div class="block-info__sec">
-                                <div class="mode">
-                                    <span class="title">2 / 1,5 </span>
-                                    <p class="text">Занятия проходят 2 раза в неделю по 1,5 часа</p>
-                                </div>
-                                <div class="schedule">
-                                    <a href="#" class="timetable">
-                                        <i class="icon-calendar"></i>
-                                        Расписание занятий
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="block-info__buttons">
-                                <button class="button-fill button-fill--green block-info__button">Записаться</button>
-                                <button class="button-bordered block-info__button_about"> Подробнее</button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="section3-block section3-block_3">
-                    <i class="icon-dashed"></i>
-                    <div class="section3__img-wrapper section3__img-wrapper_3">
-                        <img src="./img/src/section3/section3-img3.png" alt="">
-                    </div>
-                    <div class="content-block content-block3">
-                        <h5>Занятие с логопедом</h5>
-                        <h3>Индивидуальные логопедические занятия</h3>
-                        <div class="section3__img-wrapper section3__img-wrapper_3">
-                            <img class="img-block__image" src="./img/src/section3/section3-img3.png" alt="">
+                    <div class="section3-item section3-item_2">
+                        <i class="icon-wawes"></i>
+                        <div class="section3-item__content">
+                            <h5>Курс для развития школьников</h5>
+                            <h3>"Маленькие исследователи" (7+ лет)</h3>
+                            <div class="section3-item-image section3-item-image_2">
+                                <div class="section3-item-image__wrapper">
+                                    <img class="section3-item-image__image" src="./img/src/section3/section3-img2.png" alt="">
+                                </div>
+                            </div>
+                            <p class="section3-item__discr">Цель курса: развить исследовательские способности школьника, научить видеть необычное в обычном, повысить навыки общения.</p>
+                            <div class="section3-item__info">
+                                <div class="section3-item-params">
+                                    <div class="section3-item-params-item">
+                                        <div class="section3-item-params-item__title">15 руб.</div>
+                                        <div class="section3-item-params-item__text">Стоимость 1-го занятия</div>
+                                    </div>
+                                    <div class="section3-item-params-item">
+                                        <div class="section3-item-params-item__title">9 месяцев</div>
+                                        <div class="section3-item-params-item__text">Продолжительность занятий (сентябрь - май)</div>
+                                    </div>
+                                    <div class="section3-item-params-item">
+                                        <div class="section3-item-params-item__title">2 / 1,5</div>
+                                        <div class="section3-item-params-item__text">Занятия проходят 2 раза в неделю по 1,5 часа</div>
+                                    </div>
+                                    <div class="section3-item-params-item section3-item-params-item_center">
+                                        <div class="section3-item-params-item__text">
+                                            <a href="#" class="timetable">
+                                                <i class="icon-calendar"></i>
+                                                Расписание занятий
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info__buttons">
+                                    <button class="button-fill button-fill--green block-info__button" type="button" data-toggle="modal" data-target="#modalConsultationFirst">Записаться</button>
+                                    <button class="button-bordered block-info__button_about"> Подробнее</button>
+                                </div>
+                            </div>
                         </div>
-                        <p>Цель занятий: исправление речевых недостатков, формирование грамматически правильной и красивой речи.</p>
-                        <div class="block-info">
-                            <div class="block-info__first">
-                                <div class="price">
-                                    <span class="title">30 руб. / 20 руб. </span>
-                                    <p class="text">20 руб. для учащихся школы</p>
-                                </div>
-                                <div class="duration">
-                                    <span class="title">Индивидуально</span>
-                                    <p class="text">Продолжительность</p>
-                                </div>
-                            </div>
-                            <div class="block-info__sec">
-                                <div class="mode">
-                                    <span class="title">30 мин.</span>
-                                    <p class="text">Время занятия</p>
-                                </div>
-                                <div class="schedule">
-                                    <a href="#" class="timetable">
-                                        <i class="icon-calendar"></i>
-                                        Расписание занятий
-                                    </a>
+                    </div>
+                    <div class="section3-item section3-item_3">
+                        <i class="icon-dashed"></i>
+                        <div class="section3-item__content">
+                            <h5>Занятие с логопедом</h5>
+                            <h3>Индивидуальные логопедические занятия</h3>
+                            <div class="section3-item-image section3-item-image_3">
+                                <div class="section3-item-image__wrapper">
+                                    <img class="section3-item-image__image" src="./img/src/section3/section3-img3.png" alt="">
                                 </div>
                             </div>
-                            <div class="block-info__buttons">
-                                <button class="button-fill button-fill--green block-info__button">Записаться</button>
-                                <button class="button-bordered block-info__button_about"> Подробнее</button>
+                            <p class="section3-item__discr">Цель занятий: исправление речевых недостатков, формирование грамматически правильной и красивой речи.</p>
+                            <div class="section3-item__info">
+                                <div class="section3-item-params">
+                                    <div class="section3-item-params-item">
+                                        <div class="section3-item-params-item__title">30 руб. / 20 руб.</div>
+                                        <div class="section3-item-params-item__text">20 руб. для учащихся школы</div>
+                                    </div>
+                                    <div class="section3-item-params-item">
+                                        <div class="section3-item-params-item__title">Индивидуально</div>
+                                        <div class="section3-item-params-item__text">Продолжительность</div>
+                                    </div>
+                                    <div class="section3-item-params-item">
+                                        <div class="section3-item-params-item__title">30 мин.</div>
+                                        <div class="section3-item-params-item__text">Время занятия</div>
+                                    </div>
+                                    <div class="section3-item-params-item section3-item-params-item_center">
+                                        <div class="section3-item-params-item__text">
+                                            <a href="#" class="timetable">
+                                                <i class="icon-calendar"></i>
+                                                Расписание занятий
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info__buttons">
+                                    <button class="button-fill button-fill--green block-info__button" type="button" data-toggle="modal" data-target="#modalConsultationFirst">Записаться</button>
+                                    <button class="button-bordered block-info__button_about"> Подробнее</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -565,8 +533,10 @@
             <div class="section5-wrapper">
                 <div class="section5-row">
                     <div class="section5__item section5__item_1">
-                        <i class="icon-wawes"></i>
-                        <img src="./img/src/section5/teacher1.png" alt="" class="section5-img">
+                        <div class="section5__img-wrapper">
+                            <img src="./img/src/section5/teacher1.png" alt="" class="section5-img">
+                            <i class="icon-wawes"></i>
+                        </div>
                         <div class="section5__item-info">
                             <h3 class="item-info__name">Таипова Марина Евгеньевна</h3>
                             <h5 class="item-info__discr">Учитель начальных классов высшей категории</h5>
@@ -587,8 +557,10 @@
                         </div>
                     </div>
                     <div class="section5__item section5__item_2">
-                        <i class="icon-roundels"></i>
-                        <img src="./img/src/section5/teacher2.png" alt="" class="section5-img">
+                        <div class="section5__img-wrapper">
+                            <img src="./img/src/section5/teacher1.png" alt="" class="section5-img">
+                            <i class="icon-roundels"></i>
+                        </div>
                         <div class="section5__item-info">
                             <h3 class="item-info__name">Чапего Наталья Николаевна</h3>
                             <h5 class="item-info__discr">Учитель начальных классов высшей категории</h5>
@@ -599,7 +571,7 @@
                                         Об учителе
                                     </span>
                                 </a>
-                                <a href="" class="section5-discr__link-certificate">
+                                <a href="" class="section5-info__link-certificate" type="button" data-toggle="modal" data-target="#teacherCertificatesModal">
                                     <i class="icon-certificate"></i>
                                     <span>
                                         Сертификаты
@@ -609,8 +581,10 @@
                         </div>
                     </div>
                     <div class="section5__item section5__item_3">
-                        <i class="icon-dashed-rainbow"></i>
-                        <img src="./img/src/section5/teacher3.png" alt="" class="section5-img">
+                        <div class="section5__img-wrapper">
+                            <img src="./img/src/section5/teacher1.png" alt="" class="section5-img">
+                            <i class="icon-dashed-rainbow"></i>
+                        </div>
                         <div class="section5__item-info">
                             <h3 class="item-info__name">Косович Дарья Сергеевна</h3>
                             <h5 class="item-info__discr">Логопед. Учитель-дефектолог</h5>
@@ -621,7 +595,7 @@
                                         Об учителе
                                     </span>
                                 </a>
-                                <a href="" class="section5-info__link-certificate">
+                                <a href="" class="section5-info__link-certificate" type="button" data-toggle="modal" data-target="#teacherCertificatesModal">
                                     <i class="icon-certificate"></i>
                                     <span>
                                         Сертификаты
@@ -631,9 +605,11 @@
                         </div>
                     </div>
                     <div class="section5__item section5__item_4">
-                        <i class="icon-double-empty-circles"></i>
-                        <i class="icon-item_4-fill-circle"></i>
-                        <img src="./img/src/section5/teacher4.png" alt="" class="section5-img">
+                        <div class="section5__img-wrapper">
+                            <img src="./img/src/section5/teacher1.png" alt="" class="section5-img">
+                            <i class="icon-double-empty-circles"></i>
+                            <i class="icon-item_4-fill-circle"></i>
+                        </div>
                         <div class="section5__item-info">
                             <h3 class="item-info__name">Васютинская Алеся Владимировна</h3>
                             <h5 class="item-info__discr">Преподаватель английского</h5>
@@ -644,7 +620,7 @@
                                         Об учителе
                                     </span>
                                 </a>
-                                <a href="" class="section5-info__link-certificate">
+                                <a href="" class="section5-info__link-certificate" type="button" data-toggle="modal" data-target="#teacherCertificatesModal">
                                     <i class="icon-certificate"></i>
                                     <span>
                                         Сертификаты
@@ -654,9 +630,11 @@
                         </div>
                     </div>
                     <div class="section5__item section5__item_5">
-                        <i class="icon-item_5-fill-circle icon-item_5-fill-circle_1"></i>
-                        <i class="icon-item_5-fill-circle icon-item_5-fill-circle_2"></i>
-                        <img src="./img/src/section5/teacher5.png" alt="" class="section5-img">
+                        <div class="section5__img-wrapper">
+                            <i class="icon-item_5-fill-circle icon-item_5-fill-circle_1"></i>
+                            <i class="icon-item_5-fill-circle icon-item_5-fill-circle_2"></i>
+                            <img src="./img/src/section5/teacher1.png" alt="" class="section5-img">
+                        </div>
                         <div class="section5__item-info">
                             <h3 class="item-info__name">Молокова Светлана Васильевна</h3>
                             <h5 class="item-info__discr">Педагог по вокалу</h5>
@@ -667,7 +645,7 @@
                                         Об учителе
                                     </span>
                                 </a>
-                                <a href="" class="section5-info__link-certificate">
+                                <a href="" class="section5-info__link-certificate" type="button" data-toggle="modal" data-target="#teacherCertificatesModal">
                                     <i class="icon-certificate"></i>
                                     <span>
                                         Сертификаты
@@ -689,16 +667,19 @@
                 <i class="icon-icon-cicle-fill-sec5"></i>
                 <div class="section6-row">
                     <div class="section6__item section6__item-1">
-                        <!-- замена видео -->
                         <div class="section6-video">
+                            <img class="section6-video__poster" src="./img/src/section6/poster1.png" alt="">
                             <button class="section6-button">
                                 <i class="icon-triangle-play"></i>
                             </button>
                         </div>
-                        <span>Подготовка к школе. Курсы для детей. Школа "Новое поколение" в Минске</span>
+                        <div class="section6__item-discr">
+                            <span>Подготовка к школе. Курсы для детей. Школа "Новое поколение" в Минске</span>
+                        </div>
                     </div>
                     <div class="section6__item section6__item-2">
                         <div class="section6-video">
+                            <img class="section6-video__poster" src="./img/src/section6/poster2.png" alt="">
                             <button class="section6-button">
                                 <i class="icon-triangle-play"></i>
                             </button>
@@ -708,8 +689,8 @@
                         </div>
                     </div>
                     <div class="section6__item section6__item-3">
-                        <!-- замена видео -->
                         <div class="section6-video">
+                            <img class="section6-video__poster" src="./img/src/section6/poster3.png" alt="">
                             <button class="section6-button">
                                 <i class="icon-triangle-play"></i>
                             </button>
@@ -720,6 +701,7 @@
                     </div>
                     <div class="section6__item section6__item-4">
                         <div class="section6-video">
+                            <img class="section6-video__poster" src="./img/src/section6/poster4.png" alt="">
                             <button class="section6-button">
                                 <i class="icon-triangle-play"></i>
                             </button>
@@ -730,6 +712,7 @@
                     </div>
                     <div class="section6__item section6__item-5">
                         <div class="section6-video">
+                            <img class="section6-video__poster" src="./img/src/section6/poster5.png" alt="">
                             <button class="section6-button">
                                 <i class="icon-triangle-play"></i>
                             </button>
@@ -922,7 +905,7 @@
             <div class="section9-wrapper">
                 <div class="section9-header">
                     <h2>Новости</h2>
-                    <button class="button-fill button-fill--sm header-button">Все новости</button>
+                    <button class="button-fill button-fill--sm header-button section9-button">Все новости</button>
                 </div>
                 <div class="section9-row">
                     <div class="section9__item">
@@ -932,7 +915,10 @@
                         <div class="section9__item-about-wrapper">
                             <div class="section9__item-discr">Организационная встреча с родителями в школе раннего развития «Новое поколение»</div>
                             <div class="section9__item-count">
-                                <div class="section9__item-show-counter">124</div>
+                                <div class="section9__item-show-counter">
+                                    <i class="icon-eye"></i>
+                                    <p>124</p>
+                                </div>
                                 <div class="section9__item-show-counter-start">01.09.2020</div>
                             </div>
                         </div>
@@ -944,7 +930,10 @@
                         <div class="section9__item-about-wrapper">
                             <div class="section9__item-discr">5 советов сделать просмотр мультфильмов полезным для ребёнка</div>
                             <div class="section9__item-count">
-                                <div class="section9__item-show-counter">124</div>
+                                <div class="section9__item-show-counter">
+                                    <i class="icon-eye"></i>
+                                    <p>124</p>
+                                </div>
                                 <div class="section9__item-show-counter-start">01.09.2020</div>
                             </div>
                         </div>
@@ -956,7 +945,10 @@
                         <div class="section9__item-about-wrapper">
                             <div class="section9__item-discr">Что такое готовность к школе, когда и как начинать готовиться?</div>
                             <div class="section9__item-count">
-                                <div class="section9__item-show-counter">124</div>
+                                <div class="section9__item-show-counter">
+                                    <i class="icon-eye"></i>
+                                    <p>124</p>
+                                </div>
                                 <div class="section9__item-show-counter-start">01.09.2020</div>
                             </div>
                         </div>
@@ -981,7 +973,9 @@
                 <h2 class="footer-title">Контакты</h2>
 
                 <div class="footer-map">
-                    <img src="./img/src/footer/footer-map.png" alt="map" class="footer__img-map">
+                    <div class="footer-map-wraper">
+                        <img src="./img/src/footer/footer-map.png" alt="map" class="footer__img-map">
+                    </div>
                 </div>
                 <div class="footer-contacts__row">
                     <div class="footer-contacts footer-contacts__item1">
@@ -1021,81 +1015,65 @@
             </div>
         </div>
     </footer>
-
-    <section class="section11">
-        <div class="container">
-            <div class="section11-wrapper">
-
-            </div>
-        </div>
-    </section>
-
-
     <!-- HEADER modals start -->
-    <div class="header__modal">
-        <div class="modal fade" id="headerModalFirst" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title" id="aboutTeacherModalTitle">Заказать консультацию</h3>
-                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button> -->
-                    </div>
-                    <div class="modal-body">
-                        <p>Оставьте свои контактные данные и мы очень скоро перезвоним вам :)</p>
-                        <input class="modal-body__input-name" type="text" placeholder="Как вас зовут?">
-                        <input class="modal-body__input-phone" type="text" placeholder="Ваш омер телефона">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary header__modal-button button-fill button-fill--green"type="button" data-toggle="modal" data-target="#headerModalSecond">
-                            <span>Получить консультацию</span>
-                        </button>
+<div class="modal fade modal-consultation" id="modalConsultationFirst" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <div class="modal-consultation__wrapper">
+                    <h3 class="modal-title" id="modalConsultationFirstlTitle">Заказать консультацию</h3>
+                    <p>Оставьте свои контактные данные и мы очень скоро перезвоним вам :)</p>
+                    <div class="modal-form">
+                        <form action="">
+                            <input class="modal-body__input-name" name="name" type="text" placeholder="Как вас зовут?">
+                            <input class="modal-body__input-phone" name="phone" type="text" placeholder="Ваш омер телефона">
+                            <button  type="submit" class="btn btn-primary modal-consultation-button button-fill button-fill--green" >
+                                <span>Получить консультацию</span>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
     <!-- 2nd Header Modal -->
-    <div class="header__modal">
-        <div class="modal fade" id="headerModalSecond" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title" id="headerModalTitle">Заявка принята!</h3>
-                    </div>
-                    <div class="modal-body">
-                        <p>Мы свяжемся с вами в ближайшее время, хорошего дня!</p>
-                    </div>
-                </div>
+<div class="modal fade modal-consultation modal-consultation_2" id="thanksModal" data-timeout="3000" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="thanksModalTitle">Заявка принята!</h3>
+            </div>
+            <div class="modal-body">
+                <p>Мы свяжемся с вами в ближайшее время, хорошего дня!</p>
             </div>
         </div>
     </div>
+</div>
     <!-- HEADER modals end -->
 
     <!-- ABOUT TEACHER modals start -->
   <!-- Modal -->
-<div class="about-teacher__modal">
-    <div class="modal fade" id="aboutTeacherModal" tabindex="-1" role="dialog" aria-labelledby="aboutTeacherModalTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                <button type="button" class="close about-teacher__modal-button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                </div>
-                <div class="modal-body">
-                    Более 20 лет работала учителем начальных классов в средних специализированных учебных заведениях России и Беларуси.
-                    <br><br>
-                    Имеет публикации методических разработок по проведению уроков в российских периодических печатных образовательных изданиях. В 2000 и 2005 годах повышала свою квалификацию в Минском городском институте развития образования и Академии последипломного образования. Ежегодно в 2006-2009 годах проходила обучение в информационно-образовательном центре "Наставник" Минского городского института развития образования по курсу А.А. Нестеренко "Использование ОТСМ-ТРИЗ педагогики в начальной школе".
-                    <br><br>
-                    В 2004 - 2007 годах, будучи методистом Минского городского института развития образования, была направлена в Управление образования Ленинского района города Минска и занималась оказанием методической помощи учреждениям образования района, содействовала распространению передового педагогического опыта.
-                    <br><br>
-                    С 2007 года на базе начальной школы минской гимназии применяет в учебном процессе инновационные методики развивающего обучения, в том числе ТРИЗ-педагогику.
-                    <br><br>
-                    Неоднократно поощрялась комитетом по образованию Мингорисполкома, Управленииями образования Московского и Ленинского районов города Минска за достижения в работе. В 2010 году удостоена диплома и гранта Мингорисполкома за разработку образовательного проекта "Развитие творческого мышления младших школьников посредством использования инструментов технологии ОТСМ-ТРИЗ".
-                    <br><br>
-                    С 2011 года систематически приглашается в Минский городской институт развития образования для чтения лекций и ознакомления учителей начальных классов города Минска с практическим опытом применения ТРИЗ-технологии в начальной школе.
+<div class="modal fade about-teacher__modal" id="aboutTeacherModal" tabindex="-1" role="dialog" aria-labelledby="aboutTeacherModalTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close about-teacher__modal-button button-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-block">
+                    <p>Более 20 лет работала учителем начальных классов в средних специализированных учебных заведениях России и Беларуси.</p>
+                    <p>Имеет публикации методических разработок по проведению уроков в российских периодических печатных образовательных изданиях. В 2000 и 2005 годах повышала свою квалификацию в Минском городском институте развития образования и Академии последипломного образования. Ежегодно в 2006-2009 годах проходила обучение в информационно-образовательном центре "Наставник" Минского городского института развития образования по курсу А.А. Нестеренко "Использование ОТСМ-ТРИЗ педагогики в начальной школе".</p>
+                    <p>В 2004 - 2007 годах, будучи методистом Минского городского института развития образования, была направлена в Управление образования Ленинского района города Минска и занималась оказанием методической помощи учреждениям образования района, содействовала распространению передового педагогического опыта.</p>
+                    <p>С 2007 года на базе начальной школы минской гимназии применяет в учебном процессе инновационные методики развивающего обучения, в том числе ТРИЗ-педагогику.</p>
+                    <p>Неоднократно поощрялась комитетом по образованию Мингорисполкома, Управленииями образования Московского и Ленинского районов города Минска за достижения в работе. В 2010 году удостоена диплома и гранта Мингорисполкома за разработку образовательного проекта "Развитие творческого мышления младших школьников посредством использования инструментов технологии ОТСМ-ТРИЗ".</p>
+                    <p>С 2011 года систематически приглашается в Минский городской институт развития образования для чтения лекций и ознакомления учителей начальных классов города Минска с практическим опытом применения ТРИЗ-технологии в начальной школе.</p>
                 </div>
             </div>
         </div>
@@ -1104,53 +1082,43 @@
     <!-- ABOUT TEACHER modals end  -->
 
     <!-- TEACHERS certificates modal statr -->
-  <div class="modal fade" id="teacherCertificatesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade teacher-certificates__modal" id="teacherCertificatesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="aboutTeacherModalTitle">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
+        <div class="modal-content">
         <div class="modal-body">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a data-fancybox="gallery" data-fancybox="gallery-materials" class="section2__img-wrapper">
-                        <img src="./img/src/section2-img.png" alt="" />
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a data-fancybox="gallery" data-fancybox="gallery-materials" class="section2__img-wrapper">
-                        <img src="./img/src/пример.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a data-fancybox="gallery" data-fancybox="gallery-materials" class="section2__img-wrapper">
-                        <img src="./img/src/пример2.png" alt="" />
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a data-fancybox="gallery" data-fancybox="gallery-materials" class="section2__img-wrapper">
-                        <img src="./img/src/пример3.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a data-fancybox="gallery" data-fancybox="gallery-materials" class="section2__img-wrapper">
-                        <img src="./img/src/пример4.jpg" alt="" />
-                    </a>
-                </div>
+            <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="swiper-container mySwiper teacher-certificates-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/src/modals/sectificate.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/src/modals/sectificate.png" alt="">
+                        </div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
-        <div class="swiper-pagination"></div>
-      </div>
+        </div>
     </div>
-  </div>
+</div>
   <!-- TEACHERS certificates modal end-->
 
 
 
 
+<!-- Initialize Swiper -->
  <script src="./js/app.min.js"></script>
 </body>
 </html>

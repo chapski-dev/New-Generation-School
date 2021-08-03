@@ -1,16 +1,29 @@
 .section8-wrapper {
-    padding-bottom: 139px;
+    margin-bottom: 136px;
+    @include tablet {
+        margin-bottom: 106px;
+    }
 }
 .section8-title {
     padding-bottom: 60px;
     text-align: center;
 }
 .section8-accordion {
-    padding-bottom: 42px;
+    padding-bottom: 31px;
+    @include tablet {
+        padding-bottom: 42px;
+    }
 }
 .section8__bottom {
     text-align: center;
     .section8__bottom-link {
         text-decoration: underline;
+        &:hover {
+            color: $green;
+            text-decoration: none;
+        }
+        @include tablet {
+            font-size: 15px;
+        }
     }
 }
