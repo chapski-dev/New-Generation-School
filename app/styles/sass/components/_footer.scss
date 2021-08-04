@@ -7,7 +7,7 @@
     margin-bottom: 55px;
     @include tablet {
         text-align: center;
-        padding-top: 112px;
+        padding-top: 106px;
         margin-bottom: 59px;
     }
 }
@@ -77,6 +77,7 @@
     position: relative;
     margin-bottom: 31px;
     @include tablet {
+        width: 100%;
         margin-bottom: 30px;
     }
     &::after {
@@ -98,6 +99,9 @@
     display: block;
     position: relative;
     padding-bottom: (33.3333333/100) * 100%;
+    @include tablet {
+        padding-bottom: (190/300) * 100%;
+    }
 }
 .footer__img-map {
     position: absolute;
@@ -107,7 +111,9 @@
     object-fit: fill;
     border-radius: 70px;
     @include tablet {
+        height: 100%;
         border-radius: 20px;
+        object-fit: cover;
     }
 }
 .footer-contacts__row {
@@ -125,7 +131,7 @@
     @include tablet {
         width: 100%;
         &:last-of-type {
-            padding-bottom: 70px;
+            margin-bottom: 79px;
         }
     }
     .footer-contacts__title {
@@ -139,6 +145,7 @@
 
     .footer-contacts__text {
         @include tablet {
+            padding: 0 3%;
             font-size: 15px;
         }
      }
@@ -147,14 +154,14 @@
     min-width: 30.8%;
     margin-right: 143px;
     @include tablet {
-        padding-bottom: 34px;
+        padding-bottom: 26px;
     }
 }
 .footer-contacts__item2 {
     min-width: 25.8%;
     margin-right: 49px;
     @include tablet {
-        padding-bottom: 39px;
+        padding-bottom: 37px;
     }
 }
 .footer-contacts__item3 {
@@ -164,7 +171,7 @@
     }
     .footer-contacts__title-mail {
         @include tablet {
-            padding-bottom: 20px;
+            margin-bottom: 19px;
         }
     }
 }
@@ -218,12 +225,15 @@
         align-items: center;
         width: 60px;
         height: 60px;
-        // padding: 14.5px;
         background: #7294C7;
         border-radius: 100%;
         font-size: 0;
+        z-index: 2;
         @include tablet {
             margin-right: 20px;
+        }
+        &:hover {
+            text-decoration: none;
         }
         .icon-vk {
             font-size: 31px;
@@ -238,13 +248,16 @@
         height: 60px;
         background: linear-gradient(43.94deg, #EEA054 16.16%, #D64763 50.11%, #B62A99 83.68%);
         border-radius: 100%;
-        // padding: 17.5px;
         font-size: 0;
         margin-left: -2%;
-        z-index: -1;
+        z-index: 1;
         @include tablet {
             margin-left: 0;
             z-index: 1;
+        }
+        &:hover {
+            text-decoration: none;
+            cursor: pointer;
         }
         .icon-instagram {
             font-size: 25px;

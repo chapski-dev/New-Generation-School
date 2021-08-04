@@ -4,7 +4,7 @@
     margin-bottom: 258px;
     z-index: 1;
     @include tablet {
-        margin-bottom: 195px;
+        margin-bottom: 203px;
     }
     .icon-daub-section7 {
         position: absolute;
@@ -60,7 +60,12 @@
     .section7-item-1 {
         grid-column-start: 1;
         grid-row-start: 1;
-
+        @include tablet {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            padding-bottom: 109px;
+            margin-bottom: 24px;
+        }
         .icon-cicle-fill-1 {
             position: absolute;
             top: -6%;
@@ -98,14 +103,9 @@
                 top: 88%;
                 left: 7%;
                 transform: translate(-50%, -50%) rotate(341deg);
-                }
-            
+            }
         }
-        @include tablet {
-            grid-column-start: 1;
-            grid-column-end: 5;
-            padding-bottom: 110px;
-        }
+
     }
     .section7-item-2 {
         grid-column-start: 2;
@@ -113,7 +113,8 @@
         @include tablet {
             grid-column-start: 1;
             grid-column-end: 5;
-            padding-bottom: 98px;
+            padding-bottom: 99px;
+            margin-bottom: 24px;
         }
         .icon-cicle-fill-2 {
             position: absolute;
@@ -161,6 +162,7 @@
             grid-column-start: 1;
             grid-column-end: 5;
             padding-bottom: 115px;
+            margin-bottom: 24px;
         }
         .icon-cicle-fill-3 {
             position: absolute;
@@ -209,6 +211,7 @@
             grid-column-start: 1;
             grid-column-end: 5;
             padding-bottom: 116px;
+            margin-bottom: 24px;
         }
         .icon-cicle-fill-4 {
             position: absolute;
@@ -256,6 +259,7 @@
             grid-column-start: 1;
             grid-column-end: 5;
             padding-bottom: 114px;
+            margin-bottom: 24px;
         }
         .icon-cicle-fill-5 {
             position: absolute;

@@ -39,8 +39,8 @@
         align-items: center;
         justify-content: center;
         padding-top: 41px;
-        padding-bottom: 71px;
-        margin-bottom: 50px;
+        padding-bottom: 71px !important;
+        margin-bottom: 54px;
         &:last-of-type {
             margin-bottom: 0px;
         }
@@ -68,14 +68,6 @@
             padding-bottom: 23px;
         }
     }
-    .section3-item__dicr{
-        width: 99%;
-        padding-bottom: 62px;
-        margin: 0 auto;
-        @include tablet {
-            font-size: 15px;
-        }
-    }
 }
 // COMMON STYLES OF DESCTOP BACKGROUND
 .section3-item_1, .section3-item_2, .section3-item_3 {
@@ -101,10 +93,14 @@
             }
         }
 }    
-
 .section3-item__discr {
     margin-bottom: 67px;
     width: 90%;
+    @include tablet {
+        margin: 0 auto 42px;
+        width: 90%;
+        line-height: 145%;
+    }
 }
 .section3-item_1 {
     &::before {
@@ -119,6 +115,10 @@
 }
 .section3-item_2 {
     position: relative;
+    @include tablet {
+        background: #E7F8EF;
+        border-radius: 20px;
+    }
     .icon-wawes {
         position: absolute;
         top: 2%;
@@ -134,9 +134,12 @@
     transform: rotate(1.23deg);
     top: -9.5%;
     }
-    @include tablet {
-        background: #E7F8EF;
-        border-radius: 20px;
+    .section3-item__discr {
+        @include tablet {
+            margin: 0 auto 42px;
+            width: 100%;
+            line-height: 145%;
+        }
     }
 }
 .section3-item_3 {
@@ -160,11 +163,6 @@
         background: #F5F5F9;
         transform: rotate(-1.19deg);
     }
-    .section3-item-params-item__text {
-        &:nth-last-of-type(1) {
-            margin-bottom: 25px;
-        }
-    }
 } 
 
 .section3-item-image {
@@ -176,19 +174,30 @@
 
     @include tablet {
         position: relative;
-        width: 100%;
+        width: 87%;
+        margin: 0 auto;
         height: auto;
     }
 
     &.section3-item-image_1{
         transform: rotate(3.09deg);
+        @include tablet {
+            transform: none;
+        }
     }
     &.section3-item-image_2{
         top: -2%;
         transform: rotate(-1.43deg);
+        @include tablet {
+            top: 0;
+            transform: none;
+        }
     }
     &.section3-item-image_3{
         transform: rotate(2.23deg);
+        @include tablet {
+            transform: none;
+        }
     }
 }
 .section3-item-image__wrapper {
@@ -228,6 +237,9 @@
 .section3-item-params-item {
     flex: 0 0 calc((100% / 2) - (89px / 2));
     margin-bottom: 20px;
+    @include tablet {
+        margin-bottom: 24px;
+    }
     &:nth-last-of-type(1),
     &:nth-last-of-type(2) {
         margin-bottom: 0;
@@ -244,6 +256,10 @@
         align-items: center;
         padding-top: 25px;
         padding-left: 5px;
+        @include tablet {
+            display: block;
+            padding: 20px 0px 0px 0px;
+        }
     }
 }
 
@@ -254,19 +270,25 @@
     margin-bottom: 12px;
     @include tablet {
         font-size: 20px;
+        margin-bottom: 7px;
     }
 }
-
 .section3-item-params-item__text {
     font-size: 16px;
     line-height: (24/16);
     margin-bottom: 44px;
-    &:nth-last-of-type(1),
+    &:nth-last-of-type(1) {
+        margin-bottom: 25px;
+        @include tablet {
+            margin-bottom: 0;
+        }
+    }
     &:nth-last-of-type(2) {
         margin-bottom: 0;
     }
     @include tablet {
         font-size: 15px;
+        padding: 0 10%;
     }
 
     a {

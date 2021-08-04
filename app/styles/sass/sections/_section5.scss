@@ -80,8 +80,8 @@
         transform: rotate(15.22deg);
         z-index: 3;
         @include mobile {
-            top: 27%;
-            left: -25%;
+            top: 50%;
+            left: -23%;
             font-size: 108px;
         }
     }
@@ -104,7 +104,7 @@
             font-size: 120px;
         }
         @include tablet {
-            top: 38%;
+            top: 73%;
             left: 53%;
             font-size: 124px;
         }
@@ -131,8 +131,9 @@
             font-size: 164px;
         }
         @include tablet {
-            left: 60%;
-            font-size: 89px;
+            top: -8%;
+            left: 59%;
+            font-size: 119px;
         }
     }
 }
@@ -156,8 +157,8 @@
             font-size: 109px;
         }
         @include tablet {
-            top: 41%;
-            left: 11%;
+            top: 67%;
+            left: 12%;
             font-size: 99px;
         }
     }
@@ -169,6 +170,8 @@
         font-size: 53px;
         z-index: -1;
         @include tablet {
+            top: 0%;
+            left: 73%;
             font-size: 52px;
         }
     }
@@ -189,7 +192,8 @@
         color: $yellow;
         font-size: 41px;
         @include tablet {
-            left: 68%;
+            top: -2%;
+            left: 69%;
             font-size: 24px;
         }
     }
@@ -201,7 +205,7 @@
         font-size: 71px;
         z-index: 3;
         @include tablet {
-            top: 6%;
+            top: 10%;
             left: 79%;
             font-size: 42px;
         }

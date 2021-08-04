@@ -183,7 +183,6 @@
     display: block;
     position: relative;
     overflow: hidden;
-    // padding-bottom: (300 / 560) * 100%;
     background: cornflowerblue;
     border-radius: 70px;
     margin-bottom: 21px;
@@ -224,7 +223,7 @@
         position: absolute;
         bottom: 30px;
         left: 30px;
-        transition: .5s linear;
+        transition: .2s linear;
         z-index: 3;
         @include tablet {
             bottom: 10px;

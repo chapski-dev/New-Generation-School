@@ -1,4 +1,4 @@
-#accordion {
+.accordion {
     width: 69%;
     margin: 0 auto;
     @include tablet {
@@ -25,6 +25,18 @@
         border-radius: 20px;
         margin-bottom: 7px;
     }
+
+    &.active {
+        border-radius: 20px;
+        .accordion-item__body {
+            display: block;
+        }
+        .accordion-item__header::after {
+            color: $green;
+            transform: rotate(135deg);
+        } 
+    }
+
     .accordion-item__header {
         display: flex;
         align-items: center;
@@ -54,16 +66,8 @@
             }
         }
     }
-    .active {
-        &::after {
-            color: $green;
-            transform: rotate(135deg);
-        } 
-    }
     .accordion-item__body {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
+        display: none;
         @include tablet {
             width: 93%;
         }
@@ -75,10 +79,10 @@
         line-height: 24px;
         @include tablet {
             padding-right: 30px;
+            line-height: 20px;
         }
     }
 }
-
 
 .section-questions-accordion {
     position: relative;

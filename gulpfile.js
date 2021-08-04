@@ -2,6 +2,7 @@ let preprocessor = 'sass', // Preprocessor (sass, less, styl); 'sass' also work 
 		fileswatch   = 'html,htm,txt,json,md,woff2' // List of files extensions for watching & hard reload
 
 const { src, dest, parallel, series, watch } = require('gulp')
+const gulp         = require('gulp');
 const browserSync  = require('browser-sync').create()
 const bssi         = require('browsersync-ssi')
 const ssi          = require('ssi')
@@ -19,6 +20,7 @@ const imagemin     = require('gulp-imagemin')
 const newer        = require('gulp-newer')
 const rsync        = require('gulp-rsync')
 const del          = require('del')
+const fileinclude  = require('gulp-file-include')
 
 function browsersync() {
 	browserSync.init({
@@ -32,6 +34,16 @@ function browsersync() {
 		// tunnel: 'yousutename', // Attempt to use the URL https://yousutename.loca.lt
 	})
 }
+
+  /** HTML */
+  function html() {
+	return src('app/pages/*.html')
+	  .pipe( fileinclude({
+		prefix: '@@',
+		basepath: 'app/html-components'
+	  }) )
+	  .pipe( dest('app') )
+  }
 
 function scripts() {
 	return src(['app/js/*.js', '!app/js/*.min.js'])
@@ -119,7 +131,8 @@ function startwatch() {
 	watch(`app/styles/${preprocessor}/**/*`, { usePolling: true }, styles)
 	watch(['app/js/**/*.js', '!app/js/**/*.min.js'], { usePolling: true }, scripts)
 	watch('app/images/src/**/*.{jpg,jpeg,png,webp,svg,gif}', { usePolling: true }, images)
-	watch(`app/**/*.{${fileswatch}}`, { usePolling: true }).on('change', browserSync.reload)
+	watch(['app/pages/*.html', 'app/html-components/**/*.html'], html)
+	watch([`app/**/*.{${fileswatch}}`,'!app/pages/*.html', '!app/html-components/**/*.html'], { usePolling: true }).on('change', browserSync.reload)
 }
 
 exports.scripts = scripts

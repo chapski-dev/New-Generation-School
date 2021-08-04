@@ -36,7 +36,6 @@ var swiper = new Swiper(".section2-tabs-slider", {
 });
 
 // modal swiper
-
 var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
@@ -124,24 +123,35 @@ $('form').on('submit', function(event) {
 
 // Коллапс Аккордеон собствеными руками.
 
-const accordionItemHeader = document.querySelectorAll(".accordion-item__header")
+const accordion = $('.accordion');
 
-accordionItemHeader.forEach(accordionItemHeader => {
-  accordionItemHeader.addEventListener("click", event => {
-    const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item__header.active");
-    if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
-      currentlyActiveAccordionItemHeader.classList.toggle("active");
-      currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
-    }
-
-
-    accordionItemHeader.classList.toggle("active");
-    const accordionItemBody = accordionItemHeader.nextElementSibling;
-    if (accordionItemHeader.classList.contains("active")) {
-      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
-    }
-    else {
-      accordionItemBody.style.maxHeight = 0;
-    }
+if (accordion.length) {
+  accordion.on('click', '.accordion-item__header', function (event) {
+    event.preventDefault();
+    const parent = $(this).closest('.accordion-item');
+    parent.siblings().removeClass('active');
+    parent.toggleClass('active');
   })
-});
+}
+
+// const accordionItemHeader = document.querySelectorAll(".accordion-item__header")
+
+// accordionItemHeader.forEach(accordionItemHeader => {
+//   accordionItemHeader.addEventListener("click", event => {
+//     const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item__header.active");
+//     if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
+//       currentlyActiveAccordionItemHeader.classList.toggle("active");
+//       currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+//     }
+
+
+//     accordionItemHeader.classList.toggle("active");
+//     const accordionItemBody = accordionItemHeader.nextElementSibling;
+//     if (accordionItemHeader.classList.contains("active")) {
+//       accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+//     }
+//     else {
+//       accordionItemBody.style.maxHeight = 0;
+//     }
+//   })
+// });
