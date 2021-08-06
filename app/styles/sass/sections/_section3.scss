@@ -148,6 +148,21 @@
         background: #F5F5F9;
         border-radius: 20px;
     }
+    .section3-item-params {
+        margin-bottom: 70px;
+        @include tablet {
+            margin-bottom: 47px;
+        }
+    }
+    .section3-item-params-item {
+        &:first-of-type {
+            margin-bottom: 40px;
+            @include tablet {
+                margin-bottom: 23px;
+            }
+        }
+
+    }
     .icon-dashed {
         position: absolute;
         top: -30%;
@@ -278,7 +293,7 @@
     line-height: (24/16);
     margin-bottom: 44px;
     &:nth-last-of-type(1) {
-        margin-bottom: 25px;
+        margin-bottom: 0px;
         @include tablet {
             margin-bottom: 0;
         }
