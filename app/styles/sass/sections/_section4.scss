@@ -62,20 +62,16 @@
     }
 }
 .section4-item_1 {
-    width: 560px;
     height: 120px;
     background-color: #FCE8E6;
     @include tablet {
-        width: 300px;
         height: 120px;
     }
 }
 .section4-item_2 {
-    width: 260px;
     height: 120px;
     background-color: #E6F3FC;
     @include tablet {
-        width: 300px;
         height: 120px;
     }
 }
@@ -84,16 +80,13 @@
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 2;
-    width: 260px;
     height: 280px;
     @include tablet {
-        width: 300px;
         height: 120px;
     }
 }
 
 .section4-item_4 {
-    width: 560px;
     height: 120px;
     background-color: #FFF8D2;
     @include tablet {
@@ -103,11 +96,9 @@
 }
 
 .section4-item_5 {
-    width: 260px;
     height: 120px;
     background-color: #E7F8EF;
     @include tablet {
-        width: 300px;
         height: 120px;
     }
 }

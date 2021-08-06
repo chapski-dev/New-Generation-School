@@ -252,15 +252,15 @@
 .section3-item-params-item {
     flex: 0 0 calc((100% / 2) - (89px / 2));
     margin-bottom: 20px;
-    @include tablet {
-        margin-bottom: 24px;
-    }
     &:nth-last-of-type(1),
     &:nth-last-of-type(2) {
         margin-bottom: 0;
     }
-
+    @include tablet-land {
+        flex: 1 0 calc((100% / 2) - (89px / 2));
+    }
     @include tablet {
+        margin-bottom: 24px;
         &:nth-last-of-type(2) {
             margin-bottom: 20px;
         }
@@ -343,6 +343,9 @@
     display: flex;
     justify-content: space-between;
     width: 81%;
+    @include tablet-land {
+        width: 95%;
+    }
     @include tablet {
         justify-content: center;
         align-items: center;
