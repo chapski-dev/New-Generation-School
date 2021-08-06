@@ -10,7 +10,7 @@
     }
     @include tablet {
         padding: 0;
-        margin-bottom: 62px;
+        margin-bottom: 142px;
         .container {
             padding: 0;
         }
@@ -18,6 +18,9 @@
 }
 .header__row{
     @include tablet {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
         height: 80px;
         background-color: #36347F;
         padding: 0 10px;

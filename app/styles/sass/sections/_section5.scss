@@ -202,8 +202,16 @@
     z-index: -1;
     margin-bottom: 27px;
     @include tablet {
-        padding-bottom: (351 / 360) * 100%;
+        padding-bottom: (252 / 360) * 100%;
         margin-bottom: 28px;
+    }
+    @include mobile-land {
+        padding-bottom: (325 / 360) * 100%;
+
+    }
+    @include mobile {
+        padding-bottom: (351 / 360) * 100%;
+
     }
     .section5-img {
         position: absolute;
@@ -217,9 +225,16 @@
         object-fit: cover;
         object-position: center;
         @include tablet {
-            width: 100%;
+            width: 70%;
             top: -2%;
-            left: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        @include mobile-land {
+            width: 90%;
+        }
+        @include mobile {
+            width: 100%;
         }
     }
 }

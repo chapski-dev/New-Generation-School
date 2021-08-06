@@ -34,6 +34,7 @@
     }
 }
 .section9__item {
+    position: relative;
     display: block;
     @include tablet {
         margin-bottom: 27px;
@@ -56,6 +57,20 @@
         @include tablet {
             line-height: 22px;
         }
+    }
+}
+.section9__item-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    z-index: 999;
+    @include tablet-land {
+        height: 100%;
+    }
+    @include mobile-land {
+        height: 90%;
     }
 }
 .section9__item-img-wrapper {
