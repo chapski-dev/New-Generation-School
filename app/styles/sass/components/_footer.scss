@@ -90,30 +90,20 @@
         border-radius: 70px;
         border: 4px solid $yellow;
         transform: rotate(3.2deg);
+        z-index: 2;
+        pointer-events: none;
         @include tablet {
             display: none;
         }
     }
 }
+
 .footer-map-wraper {
-    display: block;
-    position: relative;
-    padding-bottom: (33.3333333/100) * 100%;
-    @include tablet {
-        padding-bottom: (190/300) * 100%;
-    }
-}
-.footer__img-map {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-position: center;
-    object-fit: fill;
+    z-index: 1;
     border-radius: 70px;
     @include tablet {
         height: 100%;
         border-radius: 20px;
-        object-fit: cover;
     }
 }
 .footer-contacts__row {

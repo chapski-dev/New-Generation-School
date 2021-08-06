@@ -9,10 +9,10 @@
         position: relative;
     }
     @include tablet {
-        padding: 0;
+        padding: 0  !important;
         margin-bottom: 142px;
         .container {
-            padding: 0;
+            padding: 0  !important;
         }
     }
 }
