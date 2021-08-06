@@ -186,6 +186,9 @@
 }
 .section1-bottom{
     margin-left: -1%;
+	a {
+		text-decoration: none;
+	}
 	@include tablet {
 		padding-bottom: 0;
 		margin: 0 auto;

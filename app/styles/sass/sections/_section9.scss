@@ -34,6 +34,7 @@
     }
 }
 .section9__item {
+    display: block;
     @include tablet {
         margin-bottom: 27px;
         &:last-of-type {
@@ -41,6 +42,7 @@
         }
     }
     &:hover {
+        text-decoration: none;
         cursor: pointer;
         .section9__item-discr {
             color: $green;

@@ -90,6 +90,7 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
+        border-radius: 70px;
         @include tablet {
             border-radius: 20px;
         }
