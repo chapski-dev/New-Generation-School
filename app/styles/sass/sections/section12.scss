@@ -1,0 +1,25 @@
+.section12 {
+    margin-bottom: 147px;
+}
+.section12-title {
+    margin-bottom: 93px;
+}
+.section12-content {
+    display: flex;
+}
+.section12-content__left, .section12-content__right {
+    display: flex;
+    flex: 1;
+}
+.section12-content__number {
+    font-size: 64px;
+    line-height: 70px;
+    flex: .3;
+    text-align: center;
+    font-family: $neucha;
+    margin-right: 10%;
+}
+.section12-content__text {
+    flex: 1;
+    padding-right: 5%;
+}

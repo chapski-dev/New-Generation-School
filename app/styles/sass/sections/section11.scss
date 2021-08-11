@@ -1,0 +1,53 @@
+.section11 {
+    margin-bottom: 129px;
+}
+.section11-tabs-content {
+    display: flex;
+}
+.section11-title {
+    width: 85%;
+    line-height: 59px;
+    margin-bottom: 58px;
+}
+.section11-tabs {
+    .tabs-nav__trigge {
+        font-size: 16px;
+        line-height: 150%;
+    }
+    .nav-pills {
+        margin-bottom: 56px;
+    }
+}
+.section11-tabs-content__left {
+    flex: 1;
+    margin-right: 21px;
+    .section5__img-wrapper {
+        margin-bottom: 3px;
+    }
+    .section5-img {
+        width: 91%;
+    }
+    .icon-wawes {
+        top: 27%;
+    }
+    .section5__item-info {
+        margin-bottom: 43px;
+    }
+    .item-info__name {
+        letter-spacing: normal;
+    }
+    .section5-info__link-certificate {
+        i {
+            color: $green;
+        }
+        span {
+            color: $green;
+        }
+    }
+}
+.section11-tabs-content__right {
+    flex: 2;
+}
+.section11-button {
+    width: 240px;
+}

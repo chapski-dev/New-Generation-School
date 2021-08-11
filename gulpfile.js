@@ -141,4 +141,4 @@ exports.images  = images
 exports.deploy  = deploy
 exports.assets  = series(scripts, styles, images)
 exports.build   = series(cleandist, scripts, styles, images, buildcopy, buildhtml)
-exports.default = series(scripts, styles, images, parallel(browsersync, startwatch))
+exports.default = series(html, scripts, styles, images, parallel(browsersync, startwatch))

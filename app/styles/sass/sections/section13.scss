@@ -1,0 +1,22 @@
+.section13-item {
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+
+    }
+}
+.section13-item_1 {
+    &::before {
+        background-color: #FFF8D299;
+    }
+}
+.section13-item__img-wraper {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-bottom: (286.14 / 402.22) * 100%;
+    height: 100%;
+
+}
