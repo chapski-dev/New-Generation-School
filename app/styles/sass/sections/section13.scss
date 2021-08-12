@@ -1,4 +1,5 @@
 .section13-title {
+    margin-bottom: 135px;
     @include tablet {
         text-align: center;
         margin-bottom: 102px;
@@ -6,26 +7,78 @@
 }
 .section13-item{
     position: relative;
-    justify-content: space-between;
-    margin-bottom: 176px;
-    padding-bottom: 0px;
+    margin-bottom: 150px;   
     @include tablet {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 41px;
-        padding-bottom: 71px;
-        margin-bottom: 54px;
-        &:last-of-type {
-            margin-bottom: 0px;
-        }
     }
+}
+.section13-item_1, .section13-item_2, .section13-item_3{
     &::before {
         content: '';
         display: block;
-        width: 100%;
-        height: 100%;
+        width: 108%;
+        height: 119%;
+        background: #FFF8D2;
+        opacity: .6;
+        border-radius: 70px;
+    
+        position: absolute;
+        z-index: -1;
+        top: -9.5%;
+        left: -4%;
+        transform: rotate(-1.7deg);
 
+        @include tablet {
+            display: none;
+        }
     }
+}
+.section13-item_2 {
+    &::before{
+        background-color: #E7F8EF;
+    }
+}
+.section13-item_3 {
+    &::before{
+        background-color: #F5F5F9;
+    }
+}
+.section13-item__content {
+    display: flex;
+}
+.section13-item-image {
+    flex: .38;
+}
+.section13-item-image__wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: (286/402) * 100%;
+    transform: rotate(3.09deg);
+    overflow: hidden;
+    border-radius: 70px;
+    @include tablet {
+        border-radius: 20px;
+    } 
+}
+.section13-item-image__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    object-position: center;
+    height: auto;
+    border-radius: 70px;
+    @include tablet {
+        border-radius: 20px;
+    }
+}
+.section13-item__discr {
+    flex: .65;
+    padding-left: 74px;
+}
+.section13-item__discr-title {
+    margin-bottom: 38px;
+}
+.section13-item__discr-point {
+    margin-bottom: 18px;
 }
