@@ -1,26 +1,70 @@
 .section11 {
     margin-bottom: 129px;
+    @include tablet {
+        margin-bottom: 105px;
+    }
 }
 .section11-tabs-content {
     display: flex;
+    @include tablet {
+        flex-direction: column;
+    }
 }
 .section11-title {
     width: 85%;
     line-height: 59px;
     margin-bottom: 58px;
+    @include tablet {
+        width: 100%;
+        font-size: 30px;
+        line-height: 33px;
+        text-align: center;
+        margin-bottom: 64px;
+    }
 }
 .section11-tabs {
+    .section2__swipe-buttons {
+        text-align: center;
+        @include tablet {
+            margin-bottom: 31px;
+        }
+    }
     .tabs-nav__trigge {
         font-size: 16px;
         line-height: 150%;
+        @include tablet {
+            display: none;
+        }
+    }
+    .nav-item {
+        @include tablet {
+            display: none;
+        }
     }
     .nav-pills {
         margin-bottom: 56px;
+        @include tablet {
+            margin-bottom: 0;
+        }
     }
 }
 .section11-tabs-content__left {
     flex: 1;
     margin-right: 21px;
+    @include tablet {
+        margin-right: 0;
+    }
+    .section5__item_1 {
+        @include tablet {
+            padding-bottom: 0;
+            margin-bottom: 33px;
+        }
+        .section11-button {
+            @include tablet {
+                display: none;
+            }
+        }
+    }
     .section5__img-wrapper {
         margin-bottom: 3px;
     }
@@ -32,11 +76,16 @@
     }
     .section5__item-info {
         margin-bottom: 43px;
+        @include tablet {
+            margin-bottom: 0;
+        }
     }
     .item-info__name {
         letter-spacing: normal;
     }
     .section5-info__link-certificate {
+        display: flex;
+        align-items: center;
         i {
             color: $green;
         }
@@ -47,6 +96,13 @@
 }
 .section11-tabs-content__right {
     flex: 2;
+    .section11-button {
+        display: none;
+        @include tablet {
+            margin: 0 auto;
+            display: block;
+        }
+    }
 }
 .section11-button {
     width: 240px;
