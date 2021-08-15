@@ -79,6 +79,12 @@
 .section13-item__discr-title {
     margin-bottom: 38px;
 }
+.section13-item__discr-row {
+    display: flex;
+}
+.section13-item__discr-left-colum, .section13-item__discr-right-colum {
+    flex: 1;
+}
 .section13-item__discr-point {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }

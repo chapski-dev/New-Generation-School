@@ -21,7 +21,7 @@ const DESKTOP_FROM = 1024;
 // section2 tabs sliders
 const slidersParents = $('.tabs-contents__item');
   
-var swiper = new Swiper(".section2-tabs-slider", {
+var swiper = new Swiper(".section-tabs-slider", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

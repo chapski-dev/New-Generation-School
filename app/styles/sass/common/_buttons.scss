@@ -47,7 +47,25 @@ button {
     background: transparent;
     border: 2px $green solid;
 }
-
+// Red circle button
+.red-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: none;
+    background: $red;
+    text-decoration: none;
+    text-align: center;
+    transition: .2s linear;
+    z-index: 3;
+    @include tablet {
+        bottom: 10px;
+        left: 10px;
+    }
+}
 // HEADER
 .header-button {
     width: 120px;

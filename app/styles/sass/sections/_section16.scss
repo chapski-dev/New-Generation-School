@@ -1,0 +1,17 @@
+.section16 {
+    margin-bottom: 97px;
+}
+.section16-title {
+    margin-bottom: 50px;
+}
+.section16-params__row {
+    display: flex;
+}
+.section16-params__item {
+    flex: 1;
+    &:last-of-type {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
