@@ -33,6 +33,7 @@ button {
     &.button-fill--green {
         background-color: $green;
         border: none;
+        font-size: 18px;
     }
     &.button-fill--sm {
         min-height: 40px;
@@ -57,7 +58,7 @@ button {
     border-radius: 100%;
     border: none;
     background: $red;
-    text-decoration: none;
+    text-decoration: none !important;
     text-align: center;
     transition: .2s linear;
     z-index: 3;

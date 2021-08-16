@@ -1,5 +1,5 @@
 .section12 {
-    margin-bottom: 147px;
+    margin-bottom: 102px;
     @include tablet {
         margin-bottom: 100px;
     }
@@ -28,6 +28,7 @@
     margin-bottom: 45px;
 }
 .section12-content__number {
+    position: relative;
     font-size: 64px;
     line-height: 70px;
     flex: .3;
@@ -35,9 +36,62 @@
     font-family: $neucha;
     margin-right: 10%;
     @include tablet {
+        font-size: 54px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    @include mobile-land {
         font-size: 30px;
         margin-right: 0;
         margin-bottom: 16px;
+        span {
+            font-size: 48px;
+            @include mobile-land {
+                font-size: 30px;
+            }
+        }
+    }
+    .icon-cicle-empty-2 {
+        position: absolute;
+        font-size: 130px;
+        @include tablet {
+            font-size: 118px;
+        }
+        @include mobile-land {
+            font-size: 65px;
+        }
+    }
+}
+.section12-content__number_1 {
+    .icon-cicle-empty-2 {
+        position: absolute;
+        top: -52%;
+        left: 0;
+        color: $dark-blue;
+        @include tablet {
+            top: -42%;
+            left: 42%;
+        }
+        @include mobile-land {
+            top: 0;
+            left: 40%;
+        }
+    }
+}
+.section12-content__number_2 {
+    .icon-cicle-empty-2 {
+        position: absolute;
+        top: -32%;
+        left: 0;
+        color: $red;
+        @include tablet {
+            top: -42%;
+            left: 42%;
+        }
+        @include mobile-land {
+            top: 0;
+            left: 40%;
+        }
     }
 }
 .section12-content__text {
@@ -47,5 +101,9 @@
         font-size: 16px;
         line-height: 150%;
         text-align: center;
+        padding: 0 15% 0 15%;
+    }
+    @include mobile-land {
+        padding: 0;
     }
 }

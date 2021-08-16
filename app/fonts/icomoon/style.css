@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('fonts/icomoon.ttf?kekd2d') format('truetype'),
-    url('fonts/icomoon.woff?kekd2d') format('woff'),
-    url('fonts/icomoon.svg?kekd2d#icomoon') format('svg');
+    url('fonts/icomoon.ttf?z7q4yt') format('truetype'),
+    url('fonts/icomoon.woff?z7q4yt') format('woff'),
+    url('fonts/icomoon.svg?z7q4yt#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-book:before {
+  content: "\e93c";
+}
+.icon-section13-daub:before {
+  content: "\e93b";
+}
+.icon-check:before {
+  content: "\e93a";
+}
 .icon-eye:before {
   content: "\e939";
 }

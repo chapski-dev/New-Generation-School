@@ -10,6 +10,19 @@
         flex-direction: column;
     }
 }
+.section11-title-wrapper {
+    position: relative;
+    .icon-sun {
+        position: absolute;
+        top: -5px;
+        right: -1.5%;
+        color: #ffd600;
+        font-size: 173px;
+        @include tablet {
+            display: none;
+        }
+    }
+}
 .section11-title {
     width: 85%;
     line-height: 59px;

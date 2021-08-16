@@ -6,6 +6,9 @@
 }
 .section16-params__row {
     display: flex;
+    @include tablet {
+        flex-direction: column;
+    }
 }
 .section16-params__item {
     flex: 1;
@@ -13,5 +16,119 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+.section16-tabs {
+    .tab-content {
+    background-color: #F5F5F9;
+    padding-top: 33px;
+    margin-bottom: 50px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    }
+}
+.section16-nav-tabs {
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    .nav-item {
+        width: 50%;
+        border: none;
+    }
+    .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 25px;
+        padding-bottom: 15px;
+        border: none;
+        border-radius: 0;
+        opacity: .5;
+        &:hover {
+            opacity: 1;
+        }
+        &:first-of-type {
+            border-top-left-radius: 70px;
+        }
+        &:last-of-type {
+            border-top-right-radius: 70px;
+        }
+        &.active {
+            background-color: #F5F5F9;
+            opacity: 1;
+        }
+    }
+}
+.section16-nav-tab__img {
+    margin-right: 20px;
+}
+.section16-tab__content {
+    display: flex;
+}
+.section16-tab__content-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+}
+.section16-tab__content-right {
+    flex: 2;
+}
+.section16-params__item-point {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    &::before {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        margin-right: 19px;
+        background-color: #4F75FF;
+
+    }
+}
+.section16-params__item {
+    &:nth-of-type(1) {
+        padding-left: 60px;
+        @include tablet {
+            padding-left: 0;
+        }
+        .section16-params__item-point {
+            &:nth-of-type(1) {
+                &::before {
+                    background-color: #4F75FF;
+                }
+            }
+            &:nth-of-type(2) {
+                &::before {
+
+                    background-color: #FAE57D;
+                }
+            }
+        }
+    }
+    &:nth-of-type(2) {
+        .section16-params__item-point {
+            &:nth-of-type(1) {
+                &::before {
+
+                    background-color: #D3A2FC;
+                }
+            }
+            &:nth-of-type(2) {
+                &::before {
+
+                    background-color: #ED887D;
+                }
+            }
+            &:nth-of-type(3) {
+                &::before {
+
+                    background-color: #25CBFF;
+                }
+            }
+        }
     }
 }

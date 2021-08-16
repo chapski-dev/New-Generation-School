@@ -1,31 +1,55 @@
+.section13 {
+    margin-bottom: 181px;
+    @include tablet {
+        margin-bottom: 118px;
+    }
+}
+.section13-title-wraper {
+    position: relative;
+    .icon-section13-daub {
+        position: absolute;
+        top: -216%;
+        left: 13.5%;
+        font-size: 362px;
+        color: $yellow;
+        z-index: -1;
+        @include tablet {
+            top: -84%;
+            left: 36.5%;
+            font-size: 159px;
+        }
+    }
+}
 .section13-title {
     margin-bottom: 135px;
     @include tablet {
         text-align: center;
-        margin-bottom: 102px;
+        margin-bottom: 59px;
     }
 }
 .section13-item{
     position: relative;
     margin-bottom: 150px;   
     @include tablet {
+        padding-top: 43px;
+        padding-bottom: 44px;
+        border-radius: 20px;
         flex-direction: column;
+        margin-bottom: 0;
     }
 }
 .section13-item_1, .section13-item_2, .section13-item_3{
     &::before {
         content: '';
         display: block;
-        width: 108%;
-        height: 119%;
-        background: #FFF8D2;
+        width: 108.5%;
+        height: 182%;
         opacity: .6;
         border-radius: 70px;
-    
         position: absolute;
         z-index: -1;
-        top: -9.5%;
-        left: -4%;
+        top: -29.5%;
+        left: -4.5%;
         transform: rotate(-1.7deg);
 
         @include tablet {
@@ -33,21 +57,83 @@
         }
     }
 }
-.section13-item_2 {
-    &::before{
-        background-color: #E7F8EF;
+.section13-item__discr {
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        width: 87%;
+        margin: 0 auto;
     }
 }
+.section13-item_1 {
+   margin-bottom: 19%;
+   @include tablet {
+       background-color: #fff8d2;
+   }
+   @include mobile-land {
+       margin-bottom: 17%;
+   }
+   &::before{
+    height: 163%;
+    top: -25.5%;
+    background: #fff8d2;
+}
+}
+.section13-item_2 {
+   margin-bottom: 17.5%;
+   @include tablet {
+        background-color: #E7F8EF;
+   }
+   &::before {
+    height: 154%;
+    top: -24.5%;
+    background-color: #E7F8EF;
+   }
+   .section13-item__discr {
+    @include tablet {
+        width: 100%;
+    }
+}
+}
 .section13-item_3 {
-    &::before{
+    @include tablet {
         background-color: #F5F5F9;
+    }
+    &::before{
+        top: -22.5%;
+        height: 139%;
+        background-color: #F5F5F9;
+    }
+    .section13-item__discr {
+        @include tablet {
+            width: 100%;
+        }
     }
 }
 .section13-item__content {
-    display: flex;
+    padding-left: calc(42% + 3px);
+    @include tablet {
+        width: 100%;
+        padding-left: 0px;
+    }
 }
 .section13-item-image {
-    flex: .38;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    height: 100%;
+    width: 35%;
+    @include tablet {
+        position: relative;
+        width: 87%;
+        margin: 0 auto;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    @include mobile-land {
+        top: 0;
+        left: 0;
+    }
 }
 .section13-item-image__wrapper {
     position: relative;
@@ -57,7 +143,9 @@
     overflow: hidden;
     border-radius: 70px;
     @include tablet {
+        padding-bottom: (162/260) * 100%;
         border-radius: 20px;
+        transform: rotate(0deg);
     } 
 }
 .section13-item-image__image {
@@ -72,19 +160,54 @@
         border-radius: 20px;
     }
 }
-.section13-item__discr {
-    flex: .65;
-    padding-left: 74px;
-}
+
 .section13-item__discr-title {
     margin-bottom: 38px;
+    @include tablet {
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
 }
 .section13-item__discr-row {
     display: flex;
+    @include tablet {
+        flex-direction: column;
+        width: 87%;
+        margin: 0 auto;
+    }
 }
 .section13-item__discr-left-colum, .section13-item__discr-right-colum {
     flex: 1;
 }
 .section13-item__discr-point {
+    position: relative;
     margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 6%;
+    @include tablet {
+        padding-right: 0;
+        margin-bottom: 23px;
+    }
+    @include mobile-land {
+        line-height: 21px;
+        padding-left: 36px;
+    }
+    .icon-check {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 25px;
+        height: 25px;
+        background-color: #0bbc63;
+        border-radius: 100%;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    span {
+        font-size: 14px;
+    }
 }

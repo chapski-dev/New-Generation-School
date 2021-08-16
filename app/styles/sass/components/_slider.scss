@@ -208,6 +208,7 @@
   @include tablet {
       display: block;
       margin-bottom: -9px;
+      text-align: center;
       .section-tabs__mobile-trigger {
           background: transparent;
           border: none;

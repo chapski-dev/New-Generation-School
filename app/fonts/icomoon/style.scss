@@ -3,9 +3,9 @@
 @font-face {
   font-family: '#{$icomoon-font-family}';
   src:
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?kekd2d') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?kekd2d') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?kekd2d##{$icomoon-font-family}') format('svg');
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?z7q4yt') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?z7q4yt') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?z7q4yt##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-book {
+  &:before {
+    content: $icon-book; 
+  }
+}
+.icon-section13-daub {
+  &:before {
+    content: $icon-section13-daub; 
+  }
+}
+.icon-check {
+  &:before {
+    content: $icon-check; 
+  }
+}
 .icon-eye {
   &:before {
     content: $icon-eye; 

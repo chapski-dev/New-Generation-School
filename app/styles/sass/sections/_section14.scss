@@ -1,13 +1,29 @@
 .section14 {
-    margin-bottom: 140px;
+    margin-bottom: 131px;
+    @include tablet {
+        margin-bottom: 103px;
+    }
 }
 .section14-title {
-    margin-bottom: 50px;
+    margin-bottom: 63px;
+    line-height: 59.48px;
+    @include tablet {
+        line-height: 33.05px;
+        text-align: center;
+    }
 }
 .section14-tabs {
     margin-bottom: 140px;
+    @include tablet {
+        margin-bottom: 242px;
+    }
 }
 .section14-info {
     width: 60%;
     margin: 0 auto;
+    margin-left: 21%;
+    @include tablet {
+        width: 100%;
+        margin-left: 0;
+    }
 }

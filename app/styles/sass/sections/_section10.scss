@@ -19,6 +19,16 @@
             display: none;
         }
     }
+    .icon-book {
+        position: absolute;
+        top: 39.7%;
+        left: -34%;
+        font-size: 121px;
+        color: $yellow;
+        @include tablet {
+            display: none;
+        }
+    }
 }
 .section10-suptitle {
     margin-bottom: 15px;
