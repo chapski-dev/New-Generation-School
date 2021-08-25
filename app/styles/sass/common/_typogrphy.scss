@@ -4,17 +4,24 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 64.5px;
-    @include mobile {
+    @include tablet {
         text-align: center;
+    }
+    @include mobile-land {
         font-size: 30px;  
     }
 }
 
 h2 {
     font-size: 54px;
-    @include mobile {
+    @include tablet {
+        font-size: 42px;
+        line-height: 47px;
+    }
+    @include mobile-land {
         text-align: center;
         font-size: 30px;
+        line-height: 33px;
     }
 }
 
@@ -31,7 +38,7 @@ h3 {
 }
 
 span {
-    @include mobile {
+    @include mobile-land {
         font-size: 15px;
     }
 }

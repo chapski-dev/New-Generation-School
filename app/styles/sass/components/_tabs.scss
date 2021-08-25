@@ -97,3 +97,40 @@
         }
     }
 }
+
+.section-tabs {
+    .nav-pills {
+        margin-bottom: 50px;
+        @include tablet {
+            display: block;
+            margin-bottom: 28px;
+        }
+    }
+  
+    .nav-item {
+        @include tablet {
+            border: none;
+        }
+    }
+  
+    @include tablet {
+        .tabs-nav__trigger {
+            display: none;
+            background-color: transparent;
+            padding: 0;
+    
+            &.active {
+                display: block;
+                text-align: center;
+                @include tablet {
+                    font-size: 30px;
+                    font-family: $neucha;
+                }
+                @include mobile-land {
+                    
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+  }

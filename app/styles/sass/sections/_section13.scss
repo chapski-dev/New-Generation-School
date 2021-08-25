@@ -1,5 +1,5 @@
 .section13 {
-    margin-bottom: 181px;
+    margin-bottom: 200px;
     @include tablet {
         margin-bottom: 118px;
     }
@@ -25,6 +25,19 @@
     @include tablet {
         text-align: center;
         margin-bottom: 59px;
+    }
+}
+.section13-row {
+    position: relative;
+    .icon-dashed {
+        position: absolute;
+        top: 57%;
+        left: 116%;
+        color: $yellow;
+        font-size: 249px;
+        @include tablet {
+            display: none;
+        }
     }
 }
 .section13-item{
@@ -157,10 +170,16 @@
     height: auto;
     border-radius: 70px;
     @include tablet {
+        transform: scale(2);
         border-radius: 20px;
     }
 }
-
+.section13-item__discr {
+    width: 90%;
+    // @include tablet {
+    //     width: 100%;
+    // }
+}
 .section13-item__discr-title {
     margin-bottom: 38px;
     @include tablet {
@@ -179,13 +198,21 @@
     }
 }
 .section13-item__discr-left-colum, .section13-item__discr-right-colum {
-    flex: 1;
+    width: 50%;
+    @include tablet {
+        width: 100%;
+    }
+}
+.section13-item__discr-right-colum {
+    padding-left: 6%;
+    @include tablet {
+        padding-left: 0;
+    }
 }
 .section13-item__discr-point {
     position: relative;
     margin-bottom: 20px;
     padding-left: 40px;
-    padding-right: 6%;
     @include tablet {
         padding-right: 0;
         margin-bottom: 23px;

@@ -80,8 +80,11 @@
   font-size: 220px;
   color: $yellow;
   @include tablet {
-      font-size: 57px;
+      font-size: 120px;
       left: -7%;
+  }
+  @include mobile-land {
+    font-size: 57px;
   }
 }
 .icon-slider-daub-2  {
@@ -113,38 +116,6 @@
   }
 }
 
-.section-tabs {
-  .nav-pills {
-      margin-bottom: 50px;
-      @include tablet {
-          display: block;
-          margin-bottom: 28px;
-      }
-  }
-
-  .nav-item {
-      @include tablet {
-          border: none;
-      }
-  }
-
-  @include tablet {
-      .tabs-nav__trigger {
-          display: none;
-          background-color: transparent;
-          padding: 0;
-  
-          &.active {
-              display: block;
-              text-align: center;
-              @include tablet {
-                  font-family: $neucha;
-                  font-size: 20px;
-              }
-          }
-      }
-  }
-}
 
 .section-row {
   margin-bottom: 134px;
@@ -203,12 +174,17 @@
       }
   }
 }
+// SWIPE-BUTTONS ON MOBILE AND SERTIFICATES
+
 .section__swipe-buttons {
   display: none;
   @include tablet {
       display: block;
       margin-bottom: -9px;
       text-align: center;
+      @include tablet {
+        margin-bottom: 10px ;
+      }
       .section-tabs__mobile-trigger {
           background: transparent;
           border: none;
@@ -217,6 +193,12 @@
           i {
               font-size: 54px;
               color: $green;
+              @include tablet {
+                font-size: 84px;
+              }
+              @include mobile-land {
+                font-size: 54px;
+              }
           }
       }
       .section-tabs__mobile-trigger-prev {

@@ -39,6 +39,9 @@
 .section10-title {
     margin-bottom: 35px;
     @include tablet {
+        font-size: 42px;
+    }
+    @include mobile-land {
         font-size: 30px;
         line-height: 33px;
         text-align: center;
@@ -132,6 +135,11 @@
     text-align: center;
     margin-bottom: 28px;
     @include tablet {
+        font-size: 42px;
+        line-height: 47px;
+
+    }
+    @include mobile-land {
         font-size: 30px;
         line-height: 33px;
         margin-bottom: 7px;
@@ -140,6 +148,9 @@
 .section10__info-item-discr{
     text-align: center;
     @include tablet {
+        font-size: 16px;
+    }
+    @include mobile-land {
         font-size: 15px;
         line-height: 150%;
     }

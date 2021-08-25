@@ -13,20 +13,20 @@
 }
 .section12-content {
     display: flex;
+    flex-wrap: wrap;
     @include tablet {
         flex-direction: column;
     }
 }
-.section12-content__left, .section12-content__right {
+.section12-content__item {
     display: flex;
-    flex: 1;
+    flex: 0 0 50%;
+    margin-bottom: 45px;
     @include tablet {
         flex-direction: column;
     }
 }
-.section12-content__left {
-    margin-bottom: 45px;
-}
+
 .section12-content__number {
     position: relative;
     font-size: 64px;
@@ -74,6 +74,9 @@
         }
         @include mobile-land {
             top: 0;
+            // left: 40%;
+        }
+        @include mobile {
             left: 40%;
         }
     }
@@ -81,7 +84,7 @@
 .section12-content__number_2 {
     .icon-cicle-empty-2 {
         position: absolute;
-        top: -32%;
+        top: -48%;
         left: 0;
         color: $red;
         @include tablet {
@@ -90,6 +93,9 @@
         }
         @include mobile-land {
             top: 0;
+            // left: 40%;
+        }
+        @include mobile {
             left: 40%;
         }
     }

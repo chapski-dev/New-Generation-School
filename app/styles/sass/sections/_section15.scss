@@ -10,9 +10,12 @@
     margin-bottom: 53px;
     padding-left: 18px;
     padding-right: 18px;
-    @include mobile-land {
-        padding: 0;
+    @include tablet {
         margin-right: 0;
+        padding: 0;
+        text-align: center;
+    }
+    @include mobile-land {
         line-height: 33.05px;
         margin-bottom: 62px;
     }
@@ -36,7 +39,8 @@
     top: 23%;
     @include tablet {
         top: 74%;
-        left: 37%;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 }
 .section15-item {
@@ -45,29 +49,37 @@
     position: relative;
     border-radius: 70px;
     background-color: $pink;
-    height: 150px;
-    padding-left: 9%;
+    padding: 27px 30px 27px 53px;
     @include tablet {
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
         border-radius: 20px;
+        padding: 23px 28px 62px 30px;
+    }
+    @include mobile-land {
+        width: 100%;
     }
     &:hover {
+        @include tablet {
+            .section15-item__button {
+                transform: none;
+            }
+        }
         .section15-item__button {
-            transform: scale(1.2);
             @include tablet {
                 transform: none;
             }
+            transform: scale(1.2);
         }
     }
 }
 .section15-item__discr {
     padding-right: 37%;
     @include tablet {
-        position: absolute;
+        text-align: center;
         padding-right: 0;
         font-size: 14px;
         line-height: 21px;
-        top: 17%;
-        left: 10%;
-        width: 81%;
     }
 }

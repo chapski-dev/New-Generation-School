@@ -73,27 +73,35 @@ $('.nav-links__item--parent').on('click', '.nav-links__link', function(event) {
 
 // Переключение табов во второй секции на мобилке
 
-const tabsTriggers = $('.section2-tabs .tabs-nav__trigger');
+const sectionTabs = $('.section-tabs');
 
-$('.section2-tabs__mobile-trigger').on('click', function(event) {
-  event.preventDefault();
-  const currentTab = $('.section2-tabs .tabs-nav__trigger.active');
-  const activeIndex = currentTab.parent().index();
+if (sectionTabs.length) {
+  sectionTabs.each(function() {
+    const _self = $(this);
+    const tabsTriggers = _self.find('.tabs-nav__trigger');
 
-  if ($(this).data('move') === 'prev') {
-    if ( activeIndex === 0 ) {
-      tabsTriggers.eq( tabsTriggers.length - 1 ).tab('show');
-    } else {
-      tabsTriggers.eq( activeIndex - 1 ).tab('show');
-    }
-  } else {
-    if ( activeIndex === (tabsTriggers.length - 1) ) {
-      tabsTriggers.eq(0).tab('show');
-    } else {
-      tabsTriggers.eq( activeIndex + 1 ).tab('show');
-    }
-  }
-});
+    _self.find('.section-tabs__mobile-trigger').on('click', function(event) {
+      event.preventDefault();
+      const currentTab = _self.find('.tabs-nav__trigger.active');
+      const activeIndex = currentTab.parent().index();
+    
+      if ($(this).data('move') === 'prev') {
+        if ( activeIndex === 0 ) {
+          tabsTriggers.eq( tabsTriggers.length - 1 ).tab('show');
+        } else {
+          tabsTriggers.eq( activeIndex - 1 ).tab('show');
+        }
+      } else {
+        if ( activeIndex === (tabsTriggers.length - 1) ) {
+          tabsTriggers.eq(0).tab('show');
+        } else {
+          tabsTriggers.eq( activeIndex + 1 ).tab('show');
+        }
+      }
+    });
+  });
+}
+
 
 const thankModal = $('#thanksModal');
 const timeoutToCloseThanksModal = +thankModal.data('timeout');
@@ -107,7 +115,7 @@ thankModal.on('shown.bs.modal', () => {
 function showThanksModal(event) {
   $(event.target).off('hidden.bs.modal', showThanksModal);
   thankModal.modal('show');
-}
+};
 
 $('form').on('submit', function(event) {
   event.preventDefault();
@@ -119,7 +127,7 @@ $('form').on('submit', function(event) {
   } else {
     showThanksModal();
   }
-})
+});
 
 // Коллапс Аккордеон собствеными руками.
 
@@ -138,5 +146,37 @@ if (accordion.length) {
     accordion.find('.accordion-item[style]').removeAttr('style');
     $(this).remove();
   });
-}
+};
 
+// Show/Hide part of text
+
+$(document).ready(function(){
+  if ( $(window).width() < 768){
+    $('.content_block').addClass('hide')
+  }
+	$('.content_toggle').on('click', function(){
+		$('.content_block').toggleClass('hide');	
+		if ($('.content_block').hasClass('hide')) {
+			$('.content_toggle').html('Показать все описание');
+		} else {
+			$('.content_toggle').html('Скрыть');
+		}		
+		return false;
+	});				
+});
+
+
+// Наведение на обьект в расписании  
+const timeTable = $('.timetable__wrapper');
+if (timeTable.length) {
+  const timeTableColoredBoxes = timeTable.find(".colored-box:not(.colored-box—-empty)");
+
+  timeTableColoredBoxes.on({
+      mouseenter: function () {
+        timeTable.addClass(`_hover-${$(this).data('colored')}`)
+      },
+      mouseleave: function () {
+        timeTable.removeClass(`_hover-${$(this).data('colored')}`)
+      }
+  });
+}

@@ -6,38 +6,7 @@
     }
 }
 
-.section2-tabs {
-    .nav-pills {
-        margin-bottom: 46px;
-        @include tablet {
-            display: block;
-            margin-bottom: 28px;
-        }
-    }
 
-    .nav-item {
-        @include tablet {
-            border: none;
-        }
-    }
-
-    @include tablet {
-        .tabs-nav__trigger {
-            display: none;
-            background-color: transparent;
-            padding: 0;
-    
-            &.active {
-                display: block;
-                text-align: center;
-                @include tablet {
-                    font-family: $neucha;
-                    font-size: 20px;
-                }
-            }
-        }
-    }
-}
 
 .section2-row {
     margin-bottom: 134px;

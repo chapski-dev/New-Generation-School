@@ -29,14 +29,17 @@
     margin-bottom: 58px;
     @include tablet {
         width: 100%;
-        font-size: 30px;
-        line-height: 33px;
         text-align: center;
         margin-bottom: 64px;
+        line-height: 47px;
+    }
+    @include mobile-land{
+        font-size: 30px;
+        line-height: 33px;
     }
 }
 .section11-tabs {
-    .section2__swipe-buttons {
+    .section__swipe-buttons {
         text-align: center;
         @include tablet {
             margin-bottom: 31px;
@@ -67,7 +70,7 @@
     @include tablet {
         margin-right: 0;
     }
-    .section5__item_1 {
+    .section5__item {
         @include tablet {
             padding-bottom: 0;
             margin-bottom: 33px;
@@ -80,9 +83,16 @@
     }
     .section5__img-wrapper {
         margin-bottom: 3px;
+        @include tablet {
+            padding-bottom: 70%;
+            margin-bottom: 30px;
+        }
     }
     .section5-img {
         width: 91%;
+        @include tablet {
+            width: 70%;
+        }
     }
     .icon-wawes {
         top: 27%;
@@ -114,6 +124,13 @@
         @include tablet {
             margin: 0 auto;
             display: block;
+        }
+    }
+    .content_toggle {
+        display: none;
+        @include tablet {
+            display: block;
+            margin-bottom: 46px;
         }
     }
 }

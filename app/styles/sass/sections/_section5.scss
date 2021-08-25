@@ -63,6 +63,9 @@
         font-size: 157px;
         transform: rotate(15.22deg);
         z-index: 3;
+        @include tablet {
+            left: 0;
+        }
         @include mobile {
             top: 50%;
             left: -23%;
@@ -276,7 +279,7 @@
     }
     .section5-info__link-about {
         margin-right: 48px;
-        padding-left: 11px;
+        // padding-left: 11px;
         @include tablet-land {
             margin-right: 0;
             padding-left: 0;

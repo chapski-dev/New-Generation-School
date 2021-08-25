@@ -19,11 +19,45 @@
     }
 }
 .section14-info {
+    position: relative;
     width: 60%;
     margin: 0 auto;
     margin-left: 21%;
     @include tablet {
         width: 100%;
         margin-left: 0;
+    }
+    .icon-childrens {
+        position: absolute;
+        top: -45%;
+        left: -27%;
+        transform: rotate(11deg);
+        font-size: 125px;
+        color: $dark-blue;
+        z-index: -1;
+        @include tablet {
+            top: -145%;
+            left: 0;
+        }
+        @include mobile-land {
+            top: -57%;
+            left: 4%;
+        }
+    }
+    .icon-cicle-fill-1 {
+        position: absolute;
+        top: -54%;
+        left: -16%;
+        font-size: 170px;
+        z-index: -2;
+        color: $light-gray;
+        @include tablet {
+            top: -172%;
+            left: 12%;
+        }
+        @include mobile-land {
+            top: -58%;
+            left: 16%;
+        }
     }
 }

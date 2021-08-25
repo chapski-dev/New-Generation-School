@@ -1,0 +1,32 @@
+.content_block {
+	overflow: hidden;
+	position: relative;
+    margin-bottom: 40px;
+}
+.content_block.hide {
+	height: 300px;
+    margin-bottom: -50px;
+    z-index: -1;
+}
+.content_block.hide:after{
+	content: "";
+	display: block;
+	height: 274px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%)
+}
+.content_toggle {
+    text-align: center;
+    color: $green;
+    text-decoration: underline;
+    &:hover {
+        color: $green;
+        text-decoration: none;
+        @include tablet {
+            text-decoration: underline;
+        }
+    }
+}

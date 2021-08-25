@@ -110,27 +110,7 @@ button {
     }
 }
 
-// SECTION 2
-.section2__swipe-buttons {
-    display: none;
-    @include tablet {
-        display: block;
-        margin-bottom: -9px;
-        .section2-tabs__mobile-trigger {
-            background: transparent;
-            border: none;
-            padding: 0;
-            margin-bottom: 21px;
-            i {
-                font-size: 54px;
-                color: $green;
-            }
-        }
-        .section2-tabs__mobile-trigger-prev {
-            margin-right: 40px;
-        }
-    }
-}
+// SWIPE-BUTTONS ON MOBILE AND SERTIFICATES
 
 // SECTION 3
 .block-info__button{
