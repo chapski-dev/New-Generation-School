@@ -1,0 +1,201 @@
+.section31 {
+    padding-top: 25px;
+    margin-bottom: 152px;
+    @include tablet {
+        margin-bottom: 120px;
+    }
+    @include mobile-land {
+        padding-top: 0;
+    }
+}
+.section31-title-wrapper{
+    margin-bottom: 36px;
+    position: relative;
+    @include tablet {
+        justify-content: center;
+        margin-bottom: 61px;
+    }
+    @include mobile-land {
+        margin-bottom: 43px;
+    }
+    .icon-daub-section7 {
+        position: absolute;
+        top: -21.7%;
+        left: 41%;
+        font-size: 195px;
+        z-index: -1;
+        color: $yellow;
+        @include tablet {
+            top: -27.7%;
+            left: -10%
+        }
+        @include mobile-land {
+            font-size: 165px;
+            top: 22%;
+            left: -20%;
+        }
+    }
+}
+.section31-suptitle {
+    margin-bottom: 20px;
+    @include mobile-land {
+        line-height: 150%;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+}
+.section31-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include tablet {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+}
+.section31__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 360px;
+    min-height: 580px;
+    max-height: 610px;
+    margin-bottom: 46px;
+    @include tablet {
+        min-height: 0;
+        flex: none;
+        margin-bottom: 31px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    @include mobile-land {
+        margin-bottom: 24px;
+    }
+    &:hover {
+        text-decoration: none;
+        cursor: pointer;
+        .section31__item-disc-title {
+            color: $green;
+        }
+        img {
+            transform: scale(1.2);
+            @include tablet {
+                transform: none;
+            }
+        }
+    }
+}
+.section31__item-discr {
+    font-family: $neucha;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    flex: 1 1 auto;
+    @include tablet {
+        line-height: 22px;
+    }
+    span {
+        font-family: $montserrat;
+        font-size: 16px;
+        line-height: 150%;
+        @include mobile-land {
+            font-size: 14px;
+        }
+    }
+}
+.section31__item-disc-title {
+    font-size: 28px;
+    line-height: 30.84px;
+    margin-bottom: 12px;
+    @include mobile-land {
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 5px;
+    }
+}
+.section31__item-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    z-index: 999;
+    @include tablet-land {
+        height: 100%;
+    }
+    @include mobile-land {
+        height: 90%;
+    }
+}
+.section31__item-img-wrapper {
+    padding-bottom: (300 / 360) * 100%;
+    display: block;
+    position: relative;
+    background: $green;
+    border-radius: 70px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $dark-blue;
+        opacity: .2;
+        z-index: 2;
+        pointer-events: none;
+    }
+    @include tablet {
+        border-radius: 20px;
+        padding-bottom: (190/300)*100%;
+        margin-bottom: 13px;
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: .5s;
+    }
+}
+.section31__item-count {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 auto;
+    @include tablet {
+
+    }
+    div{
+        color: $dark-gray;
+        opacity: .3;
+    }
+}
+.section31__item-show-counter {
+    display: flex;
+    .icon-eye {
+        padding-right: 7px;
+        font-size: 20px;
+    }
+    p {
+        @include mobile-land {
+            font-size: 14px;
+        }
+    }
+}
+.section31__item-counter-date {
+    @include mobile-land {
+        font-size: 14px;
+    }
+}
+.section31-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

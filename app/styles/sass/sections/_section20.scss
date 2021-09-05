@@ -3,6 +3,9 @@
     @include tablet {
         margin-bottom: 100px;
     }
+    @include mobile-land {
+        margin-bottom: 104px;
+    }
 }
 .section20-title {
     margin-bottom: 93px;
@@ -14,10 +17,13 @@
 .section20-content {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin-bottom: 66px;
     @include tablet {
         flex-direction: column;
         margin-bottom: 70px;
+    }
+    @include mobile-land {
+        margin-bottom: 154px;
     }
 }
 .section20-content__item {
@@ -26,6 +32,11 @@
     margin-bottom: 45px;
     @include tablet {
         flex-direction: column;
+    }
+    &:last-of-type {
+        @include tablet {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -114,5 +125,51 @@
     }
     @include mobile-land {
         padding: 0;
+    }
+}
+.section20-info {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    margin-left: 21%;
+    @include tablet {
+        width: 93%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .icon-childrens {
+        position: absolute;
+        top: -45%;
+        left: -27%;
+        transform: rotate(11deg);
+        font-size: 125px;
+        color: $dark-blue;
+        z-index: -1;
+        @include tablet {
+            top: -145%;
+            left: 0;
+        }
+        @include mobile-land {
+            top: -64%;
+            left: 31%;
+            font-size: 97px;
+        }
+    }
+    .icon-cicle-fill-1 {
+        position: absolute;
+        top: -54%;
+        left: -16%;
+        font-size: 170px;
+        z-index: -2;
+        color: $light-gray;
+        @include tablet {
+            top: -172%;
+            left: 12%;
+        }
+        @include mobile-land {
+            top: -52%;
+            left: 40%;
+            font-size: 81px;
+        }
     }
 }

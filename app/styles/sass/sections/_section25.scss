@@ -1,6 +1,6 @@
 .section25 {
     padding-top: 29px;
-    margin-bottom: 167px;
+    margin-bottom: 132px;
     @include tablet {
         padding-top: 4px;
         margin-bottom: 82px;
@@ -10,8 +10,8 @@
     position: relative;
     .icon-daub-section7 {
         position: absolute;
-        top: -3.7%;
-        left: 15.5%;
+        top: -1.7%;
+        left: 14.5%;
         font-size: 195px;
         z-index: -1;
         color: $yellow;
@@ -56,10 +56,22 @@
     width: 100%;
     padding-bottom: (570/1160) * 100%;
     z-index: 1;
+    margin-bottom: 43px;
     @include tablet {
         padding-bottom: (250/300) *100%;
         border-radius: 20px;
         overflow: hidden;
+    }
+    .icon-sun {
+        position: absolute;
+        font-size: 171px;
+        color: #ffd600;
+        top: -11%;
+        right: -5.5%;
+        z-index: 3;
+        @include tablet {
+            display: none;
+        }
     }
 }
 .section25__img {
@@ -95,7 +107,21 @@
 
 }
 .section25-info1 {
-    width: 75%;
+    margin-bottom: 66px;
+}
+.section25-info2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px;
+    height: 165px;
+    background-color: $gray;
+    span {
+        width: 80%;
+        @include tablet {
+            width: 100%;
+        }
+    }
 }
 .section25__info-row {
     display: flex;
@@ -176,7 +202,8 @@
 .section25-content {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    justify-content: space-between;
+    margin-bottom: 44px;
     @include tablet {
         flex-direction: column;
         margin-bottom: 70px;
@@ -185,9 +212,7 @@
 .section25-content__item {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    margin-right: 39px;
-    margin-bottom: 45px;
+    flex: 0 0 358px;
 }
 
 .section25-content__number {
@@ -198,6 +223,7 @@
     text-align: center;
     font-family: $neucha;
     margin-right: 10%;
+    margin-bottom: 61px;
     @include tablet {
         font-size: 54px;
         margin-right: 0;
@@ -246,7 +272,7 @@
         position: absolute;
         top: -48%;
         left: 50%;
-        color: $red;
+        color: $green;
         transform: translate(-50%, 0);
         @include tablet {
             top: -42%;

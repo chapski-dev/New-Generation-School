@@ -75,7 +75,7 @@
 }
 .footer-map {
     position: relative;
-    margin-bottom: 31px;
+    margin-bottom: 15px;
     @include tablet {
         width: 100%;
         margin-bottom: 30px;
@@ -86,7 +86,7 @@
         top: 0%;
         left: 0;
         width: 100%;
-        height: 98%;
+        height: 94%;
         border-radius: 70px;
         border: 4px solid $yellow;
         transform: rotate(3.2deg);

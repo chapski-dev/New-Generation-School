@@ -213,5 +213,9 @@
         position: absolute;
         bottom: 30px;
         left: 30px;
+        @include mobile-land {
+            bottom: 10px;
+            left: 10px;
+        }
     }
 }

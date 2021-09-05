@@ -1,0 +1,133 @@
+.section29 {
+    padding-top: 65px;
+    margin-bottom: 50px;
+    @include tablet {
+        margin-bottom: 99px;
+    }
+}
+.section29-title-wrapper {
+    position: relative;
+    margin-bottom: 67px;
+    @include mobile-land {
+        margin-bottom: 34px;
+    }
+    .icon-daub-section7 {
+        position: absolute;
+        top: -104.7%;
+        left: 11.5%;
+        font-size: 195px;
+        z-index: -1;
+        color: $yellow;
+        @include tablet {
+            display: none;
+        }
+        @include mobile-land {
+            display: block;
+            top: -160.7%;
+            left: 19.5%;
+            font-size: 127px;
+        }
+    }
+}
+.section29-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include tablet {
+        display: block;
+    }
+}
+.section29__item {
+    position: relative;
+    flex: 0 0 560px;
+    margin-bottom: 68px;
+    @include tablet {
+        flex: none;
+        margin-bottom: 43px;
+    }
+    &:hover {
+        .section29-button {
+            width: 100px;
+            height: 100px;
+            @include tablet {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+    .section29-video {
+        padding-bottom: (300 / 560) * 100%;
+    }
+    .section29__item-discr {
+        line-height: 150%;
+        font-size: 16px;
+        span {
+            @include mobile-land {
+                font-size: 16px;
+                line-height: 150%;
+            }
+        }
+        .section29__item-discr-title {
+            margin-bottom: 12px;
+            @include mobile-land {
+                font-size: 20px;
+                line-height: 22px;
+            }
+        }
+    }
+    .label-belarus1 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+        @include tablet {
+            right: 3%;
+            transform: translate(0,-50%) scale(0.65);
+        }
+    }
+}
+.section29-video{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background: cornflowerblue;
+    border-radius: 70px;
+    margin-bottom: 21px;
+    @include tablet {
+        height: 190px;
+        border-radius: 20px;
+        margin-bottom: 24px;
+    }
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $dark-blue;
+        opacity: .2;
+        z-index: 2;
+        pointer-events: none;
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .section29-button {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        @include mobile-land {
+            bottom: 10px;
+            left: 10px;
+        }
+    }
+}

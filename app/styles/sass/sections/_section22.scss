@@ -3,13 +3,16 @@
         max-width: 1160px;
         padding: 0;
     }
-}
-.section22-wrapper{
-    position: relative;
-    margin-bottom: 130px;
+    margin-bottom: 96px;
     @include tablet {
         margin-bottom: 104px;
     }
+    @include mobile-land {
+        margin-bottom: 69px;
+    }
+}
+.section22-wrapper{
+    position: relative;
     .section22-title {
         margin-bottom: 59px;
         line-height: 59px;
@@ -58,6 +61,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @include desktop-hd {
+        justify-content: space-around;
+    }
     @include tablet {
         flex-wrap: nowrap;
         flex-direction: column;

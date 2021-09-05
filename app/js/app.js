@@ -52,6 +52,22 @@ var swiper = new Swiper(".mySwiper", {
   observSlideChildren: true,
 });
 
+// let swiperFeedback = new Swiper(".how-to-make-feedback__modal-swiper", {
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//     type: "progressbar",
+//   },
+//   observer: true,
+  
+//   observeParents: true ,
+  
+//   observSlideChildren: true,
+// });
+
 // HEADER MOBILE NAV TOGLE
 $('.header__nav-toggle').on('click', function(event) {
   event.preventDefault();
@@ -148,7 +164,7 @@ if (accordion.length) {
   });
 };
 
-// Show/Hide part of text
+// Show/Hide part of text 
 
 $(document).ready(function(){
   if ( $(window).width() < 768){
@@ -179,4 +195,36 @@ if (timeTable.length) {
         timeTable.removeClass(`_hover-${$(this).data('colored')}`)
       }
   });
-}
+};
+
+// Показ ответа по кнопке в 28 секции
+
+$(".section28-button").on('click', function(event) {
+  const parent = $(this).closest(".section28-tabs-content");
+
+  parent.find(".section28-tabs-content__img-wrapper").toggle();
+  parent.find(".section28-tabs-content__left-hiden-block").toggle();
+  
+  const isActiveState = $(this).data('isactive') === "true";
+
+  $(this).text(
+    isActiveState
+    ? $(this).data('deactivetitle')
+    : $(this).data('activetitle')
+   )
+   $(this).data('isactive', isActiveState ? "false" : "true");
+});
+
+
+// Показ другого текста на странице отзывов в модалке на кнопке
+// $(".swiper-button-next").on('click', function(event) {
+//   const isActiveState = $(".feedback-button-next").data('isactive') === "true";
+//   if ( $(".swiper-button-next").hasClass('swiper-button-disabled')) {
+//     $(this).text(
+//       isActiveState
+//       ? $(this).data('deactivetitle')
+//       : $(this).data('activetitle')
+//      )
+//      $(this).data('isactive', isActiveState ? "false" : "true");
+//   }
+// });

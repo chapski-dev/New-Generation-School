@@ -3,10 +3,52 @@
     backdrop-filter: blur(4px);
     @include mobile-land {
         background: #fff;
+        padding-top: 80px;
+        z-index: 10;
+    }
+}
+.modal-backdrop {
+    z-index: 9;
+    .show {
+        @include mobile-land {
+            opacity: 0;
+        }
+    }
+}
+.modal-dialog-centered {
+    @include mobile-land {
+        min-height: 0%;
     }
 }
 .modal-content {
     border-radius: 70px;
+    @include mobile-land {
+        border: none;
+        border-radius: 0%;
+    }
+    .button-close {
+        position: absolute;
+        top: -38px;
+        right: -12px;
+        opacity: 1;
+        z-index: 10;
+        @include mobile-land {
+            top: 0;
+            right: 0;
+        }
+        span {
+            font-size: 52px;
+            color: white;
+            @include mobile-land {
+                color: black;
+            }
+        }
+    }
+}
+.modal-body {
+    @include mobile-land {
+        padding-top: 91px !important;
+    }
 }
 .modal-consultation {
     .modal-content {
@@ -21,24 +63,7 @@
         @include mobile-land {
             border-radius: 0;
             min-width: 320px;
-            padding: 51px 0px 70px 0px;
-        }
-        .button-close {
-            position: absolute;
-            top: -38px;
-            right: -12px;
-            opacity: 1;
-            @include mobile-land {
-                top: -18px;
-                right: 4px;
-            }
-            span {
-                font-size: 52px;
-                color: white;
-                @include mobile-land {
-                    color: black;
-                }
-            }
+            padding: 0;
         }
     }
     .modal-dialog {
@@ -155,16 +180,11 @@
             border-radius: 20px;
             min-width: 280px;
             left: 0;
-            border: none;
         }
         @include mobile-land {
             border-radius: 0px;
         }
         .button-close {
-            position: absolute;
-            top: -38px;
-            right: -12px;
-            opacity: 1;
             @include tablet {
                 right: 3px;
             }
@@ -172,13 +192,6 @@
                 top: -23px;
                 right: 1%;
                 z-index: 10;
-            }
-            span {
-                font-size: 52px;
-                color: white;
-                @include mobile-land {
-                    color: black;
-                }
             }
         }
     }
@@ -209,7 +222,7 @@
             margin: 0 auto;
         }
         @include mobile-land {
-            top: -7%;
+            top: 0;
         }
     }
     .modal-content {
@@ -230,32 +243,24 @@
         height: 100%;
         padding: 0;
         .button-close {
-            position: absolute;
-            top: -38px;
-            right: -12px;
             opacity: 1;
             z-index: 10;
             @include mobile-land {
-                top: -5%;
+                top: 1%;
                 right: 1%;
-            }
-            span {
-                font-size: 52px;
-                color: white;
-                @include mobile-land {
-                    color: black;
-                }
             }
         }
         .swiper-container {
             border-radius: 70px;
             width: 93%;
             height: 100%;
-            padding: 50px 0 93px 0;
+            padding: 55px 0 93px 0;
             @include tablet {
                 width: 100%;
             }
             @include mobile-land {
+                padding: 0;
+                min-height: 413px;
                 border-radius: 0px;
             }
           }
@@ -269,7 +274,6 @@
             text-align: center;
             font-size: 18px;
             background: #fff;
-    
             /* Center slide text vertically */
             display: -webkit-box;
             display: -ms-flexbox;
@@ -291,17 +295,8 @@
             height: 100%;
             object-fit: contain;
           }
-          .swiper-button-next {
-              @include mobile-land {
-                  top: 95%;
-                  right: 25%;
-              }
-          }
-          .swiper-button-prev {
-            @include mobile-land {
-                top: 95%;
-                left: 25%;
-            }
+          .swiper-pagination {
+              margin-bottom: 57px;
           }
     }
     .swiper-pagination {
@@ -321,6 +316,116 @@
         }
         .swiper-pagination-bullet-active {
             background: $green;
+        }
+    }
+    .swiper-button-wrapper {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        padding: 0 10%;
+        @include mobile-land {
+            position: static;
+            padding: 0 25%;
+        }
+    }
+    .swiper-button-next, .swiper-button-prev {
+        i {
+            color: $green;
+            font-size: 54px;
+        }
+    }
+}
+
+// HOW TO MAKE MODALS 
+.how-to-make-feedback__modal {
+    .modal-body {
+        padding: 50px 60px 60px 60px;
+        @include mobile-land {
+            padding: 0;
+        }
+    }
+    .modal-dialog {
+        min-width: 760px;
+        max-width: 0;
+        @include mobile-land {
+            min-width: auto;
+            max-width: none;
+        }
+    }
+    .swiper-pagination {
+        padding-top: 6px;
+        margin-bottom: 33px;
+    }
+    .swiper-pagination-progressbar {
+        background-color: $light-gray;
+    }
+    .swiper-pagination-progressbar-fill {
+        background-color: $dark-blue;
+        border-radius: 25%;
+    }
+    .swiper-button-wrapper {
+        display: flex;
+        justify-content: space-between;
+        @include mobile-land {
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+    .swiper-button-next, .swiper-button-prev {
+        position: static;
+        display: block;
+        margin: 0;
+        width: auto;
+        height: auto;
+        .feedback-button {
+            min-width: 300px;
+        }
+    }
+    .swiper-button-prev {
+        @include mobile-land {
+            order: 2;
+        }
+    }
+    .swiper-button-next {
+        @include mobile-land {
+            order: 1;
+            margin-bottom: 10px;
+        }
+        .block-info__button {
+            @include mobile-land {
+                margin-bottom: 0;
+            }
+        }
+        &.swiper-button-disabled {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+    .slide-img-wrapper {
+        margin-bottom: 33px;
+        @include mobile-land {
+            margin-bottom: 20px;
+        }
+    }
+    .slide-title {
+        margin-bottom: 12px;
+        @include mobile-land {
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+    .slide-text {
+        @include mobile-land {
+            font-size: 15px;
+            line-height: 150%;
+        }
+    }
+    .swiper-wrapper {
+        margin-bottom: 38px;
+        @include mobile-land {
+            margin-bottom: 0;
         }
     }
 }

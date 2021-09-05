@@ -3,6 +3,9 @@
   @include tablet{
     width: 100%;
   }
+  @include mobile-land {
+    overflow: visible;
+  }
 }
 .swiper-slide {
   @include tablet{
@@ -40,8 +43,30 @@
       background: $green;
     }
 }
+.swiper-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  @include mobile-land {
+    padding: 0 25%;
+    width: 100%;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    position: static;
+  }
+}
 
-
+.swiper-button-next, .swiper-button-prev {
+  &::after {
+    content: '';
+    display: none;
+  }
+  .icon-arrow-right-bordered, .icon-arrow-left-bordered {
+    @include tablet {
+      font-size: 54px;
+      color: $green;
+    }
+  }
+}
 // NAVIGATION 
 .swiper-buttons-mobile {
   display: none;

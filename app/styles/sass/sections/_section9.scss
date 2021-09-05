@@ -22,13 +22,9 @@
     }
 }
 .section9-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-
-    column-gap: 39px;
+    display: flex;
+    justify-content: space-between;
     @include tablet {
-        display: flex;
         flex-direction: column;
         margin-bottom: 47px;
     }
@@ -36,7 +32,9 @@
 .section9__item {
     position: relative;
     display: block;
+    flex: 0 0 360px;
     @include tablet {
+        flex: none;
         margin-bottom: 27px;
         &:last-of-type {
             margin-bottom: 0;

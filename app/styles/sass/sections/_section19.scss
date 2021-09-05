@@ -79,6 +79,9 @@
             padding-bottom: 0;
             margin-bottom: 33px;
         }
+        @include mobile-land {
+            margin-bottom: 14px;
+        }
         .section19-button {
             @include tablet {
                 display: none;
@@ -86,23 +89,36 @@
         }
     }
     .section5__img-wrapper {
-        margin-bottom: 3px;
+        margin-bottom: 48px;
         @include tablet {
             padding-bottom: 70%;
             margin-bottom: 30px;
         }
+        @include mobile-land {
+            padding-bottom: 97.5%;
+        }
     }
     .section5-img {
-        width: 91%;
+        width: 100%;
+        left: -4%;
         @include tablet {
             width: 70%;
+        }
+        @include mobile-land {
+            width: 100%;
+        }
+    }
+    .icon-dashed-rainbow {
+        @include mobile-land {
+            font-size: 158px;
+            left: 50%;
         }
     }
     .icon-wawes {
         top: 27%;
     }
     .section5__item-info {
-        margin-bottom: 43px;
+        margin-bottom: 34px;
         @include tablet {
             margin-bottom: 0;
         }
@@ -128,7 +144,10 @@
     }
 }
 .section19-content__right {
-    flex: 2;
+    flex:  0 0 759px;
+    @include tablet {
+        flex: 2;
+    }
     .section6-video {
         margin-bottom: 21px;
     }
@@ -153,6 +172,12 @@
     }
     .page-text-content {
         margin-bottom: 24px;
+    }
+    .section6__item-discr {
+        p {
+            font-size: 15px;
+            line-height: 155%;
+        }
     }
 }
 .section19-button {

@@ -67,10 +67,10 @@
             }
         }
         .section15-item__button {
-            @include tablet {
-                transform: none;
-            }
             transform: scale(1.2);
+            @include tablet {
+                transform: translate(-50%, 0);
+            }
         }
     }
 }

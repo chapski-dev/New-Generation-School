@@ -3,10 +3,11 @@
         max-width: 1160px;
         padding: 0;
     }
+    margin-bottom: 244px;
 }
 .section26-title {
     width: 70%;
-    margin-bottom: 59px;
+    margin-bottom: 12px;
     line-height: 59px;
     @include tablet {
         width: 100%;
@@ -21,7 +22,7 @@
 }
 .section26-suptitle {
     width: 65%;
-    margin-bottom: 64px;
+    margin-bottom: 69px;
     @include tablet {
         width: 100%;
         text-align: center;
@@ -29,7 +30,6 @@
 }
 .section26-wrapper{
     position: relative;
-    margin-bottom: 130px;
     @include tablet {
         margin-bottom: 104px;
     }
@@ -72,7 +72,7 @@
 }
 .section26__item {
     flex: 0 0 560px;
-    margin-bottom: 68px;
+    margin-bottom: 47px;
     @include tablet {
         flex: none;
         margin-bottom: 24px;

@@ -34,6 +34,7 @@ button {
         background-color: $green;
         border: none;
         font-size: 18px;
+        min-width: 240px;
     }
     &.button-fill--sm {
         min-height: 40px;
@@ -47,6 +48,8 @@ button {
     @extend %button-preset;
     background: transparent;
     border: 2px $green solid;
+    min-width: 240px;
+    min-height: 100px;
 }
 // Red circle button
 .red-button {
@@ -114,7 +117,7 @@ button {
 
 // SECTION 3
 .block-info__button{
-    padding: 35px 66px;
+    padding: 20px 20px;
     color: white;
     @include tablet {
         margin-bottom: 20px;

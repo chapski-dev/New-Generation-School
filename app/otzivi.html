@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Neucha&display=swap" rel="stylesheet">
+    <title>Otzivy</title>
+</head>
+
+<body class="">
+
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <!-- LOGO IMG -->
+                <div class="header-logo">
+                    <img src="./img/src/nav-logo_circle.png" alt="" class="header-logo__circleImg">
+                    <a href="" class="nav-logo__img-link">
+                        <img src="./img/src/nav-logo.png" alt="" class="header-logo__img">
+                    </a>
+                </div>
+                <!-- NAVIGATION -->
+                <div class="header__navigation">
+                    <button class="header__nav-toggle"></button>
+                    <nav class="nav-links header__nav-links">
+                        <ul class="nav-links__list">
+                            <li class="nav-links__item nav-links__item--parent nav-links__item-courses">
+                                <a href="#" class="nav-links__link ">
+                                    Курсы
+                                    <i class="icon-triangle-down"></i>
+                                </a>
+                                <ul class="sub-menu panel">
+                                    <li><a href="#">Курсы подготовки к школе (4-6 лет)</a></li>
+                                    <li><a href="#">Маленькие исследователи (7+ лет)</a></li>
+                                    <li><a href="#">Логопед</a></li>
+                                    <li><a href="#">Репетиторство и доп.услуги</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link">О ТРИЗ</a>
+                            </li>
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link">СМИ о нас</a>
+                            </li>
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link">Блог</a>
+                            </li>
+                            <li class="nav-links__item">
+                                <a href="#" class="nav-links__link">Отзывы</a>
+                            </li>
+                        </ul>
+                        <!-- TABLET/MOBILE CONTACTS -->
+                        <div class="header-contacts__tablet">
+                                <a href="tel:375291194194" class="tel header-contacts__tablet-phone">+375(29) 1-194-194</a>
+                                <div class="header-contacts__tablet-address">пр-т Победителей, д. 23, к. 1 </div>
+                            <div class="header-actions">
+                                <button class="button-fill  button-fill--sm header-button" type="button" data-toggle="modal" data-target="#modalConsultationFirst">Записаться</button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- CONTACTS -->
+                <div class="header-contacts">
+                    <div class="header-contacts__info">
+                        <a href="tel:375291194194" class="tel header-contacts__phone">+375(29) 1-194-194</a>
+                        <div class="header-contacts__address">пр-т Победителей, д. 23, к. 1 </div>
+                    </div>
+                    <div class="header-actions">
+                        <button class="btn btn-primary button-fill button-fill--sm header-button" type="button" data-toggle="modal" data-target="#modalConsultationFirst">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- page start -->
+<section class="section32">
+    <div class="container">
+      <div class="section32-wrapper">
+        <div class="section32-title-wrapper">
+          <h2 class="section32-title">О нас говорят</h2>
+          <i class="icon-daub-section7"></i>
+         </div>
+         <div class="section32-mobile-actions">
+           <button class="button-fill make-feedback-btn">Оставить отзыв</button>
+         </div>
+         <div class="section32-tabs-wrapper section-tabs">
+            <div class="section__swipe-buttons">
+              <button class="section-tabs__mobile-trigger-prev section-tabs__mobile-trigger" data-move="prev">
+                  <i class="icon-arrow-left-bordered"></i>
+              </button>
+              <button class="section-tabs__mobile-trigger-next section-tabs__mobile-trigger" data-move="next">
+                  <i class="icon-arrow-right-bordered"></i>
+              </button>
+            </div>
+           <!-- Nav tabs -->
+            <ul class="nav nav-pills flex-column" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                  <a class="tabs-nav__trigger active" id="pills-parents-tab" data-toggle="pill" href="#pills-parents" role="tab" aria-controls="pills-parents" aria-selected="true">Родители</a>
+              </li>
+              <li class="nav-item">
+                  <a class="tabs-nav__trigger" id="pills-childrens-tab" data-toggle="pill" href="#pills-childrens" role="tab" aria-controls="pills-childrens" aria-selected="false">Детки</a>
+              </li>
+              <li class="nav-item">
+                  <a class="tabs-nav__trigger" id="pills-graduation-tab" data-toggle="pill" href="#pills-graduation" role="tab" aria-controls="pills-graduation" aria-selected="false">На выпускном</a>
+              </li>
+              <li class="nav-item">
+                  <a class="tabs-nav__trigger" id="pills-meeting-tab" data-toggle="pill" href="#pills-meeting" role="tab" aria-controls="pills-meeting" aria-selected="false">На собрании</a>
+              </li>
+              <li class="nav-item">
+                  <a class="tabs-nav__trigger" id="pills-other-feedbacks-tab" data-toggle="pill" href="#pills-other-feedbacks" role="tab" aria-controls="pills-other-feedbacks" aria-selected="false">Сторонние площадки</a>
+              </li>
+              <li class="nav-item">
+                <a class="tabs-nav__trigger make-feedback-tab" id="pills-make-feedback-tab" data-toggle="pill" href="#pills-make-feedback" role="tab" aria-controls="pills-make-feedback" aria-selected="false">Оставить отзыв</a>
+            </li>
+          </ul>
+           <!-- Nav content -->
+            <div class="tab-content" id="pills-tabContent">
+             <div class="tab-pane fade show active" id="pills-parents" role="tabpanel" aria-labelledby="pills-parents-tab">
+              <div class="section32-tab-content-row">
+                <div class="section32__item section32__item-1">
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/poster1.png" alt="">
+                        <a class="red-button section32-button"  href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                            <i class="icon-triangle-play"></i>
+                        </a>
+                    </div>
+                    <div class="section32__item-discr">
+                        <span>Методика ТРИЗ и ее доработка в наши дни</span>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-2">
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/poster2.png" alt="">
+                        <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                            <i class="icon-triangle-play"></i>
+                        </a>
+                    </div>
+                    <div class="section32__item-discr">
+                        <span>Использование элементов технологии ТРИЗ для активизации познавательной деятельности</span>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-3">
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/poster3.png" alt="">
+                        <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                            <i class="icon-triangle-play"></i>
+                        </a>
+                    </div>
+                    <div class="section32__item-discr">
+                        <span class="section32__item-discr">Первая пятерка приёмов ТРИЗ и внутренние приёмы фантазирования</span>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-4">
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/poster4.png" alt="">
+                        <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                            <i class="icon-triangle-play"></i>
+                        </a>
+                    </div>
+                    <div class="section32__item-discr">
+                        <span>ТРИЗ. Теория решения изобретательских задач</span>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-5">
+                  <div class="section32-video">
+                      <img class="section32-video__poster" src="./img/src/section32/poster5.png" alt="">
+                      <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                          <i class="icon-triangle-play"></i>
+                      </a>
+                  </div>
+                  <div class="section32__item-discr">
+                      <span>ТРИЗ. Теория решения изобретательских задач</span>
+                  </div>
+                </div>
+                <div class="section32__item section32__item-6">
+                  <div class="section32-video">
+                      <img class="section32-video__poster" src="./img/src/section32/poster6.png" alt="">
+                      <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                          <i class="icon-triangle-play"></i>
+                      </a>
+                  </div>
+                  <div class="section32__item-discr">
+                      <span>ТРИЗ. Теория решения изобретательских задач</span>
+                  </div>
+                </div>
+              </div>
+             </div>
+             <div class="tab-pane fade" id="pills-childrens" role="tabpanel" aria-labelledby="pills-childrens-tab">
+              <div class="section32-tab-content-row">
+                <div class="section32__item section32__item-1">
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/poster1.png" alt="">
+                        <a class="red-button section32-button"  href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                            <i class="icon-triangle-play"></i>
+                        </a>
+                    </div>
+                    <div class="section32__item-discr">
+                        <span>Методика ТРИЗ и ее доработка в наши дни</span>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-2">
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/poster2.png" alt="">
+                        <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                            <i class="icon-triangle-play"></i>
+                        </a>
+                    </div>
+                    <div class="section32__item-discr">
+                        <span>Использование элементов технологии ТРИЗ для активизации познавательной деятельности</span>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-3">
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/poster3.png" alt="">
+                        <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                            <i class="icon-triangle-play"></i>
+                        </a>
+                    </div>
+                    <div class="section32__item-discr">
+                        <span class="section32__item-discr">Первая пятерка приёмов ТРИЗ и внутренние приёмы фантазирования</span>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-4">
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/poster4.png" alt="">
+                        <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                            <i class="icon-triangle-play"></i>
+                        </a>
+                    </div>
+                    <div class="section32__item-discr">
+                        <span>ТРИЗ. Теория решения изобретательских задач</span>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-5">
+                  <div class="section32-video">
+                      <img class="section32-video__poster" src="./img/src/section32/poster5.png" alt="">
+                      <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                          <i class="icon-triangle-play"></i>
+                      </a>
+                  </div>
+                  <div class="section32__item-discr">
+                      <span>ТРИЗ. Теория решения изобретательских задач</span>
+                  </div>
+                </div>
+                <div class="section32__item section32__item-6">
+                  <div class="section32-video">
+                      <img class="section32-video__poster" src="./img/src/section32/poster6.png" alt="">
+                      <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                          <i class="icon-triangle-play"></i>
+                      </a>
+                  </div>
+                  <div class="section32__item-discr">
+                      <span>ТРИЗ. Теория решения изобретательских задач</span>
+                  </div>
+                </div>
+              </div>
+             </div>
+             <div class="tab-pane fade" id="pills-graduation" role="tabpanel" aria-labelledby="pills-graduation-tab">
+              <div class="section32-tab-content-row">
+                <div class="section32__item section32__item-1">
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/poster1.png" alt="">
+                        <a class="red-button section32-button"  href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                            <i class="icon-triangle-play"></i>
+                        </a>
+                    </div>
+                    <div class="section32__item-discr">
+                        <span>Методика ТРИЗ и ее доработка в наши дни</span>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-2">
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/poster2.png" alt="">
+                        <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                            <i class="icon-triangle-play"></i>
+                        </a>
+                    </div>
+                    <div class="section32__item-discr">
+                        <span>Использование элементов технологии ТРИЗ для активизации познавательной деятельности</span>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-3">
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/poster3.png" alt="">
+                        <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                            <i class="icon-triangle-play"></i>
+                        </a>
+                    </div>
+                    <div class="section32__item-discr">
+                        <span class="section32__item-discr">Первая пятерка приёмов ТРИЗ и внутренние приёмы фантазирования</span>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-4">
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/poster4.png" alt="">
+                        <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                            <i class="icon-triangle-play"></i>
+                        </a>
+                    </div>
+                    <div class="section32__item-discr">
+                        <span>ТРИЗ. Теория решения изобретательских задач</span>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-5">
+                  <div class="section32-video">
+                      <img class="section32-video__poster" src="./img/src/section32/poster5.png" alt="">
+                      <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                          <i class="icon-triangle-play"></i>
+                      </a>
+                  </div>
+                  <div class="section32__item-discr">
+                      <span>ТРИЗ. Теория решения изобретательских задач</span>
+                  </div>
+                </div>
+                <div class="section32__item section32__item-6">
+                  <div class="section32-video">
+                      <img class="section32-video__poster" src="./img/src/section32/poster6.png" alt="">
+                      <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                          <i class="icon-triangle-play"></i>
+                      </a>
+                  </div>
+                  <div class="section32__item-discr">
+                      <span>ТРИЗ. Теория решения изобретательских задач</span>
+                  </div>
+                </div>
+              </div>
+             </div>
+             <div class="tab-pane fade" id="pills-meeting" role="tabpanel" aria-labelledby="pills-meeting-tab">
+              <div class="section32-tab-content-row">
+                <div class="section32__item section32__item-1">
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/poster1.png" alt="">
+                        <a class="red-button section32-button"  href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                            <i class="icon-triangle-play"></i>
+                        </a>
+                    </div>
+                    <div class="section32__item-discr">
+                        <span>Методика ТРИЗ и ее доработка в наши дни</span>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-2">
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/poster2.png" alt="">
+                        <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                            <i class="icon-triangle-play"></i>
+                        </a>
+                    </div>
+                    <div class="section32__item-discr">
+                        <span>Использование элементов технологии ТРИЗ для активизации познавательной деятельности</span>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-3">
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/poster3.png" alt="">
+                        <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                            <i class="icon-triangle-play"></i>
+                        </a>
+                    </div>
+                    <div class="section32__item-discr">
+                        <span class="section32__item-discr">Первая пятерка приёмов ТРИЗ и внутренние приёмы фантазирования</span>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-4">
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/poster4.png" alt="">
+                        <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                            <i class="icon-triangle-play"></i>
+                        </a>
+                    </div>
+                    <div class="section32__item-discr">
+                        <span>ТРИЗ. Теория решения изобретательских задач</span>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-5">
+                  <div class="section32-video">
+                      <img class="section32-video__poster" src="./img/src/section32/poster5.png" alt="">
+                      <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                          <i class="icon-triangle-play"></i>
+                      </a>
+                  </div>
+                  <div class="section32__item-discr">
+                      <span>ТРИЗ. Теория решения изобретательских задач</span>
+                  </div>
+                </div>
+                <div class="section32__item section32__item-6">
+                  <div class="section32-video">
+                      <img class="section32-video__poster" src="./img/src/section32/poster6.png" alt="">
+                      <a class="red-button section32-button" href="https://youtu.be/C5X3_UPFulk" target="_blank" data-fancybox="video-discription">
+                          <i class="icon-triangle-play"></i>
+                      </a>
+                  </div>
+                  <div class="section32__item-discr">
+                      <span>ТРИЗ. Теория решения изобретательских задач</span>
+                  </div>
+                </div>
+              </div>
+             </div>
+             <div class="tab-pane fade" id="pills-other-feedbacks" role="tabpanel" aria-labelledby="pills-other-feedbacks-tab">
+              <div class="section32-tab-content-row section32-other-feedbacks">
+                <div class="section32__item section32__item-1">
+                    <div class="section32__item-discr">
+                        <div class="section32__item-discr-text">
+                          <strong>Юлия: </strong> Здесь ребенок всесторонне развивается благодаря нестандартным подходам к обучению. Его учат не просто буквам, цифрам, а с помощью заданий на логику в игровой форме прививают интерес и желание разобраться самому в новых знаниях. После таких насыщенных и безусловно полезных занятий результат не заставит себя ждать.
+                        </div>
+                        <div class="section32__item-discr-link">
+                          <span>otzyvy.by</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-2">
+
+                    <div class="section32__item-discr">
+                        <div class="section32__item-discr-text">
+                          <strong> Галина: </strong> Очень довольна центром. Хорошие, отзывчивые педагоги. Ребенок за три месяца уже начал бегло читать, считать. И главное, ребенок на все занятия идет с огромным желанием.
+                        </div>
+                        <div class="section32__item-discr-link">
+                          <span>otzyvy.by</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-3">
+                    <div class="section32__item-discr">
+                        <div class="section32__item-discr-text">
+                          <strong>Наташа Кечик:</strong> Всем доброго времени суток! Я никогда не оставляю отзыв в интернете и сама критично отношусь к субъективному мнению! НО поделюсь своим опытом о подготовке своего сына к школе в "Новом поколении". Мы занимаемся в группе педагога Марины Евгеньевны. Для меня на первом месте - это преподаватель, а Марина Евгеньевна это Преподаватель, которых один на миллион!!! Так или иначе Ваш ребёнок научится читать-писать, но Марина Евгеньевна даёт детям гораздо больше - МОТИВАЦИЮ К ОБУЧЕНИЮ, ЖЕЛАНИЕ УЧИТЬСЯ! Я считаю, что успешен в учёбе тот ребёнок, который хочет учиться сам. И доброе, искреннее, некоммерческое отношение к детям очень ценное качество у педагога, а Марина Евгеньевна искренне любит детей! Так что я сама случайно выбрала эту школу, воодушевившись ТРИЗ обучением, а нашла в ней доброго и высоко профессионального педагога, что гораздо важнее самых разных методик обучения!
+                        </div>
+                        <div class="section32__item-discr-link">
+                          <span>Google</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-4">
+                    <div class="section32__item-discr">
+                        <div class="section32__item-discr-text">
+                          <strong>Евгения:</strong> Школа отличнейшая! По- семейному тепло, душевно. Праздники и мероприятия на самом высоком уровне. Наталья Николаевна! Спасибо вам за работу, которую Вы проводите с нашими детьми! Огромнейшая Вам наша благодарность и признание! Я в полном восторге от Вашей работы! Хотела бы выразить также огромную благодарность всему коллективу и администрации за высокий профессионализм и чуткое отношение к учащимся. Обучение действительно построено в форме диалога учителя и ребенка. Ребенок может высказать свое мнение, задать уточняющие вопросы. Учителя с уважением относятся к личности ученика, строят работу на уроке с учетом всех его особенностей. Мы полностью довольны результатом развития ребёнка!
+                        </div>
+                        <div class="section32__item-discr-link">
+                          <span>Yandex</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-5">
+                  <div class="section32__item-discr">
+                      <div class="section32__item-discr-text">
+                        <strong> Екатерина Павловская: </strong>Добрый день! Очень хочется поделиться мнением о школе. Скоро новый учебный год и многие родители, как и мы в прошлом году, встанут перед выбором в какую школу пойти. Так вот, я с уверенностью могу сказать, что НОВОЕ ПОКОЛЕНИЕ - это лучшая школа! Сын с огромным желанием всегда идёт на занятия, скучно там не бывает) Наш учитель Марина Евгеньевна, она обычный урок превращает в увлекательное путешествие по миру знаний. За учебный год сын научился читать, математика вообще его любимый предмет, он осознанно выполняет домашние задания и очень любит радовать своего учителя) Выражаем огромную благодарность всему коллективу школы НОВОЕ ПОКОЛЕНИЕ за заботу, внимание, за волшебные праздники и подарки, за то, что Вы научили любить школу! Спасибо!
+                      </div>
+                      <div class="section32__item-discr-link">
+                        <span>otzyvy.by</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="section32__item section32__item-6">
+                  <div class="section32__item-discr">
+                      <div class="section32__item-discr-text">
+                        <strong> Екатерина Прибыльская: </strong>Хочу выразить благодарность педагогам и организатором школы Новое поколение. Внимательные, добрые а главное любищие наших деток. Знание, опыт педагогов, их умение найти подход к каждому ребенку делает детский коллектив дружным. Занятие всегда увлекательные и развивающие. Ребёнок с огромным удовольствием посещали занятия. Ребенок научился быстрому счёту,  сложению, вычитанию, стал  рассудительныи  и очень общительный .Спасибо за ваш труд!
+                      </div>
+                      <div class="section32__item-discr-link">
+                        <span>Google</span>
+                      </div>
+                  </div>
+                </div>
+                <div class="section32__item section32__item-7">
+                  <div class="section32__item-discr">
+                      <div class="section32__item-discr-text">
+                        <strong>Валерия Ростовцева: </strong>Нашей дочке(ей 5 лет) очень нравится посещать занятия, ходим уже 1 год, также планируем и в дальнейшем продолжить обучение здесь. Педагог хороший и так как группа маленькая имеет возможность индивидуального подхода к каждому ребенку. Всегда приятно видеть увлеченность занятиями и пользу от них. Сейчас очень скучаем по занятиям,и это видно по Алене (часто вспоминает какие то моменты из занятий; спрашивает , когда будем снова ходить))) Ждем нового учебного года с нетерпением)
+                      </div>
+                      <div class="section32__item-discr-link">
+                        <span>Google</span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+             </div>
+             <div class="tab-pane make-feedback-content fade" id="pills-make-feedback" role="tabpanel" aria-labelledby="pills-make-feedback-tab">
+              <div class="section32-tab-content-row">
+                <div class="section32-feedback-discr">Мы будем вам очень благодарны за ваш отзыв. Что рассказать и поделиться своими эмоциями он работе нашей школы выбирети любую удобную площадку из нижеприведенных и оставьте свой отзыв!</div>
+                <div class="section32__item section32__item-1">
+                  <div class="section32__item-hidden-block">
+                    <button class="button-fill button-fill--green section32-hidden-btn" type="button" data-toggle="modal" data-target="#howToMakeFeedbackGoogleModal">
+                      <span class="desctop"> Оставить отзыв</span>
+                      <span class="mobile"> Оставить отзыв на google</span>
+                    </button>
+                  </div>
+                  <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/feedbaks/google-img.png" alt="">
+                    </div>
+                </div>
+                <div class="section32__item section32__item-2">
+                  <div class="section32__item-hidden-block">
+                    <button class="button-fill button-fill--green section32-hidden-btn" type="button" data-toggle="modal" data-target="#howToMakeFeedbackYandexModal">
+                      <span class="desctop"> Оставить отзыв</span>
+                      <span class="mobile"> Оставить отзыв на яндекс</span>
+                    </button>
+                  </div>
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/feedbaks/yandex-img.png" alt="">
+                    </div>
+                </div>
+                <div class="section32__item section32__item-3">
+                  <div class="section32__item-hidden-block">
+                    <button class="button-fill button-fill--green section32-hidden-btn" type="button" data-toggle="modal" data-target="#howToMakeFeedbackOtzyvyModal">
+                      <span class="desctop"> Оставить отзыв</span>
+                      <span class="mobile"> Оставить отзыв на otzyvy</span>
+                    </button>
+                  </div>
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/feedbaks/otzyvy-img.png" alt="">
+                    </div>
+                </div>
+                <div class="section32__item section32__item-4">
+                  <div class="section32__item-hidden-block">
+                    <button class="button-fill button-fill--green section32-hidden-btn" type="button" data-toggle="modal" data-target="#howToMakeFeedbackFacebookModal">
+                      <span class="desctop"> Оставить отзыв</span>
+                      <span class="mobile"> Оставить отзыв на facebook</span>
+                    </button>
+                  </div>
+                    <div class="section32-video">
+                        <img class="section32-video__poster" src="./img/src/section32/feedbaks/facebook-img.png" alt="">
+                    </div>
+                </div>
+                <div class="section32__item section32__item-5">
+                  <div class="section32__item-hidden-block">
+                    <button class="button-fill button-fill--green section32-hidden-btn" type="button" data-toggle="modal" data-target="#howToMakeFeedbackVkModal">
+                      <span class="desctop"> Оставить отзыв</span>
+                      <span class="mobile"> Оставить отзыв на vk</span>
+                    </button>
+                  </div>
+                  <div class="section32-video">
+                      <img class="section32-video__poster" src="./img/src/section32/feedbaks/vk-img.png" alt="">
+                  </div>
+                </div>
+              </div>
+             </div>
+           </div>
+         </div>
+      </div>
+</section>
+<!-- page end -->
+
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <i class="icon-daub"></i>
+                <i class="icon-childrens"></i>
+                <i class="icon-scattered"></i>
+                <i class="icon-little-star"></i>
+                <i class="icon-little-star icon-little-star_1"></i>
+                <h2 class="footer-title">Контакты</h2>
+
+                <div class="footer-map">
+                    <div class="footer-map-wraper" style="position:relative;overflow:hidden;">
+                        <a href="https://yandex.by/maps/org/novoye_pokoleniye/8771193864/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Новое поколение</a>
+                        <a href="https://yandex.by/maps/157/minsk/category/children_developmental_center/184107204/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Центр развития ребёнка в Минске</a>
+                        <a href="https://yandex.by/maps/157/minsk/category/speech_therapists/70647216620/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Логопеды в Минске</a>
+                        <iframe src="https://yandex.by/map-widget/v1/-/CCUiF8qCLC" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                    </div>
+                </div>
+                <div class="footer-contacts__row">
+                    <div class="footer-contacts footer-contacts__item1">
+                        <h3 class="footer-contacts__title">Остались вопросы?</h3>
+                        <div class="footer-contacts__text">Звоните или приезжайте к нам в гости на чашечку кофе. Мы всегда рады ответить на все Ваши вопросы!</div>
+                    </div>
+                    <div class="footer-contacts footer-contacts__item2">
+                        <h3 class="footer-contacts__title">
+                            <a href="tel:+375291194194" class="tel">+375 (29) 1-194-194</a>
+                        </h3>
+                        <div class="footer-contacts-addres">
+                           <span>
+                               пр-т Победителей, д. 23, к. 1 каб. 330 с 9.00 до 22.00 без выходных!
+                           </span>
+                        </div>
+                    </div>
+                    <div class="footer-contacts footer-contacts__item3">
+                        <h3 class="footer-contacts__title footer-contacts__title-mail">info@belbrand.by</h3>
+                        <div class="footer-contacts__social-links">
+                            <a href="https://vk.com/novoepokolenieminsk" class="vk-link" target="_blank">
+                                <i class="icon-vk"></i>
+                            </a>
+                            <a href="https://www.instagram.com/novoepokolenie.by" class="instagram-link" target="_blank">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom__left">
+                        <span>Школа раннего развития детей "Новое поколение"</span>
+                    </div>
+                    <div class="footer-bottom__right">
+                        <span>Ассоциация защиты интеллектуальной собственности "БелБренд" УНП 191309736</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Order consultation modals start -->
+
+    <div class="modal fade modal-consultation" id="modalConsultationFirst" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <div class="modal-consultation__wrapper">
+                    <h3 class="modal-title" id="modalConsultationFirstlTitle">Заказать консультацию</h3>
+                    <p>Оставьте свои контактные данные и мы очень скоро перезвоним вам :)</p>
+                    <div class="modal-form">
+                        <form action="">
+                            <input class="modal-body__input-name" name="name" type="text" placeholder="Как вас зовут?">
+                            <input class="modal-body__input-phone" name="phone" type="text" placeholder="Ваш номер телефона">
+                            <button  type="submit" class="btn btn-primary modal-consultation-button button-fill button-fill--green" >
+                                <span>Получить консультацию</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Thanks Modal -->
+<div class="modal fade modal-consultation modal-consultation_2" id="thanksModal" data-timeout="3000" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="thanksModalTitle">Заявка принята!</h3>
+            </div>
+            <div class="modal-body">
+                <p>Мы свяжемся с вами в ближайшее время, хорошего дня!</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- HEADER modals end -->
+
+    <!-- ABOUT TEACHER modals start -->
+<div class="modal fade about-teacher__modal" id="aboutTeacherModal" tabindex="-1" role="dialog" aria-labelledby="aboutTeacherModalTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close about-teacher__modal-button button-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="page-text-content">
+                    <p>Более 20 лет работала учителем начальных классов в средних специализированных учебных заведениях России и Беларуси.</p>
+                    <p>Имеет публикации методических разработок по проведению уроков в российских периодических печатных образовательных изданиях. В 2000 и 2005 годах повышала свою квалификацию в Минском городском институте развития образования и Академии последипломного образования. Ежегодно в 2006-2009 годах проходила обучение в информационно-образовательном центре "Наставник" Минского городского института развития образования по курсу А.А. Нестеренко "Использование ОТСМ-ТРИЗ педагогики в начальной школе".</p>
+                    <p>В 2004 - 2007 годах, будучи методистом Минского городского института развития образования, была направлена в Управление образования Ленинского района города Минска и занималась оказанием методической помощи учреждениям образования района, содействовала распространению передового педагогического опыта.</p>
+                    <p>С 2007 года на базе начальной школы минской гимназии применяет в учебном процессе инновационные методики развивающего обучения, в том числе ТРИЗ-педагогику.</p>
+                    <p>Неоднократно поощрялась комитетом по образованию Мингорисполкома, Управленииями образования Московского и Ленинского районов города Минска за достижения в работе. В 2010 году удостоена диплома и гранта Мингорисполкома за разработку образовательного проекта "Развитие творческого мышления младших школьников посредством использования инструментов технологии ОТСМ-ТРИЗ".</p>
+                    <p>С 2011 года систематически приглашается в Минский городской институт развития образования для чтения лекций и ознакомления учителей начальных классов города Минска с практическим опытом применения ТРИЗ-технологии в начальной школе.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- ABOUT TEACHER modals end  -->
+
+    <!-- TEACHERS certificates modal statr -->
+<div class="modal fade teacher-certificates__modal" id="teacherCertificatesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="swiper-container mySwiper teacher-certificates-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/src/modals/sectificate.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/src/modals/sectificate.png" alt="">
+                        </div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-wrapper">
+                        <div class="swiper-button-prev">
+                            <i class="icon-arrow-left-bordered"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="icon-arrow-right-bordered"></i>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+  <!-- TEACHERS certificates modal end-->
+
+<!-- HOW TO MAKE FEEDBACK start -->
+<!-- Google -->
+<div class="modal fade how-to-make-feedback__modal " id="howToMakeFeedbackGoogleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="swiper-container how-to-make-feedback__modal-swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide1.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
+                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="http://google.com/" class="link-green">http://google.com/</a> , справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide2.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
+                                <div class="slide-text"> <strong>2-й шаг:</strong>В раскрывающемся окне заполняем свои данные, в строчке названия компании вводим «Новое поколение», выбираем Детский развивающий центр «Новое поколение»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide3.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
+                                <div class="slide-text"> <strong>3-й шаг:</strong> Пишем отзыв, кликаем «Опубликовать отзыв».</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-wrapper">
+                        <div class="swiper-button-prev">
+                            <button class="button-bordered block-info__button_about feedback-button">Назад</button>
+                        </div>
+                        <div class="swiper-button-next">
+                            <button 
+                            class="button-fill button-fill--green block-info__button feedback-button feedback-button-next"
+                            type="button" 
+                            data-isactive="false"
+                            data-activetitle="Оставить отзыв"
+                            data-deactivetitle="Понятно, дальше"
+                            >
+                            Понятно, дальше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Yandex -->
+<div class="modal fade how-to-make-feedback__modal" id="howToMakeFeedbackYandexModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="swiper-container how-to-make-feedback__modal-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide1.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте yandex.by</h3>
+                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="http://yandex.by/" class="link-green">http://yandex.by/</a>, справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide2.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте yandex.by</h3>
+                                <div class="slide-text"> <strong>2-й шаг:</strong>В раскрывающемся окне заполняем свои данные, в строчке названия компании вводим «Новое поколение», выбираем Детский развивающий центр «Новое поколение»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide3.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте yandex.by</h3>
+                                <div class="slide-text"> <strong>3-й шаг:</strong> Пишем отзыв, кликаем «Опубликовать отзыв».</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-wrapper">
+                        <div class="swiper-button-prev">
+                            <button class="button-bordered block-info__button_about">Назад</button>
+                        </div>
+                        <div class="swiper-button-next">
+                            <button 
+                            class="button-fill button-fill--green block-info__button feedback-button-next"
+                            type="button" 
+                            data-isactive="false"
+                            data-activetitle="Оставить отзыв"
+                            data-deactivetitle="Понятно, дальше"
+                            >
+                            Понятно, дальше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Otzyvy -->
+<div class="modal fade how-to-make-feedback__modal" id="howToMakeFeedbackOtzyvyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="swiper-container how-to-make-feedback__modal-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide1.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте otzyvy.by</h3>
+                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="http://otzyvy.by/" class="link-green">http://otzyvy.by/</a>, справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide2.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте otzyvy.by</h3>
+                                <div class="slide-text"> <strong>2-й шаг:</strong>В раскрывающемся окне заполняем свои данные, в строчке названия компании вводим «Новое поколение», выбираем Детский развивающий центр «Новое поколение»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide3.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте otzyvy.by</h3>
+                                <div class="slide-text"> <strong>3-й шаг:</strong> Пишем отзыв, кликаем «Опубликовать отзыв».</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-wrapper">
+                        <div class="swiper-button-prev">
+                            <button class="button-bordered block-info__button_about">Назад</button>
+                        </div>
+                        <div class="swiper-button-next">
+                            <button 
+                            class="button-fill button-fill--green block-info__button feedback-button-next"
+                            type="button" 
+                            data-isactive="false"
+                            data-activetitle="Оставить отзыв"
+                            data-deactivetitle="Понятно, дальше"
+                            >
+                            Понятно, дальше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Facebook -->
+<div class="modal fade how-to-make-feedback__modal" id="howToMakeFeedbackFacebookModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="swiper-container how-to-make-feedback__modal-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide1.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте facebook.com</h3>
+                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="https://www.facebook.com/" class="link-green">https://www.facebook.com/</a> , справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide2.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте facebook.com</h3>
+                                <div class="slide-text"> <strong>2-й шаг:</strong>В раскрывающемся окне заполняем свои данные, в строчке названия компании вводим «Новое поколение», выбираем Детский развивающий центр «Новое поколение»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide3.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте facebook.com</h3>
+                                <div class="slide-text"> <strong>3-й шаг:</strong> Пишем отзыв, кликаем «Опубликовать отзыв».</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-wrapper">
+                        <div class="swiper-button-prev">
+                            <button class="button-bordered block-info__button_about">Назад</button>
+                        </div>
+                        <div class="swiper-button-next">
+                            <button 
+                            class="button-fill button-fill--green block-info__button feedback-button-next"
+                            type="button" 
+                            data-isactive="false"
+                            data-activetitle="Оставить отзыв"
+                            data-deactivetitle="Понятно, дальше"
+                            >
+                            Понятно, дальше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- VK -->
+<div class="modal fade how-to-make-feedback__modal" id="howToMakeFeedbackVkModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-body">
+            <button 
+            type="button" 
+            class="close button-close" 
+            data-dismiss="modal" 
+            aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="swiper-container how-to-make-feedback__modal-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide1.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте vk.com</h3>
+                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="https://vk.com/" class="link-green">https://vk.com/</a>  , справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide2.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте vk.com</h3>
+                                <div class="slide-text"> <strong>2-й шаг:</strong>В раскрывающемся окне заполняем свои данные, в строчке названия компании вводим «Новое поколение», выбираем Детский развивающий центр «Новое поколение»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide3.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте vk.com</h3>
+                                <div class="slide-text"> <strong>3-й шаг:</strong> Пишем отзыв, кликаем «Опубликовать отзыв».</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-wrapper">
+                        <div class="swiper-button-prev">
+                            <button class="button-bordered block-info__button_about">Назад</button>
+                        </div>
+                        <div class="swiper-button-next">
+                            <button 
+                            class="button-fill button-fill--green block-info__button feedback-button-next"
+                            type="button" 
+                            data-isactive="false"
+                            data-activetitle="Оставить отзыв"
+                            data-deactivetitle="Понятно, дальше"
+                            >
+                            Понятно, дальше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- HOW TO MAKE FEEDBACK end -->
+
+
+
+<!-- Initialize Swiper -->
+ <script src="./js/app.min.js"></script>
+</body>
+</html>
+<div class="modal fade modal-consultation" id="modalConsultationFirst" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <div class="modal-consultation__wrapper">
+                    <h3 class="modal-title" id="modalConsultationFirstlTitle">Заказать консультацию</h3>
+                    <p>Оставьте свои контактные данные и мы очень скоро перезвоним вам :)</p>
+                    <div class="modal-form">
+                        <form action="">
+                            <input class="modal-body__input-name" name="name" type="text" placeholder="Как вас зовут?">
+                            <input class="modal-body__input-phone" name="phone" type="text" placeholder="Ваш номер телефона">
+                            <button  type="submit" class="btn btn-primary modal-consultation-button button-fill button-fill--green" >
+                                <span>Получить консультацию</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Thanks Modal -->
+<div class="modal fade modal-consultation modal-consultation_2" id="thanksModal" data-timeout="3000" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="thanksModalTitle">Заявка принята!</h3>
+            </div>
+            <div class="modal-body">
+                <p>Мы свяжемся с вами в ближайшее время, хорошего дня!</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- HEADER modals end -->
+
+    <!-- ABOUT TEACHER modals start -->
+<div class="modal fade about-teacher__modal" id="aboutTeacherModal" tabindex="-1" role="dialog" aria-labelledby="aboutTeacherModalTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close about-teacher__modal-button button-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="page-text-content">
+                    <p>Более 20 лет работала учителем начальных классов в средних специализированных учебных заведениях России и Беларуси.</p>
+                    <p>Имеет публикации методических разработок по проведению уроков в российских периодических печатных образовательных изданиях. В 2000 и 2005 годах повышала свою квалификацию в Минском городском институте развития образования и Академии последипломного образования. Ежегодно в 2006-2009 годах проходила обучение в информационно-образовательном центре "Наставник" Минского городского института развития образования по курсу А.А. Нестеренко "Использование ОТСМ-ТРИЗ педагогики в начальной школе".</p>
+                    <p>В 2004 - 2007 годах, будучи методистом Минского городского института развития образования, была направлена в Управление образования Ленинского района города Минска и занималась оказанием методической помощи учреждениям образования района, содействовала распространению передового педагогического опыта.</p>
+                    <p>С 2007 года на базе начальной школы минской гимназии применяет в учебном процессе инновационные методики развивающего обучения, в том числе ТРИЗ-педагогику.</p>
+                    <p>Неоднократно поощрялась комитетом по образованию Мингорисполкома, Управленииями образования Московского и Ленинского районов города Минска за достижения в работе. В 2010 году удостоена диплома и гранта Мингорисполкома за разработку образовательного проекта "Развитие творческого мышления младших школьников посредством использования инструментов технологии ОТСМ-ТРИЗ".</p>
+                    <p>С 2011 года систематически приглашается в Минский городской институт развития образования для чтения лекций и ознакомления учителей начальных классов города Минска с практическим опытом применения ТРИЗ-технологии в начальной школе.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- ABOUT TEACHER modals end  -->
+
+    <!-- TEACHERS certificates modal statr -->
+<div class="modal fade teacher-certificates__modal" id="teacherCertificatesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="swiper-container mySwiper teacher-certificates-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/src/modals/sectificate.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/src/modals/sectificate.png" alt="">
+                        </div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-wrapper">
+                        <div class="swiper-button-prev">
+                            <i class="icon-arrow-left-bordered"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="icon-arrow-right-bordered"></i>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+  <!-- TEACHERS certificates modal end-->
+
+<!-- HOW TO MAKE FEEDBACK start -->
+<!-- Google -->
+<div class="modal fade how-to-make-feedback__modal " id="howToMakeFeedbackGoogleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="swiper-container how-to-make-feedback__modal-swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide1.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
+                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="http://google.com/" class="link-green">http://google.com/</a> , справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide2.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
+                                <div class="slide-text"> <strong>2-й шаг:</strong>В раскрывающемся окне заполняем свои данные, в строчке названия компании вводим «Новое поколение», выбираем Детский развивающий центр «Новое поколение»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide3.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
+                                <div class="slide-text"> <strong>3-й шаг:</strong> Пишем отзыв, кликаем «Опубликовать отзыв».</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-wrapper">
+                        <div class="swiper-button-prev">
+                            <button class="button-bordered block-info__button_about feedback-button">Назад</button>
+                        </div>
+                        <div class="swiper-button-next">
+                            <button 
+                            class="button-fill button-fill--green block-info__button feedback-button feedback-button-next"
+                            type="button" 
+                            data-isactive="false"
+                            data-activetitle="Оставить отзыв"
+                            data-deactivetitle="Понятно, дальше"
+                            >
+                            Понятно, дальше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Yandex -->
+<div class="modal fade how-to-make-feedback__modal" id="howToMakeFeedbackYandexModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="swiper-container how-to-make-feedback__modal-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide1.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте yandex.by</h3>
+                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="http://yandex.by/" class="link-green">http://yandex.by/</a>, справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide2.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте yandex.by</h3>
+                                <div class="slide-text"> <strong>2-й шаг:</strong>В раскрывающемся окне заполняем свои данные, в строчке названия компании вводим «Новое поколение», выбираем Детский развивающий центр «Новое поколение»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide3.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте yandex.by</h3>
+                                <div class="slide-text"> <strong>3-й шаг:</strong> Пишем отзыв, кликаем «Опубликовать отзыв».</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-wrapper">
+                        <div class="swiper-button-prev">
+                            <button class="button-bordered block-info__button_about">Назад</button>
+                        </div>
+                        <div class="swiper-button-next">
+                            <button 
+                            class="button-fill button-fill--green block-info__button feedback-button-next"
+                            type="button" 
+                            data-isactive="false"
+                            data-activetitle="Оставить отзыв"
+                            data-deactivetitle="Понятно, дальше"
+                            >
+                            Понятно, дальше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Otzyvy -->
+<div class="modal fade how-to-make-feedback__modal" id="howToMakeFeedbackOtzyvyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="swiper-container how-to-make-feedback__modal-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide1.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте otzyvy.by</h3>
+                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="http://otzyvy.by/" class="link-green">http://otzyvy.by/</a>, справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide2.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте otzyvy.by</h3>
+                                <div class="slide-text"> <strong>2-й шаг:</strong>В раскрывающемся окне заполняем свои данные, в строчке названия компании вводим «Новое поколение», выбираем Детский развивающий центр «Новое поколение»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide3.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте otzyvy.by</h3>
+                                <div class="slide-text"> <strong>3-й шаг:</strong> Пишем отзыв, кликаем «Опубликовать отзыв».</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-wrapper">
+                        <div class="swiper-button-prev">
+                            <button class="button-bordered block-info__button_about">Назад</button>
+                        </div>
+                        <div class="swiper-button-next">
+                            <button 
+                            class="button-fill button-fill--green block-info__button feedback-button-next"
+                            type="button" 
+                            data-isactive="false"
+                            data-activetitle="Оставить отзыв"
+                            data-deactivetitle="Понятно, дальше"
+                            >
+                            Понятно, дальше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Facebook -->
+<div class="modal fade how-to-make-feedback__modal" id="howToMakeFeedbackFacebookModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="swiper-container how-to-make-feedback__modal-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide1.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте facebook.com</h3>
+                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="https://www.facebook.com/" class="link-green">https://www.facebook.com/</a> , справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide2.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте facebook.com</h3>
+                                <div class="slide-text"> <strong>2-й шаг:</strong>В раскрывающемся окне заполняем свои данные, в строчке названия компании вводим «Новое поколение», выбираем Детский развивающий центр «Новое поколение»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide3.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте facebook.com</h3>
+                                <div class="slide-text"> <strong>3-й шаг:</strong> Пишем отзыв, кликаем «Опубликовать отзыв».</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-wrapper">
+                        <div class="swiper-button-prev">
+                            <button class="button-bordered block-info__button_about">Назад</button>
+                        </div>
+                        <div class="swiper-button-next">
+                            <button 
+                            class="button-fill button-fill--green block-info__button feedback-button-next"
+                            type="button" 
+                            data-isactive="false"
+                            data-activetitle="Оставить отзыв"
+                            data-deactivetitle="Понятно, дальше"
+                            >
+                            Понятно, дальше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- VK -->
+<div class="modal fade how-to-make-feedback__modal" id="howToMakeFeedbackVkModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-body">
+            <button 
+            type="button" 
+            class="close button-close" 
+            data-dismiss="modal" 
+            aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="swiper-container how-to-make-feedback__modal-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide1.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте vk.com</h3>
+                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="https://vk.com/" class="link-green">https://vk.com/</a>  , справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide2.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте vk.com</h3>
+                                <div class="slide-text"> <strong>2-й шаг:</strong>В раскрывающемся окне заполняем свои данные, в строчке названия компании вводим «Новое поколение», выбираем Детский развивающий центр «Новое поколение»</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img-wrapper">
+                                <img src="../img/src/section32/modals/slide3.png" alt="">
+                            </div>
+                            <div class="slide-discr">
+                                <h3 class="slide-title">Как оставить отзыв на сайте vk.com</h3>
+                                <div class="slide-text"> <strong>3-й шаг:</strong> Пишем отзыв, кликаем «Опубликовать отзыв».</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-wrapper">
+                        <div class="swiper-button-prev">
+                            <button class="button-bordered block-info__button_about">Назад</button>
+                        </div>
+                        <div class="swiper-button-next">
+                            <button 
+                            class="button-fill button-fill--green block-info__button feedback-button-next"
+                            type="button" 
+                            data-isactive="false"
+                            data-activetitle="Оставить отзыв"
+                            data-deactivetitle="Понятно, дальше"
+                            >
+                            Понятно, дальше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- HOW TO MAKE FEEDBACK end -->

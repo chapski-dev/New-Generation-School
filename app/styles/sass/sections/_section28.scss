@@ -1,0 +1,110 @@
+.section28 {
+    margin-bottom: 135px;
+    @include tablet {
+        margin-bottom: 109px;
+        text-align: center;
+        align-items: center;
+    }
+    @include mobile-land {
+        margin-bottom: 112px;
+    }
+    .nav-pills {
+        margin-bottom: 70px;
+    }
+}
+.section28-title {
+    margin-bottom: 6px;
+    @include mobile-land {
+        text-align: center;
+        margin-bottom: 13px;
+    }
+}
+.section28-suptitle {
+    margin-bottom: 64px;
+}
+.section28-tabs-content {
+    display: flex;
+    justify-content: space-between;
+    @include tablet {
+        flex-direction: column;
+    }
+}
+.section28-tabs-content__left-hiden-block {
+    display: none;
+    padding: 66px 50px 71.5px 50px;
+    border-radius: 70px;
+    border: 3px $green dashed;
+    h3 {
+        font-size: 28px;
+        line-height: 31px;
+        margin-bottom: 7px;  
+    }
+    p {
+        font-size: 14px;
+        line-height: 160%;
+    }
+}
+.section28-tabs-content__left {
+    flex: 0 0 460px;
+    @include tablet {
+        margin-right: 0;
+    }
+    @include mobile-land {
+        flex: unset;
+    }
+}
+.section28-tabs-content__img-wrapper {
+    position: relative;
+    border-radius: 70px;
+    padding-bottom: (360/460) * 100%;
+    overflow: hidden;
+    @include tablet {
+        padding-bottom: (162/260) * 100%;
+        border-radius: 20px;
+    }
+    @include mobile-land {
+        padding-bottom: (190/300) * 100%;
+        margin-bottom: 31px;
+    }
+}
+.section28-tabs-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    @include tablet {
+        position: relative;
+        margin: 0 auto;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    @include mobile-land {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.section28-tabs-content__right {
+    flex: 0 0 658px;
+    .page-text-content {
+        margin-bottom: 30px;
+        p {
+            margin-bottom: 26px;
+        }
+    }
+    @include mobile-land {
+        flex: unset;
+    }
+}
+.section28-tabs-content__right-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+.section28-button {
+    width: 240px;
+    @include tablet {
+        margin: 0 auto;
+    }
+}

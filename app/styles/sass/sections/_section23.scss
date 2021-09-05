@@ -1,5 +1,5 @@
 .section23 {
-    margin-bottom: 136px;
+    margin-bottom: 125px;
     @include mobile-land {
         margin-bottom: 110px;
     }
@@ -9,6 +9,12 @@
     @include tablet {
         text-align: center;
     }
+    @include mobile-land {
+        margin-bottom: 61px;
+    }
+}
+.section23-tabs-buttons-wrapper {
+    position: relative;
 }
 .section23-row {
     position: relative;
@@ -27,12 +33,16 @@
             width: 100%;
             display: block;
             margin: 0;
-            top: 7%;
+            top: 0;
+            z-index: 10;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
         }
         .section-tabs__mobile-trigger {
-            &:first-of-type {
-                margin-right: 55%;
-            }
+            margin: 0;
         }
     }
 }
@@ -40,6 +50,9 @@
     position: relative;
     margin-bottom: 50px;
     @include mobile-land {
+        border-radius: 20px;
+        background-color: #F5F5F9;
+        padding-top: 22px;
         margin-bottom: 0;
     }
     .nav-item {
@@ -81,7 +94,7 @@
     .timetable {
         @include mobile-land {
             flex-direction: column;
-            padding: 0 30px;
+            padding: 6px 30px 11px 30px;
         }
     }
     .timetable__body-item, .timetable__header-item {
@@ -140,7 +153,6 @@
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         padding-bottom: 49px;
-        padding-top: 22px;
     }
     .nav-item__mobile-discr {
         display: none;

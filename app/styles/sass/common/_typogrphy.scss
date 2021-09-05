@@ -45,7 +45,11 @@ span {
 
 a {
     color: $textcolor;
+    &.link-green {
+        color: $green;
+    }
 }
+
 .page-text-content {
     p {
         font-size: 16px;

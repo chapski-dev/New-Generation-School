@@ -37,15 +37,11 @@
         @include mobile-land {
             position: absolute;
             width: 100%;
-            display: block;
-            // transform: translate(0, 50%);
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5%;
             margin: 0;
             top: 7%;
-        }
-        .section-tabs__mobile-trigger {
-            &:first-of-type {
-                margin-right: 55%;
-            }
         }
     }
 }
