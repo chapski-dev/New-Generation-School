@@ -13,6 +13,8 @@ import Swiper from 'swiper';
 // core version + navigation, pagination modules:
 import SwiperCore, { Navigation, Pagination } from 'swiper/core';
 
+import Masonry from 'masonry-layout';
+
 // configure Swiper to use modules
 SwiperCore.use([Navigation, Pagination]);
 
@@ -27,6 +29,8 @@ var swiper = new Swiper(".section-tabs-slider", {
     clickable: true,
   },
   
+  loop: false,
+
   observer: true,
   
   observeParents: true ,
@@ -52,21 +56,7 @@ var swiper = new Swiper(".mySwiper", {
   observSlideChildren: true,
 });
 
-// let swiperFeedback = new Swiper(".how-to-make-feedback__modal-swiper", {
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     type: "progressbar",
-//   },
-//   observer: true,
-  
-//   observeParents: true ,
-  
-//   observSlideChildren: true,
-// });
+
 
 // HEADER MOBILE NAV TOGLE
 $('.header__nav-toggle').on('click', function(event) {
@@ -74,11 +64,11 @@ $('.header__nav-toggle').on('click', function(event) {
   $(this).closest('.header__navigation').toggleClass('_mobile-nav-open')
 })
 
-
-$('.nav-links__item--parent').on('click', '.nav-links__link', function(event) {
+const navLinkItemParent = $('.nav-links__item--parent')
+$(navLinkItemParent).on('click', '.nav-links__link', function(event) {
   event.preventDefault();
   if ($(window).width() <= DESKTOP_FROM) {
-    $(this).closest('.nav-links__item--parent').toggleClass("active");
+    $(this).closest(navLinkItemParent).toggleClass("active");
     $(this).siblings('.sub-menu').toggle();
   } else {
     $(this).closest('.nav-links__item--parent').removeClass("active");
@@ -87,10 +77,8 @@ $('.nav-links__item--parent').on('click', '.nav-links__link', function(event) {
 });
 
 
-// Переключение табов во второй секции на мобилке
-
+// Переключение табов на мобилке
 const sectionTabs = $('.section-tabs');
-
 if (sectionTabs.length) {
   sectionTabs.each(function() {
     const _self = $(this);
@@ -164,8 +152,7 @@ if (accordion.length) {
   });
 };
 
-// Show/Hide part of text 
-
+// Show/Hide part of text on mobile-land 
 $(document).ready(function(){
   if ( $(window).width() < 768){
     $('.content_block').addClass('hide')
@@ -198,8 +185,7 @@ if (timeTable.length) {
 };
 
 // Показ ответа по кнопке в 28 секции
-
-$(".section28-button").on('click', function(event) {
+$(".section28-button_desctop").on('click', function(event) {
   const parent = $(this).closest(".section28-tabs-content");
 
   parent.find(".section28-tabs-content__img-wrapper").toggle();
@@ -216,15 +202,40 @@ $(".section28-button").on('click', function(event) {
 });
 
 
-// Показ другого текста на странице отзывов в модалке на кнопке
-// $(".swiper-button-next").on('click', function(event) {
-//   const isActiveState = $(".feedback-button-next").data('isactive') === "true";
-//   if ( $(".swiper-button-next").hasClass('swiper-button-disabled')) {
-//     $(this).text(
-//       isActiveState
-//       ? $(this).data('deactivetitle')
-//       : $(this).data('activetitle')
-//      )
-//      $(this).data('isactive', isActiveState ? "false" : "true");
-//   }
-// });
+
+// Massonry on otzivi page
+let updateMasonry = function(){
+  const grid = document.querySelector('.section32-other-feedbacks.grid');
+  const masonry = new Masonry(grid, {
+    gutter: 40,
+    columnWidth: 360,
+    itemSelector: '.section32__item.grid-item',
+  });
+};
+$('#pills-other-feedbacks-tab').on('shown.bs.tab', updateMasonry);
+$(window).on('resize load', updateMasonry);
+
+
+// Add active class on comments-sort-btn
+const commentsSortBtn = $('.comments-sort-btn');
+const currentCommentsSortBtn = $('.comments-sort-btn.active');
+
+$(commentsSortBtn).on("click", function() {
+  if($(currentCommentsSortBtn)) {
+    $(commentsSortBtn).siblings().removeClass('active')
+  };
+  $(this).addClass("active");
+});
+
+
+// Я ПЫТАЛСЯ
+  
+const swipeNextHowFeedback = $("feedback-button-next")
+const howMakeFeedbackSwiper = $('.how-to-make-feedback__modal-swiper');
+const curentBullet = $('.swiper-pagination-bullet-active');
+
+$(swipeNextHowFeedback).on("clik", customProgresBar());
+
+const customProgresBar = function() {
+  $(howMakeFeedbackSwiper).find(curentBullet).prev().addClass("active");
+};

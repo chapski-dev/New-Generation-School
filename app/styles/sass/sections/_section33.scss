@@ -1,5 +1,5 @@
 .section33 {
-    margin-bottom: 43px;
+    margin-bottom: 46px;
     .container {
         max-width: 797px;
     }
@@ -9,21 +9,31 @@
     justify-content: flex-start;
     opacity: .5;
     margin-bottom: 23px;
-    @include mobile-land {
+    & > * {
+        margin-right: 50px;
+        @include tablet {
+            &:first-of-type {
+                margin-right: 65%;
+            }
+            &:nth-of-type(2) {
+                margin-right: 0;
+            }
+        }
+        @include mobile-land {
+            &:first-of-type {
+                margin-right: 30%;
+            }
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+    }
+    @include tablet {
         justify-content: space-between;
     }
 }
-.section33-date {
-    margin-right: 50px;
-    @include mobile-land {
-        margin-right: 30%;
-    }
-}
 .section33-views {
-    margin-right: 50px;
-    @include mobile-land {
-        margin-right: 0px;
-    }
     .icon-eye {
         margin-right: 7px;
     }
@@ -84,7 +94,7 @@
         }
     }
 }
-.section33-info__box {
+.section33-info__box, blockquote {
     position: relative;
     display: flex;
     background-color: $light-gray;
@@ -136,7 +146,6 @@
             min-width: 192px;
             top: 30px;
             left: 30px;
-            padding-bottom: (108/192) * 100%;
             @include mobile-land {
                 position: static;
                 padding-bottom: 0;
@@ -199,92 +208,6 @@
     }
 }
 
-.section33-social-links{
-    margin-bottom: 60px;
-}
-.section33-social-links__discr {
-    opacity: .5;
-    margin-bottom: 5px;
-    font-size: 14px;
-    @include mobile-land {
-        text-align: center;
-    }
-}
-.section33-social-links__row {
-    display: flex;
-    flex-wrap: wrap;
-    @include mobile-land {
-        justify-content: center;
-        align-items: center;
-        max-width: 190px;
-        min-height: 90px;
-        margin: 0 auto;
-    }
-    a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 100%;
-        margin-right: 10px;
-        transition: 0.2s linear;
-        &:hover {
-            transform: scale(1.09);
-            text-decoration: none;
-            @include tablet {
-                transform: none;
-            }
-        }
-        i {
-            color: white;
-        }
-    }
-    .vk-link {
-        background-color: #7294C7;
-    }
-    .tg-link {
-        background-color: #2F89CE;
-    }
-    .twitter-link {
-        background-color: #55ACE3;
-    }
-    .facebook-link {
-        background-color: #4E6297;
-        @include mobile-land {
-            margin-right: 0;
-        }
-    }
-    .ok-link {
-        background-color: #F79A38;
-    }
-    .viber-link {
-        background-color: #7C509A;
-    }
-    .pinterest-link {
-        background-color: #BE1326;
-        @include mobile-land {
-            margin-right: 0;
-        }
-    }
-}
-.section33-comments {
-    .input-comment {
-        width: 100%;
-        height: 240px;
-        margin-bottom: 20px;
-        outline: none;
-        border: none;
-        border-radius: 10px;
-        background-color: $light-gray;
-        padding: 21px 29px;
-        &::-webkit-input-placeholder { opacity: .5; }
-        &:-ms-input-placeholder { opacity: .5; }
-        &::-ms-input-placeholder { opacity: .5; }
-        &::placeholder { opacity: .5; }
-        resize: none;
-    }
-}
 .section33-comments__actions-row {
     display: flex;
     justify-content: space-between;
@@ -297,31 +220,6 @@
         }
         .section33-comments-sorting {
             order: 2;
-        }
-    }
-}
-.section33-comments-sorting {
-    display: flex;
-    @include mobile-land {
-        justify-content: space-between;
-    }
-    .section33-comments-sort {
-        margin-right: 30px;
-        text-decoration: none;
-        cursor: pointer;
-        opacity: .5;
-        @include mobile-land {
-            margin-right: 0;
-        }
-        &:hover{
-            color: $green;
-        }
-        &.active {
-            opacity: 1;
-            border-radius: 100px;
-            color: white;
-            background-color: $green;
-            box-shadow: 0px 0px 0px 7px #0bbc63;
         }
     }
 }

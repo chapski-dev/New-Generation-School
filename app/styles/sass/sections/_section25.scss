@@ -110,17 +110,16 @@
     margin-bottom: 66px;
 }
 .section25-info2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: -50px;
     border-radius: 70px;
-    height: 165px;
+    padding: 41px 105px 52px 100px;
     background-color: $gray;
-    span {
-        width: 80%;
-        @include tablet {
-            width: 100%;
-        }
+    @include tablet {
+        border-radius: 70px;
+    }
+    @include mobile-land {
+        padding: 40px 20px 45px 20px;
+        border-radius: 20px;
     }
 }
 .section25__info-row {
@@ -213,6 +212,10 @@
     display: flex;
     flex-direction: column;
     flex: 0 0 358px;
+    margin-bottom: 50px;
+    @include tablet-land {
+        flex: 0 0 300px;
+    }
 }
 
 .section25-content__number {
@@ -259,7 +262,7 @@
         color: $dark-blue;
         transform: translate(-50%, 0);
         @include tablet {
-            top: -42%;
+            top: -30%;
             left: 50%;
         }
         @include mobile-land {
@@ -275,7 +278,7 @@
         color: $green;
         transform: translate(-50%, 0);
         @include tablet {
-            top: -42%;
+            top: -25%;
             left: 50%;
         }
         @include mobile-land {
@@ -291,7 +294,7 @@
         color: $yellow;
         transform: translate(-50%, 0);
         @include tablet {
-            top: -42%;
+            top: -30%;
             left: 50%;
         }
         @include mobile-land {

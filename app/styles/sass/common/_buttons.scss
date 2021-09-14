@@ -32,9 +32,13 @@ button {
     border: none;
     &.button-fill--green {
         background-color: $green;
+        color: white;
         border: none;
         font-size: 18px;
         min-width: 240px;
+        &:hover {
+            background-color: $green-dark;
+        }
     }
     &.button-fill--sm {
         min-height: 40px;
@@ -98,8 +102,13 @@ button {
     background: $green;
     width: 240px;
     height: 100px;
-    &:hover .icon-triangle-play::before{
-		background-color: $green;
+    &:hover {
+        background-color: $green !important;
+        .icon-triangle-play {
+            &::before {
+                background-color: $green;
+            }
+        }
 	}
     span {
         font-size: 18px;
@@ -116,14 +125,14 @@ button {
 // SWIPE-BUTTONS ON MOBILE AND SERTIFICATES
 
 // SECTION 3
-.block-info__button{
+.block-info__button {
     padding: 20px 20px;
     color: white;
     @include tablet {
         margin-bottom: 20px;
     }
 }
-.block-info__button_about{
+.block-info__button_about {
     padding: 35px 66px;
     color: $green;
     &:hover {

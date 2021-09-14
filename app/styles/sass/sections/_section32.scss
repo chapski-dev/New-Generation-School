@@ -6,6 +6,7 @@
     position: relative;
     margin-bottom: 34px;
     @include tablet {
+        text-align: center;
         margin-bottom: 34px;
     }
     .icon-daub-section7 {
@@ -16,9 +17,13 @@
         z-index: -1;
         color: $yellow;
         @include tablet {
+            top: -98.7%;
+            left: 30.5%;
+            font-size: 139px;
+        }
+        @include mobile-land {
             top: -162.7%;
             left: 15.5%;
-            font-size: 139px;
         }
     }
 }
@@ -42,7 +47,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     @include tablet {
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
     .section__swipe-buttons {
         @include tablet {
@@ -59,6 +66,10 @@
     .nav-pills {
         flex: 0 0 358px;
         @include tablet {
+            flex: unset;
+            margin-bottom: 30px;
+        }
+        @include mobile-land {
             margin-bottom: 24px;
         }
     }
@@ -85,6 +96,8 @@
             font-size: 20px;
             line-height: 22px;
             @include tablet {
+                font-size: 30px;
+                line-height: 33px;
                 color: black;
                 background-color: transparent;
             }
@@ -122,9 +135,12 @@
         }
     }
     .tab-content {
-        flex: 0 0 759px;
+        flex: 0 0 760px;
+        @include tablet-land {
+            flex: 1;
+        }
         @include tablet {
-            flex: auto;
+            flex: unset;
         }
     }
 }
@@ -132,6 +148,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @include tablet-land {
+        justify-content: center;
+    }
     @include tablet {
         display: block;
     }
@@ -140,6 +159,7 @@
 .section32__item {
     flex: 0 0 360px;
     margin-bottom: 44px;
+    // height: fit-content;
     @include tablet {
         flex: none;
         margin-bottom: 24px;
@@ -261,16 +281,33 @@
     }
 }
 .section32-other-feedbacks {
+    display: block;
+    @include tablet {
+    }
     .section32__item {
-        background-color: $lignt-blue;
-        padding: 32px 40px;
+        flex: none;
         border-radius: 20px;
+        padding: 32px 40px;
+        background-color: $lignt-blue;
+        @include tablet-land {
+            margin: 0 auto 44px;
+            position: static !important;
+        }
+        @include mobile {
+            padding: 33px 30px;
+        }
         &:hover {
             .section32__item-discr-link {
                 span {
                     font-family: $montserrat;
                     color: $green;
                 }
+            }
+        }
+        &.grid-item {
+            width: 360px;
+            @include mobile-land {
+                width: 100%;
             }
         }
     }
@@ -284,6 +321,12 @@
     font-size: 16px;
     line-height: 150%;
     margin-bottom: 24px;
+    @include tablet-land {
+        width: 80%;
+    }
+    @include tablet {
+        width: 100%;
+    }
 }
 .make-feedback-content {
     .section32-video {
@@ -299,6 +342,12 @@
         img {
             object-fit: none;
             transform: scale(.7);
+            @include tablet {
+                transform: scale(1.7);
+            }
+            @include mobile-land {
+                transform: scale(.7);
+            }
         }
     }
     .section32__item {

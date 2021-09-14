@@ -1,5 +1,5 @@
 .section12 {
-    margin-bottom: 102px;
+    margin-bottom: 60px;
     @include tablet {
         margin-bottom: 100px;
     }
@@ -21,7 +21,7 @@
 .section12-content__item {
     display: flex;
     flex: 0 0 50%;
-    margin-bottom: 45px;
+    margin-bottom: 87px;
     @include tablet {
         flex-direction: column;
     }
@@ -68,6 +68,10 @@
         top: -52%;
         left: 0;
         color: $dark-blue;
+        @include tablet-land {
+            top: -40%;
+            left: -12%;
+        }
         @include tablet {
             top: -42%;
             left: 42%;
@@ -87,6 +91,10 @@
         top: -48%;
         left: 0;
         color: $red;
+        @include tablet-land {
+            top: -40%;
+            left: -12%;
+        }
         @include tablet {
             top: -42%;
             left: 42%;

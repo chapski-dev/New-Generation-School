@@ -39,6 +39,7 @@
 		"webpack-stream": "^6.1.2"
 	},
 	"dependencies": {
-		"gulp-file-include": "^2.3.0"
+		"gulp-file-include": "^2.3.0",
+		"masonry-layout": "^4.2.2"
 	}
 }

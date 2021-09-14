@@ -111,13 +111,13 @@
     .icon-dashed-rainbow {
         position: absolute;
         top: -4%;
-        left: 56%;
+        left: 49%;
         color: $red;
         font-size: 191.5px;
         @include tablet-land {
             font-size: 164px;
         }
-        @include tablet {
+        @include mobile-land {
             top: -8%;
             left: 59%;
             font-size: 119px;

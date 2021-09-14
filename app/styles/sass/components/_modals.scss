@@ -4,8 +4,11 @@
     @include mobile-land {
         background: #fff;
         padding-top: 80px;
-        z-index: 10;
+        z-index: 12;
     }
+}
+.modal-header {
+    border: none;
 }
 .modal-backdrop {
     z-index: 9;
@@ -50,6 +53,11 @@
         padding-top: 91px !important;
     }
 }
+.modal-form {
+    @include mobile-land {
+        padding: 0 10px;
+    }
+}
 .modal-consultation {
     .modal-content {
         border-radius: 70px;
@@ -74,7 +82,6 @@
     }
     .modal-header {
         padding: 0 0 12px 0;
-        border: none;
     }
     .modal-body {
         display: flex;
@@ -106,7 +113,7 @@
         border-radius: 20px;
         border: rgba(49, 49, 49, 0.4) 1px solid;
         opacity: 0.4;
-        min-width: 360px;
+        width: 100%;
         @include tablet {
             min-width: 300px;
             font-size: 12px;
@@ -197,7 +204,6 @@
     }
     .modal-header {
         padding: 0px;
-        border: none;
         @include tablet {
             max-height: 0;
         }
@@ -347,6 +353,9 @@
     .modal-dialog {
         min-width: 760px;
         max-width: 0;
+        @include tablet {
+            min-width: 730px;
+        }
         @include mobile-land {
             min-width: auto;
             max-width: none;
@@ -378,14 +387,17 @@
         margin: 0;
         width: auto;
         height: auto;
-        .feedback-button {
-            min-width: 300px;
-        }
+    }
+    .feedback-button {
+        min-width: 300px;
     }
     .swiper-button-prev {
         @include mobile-land {
             order: 2;
         }
+    }
+    .swiper-modal-link {
+        display: none;
     }
     .swiper-button-next {
         @include mobile-land {
@@ -400,6 +412,19 @@
         &.swiper-button-disabled {
             opacity: 1;
             pointer-events: all;
+            button {
+                display: none;
+            }
+            &~.swiper-modal-link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                margin-bottom: 0;
+                &:hover {
+                    color: white;
+                }
+            }
         }
     }
 
@@ -427,5 +452,35 @@
         @include mobile-land {
             margin-bottom: 0;
         }
+    }
+}
+
+.answer-question {
+    height: auto;
+    &.modal{
+        background: rgba(54, 52, 127, 0.4);
+        backdrop-filter: blur(4px);
+        @include mobile-land {
+            padding-top: 80px;
+            z-index: 12;
+        }
+    }
+    .answer-question-button {
+        top: -20%;
+        span {
+            font-size: 72px;
+            color: white;
+        }
+    }
+    .modal-header {
+        padding: 0;
+    }
+    .modal-body {
+        padding-top: 41px !important;
+        padding-bottom: 72px;
+    }
+    h3 {
+        text-align: center;
+        margin-bottom: 6px;
     }
 }

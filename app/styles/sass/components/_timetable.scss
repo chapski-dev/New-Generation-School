@@ -80,63 +80,12 @@
         width: 50%;
     }
 }
-.timetable__header {
-    margin-bottom: 10px;
-    @include mobile-land {
-        margin-right: 16px;
-        margin-bottom: 0;
-    }
-}
-.timetable__header-row {
-    display: flex;
-    justify-content: flex-end;
-    @include mobile-land {
-        flex-direction: column;
-    }
-    .timetable__header-item {
-        &:last-of-type {
-            @include tablet {
-                margin-right: 18px;
-            }
-            @include mobile-land {
-                margin: 0;
-            }
-        }
-    }
-}
-.timetable__body {
-    @include mobile-land {
-        display: flex;
-    }
-}
-.timetable__body-row {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 20px;
-    @include mobile-land{
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-bottom: 0;
-    }
-    &:last-of-type {
-        margin-bottom: 0;
-    }
-    .timetable__body-item {
-        @include tablet {
-            margin-left: 20px;
-        }
-        @include mobile-land {
-            margin-left: 0;
-            margin-bottom: 30px;
-        }
-    }
-}
-
-
-.timetable__header-item,
-.timetable__body-item {
+.timetable__header-item, .timetable__body-item {
     flex: 0 0 60px;
     margin-left: 61px;
+    @include tablet-land {
+        margin-left: 55px;
+    }
     @include tablet {
         flex: 0 0 67px;
         margin-left: 59px;
@@ -162,6 +111,66 @@
         }
     }
 }
+.timetable__header {
+    margin-bottom: 10px;
+    @include mobile-land {
+        margin-right: 16px;
+        margin-bottom: 0;
+    }
+}
+.timetable__header-row {
+    display: flex;
+    justify-content: flex-end;
+    @include mobile-land {
+        flex-direction: column;
+    }
+    .timetable__header-item {
+        @include tablet {
+            margin-left: 13px;
+        }
+        &:last-of-type {
+            @include tablet {
+                margin-right: 0px;
+            }
+            @include mobile-land {
+                margin: 0;
+            }
+        }
+    }
+}
+.timetable__body {
+    @include mobile-land {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+    }
+}
+.timetable__body-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    @include tablet-land {
+        margin-bottom: 40px;
+    }
+    @include mobile-land{
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    .timetable__body-item {
+        @include tablet {
+            margin-left: 12px;
+        }
+        @include mobile-land {
+            margin-left: 0;
+            margin-bottom: 30px;
+        }
+    }
+}
+
 .timetable__header-item {
     text-align: center;
     font-family: $neucha;

@@ -50,11 +50,14 @@
     border-radius: 70px;
     background-color: $pink;
     padding: 27px 30px 27px 53px;
+    @include tablet-land {
+        padding: 27px 30px 27px 45px;
+    }
     @include tablet {
         justify-content: center;
-        width: 80%;
+        width: 60%;
         margin: 0 auto;
-        border-radius: 20px;
+        border-radius: 40px;
         padding: 23px 28px 62px 30px;
     }
     @include mobile-land {
@@ -76,6 +79,9 @@
 }
 .section15-item__discr {
     padding-right: 37%;
+    @include tablet-land {
+        padding-right: 25%;
+    }
     @include tablet {
         text-align: center;
         padding-right: 0;

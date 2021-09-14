@@ -17,7 +17,7 @@
         color: $yellow;
         z-index: -1;
         @include tablet {
-            top: -84%;
+            top: -54%;
             left: 36.5%;
             font-size: 159px;
         }
@@ -42,18 +42,28 @@
     position: relative;
     .icon-dashed {
         position: absolute;
-        top: 57%;
-        left: 116%;
         color: $yellow;
         font-size: 249px;
+        &.first {
+            top: 27%;
+            left: 116%;
+        }
+        &.second {
+            top: 47%;
+            left: -21%;
+        }
+        &.third {
+            top: 76%;
+            left: 116%;
+        }
         @include tablet {
             display: none;
         }
     }
 }
-.section21-item{
+.section21-item {
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: 213px;
     &:last-of-type {
         margin-bottom: 0 !important;
     }   
@@ -64,22 +74,19 @@
         flex-direction: column;
         margin-bottom: 50px !important;
     }
-}
-.section21-item_1, .section21-item_2, .section21-item_3{
     &::before {
         content: '';
         display: block;
         width: 108.5%;
-        height: 182%;
+        height: 115%;
         min-height: 447px;
-        opacity: .6;
         border-radius: 70px;
         position: absolute;
         z-index: -1;
-        top: -29.5%;
-        left: -4.5%;
-        transform: rotate(-1.7deg);
-
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -48%) rotate(-1.7deg);
+    
         @include tablet {
             display: none;
         }
@@ -97,7 +104,6 @@
     }
 }
 .section21-item_1 {
-   margin-bottom: 19%;
    @include tablet {
        background-color: #fff8d2;
    }
@@ -105,40 +111,29 @@
        margin-bottom: 17%;
    }
    &::before{
-    height: 145%;
-    top: -21.5%;
     background: #fff8d2;
 }
 }
 .section21-item_2 {
-   margin-bottom: 17.5%;
    @include tablet {
         background-color: #E7F8EF;
    }
    &::before {
-    height: 145%;
-    top: -24.5%;
     background-color: #E7F8EF;
-   }
-   &.section21-item_5 {
-       margin-bottom: 20.5%;
    }
 }
 
 .section21-item_3, .section21-item_6 {
-    margin-bottom: 247px;
     @include tablet {
         background-color: #F5F5F9;
-        margin-bottom: 0;
     }
     &::before{
-        top: -22.5%;
-        height: 145%;
         background-color: #F5F5F9;
     }
 
 }
 .section21-item__content {
+    min-height: 300px;
     padding-left: calc(42% + 3px);
     @include tablet {
         width: 100%;
@@ -185,6 +180,7 @@
     height: auto;
     border-radius: 70px;
     @include tablet {
+        width: 100%;
         border-radius: 20px;
     }
 }

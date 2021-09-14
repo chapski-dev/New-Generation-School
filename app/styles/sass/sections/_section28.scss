@@ -34,9 +34,17 @@
     padding: 66px 50px 71.5px 50px;
     border-radius: 70px;
     border: 3px $green dashed;
+    @include tablet-land {
+    padding: 35px;
+    }
+    @include tablet {
+        padding: 148px 70px 147px;
+        margin-bottom: 31px;
+        border-radius: 20px;
+    }
     h3 {
         font-size: 28px;
-        line-height: 31px;
+        line-height: 31px;  
         margin-bottom: 7px;  
     }
     p {
@@ -46,7 +54,11 @@
 }
 .section28-tabs-content__left {
     flex: 0 0 460px;
+    @include tablet-land {
+        flex: 0 0 410px;
+    }
     @include tablet {
+        flex: unset;
         margin-right: 0;
     }
     @include mobile-land {
@@ -61,10 +73,10 @@
     @include tablet {
         padding-bottom: (162/260) * 100%;
         border-radius: 20px;
+        margin-bottom: 31px;
     }
     @include mobile-land {
         padding-bottom: (190/300) * 100%;
-        margin-bottom: 31px;
     }
 }
 .section28-tabs-img {
@@ -75,36 +87,46 @@
     object-fit: cover;
     object-position: center;
     @include tablet {
-        position: relative;
-        margin: 0 auto;
-        height: auto;
-        margin-bottom: 30px;
+        width: 100%;
     }
     @include mobile-land {
-        position: absolute;
         top: 0;
         left: 0;
     }
 }
 .section28-tabs-content__right {
     flex: 0 0 658px;
+    @include tablet-land {
+        flex: 0 0 510px;
+    }
+    @include tablet {
+        flex: unset;
+    }
     .page-text-content {
         margin-bottom: 30px;
         p {
             margin-bottom: 26px;
         }
     }
-    @include mobile-land {
-        flex: unset;
-    }
 }
 .section28-tabs-content__right-actions {
     display: flex;
     justify-content: flex-end;
+    @include tablet {
+        justify-content: center;
+    }
 }
 .section28-button {
     width: 240px;
-    @include tablet {
+    @include mobile-land {
+        display: none; // убрать только с мобилок
         margin: 0 auto;
+    }
+}
+.section28-button_mobile {
+    width: 240px;
+    display: none;
+    @include mobile-land {
+        display: block;
     }
 }
