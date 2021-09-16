@@ -28,19 +28,20 @@
     }
 }
 .section32-mobile-actions {
-    display: none;
-    @include tablet {
-        display: flex;
-        justify-content: center;
-    }
+    display: flex;
+    justify-content: center;
 }
 
 .make-feedback-btn {
+    display: none;
     min-width: 240px;
     background-color: $pink;
     font-size: 18px;
     margin-bottom: 30px;
     color: black;
+    @include tablet {
+        display: block;
+    }
 }
 .section32-tabs-wrapper {
     display: flex;

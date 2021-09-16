@@ -239,3 +239,11 @@ $(toggleBtnHidenAccordionItems).on("click", function() {
   }
   return false;
 });
+
+// "Оставить отзыв" на странице otzivi.html от планшета
+$(".make-feedback-btn").on("click", function () {
+  $('.tabs-nav__trigger.active').removeClass('active');
+  $('.tabs-nav__trigger.make-feedback-tab').addClass('active');
+  $('.tab-pane').removeClass('active');
+  $('.tab-pane.make-feedback-content').addClass('active show');
+});
