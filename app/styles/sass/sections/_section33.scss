@@ -1,4 +1,5 @@
 .section33 {
+    padding-top: 26px;
     margin-bottom: 46px;
     .container {
         max-width: 797px;
@@ -33,33 +34,40 @@
         justify-content: space-between;
     }
 }
+
 .section33-views {
     .icon-eye {
         margin-right: 7px;
     }
 }
+.section33-comments, .section33-date, .section33-views {
+    font-size: 14px;
+}
 .section33-title {
     margin-bottom: 34px;
+    line-height: 59px;
     @include mobile-land {
         margin-bottom: 30px;
     }
 }
 .section33__img-wrapper {
+    position: relative;
+    min-height: 420px;
     margin-bottom: 40px;
     @include mobile-land {
-        position: relative;
         width: 100%;
         padding-bottom: (250/300) * 100%;
     }
     .section33__img {
+        position: absolute;
+        border-radius: 70px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-position: center;
+        object-fit: cover;
         @include mobile-land {
             border-radius: 20px;
-            position: absolute;
-            height: 100%;
-            top: 0;
-            left: 0;
-            object-fit: cover;
-            object-position: center;
         }
     }
 }

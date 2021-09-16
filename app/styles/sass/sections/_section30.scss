@@ -1,5 +1,5 @@
 .section30 {
-    margin-bottom: 137px;
+    margin-bottom: 97px;
     @include tablet {
         margin-bottom: 118px;
     }
@@ -13,8 +13,10 @@
 }
 .section30-row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     @include tablet {
+        align-items: center;
         flex-direction: column;
         margin-bottom: 47px;
     }
@@ -22,10 +24,12 @@
 .section30__item {
     position: relative;
     display: block;
-    flex: 0 0 360px;
+    flex: 0 0 31.1%;
+    margin-bottom: 40px;
     @include tablet {
         flex: unset;
         margin-bottom: 39px;
+        width: 100%;
         &:last-of-type {
             margin-bottom: 0;
         }
@@ -52,7 +56,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 175px;
+    width: min-content;
+    padding: 0 14px;
     height: 45px;
     background-color: $green;
     font-family: $neucha;

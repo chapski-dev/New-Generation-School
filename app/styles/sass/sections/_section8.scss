@@ -15,9 +15,11 @@
         padding-bottom: 42px;
     }
 }
-.section8__bottom {
+.section8-bottom {
     text-align: center;
-    .section8__bottom-link {
+    .section8-bottom__btn-toggle {
+        border: none;
+        background-color: transparent;
         text-decoration: underline;
         &:hover {
             color: $green;

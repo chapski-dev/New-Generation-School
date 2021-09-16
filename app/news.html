@@ -155,9 +155,9 @@
                 <div class="section33-info__box section33-info__box-link">
                     <a href="#" class="section33-info-link"></a>
                     <div class="section33-info__box-link-img">
-                        <div class="img-wrapper">
+                        <a href="#" class="img-wrapper">
                             <img src="../img/src/section27/item3-img.png" alt="">
-                        </div>
+                        </a>
                     </div>
                     <p class="gray-text">Читайте так же:</p>
                     <h3>
@@ -216,8 +216,10 @@
                 <div class="comments">
                     <div class="comments-form">
                         <form action="">
-                            <input class="input-comment-name" type="text" name="user-name" id="" placeholder="Ваше имя">
-                            <input class="input-comment-email" type="email" name="" id="" placeholder="Ваш email">
+                            <div class="comments-inputs-wrapper">
+                                <input class="input-comment-name" type="text" name="user-name" id="" placeholder="Ваше имя">
+                                <input class="input-comment-email" type="email" name="" id="" placeholder="Ваш email">
+                            </div>
                             <textarea class="input-comment" type="text" placeholder="Ваш комментарий..."></textarea>
                             <button class="button-fill button-fill--green comments-btn-submit" type="submit">Отправить</button>
                         </form>
@@ -236,6 +238,12 @@
                     <div class="comments-list">
                         <ul class="comments-list__ul">
                             <li class="comments-item">
+                                <div class="user-img-wrapper">
+                                    <img src="../img/src/comments/user.png" alt="">
+                                </div>
+                                <div class="user-img-wrapper">
+                                    <img src="../img/src/comments/user.png" alt="">
+                                </div>
                                 <div class="comments-item-info">
                                     <div class="comments-item-username">Sergey Arzumanov</div>
                                     <div class="comments-item-post-date">
@@ -254,11 +262,11 @@
                                     </span>
                                 </div>
                                 <button class="comments-reply-btn">Ответить</button>
-                                <ul class="comments-list__ul-reply">
-                                    <li class="comments-item"></li>
-                                </ul>
                             </li>
                             <li class="comments-item">
+                                <div class="user-img-wrapper">
+                                    <img src="../img/src/comments/user.png" alt="">
+                                </div>
                                 <div class="comments-item-info">
                                     <div class="comments-item-username">Инна Сергеевна</div>
                                     <div class="comments-item-post-date">
@@ -283,6 +291,9 @@
                                 <button class="comments-reply-btn">Ответить</button>
                                 <ul class="comments-list__ul-reply">
                                     <li class="comments-item">
+                                        <div class="user-img-wrapper">
+                                            <img src="../img/src/comments/user.png" alt="">
+                                        </div>
                                         <div class="comments-item-info">
                                             <div class="comments-item-username">Тамара Петровна</div>
                                             <div class="comments-item-post-date">
@@ -301,6 +312,9 @@
                                         <button class="comments-reply-btn">Ответить</button>
                                         <ul class="comments-list__ul-reply-reply">
                                             <li class="comments-item">
+                                                <div class="user-img-wrapper">
+                                                    <img src="../img/src/comments/user.png" alt="">
+                                                </div>
                                                 <div class="comments-item-info">
                                                     <div class="comments-item-username">Никита Жуков</div>
                                                     <div class="comments-item-post-date">
@@ -1018,15 +1032,15 @@
             <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
-            <div class="swiper-container how-to-make-feedback__modal-swiper">
+            <div class="swiper-container how-to-make-feedback__modal-swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="slide-img-wrapper">
                                 <img src="../img/src/section32/modals/slide1.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте yandex.by</h3>
-                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="http://yandex.by/" class="link-green">http://yandex.by/</a>, справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
+                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="http://google.com/" class="link-green">http://google.com/</a> , справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -1034,7 +1048,7 @@
                                 <img src="../img/src/section32/modals/slide2.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте yandex.by</h3>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
                                 <div class="slide-text"> <strong>2-й шаг:</strong>В раскрывающемся окне заполняем свои данные, в строчке названия компании вводим «Новое поколение», выбираем Детский развивающий центр «Новое поколение»</div>
                             </div>
                         </div>
@@ -1043,7 +1057,7 @@
                                 <img src="../img/src/section32/modals/slide3.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте yandex.by</h3>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
                                 <div class="slide-text"> <strong>3-й шаг:</strong> Пишем отзыв, кликаем «Опубликовать отзыв».</div>
                             </div>
                         </div>
@@ -1051,19 +1065,20 @@
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-wrapper">
                         <div class="swiper-button-prev">
-                            <button class="button-bordered block-info__button_about">Назад</button>
+                            <button class="button-bordered block-info__button_about feedback-button feedback-button-prev">Назад</button>
                         </div>
                         <div class="swiper-button-next">
                             <button 
-                            class="button-fill button-fill--green block-info__button feedback-button-next"
-                            type="button" 
-                            data-isactive="false"
-                            data-activetitle="Оставить отзыв"
-                            data-deactivetitle="Понятно, дальше"
-                            >
-                            Понятно, дальше
+                                class="button-fill button-fill--green block-info__button feedback-button feedback-button-next"
+                                type="button" 
+                                data-isactive="false"
+                                data-activetitle="Оставить отзыв"
+                                data-deactivetitle="Понятно, дальшe"
+                                >
+                                Понятно, дальше
                             </button>
                         </div>
+                        <a href="https://www.google.com/" target="_blank" class="swiper-modal-link button-fill button-fill--green block-info__button feedback-button feedback-button-next">Оставить отзыв</a>
                     </div>
                 </div>
             </div>
@@ -1078,15 +1093,15 @@
             <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
-            <div class="swiper-container how-to-make-feedback__modal-swiper">
+            <div class="swiper-container how-to-make-feedback__modal-swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="slide-img-wrapper">
                                 <img src="../img/src/section32/modals/slide1.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте otzyvy.by</h3>
-                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="http://otzyvy.by/" class="link-green">http://otzyvy.by/</a>, справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
+                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="http://google.com/" class="link-green">http://google.com/</a> , справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -1094,7 +1109,7 @@
                                 <img src="../img/src/section32/modals/slide2.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте otzyvy.by</h3>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
                                 <div class="slide-text"> <strong>2-й шаг:</strong>В раскрывающемся окне заполняем свои данные, в строчке названия компании вводим «Новое поколение», выбираем Детский развивающий центр «Новое поколение»</div>
                             </div>
                         </div>
@@ -1103,7 +1118,7 @@
                                 <img src="../img/src/section32/modals/slide3.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте otzyvy.by</h3>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
                                 <div class="slide-text"> <strong>3-й шаг:</strong> Пишем отзыв, кликаем «Опубликовать отзыв».</div>
                             </div>
                         </div>
@@ -1111,19 +1126,20 @@
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-wrapper">
                         <div class="swiper-button-prev">
-                            <button class="button-bordered block-info__button_about">Назад</button>
+                            <button class="button-bordered block-info__button_about feedback-button feedback-button-prev">Назад</button>
                         </div>
                         <div class="swiper-button-next">
                             <button 
-                            class="button-fill button-fill--green block-info__button feedback-button-next"
-                            type="button" 
-                            data-isactive="false"
-                            data-activetitle="Оставить отзыв"
-                            data-deactivetitle="Понятно, дальше"
-                            >
-                            Понятно, дальше
+                                class="button-fill button-fill--green block-info__button feedback-button feedback-button-next"
+                                type="button" 
+                                data-isactive="false"
+                                data-activetitle="Оставить отзыв"
+                                data-deactivetitle="Понятно, дальшe"
+                                >
+                                Понятно, дальше
                             </button>
                         </div>
+                        <a href="https://www.google.com/" target="_blank" class="swiper-modal-link button-fill button-fill--green block-info__button feedback-button feedback-button-next">Оставить отзыв</a>
                     </div>
                 </div>
             </div>
@@ -1138,15 +1154,15 @@
             <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
-            <div class="swiper-container how-to-make-feedback__modal-swiper">
+            <div class="swiper-container how-to-make-feedback__modal-swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="slide-img-wrapper">
                                 <img src="../img/src/section32/modals/slide1.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте facebook.com</h3>
-                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="https://www.facebook.com/" class="link-green">https://www.facebook.com/</a> , справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
+                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="http://google.com/" class="link-green">http://google.com/</a> , справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -1154,7 +1170,7 @@
                                 <img src="../img/src/section32/modals/slide2.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте facebook.com</h3>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
                                 <div class="slide-text"> <strong>2-й шаг:</strong>В раскрывающемся окне заполняем свои данные, в строчке названия компании вводим «Новое поколение», выбираем Детский развивающий центр «Новое поколение»</div>
                             </div>
                         </div>
@@ -1163,7 +1179,7 @@
                                 <img src="../img/src/section32/modals/slide3.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте facebook.com</h3>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
                                 <div class="slide-text"> <strong>3-й шаг:</strong> Пишем отзыв, кликаем «Опубликовать отзыв».</div>
                             </div>
                         </div>
@@ -1171,19 +1187,20 @@
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-wrapper">
                         <div class="swiper-button-prev">
-                            <button class="button-bordered block-info__button_about">Назад</button>
+                            <button class="button-bordered block-info__button_about feedback-button feedback-button-prev">Назад</button>
                         </div>
                         <div class="swiper-button-next">
                             <button 
-                            class="button-fill button-fill--green block-info__button feedback-button-next"
-                            type="button" 
-                            data-isactive="false"
-                            data-activetitle="Оставить отзыв"
-                            data-deactivetitle="Понятно, дальше"
-                            >
-                            Понятно, дальше
+                                class="button-fill button-fill--green block-info__button feedback-button feedback-button-next"
+                                type="button" 
+                                data-isactive="false"
+                                data-activetitle="Оставить отзыв"
+                                data-deactivetitle="Понятно, дальшe"
+                                >
+                                Понятно, дальше
                             </button>
                         </div>
+                        <a href="https://www.google.com/" target="_blank" class="swiper-modal-link button-fill button-fill--green block-info__button feedback-button feedback-button-next">Оставить отзыв</a>
                     </div>
                 </div>
             </div>
@@ -1195,22 +1212,18 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
         <div class="modal-body">
-            <button 
-            type="button" 
-            class="close button-close" 
-            data-dismiss="modal" 
-            aria-label="Close">
+            <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
-            <div class="swiper-container how-to-make-feedback__modal-swiper">
+            <div class="swiper-container how-to-make-feedback__modal-swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="slide-img-wrapper">
                                 <img src="../img/src/section32/modals/slide1.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте vk.com</h3>
-                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="https://vk.com/" class="link-green">https://vk.com/</a>  , справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
+                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="http://google.com/" class="link-green">http://google.com/</a> , справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -1218,7 +1231,7 @@
                                 <img src="../img/src/section32/modals/slide2.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте vk.com</h3>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
                                 <div class="slide-text"> <strong>2-й шаг:</strong>В раскрывающемся окне заполняем свои данные, в строчке названия компании вводим «Новое поколение», выбираем Детский развивающий центр «Новое поколение»</div>
                             </div>
                         </div>
@@ -1227,7 +1240,7 @@
                                 <img src="../img/src/section32/modals/slide3.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте vk.com</h3>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
                                 <div class="slide-text"> <strong>3-й шаг:</strong> Пишем отзыв, кликаем «Опубликовать отзыв».</div>
                             </div>
                         </div>
@@ -1235,19 +1248,20 @@
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-wrapper">
                         <div class="swiper-button-prev">
-                            <button class="button-bordered block-info__button_about">Назад</button>
+                            <button class="button-bordered block-info__button_about feedback-button feedback-button-prev">Назад</button>
                         </div>
                         <div class="swiper-button-next">
                             <button 
-                            class="button-fill button-fill--green block-info__button feedback-button-next"
-                            type="button" 
-                            data-isactive="false"
-                            data-activetitle="Оставить отзыв"
-                            data-deactivetitle="Понятно, дальше"
-                            >
-                            Понятно, дальше
+                                class="button-fill button-fill--green block-info__button feedback-button feedback-button-next"
+                                type="button" 
+                                data-isactive="false"
+                                data-activetitle="Оставить отзыв"
+                                data-deactivetitle="Понятно, дальшe"
+                                >
+                                Понятно, дальше
                             </button>
                         </div>
+                        <a href="https://www.google.com/" target="_blank" class="swiper-modal-link button-fill button-fill--green block-info__button feedback-button feedback-button-next">Оставить отзыв</a>
                     </div>
                 </div>
             </div>
@@ -1936,15 +1950,15 @@
             <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
-            <div class="swiper-container how-to-make-feedback__modal-swiper">
+            <div class="swiper-container how-to-make-feedback__modal-swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="slide-img-wrapper">
                                 <img src="../img/src/section32/modals/slide1.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте yandex.by</h3>
-                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="http://yandex.by/" class="link-green">http://yandex.by/</a>, справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
+                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="http://google.com/" class="link-green">http://google.com/</a> , справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -1952,7 +1966,7 @@
                                 <img src="../img/src/section32/modals/slide2.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте yandex.by</h3>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
                                 <div class="slide-text"> <strong>2-й шаг:</strong>В раскрывающемся окне заполняем свои данные, в строчке названия компании вводим «Новое поколение», выбираем Детский развивающий центр «Новое поколение»</div>
                             </div>
                         </div>
@@ -1961,7 +1975,7 @@
                                 <img src="../img/src/section32/modals/slide3.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте yandex.by</h3>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
                                 <div class="slide-text"> <strong>3-й шаг:</strong> Пишем отзыв, кликаем «Опубликовать отзыв».</div>
                             </div>
                         </div>
@@ -1969,19 +1983,20 @@
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-wrapper">
                         <div class="swiper-button-prev">
-                            <button class="button-bordered block-info__button_about">Назад</button>
+                            <button class="button-bordered block-info__button_about feedback-button feedback-button-prev">Назад</button>
                         </div>
                         <div class="swiper-button-next">
                             <button 
-                            class="button-fill button-fill--green block-info__button feedback-button-next"
-                            type="button" 
-                            data-isactive="false"
-                            data-activetitle="Оставить отзыв"
-                            data-deactivetitle="Понятно, дальше"
-                            >
-                            Понятно, дальше
+                                class="button-fill button-fill--green block-info__button feedback-button feedback-button-next"
+                                type="button" 
+                                data-isactive="false"
+                                data-activetitle="Оставить отзыв"
+                                data-deactivetitle="Понятно, дальшe"
+                                >
+                                Понятно, дальше
                             </button>
                         </div>
+                        <a href="https://www.google.com/" target="_blank" class="swiper-modal-link button-fill button-fill--green block-info__button feedback-button feedback-button-next">Оставить отзыв</a>
                     </div>
                 </div>
             </div>
@@ -1996,15 +2011,15 @@
             <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
-            <div class="swiper-container how-to-make-feedback__modal-swiper">
+            <div class="swiper-container how-to-make-feedback__modal-swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="slide-img-wrapper">
                                 <img src="../img/src/section32/modals/slide1.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте otzyvy.by</h3>
-                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="http://otzyvy.by/" class="link-green">http://otzyvy.by/</a>, справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
+                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="http://google.com/" class="link-green">http://google.com/</a> , справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -2012,7 +2027,7 @@
                                 <img src="../img/src/section32/modals/slide2.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте otzyvy.by</h3>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
                                 <div class="slide-text"> <strong>2-й шаг:</strong>В раскрывающемся окне заполняем свои данные, в строчке названия компании вводим «Новое поколение», выбираем Детский развивающий центр «Новое поколение»</div>
                             </div>
                         </div>
@@ -2021,7 +2036,7 @@
                                 <img src="../img/src/section32/modals/slide3.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте otzyvy.by</h3>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
                                 <div class="slide-text"> <strong>3-й шаг:</strong> Пишем отзыв, кликаем «Опубликовать отзыв».</div>
                             </div>
                         </div>
@@ -2029,19 +2044,20 @@
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-wrapper">
                         <div class="swiper-button-prev">
-                            <button class="button-bordered block-info__button_about">Назад</button>
+                            <button class="button-bordered block-info__button_about feedback-button feedback-button-prev">Назад</button>
                         </div>
                         <div class="swiper-button-next">
                             <button 
-                            class="button-fill button-fill--green block-info__button feedback-button-next"
-                            type="button" 
-                            data-isactive="false"
-                            data-activetitle="Оставить отзыв"
-                            data-deactivetitle="Понятно, дальше"
-                            >
-                            Понятно, дальше
+                                class="button-fill button-fill--green block-info__button feedback-button feedback-button-next"
+                                type="button" 
+                                data-isactive="false"
+                                data-activetitle="Оставить отзыв"
+                                data-deactivetitle="Понятно, дальшe"
+                                >
+                                Понятно, дальше
                             </button>
                         </div>
+                        <a href="https://www.google.com/" target="_blank" class="swiper-modal-link button-fill button-fill--green block-info__button feedback-button feedback-button-next">Оставить отзыв</a>
                     </div>
                 </div>
             </div>
@@ -2056,15 +2072,15 @@
             <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
-            <div class="swiper-container how-to-make-feedback__modal-swiper">
+            <div class="swiper-container how-to-make-feedback__modal-swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="slide-img-wrapper">
                                 <img src="../img/src/section32/modals/slide1.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте facebook.com</h3>
-                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="https://www.facebook.com/" class="link-green">https://www.facebook.com/</a> , справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
+                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="http://google.com/" class="link-green">http://google.com/</a> , справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -2072,7 +2088,7 @@
                                 <img src="../img/src/section32/modals/slide2.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте facebook.com</h3>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
                                 <div class="slide-text"> <strong>2-й шаг:</strong>В раскрывающемся окне заполняем свои данные, в строчке названия компании вводим «Новое поколение», выбираем Детский развивающий центр «Новое поколение»</div>
                             </div>
                         </div>
@@ -2081,7 +2097,7 @@
                                 <img src="../img/src/section32/modals/slide3.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте facebook.com</h3>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
                                 <div class="slide-text"> <strong>3-й шаг:</strong> Пишем отзыв, кликаем «Опубликовать отзыв».</div>
                             </div>
                         </div>
@@ -2089,19 +2105,20 @@
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-wrapper">
                         <div class="swiper-button-prev">
-                            <button class="button-bordered block-info__button_about">Назад</button>
+                            <button class="button-bordered block-info__button_about feedback-button feedback-button-prev">Назад</button>
                         </div>
                         <div class="swiper-button-next">
                             <button 
-                            class="button-fill button-fill--green block-info__button feedback-button-next"
-                            type="button" 
-                            data-isactive="false"
-                            data-activetitle="Оставить отзыв"
-                            data-deactivetitle="Понятно, дальше"
-                            >
-                            Понятно, дальше
+                                class="button-fill button-fill--green block-info__button feedback-button feedback-button-next"
+                                type="button" 
+                                data-isactive="false"
+                                data-activetitle="Оставить отзыв"
+                                data-deactivetitle="Понятно, дальшe"
+                                >
+                                Понятно, дальше
                             </button>
                         </div>
+                        <a href="https://www.google.com/" target="_blank" class="swiper-modal-link button-fill button-fill--green block-info__button feedback-button feedback-button-next">Оставить отзыв</a>
                     </div>
                 </div>
             </div>
@@ -2113,22 +2130,18 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
         <div class="modal-body">
-            <button 
-            type="button" 
-            class="close button-close" 
-            data-dismiss="modal" 
-            aria-label="Close">
+            <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
-            <div class="swiper-container how-to-make-feedback__modal-swiper">
+            <div class="swiper-container how-to-make-feedback__modal-swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="slide-img-wrapper">
                                 <img src="../img/src/section32/modals/slide1.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте vk.com</h3>
-                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="https://vk.com/" class="link-green">https://vk.com/</a>  , справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
+                                <div class="slide-text"> <strong>1-й шаг:</strong> заходим на сайт <a href="http://google.com/" class="link-green">http://google.com/</a> , справа вверху нажимаем оранжевую кнопку «Написать отзыв»</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -2136,7 +2149,7 @@
                                 <img src="../img/src/section32/modals/slide2.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте vk.com</h3>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
                                 <div class="slide-text"> <strong>2-й шаг:</strong>В раскрывающемся окне заполняем свои данные, в строчке названия компании вводим «Новое поколение», выбираем Детский развивающий центр «Новое поколение»</div>
                             </div>
                         </div>
@@ -2145,7 +2158,7 @@
                                 <img src="../img/src/section32/modals/slide3.png" alt="">
                             </div>
                             <div class="slide-discr">
-                                <h3 class="slide-title">Как оставить отзыв на сайте vk.com</h3>
+                                <h3 class="slide-title">Как оставить отзыв на сайте google.com</h3>
                                 <div class="slide-text"> <strong>3-й шаг:</strong> Пишем отзыв, кликаем «Опубликовать отзыв».</div>
                             </div>
                         </div>
@@ -2153,19 +2166,20 @@
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-wrapper">
                         <div class="swiper-button-prev">
-                            <button class="button-bordered block-info__button_about">Назад</button>
+                            <button class="button-bordered block-info__button_about feedback-button feedback-button-prev">Назад</button>
                         </div>
                         <div class="swiper-button-next">
                             <button 
-                            class="button-fill button-fill--green block-info__button feedback-button-next"
-                            type="button" 
-                            data-isactive="false"
-                            data-activetitle="Оставить отзыв"
-                            data-deactivetitle="Понятно, дальше"
-                            >
-                            Понятно, дальше
+                                class="button-fill button-fill--green block-info__button feedback-button feedback-button-next"
+                                type="button" 
+                                data-isactive="false"
+                                data-activetitle="Оставить отзыв"
+                                data-deactivetitle="Понятно, дальшe"
+                                >
+                                Понятно, дальше
                             </button>
                         </div>
+                        <a href="https://www.google.com/" target="_blank" class="swiper-modal-link button-fill button-fill--green block-info__button feedback-button feedback-button-next">Оставить отзыв</a>
                     </div>
                 </div>
             </div>

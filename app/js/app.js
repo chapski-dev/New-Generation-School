@@ -23,7 +23,7 @@ const DESKTOP_FROM = 1024;
 // section2 tabs sliders
 const slidersParents = $('.tabs-contents__item');
   
-var swiper = new Swiper(".section-tabs-slider", {
+var swiper2 = new Swiper(".section-tabs-slider", {   
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -40,7 +40,7 @@ var swiper = new Swiper(".section-tabs-slider", {
 });
 
 // modal swiper
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper", {   
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -55,7 +55,6 @@ var swiper = new Swiper(".mySwiper", {
   
   observSlideChildren: true,
 });
-
 
 
 // HEADER MOBILE NAV TOGLE
@@ -227,15 +226,16 @@ $(commentsSortBtn).on("click", function() {
   $(this).addClass("active");
 });
 
+// "Показать ещё вопросы" для акардиона
+const toggleBtnHidenAccordionItems = $(".section8-bottom__btn-toggle");
+const hidenAccordionItems = $('.hiden-accordion-items');
 
-// Я ПЫТАЛСЯ
-  
-const swipeNextHowFeedback = $("feedback-button-next")
-const howMakeFeedbackSwiper = $('.how-to-make-feedback__modal-swiper');
-const curentBullet = $('.swiper-pagination-bullet-active');
-
-$(swipeNextHowFeedback).on("clik", customProgresBar());
-
-const customProgresBar = function() {
-  $(howMakeFeedbackSwiper).find(curentBullet).prev().addClass("active");
-};
+$(toggleBtnHidenAccordionItems).on("click", function() {
+  $(hidenAccordionItems).toggleClass("hide");
+  if (hidenAccordionItems.hasClass('hide')){
+    $(toggleBtnHidenAccordionItems).html('Показать ещё вопросы');
+  } else {
+    $(toggleBtnHidenAccordionItems).html('Скрыть');
+  }
+  return false;
+});

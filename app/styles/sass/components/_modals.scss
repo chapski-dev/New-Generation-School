@@ -396,6 +396,28 @@
             order: 2;
         }
     }
+    .swiper-pagination-bullet {
+        background: $dark-blue;
+        height: 6px;
+        flex: 1;
+        margin: 0 10px !important;
+        border-radius: 6px;
+        @include mobile-land {
+            margin: 0 7.5px !important;
+        }
+        &:first-of-type {
+            margin-left: 0 !important;
+        }
+        &:last-of-type {
+            margin-right: 0 !important;
+        }
+    }
+    .swiper-pagination-bullet-active {
+        background: $dark-blue;
+        & ~ .swiper-pagination-bullet {
+            background-color: $light-gray;
+        }
+    }
     .swiper-modal-link {
         display: none;
     }

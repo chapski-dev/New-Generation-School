@@ -119,6 +119,9 @@
     z-index: 999;
     &:hover {
         ~ .section27__item-img-wrapper {
+            .hiden-hovered-block {
+                display: block;
+            }
             img {
                 transform: scale(1.2);
                 @include tablet {
@@ -140,6 +143,21 @@
         border-radius: 20px;
         padding-bottom: (190/300)*100%;
         margin-bottom: 13px;
+    }
+    .hiden-hovered-block {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        background-color: $green;
+        font-family: $neucha;
+        color: white;
+        font-size: 18px;
+        line-height: 150%;
+        padding: 7px 14px;
+        border-radius: 100px;
     }
     &::before {
         content: '';

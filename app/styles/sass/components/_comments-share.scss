@@ -62,6 +62,10 @@
         }
     }
 }
+.comments-inputs-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
 .share-links {
     margin-bottom: 60px;
 }
@@ -78,19 +82,19 @@
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    padding-inline-start: 40px;
+    padding-inline-start: 80px;
     @include mobile-land {
         padding: 0;
     }
     .comments-list__ul-reply {
-        margin-top: 17px;
-        padding-inline-start: 40px;
+        margin-top: 40px;
+        padding-inline-start: 80px;
         @include mobile-land {
             padding: 0;
         }
         .comments-list__ul-reply-reply {
             margin-top: 17px;
-            padding-inline-start: 40px;
+            padding-inline-start: 80px;
             @include mobile-land {
                 padding: 0;
             }
@@ -109,10 +113,14 @@
         background-color: $light-gray;
         margin-bottom: 15px;
         margin-right: 10px;
+        width: 32%;
         &::-webkit-input-placeholder { opacity: .5; }
         &:-ms-input-placeholder { opacity: .5; }
         &::-ms-input-placeholder { opacity: .5; }
         &::placeholder { opacity: .5; }
+        @include mobile-land {
+            width: 100%;
+        }
     }
     .input-comment {
         width: 100%;
@@ -151,14 +159,10 @@
 }
 .comments-sort-btn {
     border: none;
-    padding: 1px 9 px;
-    margin-right: 30px;
+    padding: 3px 9px;
     opacity: .5;
     background: transparent;
     border-radius: 100px;
-    @include mobile-land {
-        margin-right: 0;
-    }
     &:hover{
         color: $green;
     }
@@ -169,22 +173,38 @@
     }
 }
 .comments-item {
+    position: relative;
+    margin-bottom: 20px;
     .comments-item-text {
-        margin-bottom: 15px;
+        margin-bottom: 9px;
+        font-size: 14px;
+        line-height: 160%;
+        span {
+            font-size: 14px;
+            line-height: 160%;
+        }
     }
     .comments-reply-btn {
+        padding: 0;
         opacity: .5;
         border: none;
         background-color: transparent;
+        font-size: 14px;
+        line-height: 17px;
         &:hover {
             opacity: 1;
             color: $green;
         }
     }
+    .user-img-wrapper {
+        position: absolute;
+        top: 10px;
+        left: -80px;
+    }
 }
 .comments-item-info {
     display: flex;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     .comments-item-username {
         font-weight: bold;
         margin-right: 20px;

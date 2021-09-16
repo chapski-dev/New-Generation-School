@@ -87,6 +87,9 @@
         .icon-cicle-empty-2 {
             top: -52%;
             color: $dark-blue;
+            @include mobile-land {
+                top: 0;
+            }
         }
     }
     .icon-cicle-empty-2 {
