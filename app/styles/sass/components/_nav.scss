@@ -1,7 +1,5 @@
 .nav-links{
-
 	@include tablet {
-
 		width: 100%;
 		position: absolute;
 		top: 0;
@@ -33,29 +31,42 @@
 	@include tablet-land {
 		margin-left: 20px;
 	}
-	&:first-of-type {
-		margin-left: 35px;
-		@include tablet {
-			margin-left: 0px;
-		}
-	}
-
-	a {
-		&:hover {
-			color: $green;
-		}
-	}
-	&:hover {
-		.sub-menu {
-			display: block;
-		}
-	}
 	@include tablet {
 		padding: 10px 0;
 		margin: 0;
 		background: white;
 		&:last-of-type {
 			padding-bottom: 50px;
+		}
+		&:hover {
+			.sub-menu {
+				display: none;
+			}
+		}
+		&.active {
+			&~ .header__nav-links {
+				z-index: 1;
+			}
+		}
+	}
+	&:first-of-type {
+		margin-left: 35px;
+		@include tablet {
+			margin-left: 0px;
+		}
+	}
+	a {
+		&:hover {
+			color: $green;
+			@include tablet {
+				color: unset;
+				text-decoration: none;
+			}
+		}
+	}
+	&:hover {
+		.sub-menu {
+			display: block;
 		}
 	}
 }
@@ -72,7 +83,6 @@
 	background: white;
 	li {
 		display: block;
-		
 		a {
 			display: block;
 			padding: 5px;

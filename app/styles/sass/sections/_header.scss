@@ -24,7 +24,6 @@
         height: 80px;
         background-color: #36347F;
         padding: 0 10px;
-        z-index: 12;
     }
 }
 /* logo image */
@@ -126,7 +125,6 @@
         .header__nav-links {
             @include tablet {
                 display: block;
-                z-index: -1;
             }
         }
     }

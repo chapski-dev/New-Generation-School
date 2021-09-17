@@ -21,7 +21,6 @@ SwiperCore.use([Navigation, Pagination]);
 const DESKTOP_FROM = 1024;
 
 // section2 tabs sliders
-const slidersParents = $('.tabs-contents__item');
   
 var swiper2 = new Swiper(".section-tabs-slider", {   
   pagination: {
@@ -36,7 +35,6 @@ var swiper2 = new Swiper(".section-tabs-slider", {
   observeParents: true ,
   
   observSlideChildren: true,
-
 });
 
 // modal swiper
@@ -55,6 +53,97 @@ var swiper = new Swiper(".mySwiper", {
   
   observSlideChildren: true,
 });
+
+// timetable for teachers swiper
+
+// var swiperTimetable = new Swiper(".timetable-slider", {   
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+
+//   observer: true,
+  
+//   observeParents: true ,
+  
+//   observSlideChildren: true,
+//   slidesPerView: 2,
+// });
+
+$(window).on('load', function () {
+  if ($(window).width() <= DESKTOP_FROM) {
+    var swiperTimetable = new Swiper(".timetable-slider", {   
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    
+      observer: true,
+      
+      observeParents: true ,
+      
+      observSlideChildren: true,
+      slidesPerView: 2,
+    });
+  } else {
+    console.log("ты лох")
+    $(swiperTimetable).destroy();
+  }
+});
+
+
+
+
+// var swiper= Swiper;
+// var init = false;
+// /* Which media query
+// **************************************************************/
+// function swiperMode() {
+//     let mobile = window.matchMedia('(min-width: 0px) and (max-width: 768px)');
+//     let tablet = window.matchMedia('(min-width: 769px) and (max-width: 1024px)');
+//     let desktop = window.matchMedia('(min-width: 1025px)');
+//     // Enable (for mobile)
+//     if(mobile.matches) {
+//         if (!init) {
+//             init = true;
+//             swiper = new Swiper('.timetable-slider', {
+//               navigation: {
+//                 nextEl: ".swiper-button-next",
+//                 prevEl: ".swiper-button-prev",
+//               },
+//               observer: true,
+//               observeParents: true ,
+//               observSlideChildren: true,
+//               slidesPerView: 2,
+//               spaceBetween: 20,
+//             });
+//         }
+//     }
+//     // Disable (for tablet)
+//     else if(tablet.matches) {
+//         swiper.destroy();
+//         init = false;
+//     }
+//     // Disable (for desktop)
+//     else if(desktop.matches) {
+//         swiper.destroy();
+//         init = false;
+//     }
+// }
+
+/* On Load
+**************************************************************/
+// window.addEventListener('load', function() {
+//     swiperMode();
+// });
+
+// /* On Resize
+// **************************************************************/
+// window.addEventListener('resize', function() {
+//     swiperMode();
+// });
+
+
 
 
 // HEADER MOBILE NAV TOGLE
@@ -151,21 +240,12 @@ if (accordion.length) {
   });
 };
 
-// Show/Hide part of text on mobile-land 
-$(document).ready(function(){
-  if ( $(window).width() < 768){
-    $('.content_block').addClass('hide')
+$('.content_toggle').on('click', function(){
+  $('.content_block').addClass('show');	
+  if ($('.content_block').hasClass('show')) {
+    $(".content_toggle").remove();
   }
-	$('.content_toggle').on('click', function(){
-		$('.content_block').toggleClass('hide');	
-		if ($('.content_block').hasClass('hide')) {
-			$('.content_toggle').html('Показать все описание');
-		} else {
-			$('.content_toggle').html('Скрыть');
-		}		
-		return false;
-	});				
-});
+});				
 
 
 // Наведение на обьект в расписании  
@@ -227,17 +307,18 @@ $(commentsSortBtn).on("click", function() {
 });
 
 // "Показать ещё вопросы" для акардиона
-const toggleBtnHidenAccordionItems = $(".section8-bottom__btn-toggle");
-const hidenAccordionItems = $('.hiden-accordion-items');
+const toggleBtnHidenItems = $(".show-more-btn");
+const hidenItems = $('.hiden-items');
 
-$(toggleBtnHidenAccordionItems).on("click", function() {
-  $(hidenAccordionItems).toggleClass("hide");
-  if (hidenAccordionItems.hasClass('hide')){
-    $(toggleBtnHidenAccordionItems).html('Показать ещё вопросы');
-  } else {
-    $(toggleBtnHidenAccordionItems).html('Скрыть');
-  }
-  return false;
+$(toggleBtnHidenItems).on("click", function() {
+  $(hidenItems).toggleClass("hide");
+  $(toggleBtnHidenItems).remove();
+  // if (hidenAccordionItems.hasClass('hide')){
+  //   $(toggleBtnHidenAccordionItems).remove();
+  // } else {
+  //   $(toggleBtnHidenAccordionItems).html('Скрыть');
+  // }
+  // return false;
 });
 
 // "Оставить отзыв" на странице otzivi.html от планшета

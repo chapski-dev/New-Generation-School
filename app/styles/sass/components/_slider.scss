@@ -236,3 +236,50 @@
       }
   }
 }
+
+
+// Timetable swiper
+.timetable-slide-row {
+  .swiper-button-wrapper {
+    display: none;
+    position: absolute;
+    padding: 0 5%;
+    .swiper-button-prev, .swiper-button-next {
+      width: auto;
+      height: auto;
+    }
+    @include mobile-land {
+      display: flex;
+    }
+  }
+}
+.timetable-slider {
+  .swiper-wrapper {
+    flex-wrap: wrap;
+    @include mobile-land {
+      flex-wrap: unset;
+    }
+  }
+  .swiper-slide {
+    opacity: 1;
+    @include mobile-land {
+      opacity: 0;
+    }
+  }
+  .swiper-slide-next, .swiper-slide-active {
+    opacity: 1;
+    width: auto !important;
+    @include mobile-land {
+      margin-right: 12%;
+    }
+  }
+  .swiper-slide-active {
+    @include mobile-land {
+      margin-left: 12%;
+      margin-right: 12%;
+    }
+    @include mobile {
+      margin-left: 0;
+    }
+  }
+}

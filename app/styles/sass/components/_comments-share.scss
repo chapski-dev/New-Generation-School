@@ -23,6 +23,16 @@
         border-radius: 100%;
         margin-right: 10px;
         transition: 0.2s linear;
+        &:nth-of-type(4) {
+            @include mobile-land {
+                margin-right: 0;
+            }
+        }
+        &:last-of-type {
+            @include mobile-land {
+                margin-right: 0;
+            }
+        }
         &:hover {
             transform: scale(1.09);
             text-decoration: none;
@@ -45,9 +55,6 @@
     }
     .facebook-link {
         background-color: #4E6297;
-        @include mobile-land {
-            margin-right: 0;
-        }
     }
     .ok-link {
         background-color: #F79A38;
@@ -57,9 +64,6 @@
     }
     .pinterest-link {
         background-color: #BE1326;
-        @include mobile-land {
-            margin-right: 0;
-        }
     }
 }
 .comments-inputs-wrapper {

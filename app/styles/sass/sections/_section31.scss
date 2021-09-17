@@ -44,9 +44,8 @@
         margin-bottom: 16px;
     }
 }
-.section31-row {
+.section31-row, .section31-hiden-items {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     @include tablet {
         flex-direction: column;
@@ -59,7 +58,12 @@
     flex-direction: column;
     flex: 0 0 360px;
     min-height: 580px;
+    max-height: 580px;
     margin-bottom: 46px;
+    margin-right: 40px;
+    &:nth-of-type(3n) {
+        margin-right: 0;
+    }
     @include tablet {
         min-height: 0;
         flex: none;
@@ -86,18 +90,24 @@
     }
 }
 .section31__item-discr {
+    height: 100%;
     font-family: $neucha;
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 10px;
     flex: 1 1 auto;
+    overflow: hidden;
     @include tablet {
         line-height: 22px;
     }
-    span {
+    p {
         font-family: $montserrat;
         font-size: 16px;
         line-height: 150%;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
         @include mobile-land {
             font-size: 14px;
         }
@@ -106,7 +116,7 @@
 .section31__item-disc-title {
     font-size: 28px;
     line-height: 30.84px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     @include mobile-land {
         font-size: 20px;
         line-height: 22px;
@@ -118,8 +128,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 85%;
-    z-index: 999;
+    height: 95%;
+    z-index: 10;
     @include tablet-land {
         height: 100%;
     }
@@ -133,7 +143,7 @@
     position: relative;
     background: $green;
     border-radius: 70px;
-    margin-bottom: 24px;
+    margin-bottom: 21px;
     overflow: hidden;
     &::before {
         content: '';

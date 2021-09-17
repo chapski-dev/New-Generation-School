@@ -60,26 +60,32 @@
 }
 .section30__item-label {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: min-content;
-    padding: 0 14px;
-    height: 45px;
+    top: 0;
+    right: 62px;
+    transform: translate(0, -50%);
+    z-index: 3;
+    
+
+        
+    border-radius: 70px;
+
+    height: 40px;
+    min-width: 175px;
+    max-width: 300px;
+    padding: 7px 14px;
+
     background-color: $green;
     font-family: $neucha;
     text-align: center;
     color: white;
     font-size: 18px;
     line-height: 27px;
-    z-index: 3;
-    top: 0;
-    right: -7%;
-    transform: translate(-50%, -50%);
-    border-radius: 70px;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     @include tablet {
         right: 0;
-        transform: translate(0, -50%);
         height: 38px;
     }
 }

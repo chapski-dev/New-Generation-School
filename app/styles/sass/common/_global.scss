@@ -5,6 +5,15 @@
 body{
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
+    &.modal-open {
+        ._mobile-nav-open {
+            .header__nav-links {
+                @include tablet {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 a{
     text-decoration: none;
@@ -24,7 +33,7 @@ a{
 .c-container, .container{
     margin: 0 auto;
     width: 1196px;
-    max-width: 1196px;
+    max-width: 100%;
     padding-left: 18px;
     padding-right: 18px;
     @include tablet-land {
@@ -43,3 +52,11 @@ svg {
     height: 100%;
 }
 
+.hiden-items {
+    &.hide {
+        display: none;
+    }
+}
+.fancybox-button svg path {
+    fill: #fff;
+}

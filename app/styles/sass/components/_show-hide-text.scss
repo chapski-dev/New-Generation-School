@@ -2,22 +2,28 @@
 	overflow: hidden;
 	position: relative;
     margin-bottom: 40px;
+    @include mobile-land {
+        height: 300px;
+        z-index: -1;
+        &:after{
+            content: "";
+            display: block;
+            height: 274px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%)
+        }
+        &.show {
+            height: 100%;
+            &::after {
+                display: none;
+            }
+        }
+    }
 }
-.content_block.hide {
-	height: 300px;
-    margin-bottom: -50px;
-    z-index: -1;
-}
-.content_block.hide:after{
-	content: "";
-	display: block;
-	height: 274px;
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%)
-}
+
 .content_toggle {
     text-align: center;
     color: $green;
