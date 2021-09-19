@@ -19,7 +19,7 @@ import Masonry from 'masonry-layout';
 SwiperCore.use([Navigation, Pagination]);
 
 const DESKTOP_FROM = 1024;
-
+const TABLET_FORM = 768; 
 // section2 tabs sliders
   
 var swiper2 = new Swiper(".section-tabs-slider", {   
@@ -56,22 +56,9 @@ var swiper = new Swiper(".mySwiper", {
 
 // timetable for teachers swiper
 
-// var swiperTimetable = new Swiper(".timetable-slider", {   
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-
-//   observer: true,
+$(window).on('load resize', function () {
   
-//   observeParents: true ,
-  
-//   observSlideChildren: true,
-//   slidesPerView: 2,
-// });
-
-$(window).on('load', function () {
-  if ($(window).width() <= DESKTOP_FROM) {
+  if ( $(window).width() < TABLET_FORM) {
     var swiperTimetable = new Swiper(".timetable-slider", {   
       navigation: {
         nextEl: ".swiper-button-next",
@@ -89,7 +76,7 @@ $(window).on('load', function () {
     console.log("ты лох")
     $(swiperTimetable).destroy();
   }
-});
+}).trigger('resize');
 
 
 

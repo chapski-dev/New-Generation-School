@@ -254,6 +254,9 @@
   }
 }
 .timetable-slider {
+  @include tablet-land {
+    overflow: visible;
+  }
   .swiper-wrapper {
     flex-wrap: wrap;
     @include mobile-land {
@@ -262,8 +265,14 @@
   }
   .swiper-slide {
     opacity: 1;
+    @include tablet-land {
+      margin-bottom: 40px;
+    }
     @include mobile-land {
       opacity: 0;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
     }
   }
   .swiper-slide-next, .swiper-slide-active {

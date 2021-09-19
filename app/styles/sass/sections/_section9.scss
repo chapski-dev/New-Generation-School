@@ -16,6 +16,9 @@
     .section9-button {
         width: 126px;
         height: 41px;
+        &:active {
+           background-color: $green-dark;
+        }
         @include tablet {
             display: none;
         }
@@ -51,7 +54,7 @@
     &:hover {
         text-decoration: none;
         cursor: pointer;
-        .section9__item-link {
+        .section9__item-discr {
             color: $green;
         }
     }
@@ -62,6 +65,9 @@
         padding-bottom: 9px;
         @include tablet {
             line-height: 22px;
+        }
+        &::hover {
+            color: $green;
         }
     }
 }

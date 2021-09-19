@@ -140,6 +140,9 @@
             @include tablet {
                 font-size: 65px;
             }
+            @include mobile-land {
+               top: 25%; 
+            }
         }
         .icon-backpack {
             position: absolute;
@@ -237,6 +240,9 @@
             @include tablet {
                 font-size: 66px;
             }
+            @include mobile-land {
+                top: 25%; 
+            }
         }
         .icon-hat {
             position: absolute;
@@ -329,6 +335,9 @@
             color: $dark-blue;
             @include tablet {
                 font-size: 68px;
+            }
+            @include mobile-land {
+                top: 25%; 
             }
         }
         .icon-magnifier {

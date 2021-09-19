@@ -73,8 +73,14 @@
         justify-content: space-between;
         padding: 0 50px 0 30px;
     }
+    &:hover {
+        text-decoration: none;
+    }
 }
 .tab-time {
+    @include tablet-land {
+        line-height: 80%;
+    }
     @include mobile-land {
         font-size: 20px;
         line-height: 22px;
@@ -143,7 +149,7 @@
 .timetable__header {
     margin-bottom: 10px;
     @include mobile-land {
-        margin-right: 30px;
+        margin-right: 14.5%;
         margin-bottom: 0;
     }
 }
