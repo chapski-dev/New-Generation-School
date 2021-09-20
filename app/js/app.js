@@ -66,90 +66,44 @@ $(window).on('load resize', function () {
       },
     
       observer: true,
-      
       observeParents: true ,
-      
       observSlideChildren: true,
       slidesPerView: 2,
     });
   } else {
     console.log("ты лох")
-    $(swiperTimetable).destroy();
+    $(swiperTimetable).remove();
   }
-}).trigger('resize');
+});
 
-
-
-
-// var swiper= Swiper;
-// var init = false;
-// /* Which media query
-// **************************************************************/
-// function swiperMode() {
-//     let mobile = window.matchMedia('(min-width: 0px) and (max-width: 768px)');
-//     let tablet = window.matchMedia('(min-width: 769px) and (max-width: 1024px)');
-//     let desktop = window.matchMedia('(min-width: 1025px)');
-//     // Enable (for mobile)
-//     if(mobile.matches) {
-//         if (!init) {
-//             init = true;
-//             swiper = new Swiper('.timetable-slider', {
-//               navigation: {
-//                 nextEl: ".swiper-button-next",
-//                 prevEl: ".swiper-button-prev",
-//               },
-//               observer: true,
-//               observeParents: true ,
-//               observSlideChildren: true,
-//               slidesPerView: 2,
-//               spaceBetween: 20,
-//             });
-//         }
-//     }
-//     // Disable (for tablet)
-//     else if(tablet.matches) {
-//         swiper.destroy();
-//         init = false;
-//     }
-//     // Disable (for desktop)
-//     else if(desktop.matches) {
-//         swiper.destroy();
-//         init = false;
-//     }
-// }
-
-/* On Load
-**************************************************************/
-// window.addEventListener('load', function() {
-//     swiperMode();
-// });
-
-// /* On Resize
-// **************************************************************/
-// window.addEventListener('resize', function() {
-//     swiperMode();
-// });
-
+// $(document).on("load", disableTimetableSwiper );
+// $(window).on("resize", disableTimetableSwiper);
 
 
 
 // HEADER MOBILE NAV TOGLE
-$('.header__nav-toggle').on('click', function(event) {
+let headerNavToggle = $(".header__nav-toggle")
+$(headerNavToggle).on('click', function(event) {
   event.preventDefault();
-  $(this).closest('.header__navigation').toggleClass('_mobile-nav-open')
+  let body = $('body');
+  if($(body).hasClass("modal-open")) {
+    $(".modal").modal('hide');
+    $(headerNavToggle).closest('.header__navigation').removeClass('_mobile-nav-open');
+    $(headerNavToggle).closest('.header__navigation').toggleClass('_mobile-nav-open');
+  } else {
+    $(headerNavToggle).closest('.header__navigation').toggleClass('_mobile-nav-open');
+  };
 })
 
 const navLinkItemParent = $('.nav-links__item--parent')
 $(navLinkItemParent).on('click', '.nav-links__link', function(event) {
   event.preventDefault();
   if ($(window).width() <= DESKTOP_FROM) {
-    $(this).closest(navLinkItemParent).toggleClass("active");
-    $(this).siblings('.sub-menu').toggle();
-  } else {
-    $(this).closest('.nav-links__item--parent').removeClass("active");
-    $(this).siblings('.sub-menu').removeAttr('style');
-  }
+      $(this).closest(navLinkItemParent).toggleClass("active");
+    }
 });
+
+
 
 
 // Переключение табов на мобилке

@@ -495,9 +495,15 @@
     }
     .answer-question-button {
         top: -20%;
+        @include mobile-land {
+            top: 0%;
+        }
         span {
             font-size: 72px;
             color: white;
+            @include mobile-land {
+                color: black;
+            }
         }
     }
     .modal-header {
