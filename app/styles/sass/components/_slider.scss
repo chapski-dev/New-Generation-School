@@ -209,17 +209,14 @@
 .section__swipe-buttons {
   display: none;
   @include tablet {
-      display: block;
-      margin-bottom: -9px;
-      text-align: center;
-      @include tablet {
-        margin-bottom: 10px ;
-      }
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15%;
+      margin-bottom: 17px;
       .section-tabs__mobile-trigger {
           background: transparent;
           border: none;
           padding: 0;
-          margin-bottom: 21px;
           i {
               font-size: 54px;
               color: $green;
@@ -230,9 +227,6 @@
                 font-size: 54px;
               }
           }
-      }
-      .section-tabs__mobile-trigger-prev {
-          margin-right: 40px;
       }
   }
 }

@@ -409,4 +409,11 @@
             font-size: 15px;
         }
     }
+    @include mobile-land {
+        width: 80%;
+        margin: 0 auto;
+    }
+    @include mobile {
+        width: 94%;
+    }
 }

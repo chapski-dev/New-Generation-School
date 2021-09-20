@@ -90,14 +90,14 @@
         padding: 60px 60px 60px 90px;
     }
     @include mobile-land {
-        padding: 22px 0 53px 0;
+        padding: 22px 0 67px 0;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
     .timetable {
         @include mobile-land {
             flex-direction: column;
-            padding: 6px 30px 11px 30px;
+            padding: 0;
         }
     }
     .timetable__body-item, .timetable__header-item {
@@ -110,7 +110,7 @@
     .timetable__header {
         margin: 0;
         @include mobile-land {
-            margin-bottom: 44px;
+            margin-bottom: 46px;
         }
     }
     .timetable__header-item {

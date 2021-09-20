@@ -77,9 +77,9 @@
     }
     .label-belarus1 {
         position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 2;
+        top: 2px;
+        right: 27px;
+        z-index: 3;
         transform: translate(-50%, -50%);
         @include tablet {
             right: 3%;

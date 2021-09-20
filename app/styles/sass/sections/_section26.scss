@@ -1,9 +1,12 @@
 .section26{
+    margin-bottom: 244px;
+    @include tablet{
+        margin-bottom: 90px;
+    }
     .container {
         max-width: 1160px;
         padding: 0;
     }
-    margin-bottom: 244px;
 }
 .section26-title {
     width: 70%;
@@ -35,12 +38,14 @@
         width: 100%;
         text-align: center;
     }
+    @include mobile-land {
+        margin-bottom: 63px;
+        font-size: 15px;
+        line-height: 150%;
+    }
 }
 .section26-wrapper{
     position: relative;
-    @include tablet {
-        margin-bottom: 104px;
-    }
     .icon-glasses {
         position: absolute;
         font-size: 84px;
@@ -84,6 +89,11 @@
 .section26__item {
     flex: 0 0 560px;
     margin-bottom: 47px;
+    &:last-of-type {
+        @include tablet {
+            margin-bottom: 0;
+        }
+    }
     @include tablet {
         flex: none;
         margin-bottom: 24px;
@@ -94,6 +104,10 @@
     .section26__item-discr {
         line-height: 150%;
         font-size: 16px;
+        @include mobile-land {
+            font-size: 15px;
+            line-height: 160%;
+        }
     }
     &:hover {
         .section26-button {
@@ -105,9 +119,7 @@
             }
         }
         .section26__item-discr {
-            span {
                 color: $green;
-            }
         }
         
     }

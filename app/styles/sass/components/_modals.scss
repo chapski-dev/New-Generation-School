@@ -12,6 +12,7 @@
 }
 .modal-backdrop {
     z-index: 9;
+    height: 120vh;
     .show {
         @include mobile-land {
             opacity: 0;
@@ -486,7 +487,6 @@
 .answer-question {
     height: auto;
     &.modal{
-        background: rgba(54, 52, 127, 0.4);
         backdrop-filter: blur(4px);
         @include mobile-land {
             padding-top: 80px;

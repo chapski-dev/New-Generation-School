@@ -9,7 +9,7 @@
         text-align: center;
     }
 }
-.section4-items {
+.section4-row {
     padding-bottom: 135px;
     display: grid;
     
@@ -19,10 +19,15 @@
     column-gap: 41px;
     row-gap: 41px;
     @include tablet {
-        padding-bottom: 106px;
+        grid-template-rows: none;
+        grid-template-columns: none;
+        column-gap: unset;
+        row-gap: unset;
+
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 106px;
     }
 }
 .section4-item {
@@ -37,7 +42,7 @@
     flex-direction: column;
     @include tablet {
         padding: 49px 44px 47px 44px;
-        margin-bottom: -10px;
+        margin-bottom: 30px;
         &:last-of-type {
             margin-bottom: 0;
         }

@@ -278,8 +278,8 @@
         align-items: center;
     }
     .section5-info__link-about {
+        outline: none;
         margin-right: 48px;
-        // padding-left: 11px;
         @include tablet-land {
             margin-right: 0;
             padding-left: 0;
@@ -287,7 +287,7 @@
         }
         @include tablet {
             padding-right: 0px;
-            padding-bottom: 27px;
+            margin-bottom: 27px;
         }
         span {
             text-decoration: underline;
@@ -303,6 +303,7 @@
                 text-decoration: none;
             }
         }
+
     }
     .section5-info__link-certificate {
         .icon-certificate {
@@ -316,6 +317,9 @@
             text-decoration: none;
             span {
                 text-decoration: none;
+                @include tablet {
+                    text-decoration: underline;
+                }
             }
         }
     }

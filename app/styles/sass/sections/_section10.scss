@@ -5,6 +5,9 @@
         padding-top: 4px;
         margin-bottom: 82px;
     }
+    @include mobile-land {
+        margin-bottom: 112px;
+    }
 }
 .section10-row {
     position: relative;
@@ -123,6 +126,8 @@
         border-radius: 50px;
     }
     @include mobile-land {
+        width: 90%;
+        border-radius: 20px;
         flex: unset;
         display: flex;
         justify-content: center;
@@ -130,6 +135,9 @@
         flex-direction: column;
         min-height: unset;
         padding: 14px 0 22px;
+    }
+    &:last-of-type {
+        margin-bottom: 0;
     }
 }
 .section10__info-item-number {
@@ -173,4 +181,10 @@
 }
 .section10__info-item-discr_4 {
     padding: 0 35%;
+    @include mobile-land {
+        padding: 0 38%;
+    }
+    @include mobile {
+        padding: 0 35%;
+    }
 }

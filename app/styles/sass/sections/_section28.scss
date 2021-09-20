@@ -10,6 +10,16 @@
     }
     .nav-pills {
         margin-bottom: 70px;
+        @include mobile-land {
+            margin-bottom: 27px;
+        }
+    }
+    .section__swipe-buttons {
+        padding: 0 20%;
+        margin-bottom: 13px;
+    }
+    .section-tabs__mobile-trigger {
+        margin: 0;
     }
 }
 .section28-title {
@@ -21,6 +31,11 @@
 }
 .section28-suptitle {
     margin-bottom: 64px;
+    @include mobile-land {
+        text-align: left;
+        font-size: 15px;
+        line-height: 160%;
+    }
 }
 .section28-tabs-content {
     display: flex;
@@ -105,7 +120,14 @@
     .page-text-content {
         margin-bottom: 30px;
         p {
-            margin-bottom: 26px;
+            @include mobile-land {
+                text-align: left;
+                font-size: 15px;
+                line-height: 156%;
+            }
+        }
+        @include mobile-land {
+            margin-bottom: 24px;
         }
     }
 }

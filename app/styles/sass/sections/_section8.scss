@@ -17,16 +17,16 @@
 }
 .section8-bottom {
     text-align: center;
-    .section8-bottom__btn-toggle {
-        border: none;
-        background-color: transparent;
-        text-decoration: underline;
-        &:hover {
-            color: $green;
-            text-decoration: none;
-        }
-        @include tablet {
-            font-size: 15px;
-        }
+}
+.section8-bottom__btn-toggle {
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    &:hover {
+        color: $green;
+        text-decoration: none;
+    }
+    @include tablet {
+        font-size: 15px;
     }
 }

@@ -1,6 +1,9 @@
 .section33 {
     padding-top: 26px;
     margin-bottom: 46px;
+    @include mobile-land {
+        padding-top: 28px;
+    }
     .container {
         max-width: 797px;
     }
@@ -33,6 +36,9 @@
     @include tablet {
         justify-content: space-between;
     }
+    @include mobile-land {
+        margin-bottom: 13px;
+    }
 }
 
 .section33-views {
@@ -47,7 +53,9 @@
     margin-bottom: 34px;
     line-height: 59px;
     @include mobile-land {
-        margin-bottom: 30px;
+        margin-bottom: 26px;
+        font-size: 30px;
+        line-height: 33px;
     }
 }
 .section33__img-wrapper {
@@ -56,6 +64,7 @@
     margin-bottom: 40px;
     @include mobile-land {
         width: 100%;
+        min-height: 100%;
         padding-bottom: (250/300) * 100%;
     }
     .section33__img {
@@ -94,6 +103,9 @@
     ul {
         list-style: disc;
         margin: 15px 0px 15px 35px;
+        @include mobile-land {
+            margin: 25px 0 15px 46px;
+        }
         li {
             @include mobile-land {
                 font-size: 15px;
@@ -110,8 +122,10 @@
     padding: 21px 48px;
     margin-top: 24px;
     @include mobile-land {
+        border-radius: 20px;
         flex-wrap: wrap;
         padding: 22px 20px;
+        margin-bottom: 49px;
     }
     &.section33-info__box-link {
         display: block;

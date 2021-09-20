@@ -5,6 +5,9 @@
         padding-top: 4px;
         margin-bottom: 82px;
     }
+    @include mobile-land {
+        margin-bottom: 112px;
+    }
 }
 .section18-row {
     position: relative;
@@ -91,7 +94,7 @@
         margin-bottom: 120px;
     }
     @include mobile-land {
-        margin-bottom: 115px;
+        margin-bottom: 128px;
     }
 }
 .section18-button {
@@ -133,6 +136,9 @@
         border-radius: 50px;
     }
     @include mobile-land {
+        width: 90%;
+        border-radius: 20px;
+        margin-bottom: 50px;
         flex: unset;
         display: flex;
         justify-content: center;
@@ -140,6 +146,9 @@
         flex-direction: column;
         min-height: unset;
         padding: 14px 0 22px;
+    }
+    &:last-of-type {
+        margin-bottom: 0;
     }
 }
 .section18__info-item-number {
@@ -155,6 +164,7 @@
         font-size: 30px;
         line-height: 33px;
         margin-bottom: 7px;
+        margin-top: -30px;
     }
 }
 .section18__info-item-discr {
@@ -166,6 +176,9 @@
         font-size: 15px;
         line-height: 150%;
     }
+    @include mobile {
+        padding: 0;
+    }
 }
 .section18__info-item-discr_1 {
     padding: 0 10%;
@@ -175,17 +188,26 @@
     @include mobile-land {
         padding: 0 16%;
     }
+    @include mobile {
+        padding: 0;
+    }
 }
 .section18__info-item-discr_2 {
     padding: 0 25%;
     @include mobile-land {
         padding: 0 30%;
     }
+    @include mobile {
+        padding: 0 25%;
+    }
 }
 .section18__info-item-discr_3 {
     padding: 0 21%;
     @include mobile-land {
         padding: 3px 6% 0 13%;
+    }
+    @include mobile {
+        padding: 0 5%;
     }
 }
 .section18__info-item-discr_4 {

@@ -30,7 +30,7 @@
         padding-right: 0;
         display: flex;
         flex-direction: column;
-        gap: 70px 1px;
+        gap: unset;
     }
 }
 .section15-item__button {
@@ -59,9 +59,15 @@
         margin: 0 auto;
         border-radius: 40px;
         padding: 23px 28px 62px 30px;
+        margin-bottom: 70px;
     }
     @include mobile-land {
         width: 100%;
+    }
+    &:last-of-type {
+        @include tablet {
+            margin-bottom: 0;
+        }
     }
     &:hover {
         @include tablet {
