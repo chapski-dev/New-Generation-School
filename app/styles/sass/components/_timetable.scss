@@ -68,10 +68,10 @@
 .timetable {
     display: block;
     @include mobile-land {
-        width: inherit;
         display: flex;
         justify-content: space-between;
-        padding: 0 50px 0 30px;
+
+        padding: 0 10%;
     }
     &:hover {
         text-decoration: none;
@@ -99,13 +99,15 @@
         justify-content: flex-start;
         align-items: center;
         margin-bottom: 0;
-        width: min-content;
-    }
-    &:last-of-type {
-        margin-bottom: 0;
+        width: 100%;
     }
     .timetable__body-item {
+        &:first-of-type {
+            display: flex;
+            align-items: center;
+        }
         @include tablet {
+            width: 70px;
             margin-left: 12px;
         }
         @include mobile-land {
@@ -149,7 +151,7 @@
 .timetable__header {
     margin-bottom: 10px;
     @include mobile-land {
-        margin-right: 14.5%;
+        padding-right: 24px;
         margin-bottom: 0;
     }
 }

@@ -19,7 +19,7 @@ import Masonry from 'masonry-layout';
 SwiperCore.use([Navigation, Pagination]);
 
 const DESKTOP_FROM = 1024;
-const TABLET_FORM = 768; 
+const TABLET_FORM = 640; 
 // section2 tabs sliders
   
 var swiper2 = new Swiper(".section-tabs-slider", {   
@@ -27,13 +27,9 @@ var swiper2 = new Swiper(".section-tabs-slider", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  
   loop: false,
-
   observer: true,
-  
   observeParents: true ,
-  
   observSlideChildren: true,
 });
 
@@ -48,55 +44,88 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
   observer: true,
-  
   observeParents: true ,
-  
   observSlideChildren: true,
 });
 
 // timetable for teachers swiper
 
-$(window).on('load resize', function () {
-  
-  if ( $(window).width() < TABLET_FORM) {
-    var swiperTimetable = new Swiper(".timetable-slider", {   
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    
-      observer: true,
-      observeParents: true ,
-      observSlideChildren: true,
-      slidesPerView: 2,
-    });
-  } else {
-    console.log("ты лох")
-    $(swiperTimetable).remove();
-  }
+var mySwiper = undefined;
+function initSwiper() {
+    var screenWidth = $(window).width();
+    if(screenWidth < 640 && mySwiper == undefined) {            
+        mySwiper = new Swiper('.timetable-slider', {            
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        
+          observer: true,
+          observeParents: true ,
+          observSlideChildren: true,
+          slidesPerView: 2.8,
+        });
+    } else if (screenWidth > 640 && mySwiper != undefined) {
+        mySwiper.destroy();
+        mySwiper = undefined;
+        jQuery('.swiper-wrapper').removeAttr('style');
+        jQuery('.swiper-slide').removeAttr('style');            
+    }        
+}
+
+//Swiper plugin initialization
+initSwiper();
+
+//Swiper plugin initialization on window resize
+$(window).on('resize', function(){
+    initSwiper();        
 });
 
-// $(document).on("load", disableTimetableSwiper );
-// $(window).on("resize", disableTimetableSwiper);
+// const breakpoint = window.matchMedia( '(min-width:640px)' );
+// let swiperTimetable;
+// const breakpointChecker = function() {
+//    if ( breakpoint.matches === true ) {
+//       if ( swiperTimetable !== undefined ) swiperTimetable.disable();
+//       // if ( swiperTimetable !== undefined ) swiperTimetable.destroy( true, true );
+//       return;
+//    } else if ( breakpoint.matches === false ) {
+//       return enableSwiper();
+//    }
+// };
+// const enableSwiper = function() {
+//    swiperTimetable = new Swiper ('.timetable-slider', {
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+  
+//     observer: true,
+//     observeParents: true ,
+//     observSlideChildren: true,
+//     slidesPerView: 2.8,
+//    });
+// };
+// breakpoint.addListener(breakpointChecker);
+// breakpointChecker();
 
 
 
 // HEADER MOBILE NAV TOGLE
 let headerNavToggle = $(".header__nav-toggle")
-$(headerNavToggle).on('click', function(event) {
+headerNavToggle.on('click', function(event) {
   event.preventDefault();
   let body = $('body');
   if($(body).hasClass("modal-open")) {
     $(".modal").modal('hide');
-    $(headerNavToggle).closest('.header__navigation').removeClass('_mobile-nav-open');
-    $(headerNavToggle).closest('.header__navigation').toggleClass('_mobile-nav-open');
+    headerNavToggle.closest('.header__navigation').removeClass('_mobile-nav-open');
+    headerNavToggle.closest('.header__navigation').toggleClass('_mobile-nav-open');
   } else {
-    $(headerNavToggle).closest('.header__navigation').toggleClass('_mobile-nav-open');
+    headerNavToggle.closest('.header__navigation').toggleClass('_mobile-nav-open');
   };
 })
 
 const navLinkItemParent = $('.nav-links__item--parent')
-$(navLinkItemParent).on('click', '.nav-links__link', function(event) {
+navLinkItemParent.on('click', '.nav-links__link', function(event) {
   event.preventDefault();
   if ($(window).width() <= DESKTOP_FROM) {
       $(this).closest(navLinkItemParent).toggleClass("active");

@@ -47,6 +47,9 @@
 .section31-row, .section31-hiden-items {
     display: flex;
     flex-wrap: wrap;
+    @include tablet-land {
+        justify-content: space-around;
+    }
     @include tablet {
         flex-direction: column;
         margin-bottom: 50px;
@@ -62,6 +65,9 @@
     margin-bottom: 46px;
     margin-right: 40px;
     &:nth-of-type(3n) {
+        margin-right: 0;
+    }
+    @include tablet-land {
         margin-right: 0;
     }
     @include tablet {
@@ -134,8 +140,8 @@
     @include tablet-land {
         height: 100%;
     }
-    @include mobile-land {
-        height: 90%;
+    @include tablet {
+        height: 95%;
     }
 }
 .section31__item-img-wrapper {

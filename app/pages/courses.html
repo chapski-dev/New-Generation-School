@@ -768,70 +768,174 @@
                             </div>
                             <!-- 2nd TAB -->
                             <div class="tab-pane fade show" id="teacher2" role="tabpanel" aria-labelledby="teacher2-tab">
-                                <div class="timetable">
-                                    <div class="timetable__header">
-                                        <div class="timetable__header-row">
-                                            <div class="timetable__header-item"></div>
-                                            <div class="timetable__header-item">Пн</div>
-                                            <div class="timetable__header-item">Вт</div>
-                                            <div class="timetable__header-item">Ср</div>
-                                            <div class="timetable__header-item">Чт</div>
-                                            <div class="timetable__header-item">Пт</div>
-                                            <div class="timetable__header-item">Сб</div>
-                                            <div class="timetable__header-item">Вс</div>
+                                    
+                                <div class="section__swiper-row timetable-slide-row">
+
+                                    <div class="swiper-button-wrapper">
+                                        <div class="swiper-button-prev">
+                                            <i class="icon-arrow-left-bordered"></i>
+                                        </div>
+                                        <div class="swiper-button-next">
+                                            <i class="icon-arrow-right-bordered"></i>
                                         </div>
                                     </div>
-                                    <div class="timetable__body">
-                                        <div class="timetable__body-row">
-                                            <div class="timetable__body-item">
-                                                <h3 class="tab-time">15:30 - 17:30</h3>
-                                            </div>
-                                            <div class="timetable__body-item">
-                                                <button class="colored-box" data-colored="color1" type="button" data-toggle="modal" data-target="#modalConsultationPochemuchki-1"></button>
-                                            </div>
-                                            <div class="timetable__body-item">
-                                                <button class="colored-box" data-colored="color2" type="button" data-toggle="modal" data-target="#modalConsultationPochemuchki-2"></button>
-                                            </div>
-                                            <div class="timetable__body-item">
-                                                <button class="colored-box colored-box—-empty" data-colored="color3" type="button" data-toggle="modal"></button>
-                                            </div>
-                                            <div class="timetable__body-item">
-                                                <button class="colored-box" data-colored="color1" type="button" data-toggle="modal" data-target="#modalConsultationPochemuchki-1"></button>
-                                            </div>
-                                            <div class="timetable__body-item">
-                                                <button class="colored-box" data-colored="color2" type="button" data-toggle="modal" data-target="#modalConsultationPochemuchki-2"></button>
-                                            </div>
-                                            <div class="timetable__body-item">
-                                                <button class="colored-box colored-box—-empty" data-colored="color3" type="button" data-toggle="modal"></button>
-                                            </div>
-                                            <div class="timetable__body-item">
-                                                <button class="colored-box colored-box—-empty" data-colored="color3" type="button" data-toggle="modal"></button>
+
+                                    <div class="timetable">
+                                        <div class="timetable__header">
+                                            <div class="timetable__header-row">
+                                                <div class="timetable__header-item"></div>
+                                                <div class="timetable__header-item">Пн</div>
+                                                <div class="timetable__header-item">Вт</div>
+                                                <div class="timetable__header-item">Ср</div>
+                                                <div class="timetable__header-item">Чт</div>
+                                                <div class="timetable__header-item">Пт</div>
+                                                <div class="timetable__header-item">Сб</div>
+                                                <div class="timetable__header-item">Вс</div>
                                             </div>
                                         </div>
-                                        <div class="timetable__body-row">
-                                            <div class="timetable__body-item">
-                                                <h3 class="tab-time">18:00 - 20:00</h3>
+                                        <div class="swiper-container timetable-slider">
+                                        
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="timetable__body-row">
+                                                        <div class="timetable__body-item">
+                                                            <h3 class="tab-time">15:30 - 17:30</h3>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color1" type="button" data-toggle="modal" data-target="#modalConsultationPochemuchki-1"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color2" type="button" data-toggle="modal" data-target="#modalConsultationPochemuchki-2"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box colored-box—-empty" data-colored="color3" type="button" data-toggle="modal"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color1" type="button" data-toggle="modal" data-target="#modalConsultationPochemuchki-1"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color2" type="button" data-toggle="modal" data-target="#modalConsultationPochemuchki-2"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box colored-box—-empty" data-colored="color3" type="button" data-toggle="modal"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box colored-box—-empty" data-colored="color3" type="button" data-toggle="modal"></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="timetable__body-row">
+                                                        <div class="timetable__body-item">
+                                                            <h3 class="tab-time">18:00 - 20:00</h3>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color4" type="button" data-toggle="modal" data-target="#modalConsultationPotomuchki-1"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color5" type="button" data-toggle="modal" data-target="#modalConsultationPotomuchki-2"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color6" type="button" data-toggle="modal" data-target="#modalConsultationPotomuchki-3"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color4" type="button" data-toggle="modal" data-target="#modalConsultationPotomuchki-1"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color5" type="button" data-toggle="modal" data-target="#modalConsultationPotomuchki-2"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color6" type="button" data-toggle="modal" data-target="#modalConsultationPotomuchki-3"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box colored-box—-empty" data-colored="color3" type="button" data-toggle="modal"></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="timetable__body-row">
+                                                <div class="timetable__body-item">
+                                                    <h3 class="tab-time">15:30 - 17:30</h3>
+                                                </div>
+                                                <div class="timetable__body-item">
+                                                    <button class="colored-box" data-colored="color1" type="button" data-toggle="modal" data-target="#modalConsultationPochemuchki-1"></button>
+                                                </div>
+                                                <div class="timetable__body-item">
+                                                    <button class="colored-box" data-colored="color2" type="button" data-toggle="modal" data-target="#modalConsultationPochemuchki-2"></button>
+                                                </div>
+                                                <div class="timetable__body-item">
+                                                    <button class="colored-box colored-box—-empty" data-colored="color3" type="button" data-toggle="modal"></button>
+                                                </div>
+                                                <div class="timetable__body-item">
+                                                    <button class="colored-box" data-colored="color1" type="button" data-toggle="modal" data-target="#modalConsultationPochemuchki-1"></button>
+                                                </div>
+                                                <div class="timetable__body-item">
+                                                    <button class="colored-box" data-colored="color2" type="button" data-toggle="modal" data-target="#modalConsultationPochemuchki-2"></button>
+                                                </div>
+                                                <div class="timetable__body-item">
+                                                    <button class="colored-box colored-box—-empty" data-colored="color3" type="button" data-toggle="modal"></button>
+                                                </div>
+                                                <div class="timetable__body-item">
+                                                    <button class="colored-box colored-box—-empty" data-colored="color3" type="button" data-toggle="modal"></button>
+                                                </div>
                                             </div>
-                                            <div class="timetable__body-item">
-                                                <button class="colored-box" data-colored="color4" type="button" data-toggle="modal" data-target="#modalConsultationPotomuchki-1"></button>
-                                            </div>
-                                            <div class="timetable__body-item">
-                                                <button class="colored-box" data-colored="color5" type="button" data-toggle="modal" data-target="#modalConsultationPotomuchki-2"></button>
-                                            </div>
-                                            <div class="timetable__body-item">
-                                                <button class="colored-box" data-colored="color6" type="button" data-toggle="modal" data-target="#modalConsultationPotomuchki-3"></button>
-                                            </div>
-                                            <div class="timetable__body-item">
-                                                <button class="colored-box" data-colored="color4" type="button" data-toggle="modal" data-target="#modalConsultationPotomuchki-1"></button>
-                                            </div>
-                                            <div class="timetable__body-item">
-                                                <button class="colored-box" data-colored="color5" type="button" data-toggle="modal" data-target="#modalConsultationPotomuchki-2"></button>
-                                            </div>
-                                            <div class="timetable__body-item">
-                                                <button class="colored-box" data-colored="color6" type="button" data-toggle="modal" data-target="#modalConsultationPotomuchki-3"></button>
-                                            </div>
-                                            <div class="timetable__body-item">
-                                                <button class="colored-box colored-box—-empty" data-colored="color3" type="button" data-toggle="modal"></button>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="timetable__body-row">
+                                                        <div class="timetable__body-item">
+                                                            <h3 class="tab-time">18:00 - 20:00</h3>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color4" type="button" data-toggle="modal" data-target="#modalConsultationPotomuchki-1"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color5" type="button" data-toggle="modal" data-target="#modalConsultationPotomuchki-2"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color6" type="button" data-toggle="modal" data-target="#modalConsultationPotomuchki-3"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color4" type="button" data-toggle="modal" data-target="#modalConsultationPotomuchki-1"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color5" type="button" data-toggle="modal" data-target="#modalConsultationPotomuchki-2"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color6" type="button" data-toggle="modal" data-target="#modalConsultationPotomuchki-3"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box colored-box—-empty" data-colored="color3" type="button" data-toggle="modal"></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="timetable__body-row">
+                                                        <div class="timetable__body-item">
+                                                            <h3 class="tab-time">15:30 - 17:30</h3>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color1" type="button" data-toggle="modal" data-target="#modalConsultationPochemuchki-1"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color2" type="button" data-toggle="modal" data-target="#modalConsultationPochemuchki-2"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box colored-box—-empty" data-colored="color3" type="button" data-toggle="modal"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color1" type="button" data-toggle="modal" data-target="#modalConsultationPochemuchki-1"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box" data-colored="color2" type="button" data-toggle="modal" data-target="#modalConsultationPochemuchki-2"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box colored-box—-empty" data-colored="color3" type="button" data-toggle="modal"></button>
+                                                        </div>
+                                                        <div class="timetable__body-item">
+                                                            <button class="colored-box colored-box—-empty" data-colored="color3" type="button" data-toggle="modal"></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

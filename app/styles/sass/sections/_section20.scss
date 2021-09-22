@@ -30,26 +30,27 @@
 .section20-content {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 66px;
+    margin-bottom: 26px;
     @include tablet-land {
         justify-content: space-between;
     }
     @include tablet {
         flex-direction: column;
-        margin-bottom: 160px;
+        margin-bottom: 120px;
     }
     @include mobile-land {
-        margin-bottom: 154px;
+        margin-bottom: 114px;
     }
 }
 .section20-content__item {
     display: flex;
     flex: 0 0 50%;
-    margin-bottom: 45px;
+    margin-bottom: 80px;
     @include tablet-land {
         flex: 0 0 45%;
     }
     @include tablet {
+        margin-bottom: 45px;
         flex-direction: column;
     }
     &:last-of-type {
@@ -83,19 +84,8 @@
             }
         }
     }
-    &.section20-content__number_1 {
-        .icon-cicle-empty-2 {
-            top: -52%;
-            color: $dark-blue;
-            @include mobile-land {
-                top: 0;
-            }
-        }
-    }
     .icon-cicle-empty-2 {
-        :last-of-type {
-            top: -48%;
-        }
+        top: -52%;
         position: absolute;
         font-size: 130px;
         left: 0;
