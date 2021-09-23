@@ -28,14 +28,42 @@
 	}
 }
 
+.menu-item,
 .nav-links__item {
 	margin-left: 30px;
+
 	&:first-of-type {
 		margin-left: 35px;
 		@include tablet {
 			margin-left: 0px;
 		}
 	}
+
+	&:hover {
+		.sub-menu {
+			display: block;
+		}
+	}
+
+	&.menu-item-has-children {
+		> a {
+			display: block;
+			&::after {
+				content: $icon-triangle-down;
+				display: inline-block;
+				font-family: $icomoon-font-family;
+				font-size: 10px;
+				speak: never;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				margin-left: 4px;
+			}
+		}
+	}
+
 	a {
 		&:hover {
 			color: $green;
@@ -43,11 +71,6 @@
 				color: unset;
 				text-decoration: none;
 			}
-		}
-	}
-	&:hover {
-		.sub-menu {
-			display: block;
 		}
 	}
 	@include tablet-land {
@@ -86,10 +109,12 @@
     left: -26px;
     top: 100%;
     z-index: 1;
-    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.05);
     border-radius: 6px;
 	background: white;
-	li {
+	.menu-item,
+	.nav-links__item {
+		margin-left: 0;
 		display: block;
 		a {
 			display: block;
