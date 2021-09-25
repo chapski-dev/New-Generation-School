@@ -176,6 +176,7 @@
         position: absolute;
         top: 0;
         left: 69%;
+        z-index: -1;
         color: $yellow;
         font-size: 41px;
         @include tablet {
@@ -280,6 +281,10 @@
     .section5-info__link-about {
         outline: none;
         margin-right: 48px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+
         @include tablet-land {
             margin-right: 0;
             padding-left: 0;
@@ -306,6 +311,9 @@
 
     }
     .section5-info__link-certificate {
+        background-color: transparent;
+        border: none;
+        padding: 0;
         .icon-certificate {
             font-size: 20px;
             margin-right: 5px;
