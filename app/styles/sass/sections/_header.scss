@@ -27,6 +27,18 @@
     }
 }
 /* logo image */
+
+.header-logo {
+    .custom-logo {
+        margin-right: 10%;
+        @include tablet {
+            margin-right: 0;
+            width: 101px;
+            max-height: 40px;
+        }
+    }
+}
+
 .header-logo__img {
     margin-right: 10%;
     @include tablet {

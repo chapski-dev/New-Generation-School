@@ -179,9 +179,9 @@ function showThanksModal(event) {
   thankModal.modal('show');
 };
 
-$('form').on('submit', function(event) {
-  event.preventDefault();
-  const parent = $(this).closest('.modal');
+document.addEventListener('wpcf7mailsent', function () {
+  console.log('wpcf7mailsent')
+  const parent = $('.modal.show');
 
   if (parent.length) {
     parent.on('hidden.bs.modal', showThanksModal)
