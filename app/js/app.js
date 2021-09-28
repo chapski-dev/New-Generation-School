@@ -221,7 +221,7 @@ $('.content_toggle').on('click', function(){
 // Наведение на обьект в расписании  
 const timeTable = $('.timetable__wrapper');
 if (timeTable.length) {
-  const timeTableColoredBoxes = timeTable.find(".colored-box:not(.colored-box—-empty)");
+  const timeTableColoredBoxes = timeTable.find(".colored-box:not(.colored-box--empty)");
 
   timeTableColoredBoxes.on({
       mouseenter: function () {
@@ -231,7 +231,12 @@ if (timeTable.length) {
         timeTable.removeClass(`_hover-${$(this).data('colored')}`)
       }
   });
-};
+}
+
+$('.schedule-form-trigger-btn:not([data-colored="color3"])').on('click', function (e) {
+  $('#scheduleModalForm input[name="subject"]').val( $(this).data('subject') )
+})
+
 
 // Показ ответа по кнопке в 28 секции
 $(".section28-button_desctop").on('click', function(event) {

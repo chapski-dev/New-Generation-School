@@ -118,8 +118,14 @@
     .section5-info__link-certificate {
         display: flex;
         align-items: center;
+        padding: 0;
+        background-color: transparent;
+        border: none;
         i {
             color: $green;
+            font-size: 21px;
+            display: inline-block;
+            margin-right: 8px;
         }
         span {
             color: $green;

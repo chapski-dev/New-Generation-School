@@ -169,50 +169,16 @@
 }
 .section18__info-item-discr {
     text-align: center;
+    padding: 0 10%;
     @include tablet {
         font-size: 16px;
     }
     @include mobile-land {
+        padding: 0 15%;
         font-size: 15px;
         line-height: 150%;
     }
     @include mobile {
-        padding: 0;
-    }
-}
-.section18__info-item-discr_1 {
-    padding: 0 10%;
-    @include tablet {
-        padding: 0 18%;
-    }
-    @include mobile-land {
-        padding: 0 16%;
-    }
-    @include mobile {
-        padding: 0;
-    }
-}
-.section18__info-item-discr_2 {
-    padding: 0 25%;
-    @include mobile-land {
-        padding: 0 30%;
-    }
-    @include mobile {
-        padding: 0 25%;
-    }
-}
-.section18__info-item-discr_3 {
-    padding: 0 21%;
-    @include mobile-land {
-        padding: 3px 6% 0 13%;
-    }
-    @include mobile {
         padding: 0 5%;
-    }
-}
-.section18__info-item-discr_4 {
-    padding: 0 20%;
-    @include mobile-land {
-        padding: 0 15%;
     }
 }

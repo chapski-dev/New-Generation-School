@@ -57,5 +57,9 @@ a {
         @include tablet {
             font-size: 15px;
         }
+
+        + p {
+            margin-top: 20px;
+        }
     }
 }
