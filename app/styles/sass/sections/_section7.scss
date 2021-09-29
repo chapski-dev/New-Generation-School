@@ -30,13 +30,16 @@
     }
     .section7-title {
         width: 70%;
-        margin-bottom: 93px;
+        margin-bottom: 198px;
         line-height: 59px;
         @include tablet {
-            width: 100%;
-            text-align: center;
-            line-height: 33px;
-            margin-bottom: 66px;
+          width: 100%;
+          text-align: center;
+          line-height: 33px;
+          margin-bottom: 160px;
+        }
+        @include mobile-land {
+          margin-bottom: 152px;
         }
     }
 }
@@ -49,214 +52,252 @@
     grid-template-columns: repeat (2, 1fr);
     grid-template-rows: repeat (6, 1fr);
     
-    row-gap: 0px;
+    row-gap: 150px;
+    column-gap: 20px;
     @include tablet {
-        margin-left: 0;
-        padding: 0 20px;
-        grid-template-columns: repeat (4, 1fr);
-        grid-template-rows: repeat (6, 1fr);
-        column-gap: 20px;
+      margin-left: 0;
+      padding: 0 20px;
+      grid-template-columns: repeat (4, 1fr);
+      grid-template-rows: repeat (6, 1fr);
+      column-gap: 20px;
     }
-    .section7-item-1 {
-        grid-column-start: 1;
-        grid-row-start: 1;
-        @include tablet {
-            grid-column-start: 1;
-            grid-column-end: 5;
-            padding-bottom: 109px;
-            margin-bottom: 24px;
-        }
-        .icon-cicle-fill-1 {
-            position: absolute;
-            top: -6%;
-            left: 15%;
-            font-size: 404px;
-            z-index: -1;
-            color: #F5F5F9;
-            @include tablet {
-                font-size: 296px;
-                top: 45%;
-                left: 49%;
-                transform: translate(-50%, -50%);
-                }
-        }
-        .icon-cicle-empty-1 {
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 162px;
-            color: #36347F;
-            @include tablet {
-                font-size: 75px;
-            }
-        }
-        .icon-childrens {
-            position: absolute;
-            top: 111%;
-            left: 10%;
-            font-size: 141px;
-            color: #36347F;
-            transform: rotate(341deg);
-            @include tablet {
-                font-size: 85px;
-                top: 88%;
-                left: 7%;
-                transform: translate(-50%, -50%) rotate(341deg);
-            }
-        }
-
+    @include mobile-land {
+      row-gap: 69px;
     }
-    .section7-item-2 {
-        grid-column-start: 2;
-        grid-row-start: 2;
-        @include tablet {
-            grid-column-start: 1;
-            grid-column-end: 5;
-            padding-bottom: 99px;
-            margin-bottom: 24px;
-        }
-        .icon-cicle-fill-2 {
-            position: absolute;
-            top: -34%;
-            left: 16%;
-            font-size: 378px;
-            z-index: -1;
-            color: #E7F8EF;
-            @include tablet {
-                font-size: 296px;
-                top: 46%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                }
-        }
-        .icon-cicle-empty-2 {
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 131px;
-            color: $green;
-            @include tablet {
-                font-size: 65px;
-            }
-            @include mobile-land {
-               top: 25%; 
-            }
-        }
-        .icon-backpack {
-            position: absolute;
-            top: -37%;
-            left: 21%;
-            font-size: 107px;
-            z-index: -1;
-            color: $green;
-            @include tablet {
-                top: 66%;
-                left: -6%;
-                font-size: 56px;
-            }
-        }
-    }
-    .section7-item-3 {
-        grid-column-start: 1;
-        grid-row-start: 3;
-        @include tablet {
-            grid-column-start: 1;
-            grid-column-end: 5;
-            padding-bottom: 115px;
-            margin-bottom: 24px;
-        }
-        .icon-cicle-fill-3 {
-            position: absolute;
-            top: -9%;
-            left: 12%;
-            font-size: 392px;
-            z-index: -1;
-            color: $yellow;
-            opacity: .2;
-            @include tablet {
-                font-size: 303px;
-                top: 45.5%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                }
-        }
-        .icon-cicle-empty-3 {
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 133px;
-            z-index: -1;
-            color: $yellow;
-            @include tablet {
-                font-size: 64px;
-            }
-        }
-        .icon-rocet {
-            position: absolute;
-            top: 121%;
-            left: 17%;
-            font-size: 89px;
-            color: $yellow;
-            @include tablet {
-                font-size: 68px;
-                top: 73%;
-                left: -3%;
 }
-            }
+.section7-item-1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    @include tablet {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        padding-bottom: 109px;
+        margin-bottom: 24px;
     }
-    .section7-item-4 {
-        grid-column-start: 2;
-        grid-row-start: 4;
+    .icon-cicle-fill-1 {
+      position: absolute;
+      top: -159px;
+      left: 15%;
+      font-size: 404px;
+      z-index: -1;
+      color: #F5F5F9;
+      @include tablet {
+        font-size: 296px;
+        top: 22%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .icon-cicle-empty-1 {
+        position: absolute;
+        top: -90px;
+        left: 96%;
+        font-size: 148px;
+        transform: translate(-50%, -50%);
+        color: #36347F;
         @include tablet {
-            grid-column-start: 1;
-            grid-column-end: 5;
-            padding-bottom: 116px;
-            margin-bottom: 24px;
+            font-size: 75px;
+            top: -39px;
+            left: 81%;
         }
-        .icon-cicle-fill-4 {
-            position: absolute;
-            top: -12%;
-            left: 7%;
-            font-size: 366px;
-            z-index: -1;
-            color: #FCE8E6;
-            @include tablet {
-                font-size: 302px;
-                top: 46%;
-                left: 51%;
-                transform: translate(-50%, -50%);
-                }
+    }
+    .icon-childrens {
+      position: absolute;
+      top: 111%;
+      left: 10%;
+      font-size: 141px;
+      color: #36347F;
+      transform: rotate(341deg);
+      @include tablet {
+        font-size: 85px;
+        top: 88%;
+        left: 7%;
+        transform: translate(-50%, -50%) rotate(341deg);
+      }
+      @include mobile-land {
+        top: 71%;
+      }
+    }
+
+}
+.section7-item-2 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    @include tablet {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        padding-bottom: 99px;
+        margin-bottom: 24px;
+    }
+    .icon-cicle-fill-2 {
+      position: absolute;
+      top: -209px;
+      left: 16%;
+      font-size: 401px;
+      z-index: -1;
+      color: #E7F8EF;
+      @include tablet {
+        font-size: 296px;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .icon-cicle-empty-2 {
+      position: absolute;
+      top: -93px;
+      left: 321px;
+      transform: translate(-50%, -50%);
+      font-size: 131px;
+      color: $green;
+      @include tablet {
+        left: unset;
+        font-size: 65px;
+        right: -33px;
+        top: -42px;
+      }
+      @include mobile-land {
+        top: -50px;
+        right: -14px;
+        left: unset;
+      }
+    }
+    .icon-backpack {
+        position: absolute;
+        top: -200px;
+        left: 21%;
+        font-size: 107px;
+        z-index: -1;
+        color: $green;
+        @include tablet {
+          top: 66%;
+          left: -6%;
+          font-size: 56px;
         }
-        .icon-cicle-empty-2 {
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 131px;
-            color: $red;
-            @include tablet {
-                font-size: 66px;
-            }
-            @include mobile-land {
-                top: 25%; 
-            }
+        @include mobile-land {
+          top: 42%;
         }
-        .icon-hat {
-            position: absolute;
-            top: -34%;
-            left: 15%;
-            font-size: 133px;
-            z-index: -1;
-            color: $red;
-            @include tablet {
-                font-size: 86px;
-                left: -6%;
-                top: 59%;
-            }
+    }
+}
+.section7-item-3 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    @include tablet {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        padding-bottom: 115px;
+        margin-bottom: 24px;
+    }
+    .icon-cicle-fill-3 {
+      position: absolute;
+      top: -168px;
+      left: 12%;
+      font-size: 431px;
+      z-index: -1;
+      color: $yellow;
+      opacity: .2;
+      @include tablet {
+        font-size: 303px;
+        top: 21.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .icon-cicle-empty-3 {
+        position: absolute;
+        top: -89px;
+        left: 331px;
+        transform: translate(-50%, -50%);
+        font-size: 133px;
+        z-index: -1;
+        color: $yellow;
+        @include tablet {
+          left: unset;
+          font-size: 64px;
+          right: -33px;
+          top: -42px;
         }
+        @include mobile-land {
+          left: unset;
+          top: -41px;
+          right: -4%;
+        }
+        @include mobile {
+          right: -20px;
+        }
+    }
+    .icon-rocet {
+        position: absolute;
+        top: 121%;
+        left: 17%;
+        font-size: 89px;
+        color: $yellow;
+        @include tablet {
+          font-size: 68px;
+          top: 73%;
+          left: -3%;
+        }
+    }
+  }
+    .section7-item-4 {
+      grid-column-start: 2;
+      grid-row-start: 4;
+      @include tablet {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        padding-bottom: 116px;
+        margin-bottom: 24px;
+      }
+      .icon-cicle-fill-4 {
+        position: absolute;
+        top: -130px;
+        left: 9%;
+        font-size: 366px;
+        z-index: -1;
+        color: #FCE8E6;
+        @include tablet {
+          font-size: 302px;
+          top: 30%;
+          left: 51%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .icon-cicle-empty-2 {
+        position: absolute;
+        top: -93px;
+        left: 317px;
+        transform: translate(-50%, -50%);
+        font-size: 131px;
+        color: $red;
+        @include tablet {
+          left: unset;
+          font-size: 66px;
+          right: -33px;
+          top: -42px;
+        }
+        @include mobile-land {
+          left: unset;
+          top: -43px;
+          right: -6%;
+        }
+        @include mobile {
+          top: -42px;
+          right: -34px;
+        }
+      }
+      .icon-hat {
+        position: absolute;
+        top: -200px;
+        left: 15%;
+        font-size: 133px;
+        z-index: -1;
+        color: $red;
+        @include tablet {
+          font-size: 86px;
+          left: -6%;
+          top: 59%;
+        }
+      }
     }
     .section7-item-5 {
         grid-column-start: 1;
@@ -268,28 +309,40 @@
             margin-bottom: 24px;
         }
         .icon-cicle-fill-5 {
-            position: absolute;
-            top: -9%;
-            left: 15%;
-            font-size: 387.5px;
-            z-index: -1;
-            color: #E7F8EF;
-            @include tablet {
-                font-size: 302px;
-                top: 46%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                }
+          position: absolute;
+          top: -156px;
+          left: 15%;
+          font-size: 387.5px;
+          z-index: -1;
+          color: #E7F8EF;
+          @include tablet {
+            font-size: 302px;
+            top: 27%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
         }
         .icon-cicle-empty-3 {
             position: absolute;
-            top: 30%;
-            left: 50%;
+            top: -91px;
+            left: 328px;
             transform: translate(-50%, -50%);
             font-size: 133px;
             color: $green;
             @include tablet {
-                font-size: 68.55px;
+              left: unset;
+              font-size: 68.55px;
+              right: -33px;
+              top: -42px;
+            }
+            @include mobile-land {
+              left: unset;
+              top: -39px;
+              right: -25px;
+            }
+            @include mobile {
+              top: -39px;
+              right: -30px;
             }
         }
         .icon-paper-boat {
@@ -314,30 +367,39 @@
         }
         .icon-cicle-fill-6 {
             position: absolute;
-            top: -37%;
+            top: -200px;
             left: 7%;
             font-size: 424px;
             z-index: -1;
             color: #F5F5F9;
             @include tablet {
-                font-size: 299px;
-                top: 70.5%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                }
+              font-size: 299px;
+              top: 70.5%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
         }
         .icon-cicle-empty-2 {
             position: absolute;
-            top: 30%;
-            left: 50%;
+            top: -91px;
+            left: 321px;
             transform: translate(-50%, -50%);
             font-size: 131px;
             color: $dark-blue;
             @include tablet {
-                font-size: 68px;
+              font-size: 68px;
+              left: unset;
+              right: -33px;
+              top: -42px;
             }
             @include mobile-land {
-                top: 25%; 
+              left: unset;
+              top: -41px;
+              right: -7%;
+            }
+            @include mobile {
+              top: -40px;
+              right: -28px;
             }
         }
         .icon-magnifier {
@@ -354,10 +416,8 @@
             }
         }
     }
-}
 
 .section7-item{
-    
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -382,19 +442,84 @@
         width: 100%;
     }
     .item__number {
-        position: relative;
-        font-family: $neucha;
-        font-size: 64px;
-        padding-bottom: 36px;
-        @include tablet {
-            width: 20%;
-            font-size: 0;
-            span{
-                font-size: 33px !important; 
-            }
+      position: absolute;
+      top: -137px;
+      font-family: $neucha;
+      font-size: 64px;
+      padding-bottom: 36px;
+      @include tablet {
+        top: -64px;
+        right: 21px;
+        width: 20%;
+        font-size: 33px !important; 
+      }
+      @include mobile-land {
+        top: -62px;
+        right: 25px;
+      }
+      &.item__number-2 {
+        @include tablet-land {
+          right: -57px;
         }
+        @include tablet {
+          right: 6px;
+        }
+        @include mobile-land {
+          top: -72px;
+          right: 23px;
+        }
+      }
+      &.item__number-3 {
+        @include tablet-land {
+          right: -57px;
+        }
+        @include tablet {
+          right: 6px;
+        }
+        @include mobile-land {
+          right: 5%;
+        }
+      }
+      &.item__number-4 {
+        @include tablet-land {
+          right: -57px;
+        }
+        @include tablet {
+          right: 6px;
+        }
+        @include mobile-land {
+          right: 3%;
+        }
+      }
+      &.item__number-5 {
+        @include tablet-land {
+          right: -57px;
+        }
+        @include tablet {
+          right: 6px;
+        }
+        @include mobile-land {
+          right: 3%;
+        }
+      }
+      &.item__number-6 {
+        @include tablet-land {
+          right: -57px;
+        }
+        @include tablet {
+          right: 6px;
+        }
+        @include mobile-land {
+          right: 3%;
+        }
+      }
     }
 }
+
+.section7-item-content {
+  position: relative;
+}
+
 
 .section7-item__discr{
     h3 {
